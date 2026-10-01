@@ -41,9 +41,22 @@ Vendored talent text is client build `1.60.1.70009`. `meta.json` records the lat
 
 This is a fan site. It is not affiliated with Blizzard.
 
+## Changes
+
+Live site: https://snibi.github.io/forever-meta/. Pushes to `master` redeploy through GitHub Actions.
+
+| Commit | What changed |
+| --- | --- |
+| `25e1aef` | Initial snapshot: 27 specs, 6 tier lists, vendored talent data, build-time legality checks. |
+| `1d2e5f5` | GitHub Pages deploy. Internal links use the `/forever-meta` base path. |
+| `a86942c` | Dark icons get a framed plate so race portraits no longer vanish. Role marks are SVG, not emoji. Shaman names use `#8EBEFF` because `#0070DD` was 3.5:1 on the chip background. |
+| `a8baae6` | Meta snapshot hover notes open under the chip. The tier card was clipping them. |
+
+Also fixed before the first push: the beta banner no longer truncates “L60 conclusions are projections until launch” at 390px, and the mobile nav sits under the logo instead of beside it.
+
 ## Review (2026-10-01)
 
-Reviewed against the beta client data in this repo, the pages that were actually opened while writing content, and a local production preview.
+Reviewed against the beta client data in this repo, the pages that were actually opened while writing content, and the live Pages site.
 
 ### Verified
 
@@ -53,10 +66,7 @@ Reviewed against the beta client data in this repo, the pages that were actually
 - Negative check: setting Arms `Deflection` to 6 fails the build with `"Deflection" rank 6 must be 1..max (5)`. Reverted.
 - Preview at 1440px and 390px: countdown ticks, 9 class cards, Arms trees sum to 51, a spent-talent tooltip shows the rank text, leveling order runs Level 10 through Level 60, PvP list has 27 chips, races page has 6 NEW pills.
 - Every leveling order finishes in its own tree (lowest primary-tree total is Holy Priest at 31, which keeps 5 Spirit Tap points so the solo path does not respec).
-
-### Fixed in this review
-
-The beta banner used a fixed height and `truncate`. At 390px it cut off “L60 conclusions are projections until launch”. It now wraps on small screens. Leveling group headers stick below that banner.
+- After `a8baae6`, hovering a meta-snapshot chip shows the note under the chip instead of clipping it.
 
 ### Limits, not bugs
 
