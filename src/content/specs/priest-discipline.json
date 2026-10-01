@@ -1,0 +1,386 @@
+{
+  "class": "priest",
+  "spec": "discipline",
+  "tagline": "Shield-first healer: Penance, Renewed Hope and Divine Aegis make Power Word: Shield a rotation, not a panic button.",
+  "verdict": [
+    "Discipline is the priest healer I would bring to every level-60 dungeon. Penance is a channel on a 12-second cooldown that heals an ally (184 at its first rank, instantly and every second for 2 seconds) or hits an enemy (81), Soul Warding cuts Power Word: Shield's cooldown by 4 seconds and its mana by 15%, and Renewed Hope turns every Weakened Soul target into a crit engine: up to +10% crit on Flash Heal, Binding Heal, Heal, Greater Heal and Penance, and up to 5 seconds shaved off Weakened Soul per heal. Add Divine Aegis (crit heals leave a 12-second absorb worth up to 15% of the heal) and Power Infusion (+20% spell damage and healing for 15 seconds on a friendly target) and the tree is internally coherent in a way Classic Discipline never was.",
+    "Icy Veins calls it the harder but more rewarding priest healer, with amazing single-target healing, damage and mitigation and no real group healing. The public tier-list aggregate puts it in A (Overgear and the pre-beta forum thread both say A), while Holy swings from S to C depending on who you ask. My call: Discipline wins single-target throughput and tank healing, Holy wins when the whole party is hurt. In 5-mans with a real tank, Discipline is the stronger seat.",
+    "Two Sep-24 beta changes matter here: Power Word: Shield can now always overwrite an existing shield on a target that does not have Weakened Soul, and Renew can land critical hits. Blizzard's Sep-30 deep dive also made Fear Ward (level 20) and Divine Spirit (level 30) baseline, so none of your 51 points go to utility the class now owns for free.",
+    "The honest weak spot is solo leveling. Mobalytics and Icy Veins both tell the two healer specs to lean on Shadow talents until you can group, and the Discipline leveling order below is built around that reality: a wand, Spirit Tap and Power in Light carry you to Penance, then the tree turns into the healer above."
+  ],
+  "strengths": [
+    "Best single-target healing and mitigation in the class: Power Word: Shield, Penance and Divine Aegis stack three layers on one target.",
+    "Renewed Hope plus Soul Warding keeps Power Word: Shield cycling far faster than its base Weakened Soul timer allows.",
+    "Penance and Power in Light give real damage while you wait for the party to get hurt, in solo and in dungeons.",
+    "Power Infusion (+20% spell damage and healing for 15 seconds) is a raid-grade buff on a 1-point talent, and Meditation makes casting mana far cheaper to sustain."
+  ],
+  "weaknesses": [
+    "Little group healing: no talent here improves Prayer of Healing, and Prayer of Mending lives in the Holy tree.",
+    "Weak solo leveler; the guides recommend Shadow talents or a group until the Penance level range.",
+    "Cloth armor and no escapes or mobility beyond Levitate: you rely on friends for peel and positioning.",
+    "Every L60 conclusion on this page is a projection from beta talent text and level 20-30 reports; item stats are hidden until launch."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Shield-Weaver (36/15/0)",
+      "summary": "Battleground healer built to stay alive and keep casting: Penance and Divine Aegis for output, Silent Resolve, Martyrdom and Twilight Focus against stuns and interrupts, Spell Warding for caster-heavy fights, Power Infusion for burst windows.",
+      "stats": {
+        "priority": [
+          "Bonus Healing",
+          "Stamina",
+          "Intellect",
+          "Crit",
+          "Spirit",
+          "MP5"
+        ],
+        "note": "Method confirms Bonus Healing gear also carries Spell Power now. Skip Hit entirely: Blizzard added Holy Precision (up to +18% Holy hit) so healing priests do not need it. Stamina rides high because the other team will focus you; Crit sits above Spirit because Renewed Hope, Divine Aegis and Inner Focus all scale with it. Ordering is my projection; item stats stay hidden until items drop."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive breaks every Stun on a 3-minute cooldown, Divine Grace instantly heals a friend below 50% and removes Weakened Soul so your next Shield is immediate, and Perception counters stealthers. Mobalytics calls Human the PvP pick for priests.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken strips Fear, Charm and Sleep every 2 minutes, which is the whole Warlock and Priest crowd control kit, while Cannibalize and Dark Sacrifice refill mana between fights.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Role: team-fight healer in Arathi Basin and Darkspear Islands, and the sturdy backline for a Warsong Gulch flag carrier. Shield the carrier (or your frontline) before every engagement.",
+        "Rhythm is Power Word: Shield, then Penance on whoever is falling, then Renew and Heal to fill. Soul Warding and Renewed Hope shorten the Weakened Soul gap, so heal your shielded targets to re-shield them sooner.",
+        "Inner Focus makes your next spell free and adds 25% crit chance: use it on a Greater Heal or Penance when someone is about to die, not on cooldown.",
+        "Martyrdom gives 100% Focused Casting for 6 seconds after a melee or ranged crit lands on you, and Twilight Focus gives a 70% chance to avoid damage pushback on any spell. Together they are your anti-interrupt kit.",
+        "Power Infusion (+20% spell damage and healing for 15 seconds) goes on your best caster or fellow healer at the start of a fight, not on a melee target.",
+        "Fear Ward is baseline from level 20; keep it on whoever you most need alive against Warlocks and Priests."
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Seen on the BlizzCon demo enchanting vendor (Warcraft Tavern); Icy Veins names it the best enchant for healers to prioritise. Numeric value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Bracer",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name only is published. Mental Strength multiplies total Intellect by up to +15%.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-hand weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Two-handed only (staff). Effect value not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Buy the R2 Insignia trinket first (3,500 Honor, 2,000 for the Elite upgrade) and the R3 cloak (10 Arathi Basin Marks + 3,000 Honor). R7 Battle Standard (15% max health aura to nearby allies, 10-minute cooldown) is a team tool worth having when you call the fights. Elite pieces by rank: R8 wrist and waist, R9 boots, R10 gloves, R12 legs and shoulders, R13 chest and helm. Rare-quality PvP gear is not rank-locked but needs level 55. At R14 the healer weapon to chase is the Tome of Restoration off-hand (10 Darkspear Islands Marks + 7,000 Honor, Alliance name; same cost for Horde). Source: Icy Veins PvP rank system.",
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-priest-warrior-deep-dive",
+        "icy-veins-discipline-priest",
+        "icy-veins-pvp-rank-system",
+        "mobalytics-priest-leveling",
+        "warcraft-tavern-enchanting",
+        "method-itemization"
+      ],
+      "points": {
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Silent Resolve": 3,
+          "Improved Power Word: Shield": 3,
+          "Martyrdom": 2,
+          "Mental Agility": 3,
+          "Inner Focus": 1,
+          "Meditation": 3,
+          "Mental Strength": 5,
+          "Soul Warding": 1,
+          "Penance": 1,
+          "Renewed Hope": 5,
+          "Divine Aegis": 3,
+          "Power Infusion": 1
+        },
+        "Holy": {
+          "Twilight Focus": 3,
+          "Improved Renew": 3,
+          "Holy Specialization": 4,
+          "Spell Warding": 5
+        }
+      }
+    },
+    "pve": {
+      "title": "Penance Healer (34/17/0)",
+      "summary": "Single-target-first dungeon and raid healer: the full Shield, Penance, Renewed Hope and Divine Aegis core plus a 17-point Holy splash that gives Divine Fury (faster Heal and Greater Heal), Holy Specialization and Binding Heal.",
+      "stats": {
+        "priority": [
+          "Bonus Healing",
+          "MP5",
+          "Spirit",
+          "Intellect",
+          "Crit",
+          "Stamina"
+        ],
+        "note": "Follows Icy Veins' level-20 healer order (Healing Power, MP5, Spirit, Intellect, Crit). Crit sits above Stamina because Renewed Hope (up to +10% crit on Weakened Soul targets) and Divine Aegis both feed on it, which Icy Veins also flags for Discipline. Meditation lets 50% of your Spirit regeneration continue while casting, so Spirit counts. L60 itemization is unknown; treat this as a projection."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Contingency Plan is a 5-minute ward that gives an ally a shield and a heal-over-time below 35% health (stacks with Renew and Shield, and can crit since Sep 24). Eureka! gives healers 10% cheaper and 10% stronger next three heals, Expansive Mind adds 5% max Mana, and Confounding Flash is a 5-target AoE confuse.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize (7% health and 7% mana every 2 seconds for 10 seconds) and Dark Sacrifice (health converted to mana, scaling with Spirit) are the best mana tools any healer race has. Icy Veins picks Undead over Troll for Discipline.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Pre-shield the tank before the pull. Soul Warding makes Power Word: Shield 4 seconds shorter and 15% cheaper, and each heal on a Weakened Soul target removes up to 5 seconds of that debuff, so heal the shielded target to cycle shields faster.",
+        "Penance (12-second cooldown) goes on the tank or the most hurt ally on cooldown. It is instant and ticks every second for 2 seconds, so it is also your emergency heal when a Greater Heal would take too long.",
+        "Binding Heal (1.5-second cast, no cooldown) is tuned by Blizzard to be as good as Flash Heal even if you do not need the self-heal. It is your default fast heal when you are also taking damage.",
+        "Renew can stack from several priests on the same target now, and since Sep 24 it can crit. In a two-priest group, keep Renew on the tank; Improved Renew adds up to 15%.",
+        "Use Inner Focus on a big emergency heal. Use Power Infusion on the best caster or fellow healer for +20% spell damage and healing over 15 seconds.",
+        "Filler while idle is Smite and Holy Fire. Wand Specialization is skipped: Sep 24 removed spell power scaling from wands.",
+        "Fear Ward (level 20) and Divine Spirit (level 30) are baseline now. Cast Fear Ward on the tank before fear-casting bosses and Divine Spirit on the group; Icy Veins notes the Faction Banner camp buff is exclusive with Divine Spirit."
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Seen on the BlizzCon demo enchanting vendor (Warcraft Tavern); Icy Veins names it the best healer enchant to prioritise. Numeric value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Bracer",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name only is published. Mental Strength multiplies total Intellect by up to +15%.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-hand weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Two-handed only (staff). Effect value not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-priest-warrior-deep-dive",
+        "blizzard-beta-notes-sep-24",
+        "icy-veins-discipline-priest",
+        "icy-veins-priest-overview",
+        "warcraft-tavern-enchanting",
+        "method-itemization",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Silent Resolve": 3,
+          "Improved Power Word: Shield": 3,
+          "Mental Agility": 3,
+          "Inner Focus": 1,
+          "Meditation": 3,
+          "Mental Strength": 5,
+          "Soul Warding": 1,
+          "Penance": 1,
+          "Renewed Hope": 5,
+          "Divine Aegis": 3,
+          "Power Infusion": 1
+        },
+        "Holy": {
+          "Twilight Focus": 3,
+          "Improved Renew": 3,
+          "Holy Specialization": 5,
+          "Divine Fury": 5,
+          "Binding Heal": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Wand, Spirit Tap, Power in Light, then Penance (46/0/5)",
+      "summary": "Respec-free path to a full Discipline healer: wand and Spirit Tap carry levels 10-16, Power in Light and Twin Disciplines make Smite and instants hit harder, Penance arrives at level 35, and the remaining points build the healer core.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Intellect",
+          "Spirit",
+          "Stamina",
+          "MP5",
+          "Crit"
+        ],
+        "note": "Mobalytics lists Intellect, Spirit and Stamina first for mana and survival, with Spell Power for damage; Method adds that Bonus Healing gear now also carries Spell Power, which helps healer-spec leveling. Weapon upgrades and a good wand matter most. Order is my synthesis."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Contingency Plan can be cast on yourself as a solo panic button, Confounding Flash confuses up to 5 attackers, and Expansive Mind adds 5% max Mana, which matters for a mana-starved caster.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize and Dark Sacrifice are the strongest mana-recovery tools in the game for a priest who would otherwise be drinking after every pull.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Take the first two points in Wand Specialization and use the wand to finish every mob, as both Icy Veins healer guides call it the most critical early talent. If you have no wand at level 10, delay and go straight to Spirit Tap.",
+        "Spirit Tap (5 ranks, 100% chance to gain +100% Spirit for 15 seconds after a non-trivial kill) is the second most important early talent per Icy Veins and is the only Shadow talent in this order.",
+        "Solo pull: Power Word: Shield, Holy Fire on the furthest enemy, Smite while it closes, Mind Blast, Shadow Word: Pain, then wand. Power in Light adds up to +10% to Smite and Penance against a target with Holy Fire.",
+        "Penance arrives at level 35 and Soul Warding at 33. Until then you are a Smite-and-wand caster; do dungeon quests, since Icy Veins notes Blizzard cut dungeon mob XP but raised dungeon quest XP.",
+        "Healer spec leveling is the slowest priest path: Mobalytics and Icy Veins both recommend Shadow talents when solo. This order takes Spirit Tap and then commits to Discipline so you never respec on the way to 60.",
+        "Visit your trainer every two levels for new spell ranks and update your action bars; Mobalytics recommends wand macros and the 5-second rule to keep downtime low."
+      ],
+      "enchants": [],
+      "confidence": "low",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-veins-discipline-priest",
+        "mobalytics-priest-leveling",
+        "blizzard-priest-warrior-deep-dive",
+        "method-itemization"
+      ],
+      "order": [
+        "Wand Specialization",
+        "Wand Specialization",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Power in Light",
+        "Power in Light",
+        "Power in Light",
+        "Power in Light",
+        "Power in Light",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Improved Power Word: Shield",
+        "Improved Power Word: Shield",
+        "Improved Power Word: Shield",
+        "Holy Precision",
+        "Holy Precision",
+        "Holy Precision",
+        "Soul Warding",
+        "Mental Agility",
+        "Penance",
+        "Renewed Hope",
+        "Renewed Hope",
+        "Renewed Hope",
+        "Renewed Hope",
+        "Renewed Hope",
+        "Mental Agility",
+        "Mental Agility",
+        "Inner Focus",
+        "Meditation",
+        "Meditation",
+        "Meditation",
+        "Mental Strength",
+        "Mental Strength",
+        "Mental Strength",
+        "Mental Strength",
+        "Mental Strength",
+        "Divine Aegis",
+        "Divine Aegis",
+        "Divine Aegis",
+        "Power Infusion",
+        "Improved Inner Fire",
+        "Improved Inner Fire",
+        "Silent Resolve",
+        "Silent Resolve",
+        "Silent Resolve"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-priest-warrior-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives - Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes - Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-discipline-priest",
+      "title": "World of Warcraft: Forever Discipline Priest Guide",
+      "url": "https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-priest-overview",
+      "title": "Priest Class Guide",
+      "url": "https://www.icy-veins.com/wow-forever/priest-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "mobalytics-priest-leveling",
+      "title": "Priest Leveling Guide (Level 1-30) - Talents, Rotations, Races & More",
+      "url": "https://mobalytics.gg/wow-forever/classes/priest-leveling-guide",
+      "publisher": "Mobalytics",
+      "date": "2026-09-23",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

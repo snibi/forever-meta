@@ -1,0 +1,381 @@
+{
+  "class": "hunter",
+  "spec": "marksmanship",
+  "tagline": "Burst-and-AoE Hunter: crit-stacked Aimed Shots, Sniper Shot and Lone Wolf for pet-free ranged damage.",
+  "verdict": [
+    "Marksmanship is the Classic Hunter with a few new toys. Icy Veins calls it \"relatively unchanged\" apart from Aimed Shot becoming baseline at 20 and traps working in combat, and highlights two additions: Lone Wolf (+20% damage with all attacks while you have no active pet, at 11 points) and the 31-point Sniper Shot (4-sec cast, 15-sec cooldown, hits harder than Aimed Shot, +10 yards on the next 3 Shots). Icy Veins also states that Marksmanship's AoE is the highest of any Hunter spec, because Lone Wolf and Barrage feed Multi-Shot.",
+    "The sleeper is Careful Aim: 5/5 gives Attack Power equal to 100% of your Intellect (melee and ranged), so Intellect becomes a real damage stat. Add Lethal Attacks (+5% crit on all attacks), Mortal Shots (+30% ranged crit damage), Barrage (+10% to Multi-Shot, Aimed Shot and Volley) and Ranged Weapon Specialization (+5%), and this is a crit-and-burst spec. We spend 5 points in Beast Mastery for Deadly Aspects, which Icy Veins calls the clear outlier talent for every Hunter.",
+    "Placement is contested: the wowforever.co roundup shows Marksmanship as A on MMOExp and Overgear but F on a player-posted Blizzard forum list dated Sep 16 (the day before beta opened, challenged inside the thread). We read that as a pre-beta outlier and keep Marksmanship in the A band, behind Beast Mastery for leveling (Icy Veins: BM is slightly better) and ahead of it for AoE.",
+    "All level-60 content is projection. The beta cap is 30, so Mortal Shots, Barrage, Ranged Weapon Specialization and Sniper Shot have not been tested live."
+  ],
+  "strengths": [
+    "Highest AoE of any Hunter spec (Icy Veins): Lone Wolf, Barrage and Multi-Shot, plus Explosive Trap in combat.",
+    "Burst: Rapid Killing cuts Rapid Fire's cooldown by up to 2 min and Sniper Shot adds a 4-sec nuke with longer range.",
+    "Lone Wolf removes the pet from the equation: +20% damage and no pet pulling extra packs in dungeons.",
+    "Careful Aim turns Intellect into Attack Power (up to 100%), widening the stat budget.",
+    "Scatter Shot and Improved Concussive Shot (20% stun chance) give Marksmanship the Hunter's best PvP control tools."
+  ],
+  "weaknesses": [
+    "Needs to stand still for Auto Shot and is helpless in the 8-yard dead zone (Blizzard, Icy Veins).",
+    "Sniper Shot's 4-sec cast may be a DPS loss in PvE, so it is only worth a point as a capstone (Icy Veins).",
+    "Slower leveler than Beast Mastery (Icy Veins): Mortal Shots and Sniper Shot only arrive past point 31.",
+    "Lone Wolf throws away the pet's utility (Mend Pet, family abilities) and any pet-buff plan.",
+    "Mana-hungry shots: Efficiency and Rapid Recuperation exist to patch mana, which costs 7 points."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "0/46/5 Marksmanship/Survival: Sniper Shot burst with built-in peel",
+      "summary": "Marksmanship almost wall to wall (everything except Improved Arcane Shot) with 5 points in Survival for Improved Tracking. Crit, Mortal Shots, Barrage and Sniper Shot burst one target at 45+ yards; Scatter Shot, Improved Concussive Shot and Hawk Eye keep you out of melee.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Critical Strike",
+          "Hit",
+          "Intellect",
+          "Stamina",
+          "Attack Power"
+        ],
+        "note": "Crit leads because Lethal Attacks, Mortal Shots and Aimed Shot all convert it into burst (Icy Veins: Marksmanship relies on critical hits). Intellect is an Attack Power stat via Careful Aim. Stamina is promoted for battlegrounds by inference; Icy Veins only gives leveling priorities."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive breaks stuns without touching your PvP trinket cooldown (Icy Veins), which a stationary shooter needs most; Sword Specialization adds +2% crit.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp is a stun for a class with none, Endurance adds 5% Health and 1% hit, and Plainsrunning speeds you to the next sniping perch.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Role: ranged burst on flag carriers, healers and low-health targets in WSG, AB and Darkspear. Pick one target, stack Rapid Fire and Aimed Shot, and finish with Sniper Shot (4 sec cast, so only on a stunned, rooted or distracted target).",
+        "Scatter Shot (4 sec disorient, turns your attack off) and Concussive Shot with Improved Concussive Shot (up to 20% stun chance) are your peel. Icy Veins calls Concussive Shot one of the strongest Hunter PvP tools against melee.",
+        "Traps work in combat on a 30-second cooldown; use Freezing Trap on melee that jump you, Frost Trap to hold a choke.",
+        "Lone Wolf (+20% damage) means no pet: dismiss it before queueing and stay out of the dead zone with Hawk Eye's extra 6 yards.",
+        "Trueshot Aura (+30 Ranged Attack Power in 45 yards) is a free party buff; stand with the group so it pays off.",
+        "Track Humanoids for Improved Tracking's +5% damage; switch to Undead against Forsaken-heavy groups (inference from Classic creature types)."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Only worth it because Careful Aim converts Intellect into Attack Power. Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rare PvP gear needs level 55 and is not rank-locked; Elite upgrades use Emboldened Seals (strongly supported by datamining, not confirmed). R2 Insignia Trinket (3,500 Honor) first. R3 Cloak (10 Arathi Basin Marks, 3,000 Honor) and R4 Necklace (10 Darkspear Islands Marks, 5,000 Honor) take Agility enchants. Chest and Legs are the big purchases (15 Marks each), so farm Arathi Basin and Warsong Gulch marks early. R7 Battle Standard (15% max health aura, 10 min cooldown) helps AB and AV fights. At R14 the ranged-named weapons (Hand Cannon, Bullseye, Repeater: 10 Darkspear Islands Marks, 8,000 Honor) are the targets; weapon type is inferred from the names.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-mm-hunter",
+        "icy-veins-race-guide",
+        "icy-veins-pvp-rank-system",
+        "warcraft-tavern-enchanting-formulas"
+      ],
+      "points": {
+        "Marksmanship": {
+          "Hawk Eye": 3,
+          "Improved Concussive Shot": 5,
+          "Lethal Attacks": 5,
+          "Improved Stings": 3,
+          "Efficiency": 5,
+          "Careful Aim": 5,
+          "Rapid Killing": 2,
+          "Lone Wolf": 1,
+          "Trueshot Aura": 1,
+          "Mortal Shots": 5,
+          "Rapid Recuperation": 1,
+          "Barrage": 3,
+          "Scatter Shot": 1,
+          "Ranged Weapon Specialization": 5,
+          "Sniper Shot": 1
+        },
+        "Survival": {
+          "Improved Tracking": 5
+        }
+      }
+    },
+    "pve": {
+      "title": "5/46/0 Deadly Aspects + Marksmanship: Lone Wolf crit-and-AoE",
+      "summary": "Five points in Beast Mastery for Deadly Aspects, then every Marksmanship talent except Improved Concussive Shot and Scatter Shot (both PvP tools). Lone Wolf gives +20% damage with no pet; Careful Aim, Lethal Attacks and Mortal Shots make crit the damage engine; Sniper Shot is the capstone.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Intellect",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Follows Icy Veins' Marksmanship list (weapon damage, Hit, Agility, Crit, Intellect, Spirit, Stamina): Crit is \"highly valuable\" because of Mortal Shots. Weapon damage still comes from the ranged weapon. Level 60 itemization is hidden, so weights are provisional."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Icy Veins gives Humans a slight edge in both PvE and PvP: permanent +2% crit from Sword Specialization applies to ranged attacks too.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Attack Power for 15 sec every 2 min) lines up with Rapid Fire, and Axe Specialization adds 1% crit with an axe equipped.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Stay in Aspect of the Hawk for Deadly Aspects; no pet means no pet management, no Mend Pet, no Revive Pet.",
+        "Hunter's Mark, Serpent Sting, then Aimed Shot and Multi-Shot (which share a cooldown) and Arcane Shot (its own cooldown now, reduced up to 1.5 sec by Improved Arcane Shot).",
+        "Multi-Shot is the AoE button: Lone Wolf and Barrage both feed it, and Explosive Trap works in combat.",
+        "Rapid Killing: kill or let a Serpent Stung target die to get +20% damage on your next Shot within 20 sec, and Rapid Fire's cooldown drops by 2 min.",
+        "Sniper Shot (45 yard range, 4 sec cast, 15 sec cooldown) is your opener or planned burst only; Icy Veins warns the long cast may be a DPS loss in sustained PvE.",
+        "Trueshot Aura (+30 Ranged Attack Power in 45 yards) is free group value you pick up on the way to Sniper Shot."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Only worth it because Careful Aim converts Intellect into Attack Power. Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-mm-hunter",
+        "icy-veins-bm-hunter",
+        "icy-veins-race-guide",
+        "warcraft-tavern-enchanting-formulas",
+        "wowforever-tier-list"
+      ],
+      "points": {
+        "Beast Mastery": {
+          "Deadly Aspects": 5
+        },
+        "Marksmanship": {
+          "Hawk Eye": 3,
+          "Lethal Attacks": 5,
+          "Improved Stings": 3,
+          "Efficiency": 5,
+          "Careful Aim": 5,
+          "Rapid Killing": 2,
+          "Improved Arcane Shot": 5,
+          "Lone Wolf": 1,
+          "Trueshot Aura": 1,
+          "Mortal Shots": 5,
+          "Rapid Recuperation": 2,
+          "Barrage": 3,
+          "Ranged Weapon Specialization": 5,
+          "Sniper Shot": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Deadly Aspects, Focused Fire, Lethal Attacks, then straight down Marksmanship",
+      "summary": "Icy Veins' strongest early talents first (Deadly Aspects, Focused Fire, Lethal Attacks), then Careful Aim, Efficiency and the rest of the Marksmanship tree. You keep the pet while leveling, so Lone Wolf and Sniper Shot are left for a cheap respec at 60.",
+      "stats": {
+        "priority": [
+          "Ranged weapon damage",
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Intellect",
+          "Spirit",
+          "Stamina"
+        ],
+        "note": "Icy Veins' Marksmanship level-20 list. Slower, harder-hitting weapons are better because Aimed Shot uses weapon damage. Crit matters more here than for Beast Mastery because Mortal Shots and Lethal Attacks feed on it, but it is rare on low-level gear."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Big Game Hunter adds 5% damage to Beasts, most of what you will shoot while questing, and Stoneform clears poisons and bleeds.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Icy Veins: Tauren is the single strongest Hunter race for leveling thanks to Plainsrunning (30% speed) letting you kite every target from range.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Same opener as every Hunter: Hunter's Mark, send the pet, Serpent Sting, Aimed Shot on cooldown, Auto Shot the rest (Icy Veins).",
+        "Icy Veins' own Marksmanship advice: never take Lone Wolf while leveling (the pet is your tank and your threat), unless the goal is dungeon AoE.",
+        "Keep Aspect of the Hawk up in combat for Deadly Aspects and Aspect of the Cheetah for travel, never under attack.",
+        "Beast Mastery levels slightly faster (Icy Veins). Marksmanship pays you back in dungeons: Multi-Shot and Explosive Trap AoE.",
+        "Use Mend Pet and Serpent Sting as mana efficient filler; with no mana, Auto Shot plus pet is still strong.",
+        "At 60, respec to the PvE build: move the Focused Fire points and one Hawk Eye rank into Lone Wolf and Sniper Shot."
+      ],
+      "enchants": [],
+      "confidence": "low",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-veins-mm-hunter",
+        "icy-veins-bm-hunter",
+        "icy-veins-race-guide",
+        "blizzard-hunter-druid-deep-dive"
+      ],
+      "order": [
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Focused Fire",
+        "Focused Fire",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Improved Stings",
+        "Improved Stings",
+        "Improved Stings",
+        "Rapid Killing",
+        "Rapid Killing",
+        "Improved Arcane Shot",
+        "Improved Arcane Shot",
+        "Improved Arcane Shot",
+        "Improved Arcane Shot",
+        "Improved Arcane Shot",
+        "Trueshot Aura",
+        "Mortal Shots",
+        "Mortal Shots",
+        "Mortal Shots",
+        "Mortal Shots",
+        "Mortal Shots",
+        "Rapid Recuperation",
+        "Rapid Recuperation",
+        "Barrage",
+        "Barrage",
+        "Barrage",
+        "Ranged Weapon Specialization",
+        "Ranged Weapon Specialization",
+        "Ranged Weapon Specialization",
+        "Ranged Weapon Specialization",
+        "Ranged Weapon Specialization",
+        "Hawk Eye",
+        "Hawk Eye",
+        "Hawk Eye"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-hunter-druid-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives — Hunter and Druid",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301515",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-hunter-overview",
+      "title": "Hunter Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/hunter-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-mm-hunter",
+      "title": "World of Warcraft: Forever Marksmanship Hunter Guide",
+      "url": "https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-bm-hunter",
+      "title": "World of Warcraft: Forever Beast Mastery Hunter Guide",
+      "url": "https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-18",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-tier-list",
+      "title": "WoW Forever Tier List — Every Public Ranking (Oct 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

@@ -1,0 +1,18 @@
+---
+interface Props {
+  priority: string[];
+  note?: string;
+}
+const { priority, note } = Astro.props;
+---
+<div>
+  <ol class="flex flex-wrap items-center gap-x-2 gap-y-2" aria-label="Stat priority">
+    {priority.map((s, i) => (
+      <>
+        {i > 0 && <li aria-hidden="true" class="text-gold">›</li>}
+        <li class="chip px-3 py-1 text-sm">{s}</li>
+      </>
+    ))}
+  </ol>
+  {note && <p class="mt-2 text-sm text-muted">{note}</p>}
+</div>

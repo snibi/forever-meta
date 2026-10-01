@@ -1,0 +1,179 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/cinzel";
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b0d12;
+  --color-surface: #12151c;
+  --color-raised: #191d27;
+  --color-line: #232836;
+  --color-text: #e6e2d6;
+  --color-muted: #9a9688;
+  --color-gold: #d4a64a;
+  --color-alliance: #3b82f6;
+  --color-horde: #dc2626;
+  --color-tier-s: #e5484d;
+  --color-tier-a: #f59e0b;
+  --color-tier-b: #eab308;
+  --color-tier-c: #22c55e;
+  --color-tier-d: #3b82f6;
+  --font-display: "Cinzel Variable", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 50% -150px, color-mix(in srgb, var(--color-gold) 10%, transparent), transparent),
+    var(--color-bg);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+a { color: inherit; }
+
+main {
+  --class-color: var(--color-gold);
+}
+
+.prose-block p + p { margin-top: 0.85rem; }
+.prose-block p { line-height: 1.7; }
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 0.75rem;
+}
+.card-accent {
+  border-top: 2px solid var(--class-color);
+}
+
+/* Chips */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.3rem;
+  background: var(--color-raised);
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  transition: border-color 0.15s, transform 0.15s;
+}
+a.chip:hover, a.chip:focus-visible {
+  border-color: var(--chip-color, var(--color-gold));
+  transform: translateY(-1px);
+}
+.chip.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* CSS-only tooltip: any element with .tip-host and a .tip child */
+.tip-host { position: relative; }
+.tip-host > .tip {
+  position: absolute;
+  z-index: 40;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 260px;
+  padding: 0.55rem 0.7rem;
+  background: #05060a;
+  border: 1px solid var(--color-gold);
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: left;
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.12s;
+  white-space: normal;
+}
+.tip-host:hover > .tip,
+.tip-host:focus-within > .tip,
+.tip-host:focus > .tip {
+  opacity: 1;
+  visibility: visible;
+}
+.tip-host.tip-below > .tip { bottom: auto; top: calc(100% + 8px); }
+
+/* Talent grid */
+.talent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+}
+.talent-cell { width: 44px; height: 44px; }
+.talent-cell img { width: 44px; height: 44px; border-radius: 6px; display: block; }
+.talent-cell.spent img { box-shadow: 0 0 0 2px var(--color-gold), 0 0 12px color-mix(in srgb, var(--color-gold) 40%, transparent); }
+.talent-cell.unspent img { filter: grayscale(1); opacity: 0.4; }
+.talent-rank {
+  position: absolute;
+  right: -6px;
+  bottom: -7px;
+  min-width: 26px;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  border-radius: 4px;
+  background: #05060a;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+.talent-cell.maxed .talent-rank { background: var(--color-gold); color: #0b0d12; }
+.talent-cell.unspent .talent-rank { display: none; }
+
+/* Tabs */
+.mode-tab {
+  padding: 0.65rem 1.1rem;
+  border-bottom: 2px solid transparent;
+  color: var(--color-muted);
+  font-weight: 600;
+  transition: color 0.15s, border-color 0.15s;
+}
+.mode-tab:hover { color: var(--color-text); }
+.mode-tab[aria-current='page'] { color: var(--color-text); border-bottom-color: var(--class-color); }
+
+.section-title {
+  font-size: 1.15rem;
+  color: var(--color-gold);
+  margin-bottom: 0.75rem;
+}
+
+/* Spec icon transition */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-group(*) { animation-duration: 0.25s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+@media (max-width: 899px) {
+  .trees { grid-template-columns: 1fr !important; }
+}

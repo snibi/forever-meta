@@ -1,0 +1,447 @@
+{
+  "class": "paladin",
+  "spec": "retribution",
+  "tagline": "Two-hander, Holy Strike and Seal of Command; twist your Seals in PvE and keep Holy Shock in your back pocket for PvP.",
+  "verdict": [
+    "Retribution finally has a rotation. Holy Strike is baseline from level 6 (10 sec cooldown, 25% weapon damage at rank 1 rising to 50%), Judgement no longer consumes your Seal, Consecration is baseline at level 20, and Sacred Arbiter adds 20% Holy Strike damage while refreshing every Judgement on the target. Add Seal of Command, Conviction and Two-Handed Weapon Specialization and you have a proper melee spec. Champion of the Light turns Intellect into spell damage (up to 100% of Intellect) and is the reason this build also takes Divine Intellect.",
+    "There are two archetypes and we pick one for each mode. For PvE we play Twist of Light, the Seal-twisting capstone: swap Seals and the replaced Seal's effects fire on your next melee swing, and your Seals cost 20% less. It needs 31 points in Retribution; the 15 spare points go to Divine Strength, Divine Intellect, Improved Seals and Reverence. For PvP we drop Twist for the Shockadin hybrid: 21 points in Holy for Divine Favor plus Holy Shock (instant, ranged, 10 sec cooldown) alongside Repentance and Seal of Command. Icy Veins describes both archetypes. We choose Holy Shock for PvP because it gives a Paladin with no ranged attack and no mobility a ranged finisher, and does not rely on Seals that players report get dispelled.",
+    "Be honest about the data. ExpCarry, a seller, recaps a MythicSim level 60 single-target simulation where Retribution Paladin is #1 at 714 DPS, but that is a reference build with no trinkets and no raid logs. Hand-made level 20 lists disagree: wowforever.co's side-by-side shows Retribution at C in the forum list, MMOExp and Overgear. Icy Veins also warns that mana may starve the spec and that mobility is almost nonexistent. Expect to retune after real level 60 testing.",
+    "Data notes: Icy Veins' overview still lists Crusade, but the vendored client data (build 1.60.1.70009) has no Crusade and ForeverChanges says it vanished without a Blizzard note, so we do not plan around it. Sep-24 changes that shaped this build: Vengeance now triggers off non-periodic crits and stacks to 3, Two-Handed Weapon Specialization is now 2/4/6%, Sacred Arbiter went from 10% to 20%, and Twist of Light gained the 20% Seal cost reduction."
+  ],
+  "strengths": [
+    "Real melee rotation: Holy Strike and Judgement on cooldown, Seal of Command up, with Sacred Arbiter refreshing Judgement effects.",
+    "Hybrid toolbox no other melee has: Lay on Hands, Divine Protection, Blessing of Protection and Freedom, Hammer of Justice, Repentance, Purify.",
+    "Champion of the Light scales spell damage off Intellect, so spell power and Strength gearing both work (Icy Veins gives two gear paths).",
+    "Consecration is baseline for AoE, and Benediction, Holy Conduit and Sanctified Judgement give three separate mana tools."
+  ],
+  "weaknesses": [
+    "Almost no mobility: Icy Veins calls it one of the slowest specs; Pursuit of Justice is only +15% speed.",
+    "Mana can run dry, especially when twisting. Players report the pool empties within about 30 seconds of Twist of Light play in PvP.",
+    "Weak AoE beyond Consecration, and Seals can be dispelled (player reports), forcing a mana-costly recast.",
+    "Level 60 numbers are simulation only and hand-made level 20 tier lists rate the spec low (C). Expect big swings by launch.",
+    "No interrupt and no slow, as Blizzard states."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Retribution Paladin: Shockadin battleground hunter",
+      "summary": "Retribution core (Seal of Command, Vengeance, two-hander, Repentance) with 21 points in Holy for Divine Favor, Holy Shock and Voice of Truth. Hunt flag carriers, burst with Holy Shock, and stun-Judge targets.",
+      "stats": {
+        "priority": [
+          "Weapon DPS",
+          "Crit",
+          "Hit",
+          "Spell Power",
+          "Intellect",
+          "Strength",
+          "Stamina"
+        ],
+        "note": "Theory ranking, no Forever PvP stat data. Hit and Crit apply to melee and spells alike, so one set of gear serves Holy Shock and Seals. Weapon DPS leads because Holy Strike and Seal of Command scale off weapon damage."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes all Stuns instantly, the best answer for a melee class with no mobility. Sword Specialization adds 2% crit with a sword, and Perception counters stealthers.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Will of the Forsaken breaks Fear and Charm, and Cannibalize restores 7% Health and Mana every 2 sec between fights."
+        }
+      },
+      "playstyle": [
+        "Role: flag-carrier hunter and burst finisher in WSG 10v10, node raider in AB 15v15 and Darkspear Islands 15v15.",
+        "Hammer of Justice, then Judgement with Seal of Command: the Judgement does 137 to 145 damage on a stunned or incapacitated target instead of 68 to 73.",
+        "Divine Favor plus Holy Shock is your guaranteed-crit burst. It is instant, ranged and has a 10 sec cooldown, so it finishes fleeing carriers and heals you in a pinch.",
+        "Repentance incapacitates a Humanoid for up to 6 sec (damage wakes it) and doubles as the setup for a Seal of Command Judgement.",
+        "Voice of Truth grants 6 sec of silence and interrupt immunity: use it before a key heal or when a caster is trying to lock you down.",
+        "Players report that Shamans and Priests dispel Seals and drain mana on re-application, so keep Reverence, Benediction and Sanctified Judgement going."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Holy Power",
+          "note": "One of three gloves formulas that boost a single damage school (the Warcraft Tavern article names Arcane, Holy and Natural). Bonus size not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new in Forever. A Spell Power formula was seen on the BlizzCon demo vendor; numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "The 2H-only enchants are Mighty Healing Power, Spellblasting and Mighty Spell Power; Judgement, Holy Strike, Consecration and Seals all use Spell Power. Numbers not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Insignia Trinket (Rank 2) is the first buy and Faction Cloak (Rank 3, costs Arathi Basin Marks) and Necklace (Rank 4) follow. Battle Standard at Rank 7 (+15% health to nearby allies, 10 min cooldown) helps a push or a flag stand. Rare PvP gear needs level 55; Elite upgrades come via Emboldened Seals at Ranks 8 to 13. Weapon DPS is the top stat and the Rank 14 arsenal includes Battle Hammer, Warhammer, Longsword and Claymore, but that is a 10-week-plus grind (24,750 Rank Points).",
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "icy-retribution-paladin",
+        "icy-paladin-overview",
+        "icy-race-guide",
+        "icy-pvp-rank-system",
+        "blizzard-forum-ret-feedback"
+      ],
+      "points": {
+        "Retribution": {
+          "Benediction": 5,
+          "Conviction": 5,
+          "Vindication": 3,
+          "Sanctified Judgement": 3,
+          "Seal of Command": 1,
+          "Pursuit of Justice": 2,
+          "Sacred Arbiter": 1,
+          "Two-Handed Weapon Specialization": 3,
+          "Repentance": 1,
+          "Vengeance": 3,
+          "Champion of the Light": 3
+        },
+        "Holy": {
+          "Divine Strength": 5,
+          "Divine Intellect": 5,
+          "Improved Seals": 3,
+          "Unyielding Faith": 2,
+          "Voice of Truth": 1,
+          "Reverence": 3,
+          "Divine Favor": 1,
+          "Holy Shock": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "Retribution Paladin: Twist of Light melee damage dealer",
+      "summary": "36 points in Retribution all the way to Twist of Light, plus Divine Strength, Divine Intellect, Improved Seals and Reverence 2/3 in Holy. Seal-twist with a two-hander for dungeons and raid prep.",
+      "stats": {
+        "priority": [
+          "Weapon DPS",
+          "Hit",
+          "Expertise",
+          "Crit",
+          "Intellect",
+          "Spell Power",
+          "Strength",
+          "Agility",
+          "Stamina",
+          "Spirit"
+        ],
+        "note": "Adapted from Icy Veins' Retribution stat list; Intellect is moved up because Champion of the Light and Divine Intellect make it one of the strongest stats. Expertise replaces weapon skill (Method). Hit and Crit are unified; no TBC hit cap math. Level 60 item stats are hidden until drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization gives 2% crit to melee and spells with a sword equipped. Icy Veins rates Human slightly ahead when you have a strong sword, and Will to Survive removes Stuns.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Touch of the Grave drains life on hits, and Cannibalize restores Mana as well as Health."
+        }
+      },
+      "playstyle": [
+        "Keep Seal of Command up and use Judgement and Holy Strike on cooldown; Sacred Arbiter makes Holy Strike also refresh Judgement effects.",
+        "Twist of Light: swap between Seal of Command, Seal of Righteousness, Seal of Fury or Seal of Justice and your next melee swing applies the replaced Seal's effects. Your Seal spells cost 20% less.",
+        "Mana tools stack: Sanctified Judgement returns 60% of the judged Seal's cost, Benediction cuts instant costs 10%, Holy Conduit cuts Consecration, Exorcism, Holy Wrath and Hammer of Wrath by 40%.",
+        "Consecration is your AoE for dungeon packs (full damage on the first four targets). Use Exorcism against Undead and Demons.",
+        "Vengeance stacks +3% Physical and Holy damage per non-periodic crit, up to 3 stacks for 30 sec, and Vindication cuts the target's Attack Power by 200 while adding 3% to yours.",
+        "Keep Blessing of Might or Kings on yourself and an appropriate Aura up; use Divine Protection and Lay on Hands as emergency buttons."
+      ],
+      "enchants": [
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram in Icy Veins' Retribution gear tables; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Effect not published in the sources.",
+          "evidence": "beta-tested"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "The 2H-only enchants are Mighty Healing Power, Spellblasting and Mighty Spell Power; Judgement, Holy Strike, Consecration and Seals all use Spell Power. Numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Holy Power",
+          "note": "One of three gloves formulas that boost a single damage school (the Warcraft Tavern article names Arcane, Holy and Natural). Bonus size not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Formula seen on the demo vendor; numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new in Forever. A Spell Power formula was seen on the BlizzCon demo vendor; numbers not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "medium",
+      "evidence": [
+        "official",
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "blizzard-beta-notes-sep24",
+        "icy-retribution-paladin",
+        "icy-paladin-overview",
+        "forevertalents-ret-build",
+        "method-itemization",
+        "expcarry-tier-list",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Retribution": {
+          "Benediction": 5,
+          "Improved Judgement": 2,
+          "Holy Conduit": 2,
+          "Conviction": 5,
+          "Vindication": 3,
+          "Sanctified Judgement": 3,
+          "Seal of Command": 1,
+          "Pursuit of Justice": 2,
+          "Sacred Arbiter": 1,
+          "Two-Handed Weapon Specialization": 3,
+          "Vengeance": 3,
+          "Champion of the Light": 3,
+          "Instrument of Law": 2,
+          "Twist of Light": 1
+        },
+        "Holy": {
+          "Divine Strength": 5,
+          "Divine Intellect": 5,
+          "Improved Seals": 3,
+          "Reverence": 2
+        }
+      }
+    },
+    "leveling": {
+      "title": "Retribution Paladin: Benediction-first two-hander path",
+      "summary": "Benediction, Improved Judgement and Conviction, Seal of Command at level 20, then Holy Conduit and Sanctified Judgement. Ends on the PvE build with no respec, with Twist of Light at level 55.",
+      "stats": {
+        "priority": [
+          "Weapon DPS",
+          "Crit",
+          "Spell Power",
+          "Strength",
+          "Intellect",
+          "Hit",
+          "Agility",
+          "Stamina",
+          "Spirit"
+        ],
+        "note": "Icy Veins' leveling ranking: weapon DPS matters most, Hit and Expertise are less relevant at the low cap. Spell Power builds can match or beat Strength builds in AoE because of Consecration. Intellect rises sharply once Champion of the Light is online."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Icy Veins says Dwarves perform slightly better in the 20s thanks to Verigan's Fist, a mace from the level 20 quest chain, and Mace Specialization (+1% crit) plus Stoneform help while soloing.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Cannibalize between pulls refills Health and Mana, which helps Ret's mana-hungry rotation."
+        }
+      },
+      "playstyle": [
+        "Always have a Seal active: Seal of Righteousness until Seal of Command at level 20, then Seal of Command. Judgement and Holy Strike on cooldown when mana allows.",
+        "Use Holy Light to top up instead of sitting to eat: Icy Veins says mana is an extension of your health pool.",
+        "No AoE until level 20; after that Consecration gets expensive, so Holy Conduit (points 14 and 15, levels 23 and 24) is worth it.",
+        "Hammer of Justice a mob, then Judge with Seal of Command for the doubled Judgement.",
+        "Level 30 (21 points) lands Benediction 5, Improved Judgement 2, Conviction 5, Seal of Command, Holy Conduit 2, Sanctified Judgement 3 and Vindication 3.",
+        "Pick up Mining plus Blacksmithing or Herbalism plus Alchemy as Icy Veins suggests; Cooking adds a Well Fed XP bonus."
+      ],
+      "enchants": [
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram in Icy Veins' Retribution gear tables; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Effect not published in the sources.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-retribution-paladin",
+        "forevertalents-ret-build",
+        "blizzard-deep-dive",
+        "method-itemization"
+      ],
+      "order": [
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Improved Judgement",
+        "Improved Judgement",
+        "Conviction",
+        "Conviction",
+        "Conviction",
+        "Seal of Command",
+        "Conviction",
+        "Conviction",
+        "Holy Conduit",
+        "Holy Conduit",
+        "Sanctified Judgement",
+        "Sanctified Judgement",
+        "Sanctified Judgement",
+        "Vindication",
+        "Vindication",
+        "Vindication",
+        "Two-Handed Weapon Specialization",
+        "Two-Handed Weapon Specialization",
+        "Two-Handed Weapon Specialization",
+        "Sacred Arbiter",
+        "Divine Strength",
+        "Divine Strength",
+        "Divine Strength",
+        "Divine Strength",
+        "Divine Strength",
+        "Vengeance",
+        "Vengeance",
+        "Vengeance",
+        "Pursuit of Justice",
+        "Pursuit of Justice",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Champion of the Light",
+        "Champion of the Light",
+        "Champion of the Light",
+        "Instrument of Law",
+        "Instrument of Law",
+        "Twist of Light",
+        "Improved Seals",
+        "Improved Seals",
+        "Improved Seals",
+        "Reverence",
+        "Reverence"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-deep-dive",
+      "title": "World of Warcraft: Forever Deep Dive Panel Recap",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-13",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-forum-ret-feedback",
+      "title": "Ret paladin still bad (Blizzard EU forums, WoW: Forever General Discussion)",
+      "url": "https://eu.forums.blizzard.com/en/wow/t/ret-paladin-still-bad/630021",
+      "publisher": "Blizzard Forums (player thread)",
+      "date": "2026-09-27",
+      "tier": "fan"
+    },
+    {
+      "id": "icy-paladin-overview",
+      "title": "Paladin Class Guide – WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/paladin-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-retribution-paladin",
+      "title": "World of Warcraft: Forever Retribution Paladin Guide",
+      "url": "https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "forevertalents-ret-build",
+      "title": "Paladin Retribution Build: Two-handed questing (Forever Talents)",
+      "url": "https://forevertalents.org/builds/paladin-retribution/",
+      "publisher": "Forever Talents",
+      "date": "2026-09-26",
+      "tier": "fan"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared (October 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "expcarry-tier-list",
+      "title": "WoW Forever Tier List: Best Classes for DPS, PvP & Leveling",
+      "url": "https://expcarry.com/wow-forever-class-tier-list",
+      "publisher": "ExpCarry",
+      "date": "2026-09-29",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

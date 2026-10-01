@@ -1,0 +1,296 @@
+{
+  "class": "druid",
+  "spec": "balance",
+  "tagline": "Moonkin nuker: Wrath into two cheap Starfires via Eclipse, plus a party crit aura. Light on AoE and utility.",
+  "verdict": [
+    "Balance is the druid's caster DPS and the one spec built around a visible rotation. Eclipse makes every Wrath shave 0.5 sec off your next two Starfires (stacking to 4 charges), Improved Starfire stacks a further 0.5 sec and a 15% stun on top, and Nature's Grace turns every non-periodic crit into a 10% haste and global-cooldown window for 3 sec. The Sep-24 build also raised Wrath's base damage by about 50%, so the filler no longer feels like a leveling spell.",
+    "At level 60 the tree is almost fully spent: 41 points of Balance is every damage talent plus Nature's Splendor, and the last 10 go to Nature's Focus and Naturalist in Restoration (70% pushback resistance and +5% damage). Blizzard's deep dive confirms the shape of the toolkit: Vengeance and Moonfury now cover all Arcane and Nature spells, Moonkin Form gives the whole party +3% crit on spells and melee (exclusive with Feral's Leader of the Pack), and Omen of Clarity is baseline and never consumed by Wrath.",
+    "The cost is utility and mobility. Blizzard's own summary says druids cannot snare, silence or interrupt and have weaker crowd control; Wrath and Starfire are cast-time spells, only Moonfire and Insect Swarm move with you, and Hurricane (learned at 40, now with its cooldown removed) is the lone AoE tool. Outside sources are split: MMOExp and Overgear rank Balance in their second band, while the Blizzard-forum list has it fourth, so treat the placement as unsettled until raids open on 2026-12-09."
+  ],
+  "strengths": [
+    "Eclipse + Improved Starfire gives a real two-button rhythm (Wrath, Starfire, Starfire) with 1.0 sec of cast time shaved off each Starfire at full investment.",
+    "Moonkin Form buffs every party member within 45 yards with +3% crit on all spells and attacks, which makes the spec a bring-me spot in 5-man and 10-man groups.",
+    "Vengeance (+100% crit bonus) and Moonfury (+10% damage) both apply to all Arcane and Nature spells, and the Sep-24 Wrath buff lifted the baseline.",
+    "Can step into tank or healer in an emergency (Icy Veins), and Entangling Roots now works indoors."
+  ],
+  "weaknesses": [
+    "No interrupt, silence or snare (Blizzard deep dive); crowd control is Entangling Roots and little else.",
+    "Mostly stationary: Wrath and Starfire have cast times, so movement phases rely on Moonfire and Insect Swarm.",
+    "AoE is thin: Hurricane arrives at level 40, so it is absent from the level-30 beta, and no source has yet shown how it performs.",
+    "Third-party rankings disagree (A, A and C across MMOExp, Overgear and the Blizzard-forum thread); there is no level-60 data."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Battleground Moonkin: whole Balance tree + Nature's Focus",
+      "summary": "Take every Balance talent (46 points) and put the last 5 into Nature's Focus. Moonkin Form, Starfire stuns and rooted flag carriers make you a ranged burst and peel role for WSG, AB, Darkspear Islands and AV.",
+      "stats": {
+        "priority": ["Spell Power", "Critical Strike", "Hit", "Stamina", "Intellect", "Haste"],
+        "note": "Theory: item stats are hidden until drops. Crit sits high because Vengeance, Nature's Majesty and Nature's Grace all key off it; Stamina is added for battleground survivability. Hit and Crit are unified stats in Forever, so no TBC-style cap math applies."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune's Light is +10% crit for 15 sec on a 3-min cooldown, a burst window that stacks with Nature's Grace, and Shadowmeld now works in form.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp stuns up to 5 enemies for 2 sec for peel (and now works in form), plus 5% Health and Plainsrunning for long flag-room runs.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "Open every fight from max range in Moonkin Form: Moonfire for the instant tag, then Wrath to start Eclipse charges and two reduced-cast Starfires.",
+        "Starfire carries a 15% chance (at 5/5) to stun for 3 sec; chain it into the Wrath, Starfire, Starfire loop on any target that gets in your flag carrier's way.",
+        "WSG: root the enemy flag carrier with Entangling Roots, which now works indoors; Improved Entangling Roots makes the root absorb 75% more damage and Overgrowth lets you hold 3 roots at once.",
+        "AB and Darkspear Islands: sit behind a node and use Moonkin Form's crit aura for your whole group, while shapeshifting to break Polymorph and movement-impairing effects.",
+        "AV 40v40: stay in the back line, spread Insect Swarm (-2% hit, 48 Nature damage over 12 sec) on tanks and pull targets, and avoid taking the first hit.",
+        "Moonkin cannot cast healing spells, so leave form deliberately if you need a Rejuvenation; Nature's Focus gives 70% to avoid pushback while casting."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Arcane Power",
+          "note": "Starfire and Moonfire are Arcane, Wrath and Insect Swarm are Nature; Natural Power is the alternative glove formula. Effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Formula name from the BlizzCon-demo vendor screenshots; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; effect size is not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rare PvP gear needs level 55. Priorities: Insignia trinket (R2, Honor only), Faction Cloak (R3: 10 AB Marks + 3,000 Honor), Faction Necklace (R4). Elite Chest and Helm at R13 and Legs and Shoulders at R12 are the biggest Elite slots; Battle Standard (R7, +15% max health aura, 10-min cooldown) helps node fights. Stats are hidden until drops, so slot count rather than a named BiS drives priority. R14 unlocks the Weapon Arsenal, which lists a Premier Grand Marshal's Stave (20 AV Marks + 15,000 Honor).",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["blizzard-hunter-druid-deep-dive", "icy-veins-balance-druid", "icy-veins-pvp-rank-system", "blizzard-beta-dev-notes-sep-24"],
+      "points": {
+        "Balance": {
+          "Improved Wrath": 5,
+          "Genesis": 5,
+          "Moonglow": 3,
+          "Improved Moonfire": 2,
+          "Nature's Majesty": 2,
+          "Nature's Reach": 2,
+          "Improved Entangling Roots": 3,
+          "Nature's Splendor": 1,
+          "Insect Swarm": 1,
+          "Vengeance": 5,
+          "Improved Starfire": 5,
+          "Overgrowth": 2,
+          "Nature's Grace": 1,
+          "Eclipse": 3,
+          "Moonfury": 5,
+          "Moonkin Form": 1
+        },
+        "Restoration": {
+          "Nature's Focus": 5
+        }
+      }
+    },
+    "pve": {
+      "title": "Dungeon and raid Moonkin: 41 Balance + Nature's Focus and Naturalist",
+      "summary": "Skip the two Entangling Roots talents and spend those 5 points plus 5 more on Nature's Focus and Naturalist. You keep every damage talent and the crit aura and add +5% all damage, with 70% pushback resistance.",
+      "stats": {
+        "priority": ["Spell Power", "Critical Strike", "Hit", "Intellect", "Haste", "Spirit"],
+        "note": "Projection. Icy Veins' level-20 list reads Spell Power, Intellect, Haste, Critical Strike, Spirit; I move Crit and Hit above Intellect because Vengeance, Nature's Majesty and Nature's Grace all reward crit, and Nature's Reach shows hit is a live stat. Item stats are hidden until drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune's Light is a 10% crit burst for 15 sec every 3 min, and extra crit feeds Nature's Grace and Vengeance's doubled crit bonus.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Endurance gives +1% hit and 5% Health, and War Stomp is a dungeon-safe panic stun; Windshaper's 1% haste is the smaller edge.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "Rotation: Moonfire and Insect Swarm up, then Wrath into Starfire, Starfire so Eclipse's two reduced-cast charges are always used.",
+        "Wrath now costs far less Mana and never consumes Omen of Clarity (Blizzard); Moonkin Form doubles Omen's proc chance, which eases the mana bill.",
+        "Stay in Moonkin Form for the +3% crit aura; it is exclusive with Leader of the Pack, so a Feral or second Balance in the group is redundant.",
+        "Use Entangling Roots indoors on a loose add and Mark of the Wild for the group; Rebirth is your combat resurrection.",
+        "Balance has no threat-reduction talent in this build (Subtlety is in Restoration), so let the tank pick up aggro before you open with Wrath.",
+        "Hurricane arrives at level 40 and no longer has a cooldown, so test it on packs in dungeons before raid night."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Arcane Power",
+          "note": "Starfire and Moonfire are Arcane, Wrath and Insect Swarm are Nature; Natural Power is the alternative formula. Effect size not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Formula name from the BlizzCon-demo vendor screenshots; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-Hand Weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff-wielding casters get this formula; Spellblasting is the other 2H caster formula, with unpublished numbers.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["blizzard-hunter-druid-deep-dive", "icy-veins-balance-druid", "icy-veins-druid-overview", "warcraft-tavern-enchanting", "wowforever-tier-list"],
+      "points": {
+        "Balance": {
+          "Improved Wrath": 5,
+          "Genesis": 5,
+          "Moonglow": 3,
+          "Improved Moonfire": 2,
+          "Nature's Majesty": 2,
+          "Nature's Reach": 2,
+          "Nature's Splendor": 1,
+          "Insect Swarm": 1,
+          "Vengeance": 5,
+          "Improved Starfire": 5,
+          "Nature's Grace": 1,
+          "Eclipse": 3,
+          "Moonfury": 5,
+          "Moonkin Form": 1
+        },
+        "Restoration": {
+          "Nature's Focus": 5,
+          "Naturalist": 5
+        }
+      }
+    },
+    "leveling": {
+      "title": "Wrath-first Moonkin leveler, ending in the PvE build",
+      "summary": "Improved Wrath first (cheaper, faster nuke), then Nature's Reach and Moonglow, Vengeance by 30, Eclipse by 34 and Moonkin Form at 40. The last 20 points land you on the level-60 PvE allocation with no respec.",
+      "stats": {
+        "priority": ["Spell Power", "Intellect", "Haste", "Critical Strike", "Spirit"],
+        "note": "Icy Veins' level-20 beta order. Spell Power and Intellect on your highest item-level pieces; Haste helps responsiveness, and Spirit pays for itself only between pulls."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Quickness gives +2% move speed, and Shadowmeld plus Elune's Light make solo pulls and bad pulls survivable.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Plainsrunning builds up to +30% run speed and the extra Health and 1% hit smooth out solo questing.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "Levels 10-14 go all-in on Improved Wrath: 0.5 sec faster and 50% cheaper makes Wrath your efficient filler (Icy Veins' level-20 pick as well).",
+        "Moonfire to tag at range, then Wrath; Nature's Reach (levels 15-16) cuts misses and extends your pull range.",
+        "From level 24 Nature's Splendor opens row 4: Insect Swarm at 25 and Vengeance from 26 to 30 for far bigger crits.",
+        "Eclipse arrives at 32-34 and Moonfury at 35-39; from level 40 Moonkin Form arrives with a +360% armor bonus, then fill Improved Starfire, Nature's Focus, Naturalist and Genesis.",
+        "Bear Form unlocks via a quest at level 10 and Cat Form at 20; keep them for travel and emergencies (Icy Veins).",
+        "Use campfires: sitting by a Basic Campfire grants a one-hour buff."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-veins-balance-druid", "blizzard-hunter-druid-deep-dive", "blizzard-deep-dive-panel-recap"],
+      "order": [
+        "Improved Wrath", "Improved Wrath", "Improved Wrath", "Improved Wrath", "Improved Wrath",
+        "Nature's Reach", "Nature's Reach",
+        "Moonglow", "Moonglow", "Moonglow",
+        "Improved Moonfire", "Improved Moonfire",
+        "Nature's Majesty", "Nature's Majesty",
+        "Nature's Splendor",
+        "Insect Swarm",
+        "Vengeance", "Vengeance", "Vengeance", "Vengeance", "Vengeance",
+        "Nature's Grace",
+        "Eclipse", "Eclipse", "Eclipse",
+        "Moonfury", "Moonfury", "Moonfury", "Moonfury", "Moonfury",
+        "Moonkin Form",
+        "Improved Starfire", "Improved Starfire", "Improved Starfire", "Improved Starfire", "Improved Starfire",
+        "Nature's Focus", "Nature's Focus", "Nature's Focus", "Nature's Focus", "Nature's Focus",
+        "Naturalist", "Naturalist", "Naturalist", "Naturalist", "Naturalist",
+        "Genesis", "Genesis", "Genesis", "Genesis", "Genesis"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-hunter-druid-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives - Hunter and Druid",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301515",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes - Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-deep-dive-panel-recap",
+      "title": "World of Warcraft: Forever Deep Dive Panel Recap",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-13",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-balance-druid",
+      "title": "World of Warcraft: Forever Balance Druid Guide",
+      "url": "https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-18",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-druid-overview",
+      "title": "Druid Class Guide (WoW Forever)",
+      "url": "https://www.icy-veins.com/wow-forever/druid-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

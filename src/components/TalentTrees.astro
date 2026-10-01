@@ -1,0 +1,57 @@
+---
+import Icon from './Icon.astro';
+import { getClassTalents, treePoints, type Points } from '../lib/talents';
+import type { ClassSlug } from '../lib/classes';
+
+interface Props {
+  classSlug: ClassSlug;
+  points: Points;
+}
+const { classSlug, points } = Astro.props;
+const ct = getClassTalents(classSlug);
+const split = ct.trees.map((t) => treePoints(points, t.name));
+---
+<section aria-label="Talent allocation">
+  <p class="mb-3 font-display text-lg text-gold" aria-label="Points split">
+    {split.join(' / ')} <span class="text-sm text-muted font-sans">({split.reduce((a, b) => a + b, 0)} points)</span>
+  </p>
+  <div class="trees grid gap-4" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+    {ct.trees.map((tree) => {
+      const n = treePoints(points, tree.name);
+      return (
+        <div class="card p-4">
+          <header class="mb-4 flex items-center gap-3">
+            <Icon name={tree.icon} size={32} alt="" />
+            <h3 class="text-base">{tree.name}</h3>
+            <span class="ml-auto text-sm text-gold" data-tree-points>{n} pts</span>
+          </header>
+          <div class="talent-grid" style="grid-template-rows: repeat(7, 44px); row-gap: 14px;">
+            {tree.talents.map((t) => {
+              const rank = points[tree.name]?.[t.name] ?? 0;
+              const state = rank === 0 ? 'unspent' : rank === t.max ? 'spent maxed' : 'spent';
+              const text = t.desc[Math.max(rank, 1) - 1] ?? t.desc[0];
+              return (
+                <div
+                  class={`talent-cell tip-host ${state} ${t.row <= 2 ? 'tip-below' : ''}`}
+                  style={`grid-row:${t.row};grid-column:${t.col};`}
+                  tabindex="0"
+                  data-talent={t.name}
+                  data-rank={rank}
+                >
+                  <Icon name={t.icon} size={44} alt={t.name} />
+                  {rank > 0 && <span class="talent-rank">{rank}/{t.max}</span>}
+                  <div class="tip" role="tooltip">
+                    <strong class="block text-gold">{t.name}</strong>
+                    <span class="block text-muted">Rank {rank}/{t.max}</span>
+                    <span class="mt-1 block">{text}</span>
+                    {t.req && <span class="mt-1 block text-amber-300">Requires {t.req}</span>}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>

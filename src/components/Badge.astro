@@ -1,0 +1,28 @@
+---
+interface Props {
+  confidence?: 'low' | 'medium' | 'high';
+  evidence?: string[];
+}
+const { confidence, evidence = [] } = Astro.props;
+const CONF = {
+  low: { label: 'Projection', cls: 'text-amber-300 border-amber-500/50 bg-amber-500/10' },
+  medium: { label: 'Supported', cls: 'text-sky-300 border-sky-500/50 bg-sky-500/10' },
+  high: { label: 'Proven', cls: 'text-emerald-300 border-emerald-500/50 bg-emerald-500/10' },
+} as const;
+const EVIDENCE: Record<string, string> = {
+  official: 'Official',
+  'beta-tested': 'Beta-tested',
+  datamined: 'Datamined',
+  theory: 'Theory',
+};
+---
+<span class="inline-flex flex-wrap items-center gap-1.5">
+  {confidence && (
+    <span class={`rounded-full border px-2 py-0.5 text-xs font-semibold ${CONF[confidence].cls}`} title={`Confidence: ${confidence}`}>
+      {CONF[confidence].label}
+    </span>
+  )}
+  {evidence.map((e) => (
+    <span class="rounded-full border border-line bg-raised px-2 py-0.5 text-xs text-muted">{EVIDENCE[e] ?? e}</span>
+  ))}
+</span>

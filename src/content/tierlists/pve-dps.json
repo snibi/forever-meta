@@ -1,0 +1,57 @@
+{
+  "title": "PvE DPS",
+  "description": "Level-60 dungeons and the raids that open December 9. One letter per damage spec. Tanks and healers are on their own lists.",
+  "scope": "pve",
+  "coverage": "dps",
+  "basis": "L60 projection from beta build 1.60.1.70124 talent data and the 20 DPS spec files. Cross-checked against the public rankings wowforever.co indexed on 2026-10-01. Item stats are still hidden, so this is not a parse.",
+  "updatedOn": "2026-10-01",
+  "confidence": "low",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "mage-arcane", "note": "The spec file says roll Arcane. Every indexed list that ranks it puts it in its own top band." },
+        { "ref": "warlock-affliction", "note": "Top-rated DoT engine in the spec file. Three of four indexed lists put it in their top band." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "ref": "warrior-fury", "note": "The Warrior damage spec. Lists put it above Arms. Rage bugs are still open, so this is not proven." },
+        { "ref": "hunter-beast-mastery", "note": "Pet damage and Bestial Wrath. The safe Hunter invite until Survival's melee kit is tested at 60." },
+        { "ref": "hunter-marksmanship", "note": "Aimed Shot and Sniper Shot. Two lists say A. One pre-beta forum post said F. We are not taking the forum post." },
+        { "ref": "hunter-survival", "note": "Highest ceiling in the Hunter file, and every signature talent is past the point the beta has played." },
+        { "ref": "rogue-assassination", "note": "Poison uptime on a boss that stands still. The spec file's PvE pick over Combat." },
+        { "ref": "priest-shadow", "note": "Shadowform and a personal Shadow Weaving. Two lists say A. You are not buffing the other caster." },
+        { "ref": "shaman-elemental", "note": "Lava Burst and crit damage at the bottom of the tree. The file calls it weak before 40 and real at 60." },
+        { "ref": "mage-fire", "note": "Ignite and Combustion. A on two lists, F on a forum post. The file says unproven, not bad." },
+        { "ref": "warlock-destruction", "note": "Conflagrate and Incinerate. A on the indexed DPS lists. Hard casts, so movement hurts." },
+        { "ref": "druid-balance", "note": "Eclipse and a party crit aura. Light on AoE. A on two lists, and the file does not claim the meter." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "warrior-arms", "note": "The file says mid-pack PvE and tells you to pick Fury if raid damage is the only goal." },
+        { "ref": "rogue-combat", "note": "Blade Flurry for trash. The file sends boss damage to Assassination." },
+        { "ref": "shaman-enhancement", "note": "Stormstrike and Maelstrom. Rebuilt, and the indexed lists leave it a band under Elemental." },
+        { "ref": "mage-frost", "note": "Icy Veins says it will not top the meters. Three indexed lists put it at B. Winter's Chill is the invite." },
+        { "ref": "druid-feral-combat", "note": "The file's dungeon call is bear tank, not cat DPS. Cat is the PvP build. Listed here because the role is melee." }
+      ]
+    },
+    {
+      "tier": "C",
+      "entries": [
+        { "ref": "rogue-subtlety", "note": "The file says do not bring it as the raid plan until someone parses it. Opener kit, not a boss kit." },
+        { "ref": "warlock-demonology", "note": "Rankings are split, including a seller D and a forum A. The file calls it high variance. Not a recommendation." },
+        { "ref": "paladin-retribution", "note": "Has a rotation now. The indexed lists still put it in their low band, and the file does not overrule them." }
+      ]
+    },
+    { "tier": "D", "entries": [] }
+  ],
+  "sources": [
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" },
+    { "id": "icy-frost-guide", "title": "World of Warcraft: Forever Frost Mage Guide", "url": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "blizz-priest-warrior", "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514", "publisher": "Blizzard Entertainment", "date": "2026-09-30", "tier": "official" }
+  ]
+}

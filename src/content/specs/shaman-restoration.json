@@ -1,0 +1,360 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "shaman",
+  "spec": "restoration",
+  "tagline": "Riptide into Chain Heal, with Mana Tide when the group is dry.",
+  "verdict": [
+    "Restoration is the shaman healer Icy Veins calls flexible: Healing Wave for one person, Chain Heal for the group, neither on a cooldown, and Riptide as the capstone that also makes the next Chain Heal on that target 25% stronger. Mana Tide Totem is the group mana button. Water Shield restores mana when you are hit or when a heal crits.",
+    "Sep 24 let Riptide crit. The same notes stopped Flametongue Totem from stacking with Flametongue Weapon or Windfury Totem, and stopped Windfury Totem from stacking with other air totems. Your buffs are still required. They are no longer free to double.",
+    "wowforever.co shows Restoration at S on Skycoach and Overgear and at B on the forum list. Icy Veins, updated Sep 23, calls it an excellent dungeon healer and a poor solo leveler. Alliance has one shaman race: Dwarf. There is no runner-up.",
+    "Bring Restoration to dungeons. Do not solo-level as a healer past the point Lightning Bolt stops being enough. The leveling order keeps 10 Elemental points so the respec never comes."
+  ],
+  "strengths": [
+    "Riptide is a direct heal, a 15-second heal over time, and 25% stronger Chain Heals on that target.",
+    "Mana Tide Totem restores mana to the group. Icy Veins lists it as the talent that defines the spec’s raid invite.",
+    "Nature’s Swiftness makes the next Nature cast instant. That is the emergency Healing Wave.",
+    "Earth Shock interrupts, Purge dispels, Tremor Totem breaks fear. Icy Veins is right that the totem kit is the utility, not a talent."
+  ],
+  "weaknesses": [
+    "Icy Veins: healer specs level slowly, and Restoration has no area damage talents. You Lightning Bolt like a bad Elemental.",
+    "Totems are short-range and die. A battleground that moves off your totems deletes the spec’s buffs.",
+    "Windfury and Flametongue no longer stack the way Classic groups remember. Do not promise double totems.",
+    "The S-rank on seller lists is not a level-60 parse. The forum list has the spec at B."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Natural Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Riptide with Ghost Wolf (0/7/44)",
+      "summary": "Full Healing Wave speed, Riptide, Mana Tide and Nature’s Swiftness, plus five Thundering Strikes and Improved Ghost Wolf so the wolf is instant and works indoors. Icy Veins says that talent solves shaman mobility and that Riptide covers the short moves.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Healing Power",
+          "Intellect",
+          "MP5",
+          "Crit"
+        ],
+        "note": "Icy Veins’ Restoration stat list leads with Healing Power, then crit, haste, Intellect, MP5, Spirit and Stamina. In a battleground Stamina moves ahead of throughput because a dead shaman drops no totems. Tidal Focus already adds 5% hit."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Dwarf is the only Alliance shaman. Stoneform removes bleed, poison and disease and cuts physical damage by 10% for 8 seconds. Mace Specialization is 1% crit with a mace. There is no second Alliance race to name."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Icy Veins says Hardiness is especially strong in PvP, and Shatter Curse is a self-dispel plus 15% less magic damage for 8 seconds. Blood Fury does not heal, so it is not the reason. The stun reduction is.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Riptide the focus target, Chain Heal if two are low, Healing Wave the spike. Nature’s Swiftness the cast you cannot finish.",
+        "Improved Ghost Wolf to reposition. Do not heal while running unless Riptide is off cooldown.",
+        "Earthbind or Tremor under the node. Earth Shock the caster. Purge the blessing or the hot.",
+        "Mana Tide when the group is oom, not when you are bored. It has 5 health. Hide it.",
+        "You are the node healer. You are not the flag carrier. War Stomp is the Tauren runner-up’s button, not yours."
+      ],
+      "gearNote": "Healing Power on the R14 stave and the R4 necklace matter more than a spell-damage weapon. Drop the R7 Battle Standard on the node you are holding. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-resto-guide",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Restoration": {
+          "Improved Healing Wave": 5,
+          "Totemic Focus": 5,
+          "Tidal Focus": 5,
+          "Natural Grace": 3,
+          "Mindfulness": 3,
+          "Healing Focus": 3,
+          "Water Shield": 1,
+          "Ancestral Healing": 3,
+          "Tidal Mastery": 5,
+          "Mana Tide Totem": 1,
+          "Healing Way": 3,
+          "Nature's Swiftness": 1,
+          "Purification": 5,
+          "Riptide": 1
+        },
+        "Enhancement": {
+          "Thundering Strikes": 5,
+          "Improved Ghost Wolf": 2
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Natural Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Relic",
+          "name": "Totem of Ancestral Protection",
+          "note": "Enchanting-crafted shaman totem seen on the BlizzCon demo vendor. Effect amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Chain Heal and Mana Tide (0/0/51)",
+      "summary": "Every point stays in Restoration: Riptide, full Purification, full Restorative Totems, Mana Tide, Nature’s Swiftness and Improved Reincarnation. No Ghost Wolf tax. Dungeon movement is short enough that Riptide covers it, which is Icy Veins’ own trade.",
+      "stats": {
+        "priority": [
+          "Healing Power",
+          "Crit",
+          "Intellect",
+          "MP5",
+          "Spirit"
+        ],
+        "note": "Copied from Icy Veins’ Restoration priority, which also lists Haste above Intellect. Haste is on that page; this build does not assume a cap. Tidal Mastery is already 5% heal crit. Mindfulness keeps 50% mana regeneration while casting."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance shaman. Stoneform is the dungeon dispel for poison and disease when your own cleanse is on the tank. Big Game Hunter does not heal."
+        },
+        "horde": {
+          "race": "troll",
+          "why": "Berserking is 10% spell haste for 10 seconds, which shortens Healing Wave. Icy Veins’ general shaman pick is Orc for Blood Fury, but Blood Fury is Attack Power and Spell Power, not healing. A healer takes the haste.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Riptide, then Chain Heal on that target for the 25% bonus. Healing Wave the tank spike. Lesser Healing Wave only to move.",
+        "Mana Tide before the group is empty, not after. Restorative Totems makes Mana Spring 25% stronger and Healing Stream 50% stronger.",
+        "Water Shield on yourself. A heal crit or a hit restores 2% mana and spends a globe.",
+        "Nature’s Swiftness plus Healing Wave is the lay-on-hands. It is one cast.",
+        "Windfury Totem for the melee, Healing Stream for the party. They do not stack with a second shaman’s air totem after Sep 24. Assign one."
+      ],
+      "sourceIds": [
+        "icy-resto-guide",
+        "icy-race-guide",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Restoration": {
+          "Improved Healing Wave": 5,
+          "Totemic Focus": 5,
+          "Tidal Focus": 5,
+          "Natural Grace": 3,
+          "Mindfulness": 3,
+          "Improved Reincarnation": 2,
+          "Water Shield": 1,
+          "Healing Focus": 3,
+          "Ancestral Healing": 3,
+          "Tidal Mastery": 5,
+          "Mana Tide Totem": 1,
+          "Restorative Totems": 5,
+          "Healing Way": 3,
+          "Nature's Swiftness": 1,
+          "Purification": 5,
+          "Riptide": 1
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Lightning Bolt until Riptide",
+      "summary": "Icy Veins says you level Restoration by casting Lightning Bolt and Flame Shock with no damage talents. This order puts 10 points in Concussion and Convection first so that is less true, then walks Restoration to Riptide. No respec at 40.",
+      "stats": {
+        "priority": [
+          "Intellect",
+          "Stamina",
+          "Spell Power",
+          "Spirit",
+          "Healing Power"
+        ],
+        "note": "You are a caster until the group invites you. Intellect and a wand-equivalent staff beat healing power you cannot use on mobs."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only choice. Stoneform saves a bad pull. Big Game Hunter is 5% damage against beasts, which is a lot of the leveling map."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Icy Veins names Orc the Horde shaman for Blood Fury, and while leveling you are dealing damage, so the 10% Spell Power applies. Shatter Curse saves a cursed pull.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Lightning Bolt, Flame Shock, Earth Shock to interrupt. Drink. Icy Veins is explicit that this is the level-20 loop.",
+        "Healing Wave yourself between pulls once Improved Healing Wave has cut the cast. Do not heal the mob’s damage with a full-rank cast if a bandage exists.",
+        "Drop Searing Totem only if you will stand still. A totem you run away from is wasted mana.",
+        "Water Shield the moment the order grants it. Solo, getting hit is how it procs.",
+        "Group for dungeons as soon as someone will take a shaman healer. The spec is bad at solo elites. Icy Veins says so."
+      ],
+      "sourceIds": [
+        "icy-resto-guide",
+        "icy-race-guide",
+        "foreverchanges-patch-notes"
+      ],
+      "order": [
+        "Concussion",
+        "Concussion",
+        "Concussion",
+        "Concussion",
+        "Concussion",
+        "Improved Healing Wave",
+        "Improved Healing Wave",
+        "Improved Healing Wave",
+        "Improved Healing Wave",
+        "Improved Healing Wave",
+        "Mindfulness",
+        "Mindfulness",
+        "Mindfulness",
+        "Tidal Focus",
+        "Tidal Focus",
+        "Tidal Focus",
+        "Tidal Focus",
+        "Tidal Focus",
+        "Water Shield",
+        "Healing Focus",
+        "Healing Focus",
+        "Healing Focus",
+        "Tidal Mastery",
+        "Tidal Mastery",
+        "Tidal Mastery",
+        "Tidal Mastery",
+        "Tidal Mastery",
+        "Healing Way",
+        "Healing Way",
+        "Healing Way",
+        "Nature's Swiftness",
+        "Mana Tide Totem",
+        "Purification",
+        "Purification",
+        "Purification",
+        "Riptide",
+        "Purification",
+        "Purification",
+        "Totemic Focus",
+        "Totemic Focus",
+        "Totemic Focus",
+        "Totemic Focus",
+        "Totemic Focus",
+        "Natural Grace",
+        "Natural Grace",
+        "Ancestral Healing",
+        "Convection",
+        "Convection",
+        "Convection",
+        "Convection",
+        "Convection"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-resto-guide",
+      "title": "World of Warcraft: Forever Restoration Shaman Guide",
+      "url": "https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-23",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

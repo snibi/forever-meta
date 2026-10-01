@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import Badge from '../components/Badge.astro';
+import Sources from '../components/Sources.astro';
+import meta from '../data/meta.json';
+import { getSpecs, getTierLists } from '../lib/content';
+
+const specs = await getSpecs();
+const lists = await getTierLists();
+const byUrl = new Map<string, (typeof specs)[number]['data']['sources'][number]>();
+for (const s of [...specs.flatMap((x) => x.data.sources), ...lists.flatMap((l) => l.data.sources)]) {
+  if (!byUrl.has(s.url)) byUrl.set(s.url, s);
+}
+const sources = [...byUrl.values()].sort((a, b) => a.publisher.localeCompare(b.publisher) || a.title.localeCompare(b.title));
+---
+<Base title="Methodology" description="How Forever Meta builds its WoW Forever recommendations: evidence types, confidence levels and source tiers.">
+  <h1 class="mb-6 text-4xl font-bold text-gold">Methodology</h1>
+  <div class="prose-block max-w-3xl space-y-8">
+    <section>
+      <h2 class="section-title">What this is</h2>
+      <p>Forever Meta gives one decisive build per spec and mode — PvP (battlegrounds and world PvP; there is no arena), PvE (level-60 dungeons and raid prep) and Leveling (10→60). Every build is validated against the beta client's own talent data: allocations must be exactly 51 legal points and leveling orders must stay legal at every level.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">The big caveat</h2>
+      <p>The beta is capped at level {meta.betaLevelCap} (build {meta.gameBuild}); the game launches November 4, 2026 and raids open December 9. Level-60 conclusions are <strong>projections</strong> from talent text and early reports, and item stats are hidden until they drop, so there is no best-in-slot list yet. Treat anything at L60 as theory until launch data arrives.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Evidence types</h2>
+      <ul class="space-y-2">
+        <li><Badge evidence={['official']} /> Stated by Blizzard (blog posts, dev notes).</li>
+        <li><Badge evidence={['beta-tested']} /> Played or measured in the beta, at the current level cap.</li>
+        <li><Badge evidence={['datamined']} /> Read from the beta client or data exports; may change before launch.</li>
+        <li><Badge evidence={['theory']} /> Reasoned from talent and ability text only.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Confidence levels</h2>
+      <ul class="space-y-2">
+        <li><Badge confidence="high" /> At least two reputable or official sources agree and it has been beta-tested.</li>
+        <li><Badge confidence="medium" /> One reputable source, or beta-tested at level 30 or below.</li>
+        <li><Badge confidence="low" /> Projection — no direct testing at the relevant level.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Source tiers</h2>
+      <p><strong>official</strong> — Blizzard. <strong>reputable</strong> — established guide sites (Icy Veins, Wowhead, Method, Warcraft Tavern, Mobalytics). <strong>fan</strong> — community tools and wikis. <strong>seller</strong> — boosting shops; cited only alongside a reputable source, never alone.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Update policy</h2>
+      <p>Everything here is a static snapshot, last researched on {meta.researchedOn} against build {meta.gameBuild}. We re-verify after each beta build and again at launch.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Data attribution</h2>
+      <p>Talent and racial data come from <a class="underline" href="https://talentsforever.com" rel="noopener">talentsforever.com</a>, licensed <a class="underline" href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>, extracted from the beta client and trimmed for this site. Game icons © Blizzard Entertainment. This is a fan site, not affiliated with Blizzard.</p>
+    </section>
+  </div>
+
+  {sources.length > 0 && <div class="mt-10"><Sources sources={sources} heading="All sources" /></div>}
+</Base>

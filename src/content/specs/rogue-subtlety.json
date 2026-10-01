@@ -1,0 +1,358 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "rogue",
+  "spec": "subtlety",
+  "tagline": "Hemorrhage, Preparation and Thousand Cuts: the opener rogue.",
+  "verdict": [
+    "Subtlety is the opener. Premeditation adds 2 combo points from stealth. Hemorrhage is the builder that also makes the target take 15% more Rupture damage, and it hits harder with a dagger. Preparation resets your other cooldowns. Thousand Cuts, the capstone, makes Rupture ticks cheapen the next Hemorrhage or Backstab, stacking to 5.",
+    "Dirty Deeds cuts Cheap Shot and Garrote by 20 energy and lets Garrote land from the front. That is the battleground change. You no longer lose the opener because the flag carrier turned around.",
+    "wowforever.co puts Subtlety at B on MMOExp and Overgear and at C on the forum list. Icy Veins’ Assassination page is clear that low-level Rogue specs feel the same. Subtlety pulls ahead when Preparation and Hemorrhage exist, which is not level 20. The 51-point builds are projections.",
+    "Play Subtlety to open, control and reset. Play Combat if the fight never lets you restealth. Do not bring Subtlety as the raid DPS plan until someone parses it."
+  ],
+  "strengths": [
+    "Preparation finishes the cooldown on your other abilities. A second Cheap Shot, a second Vanish, a second Blind.",
+    "Hemorrhage plus Serrated Blades ignores 9% armor and adds 30% Rupture damage before the debuff even applies.",
+    "Elusiveness cuts Vanish and Blind by 90 seconds. That is the reset spec.",
+    "Master of Deception and Heightened Senses are stealth offense and stealth detection in the same tree."
+  ],
+  "weaknesses": [
+    "If you cannot restealth, you are a worse Combat rogue. Ghostly Strike does not replace Blade Flurry.",
+    "Thousand Cuts wants Rupture rolling. A target that dies in a stun never pays for the capstone.",
+    "Public lists do not put Subtlety in S. The forum list has it at C.",
+    "Early levels lack Sap and Blind. Icy Veins says that about Rogue in general, and Subtlety feels it most."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Preparation opener (15/0/36)",
+      "summary": "Hemorrhage, Premeditation, Preparation, Dirty Deeds and Thousand Cuts, with enough Assassination for Malice and full Lethality. Cutthroat is only two points. The points went to the opener, not to a second Ambush proc.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "A dagger makes Hemorrhage 145% weapon damage and Ghostly Strike 180%. A sword does not. Hit still comes from gear; this split has no Precision."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Quickness makes you harder to detect in stealth, as if you were 1 level higher, and Shadowmeld is a combat drop. That is the Subtlety racial. Human Perception is the counter-pick, not the opener pick.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Hardiness cuts the stun that ends your opener. Blood Fury is 10% Attack Power for the five-point Kidney Shot that follows Premeditation.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Premeditation, Cheap Shot, Hemorrhage, Kidney Shot or Rupture. Dirty Deeds means Garrote works from the front if they spin.",
+        "Preparation when Vanish, Blind or Kidney Shot is down and the second opener wins the node.",
+        "Rupture on anything that will live 15 seconds, so Thousand Cuts starts discounting Hemorrhage.",
+        "Ghostly Strike if you are stuck in the open. It is 15% dodge for 7 seconds and a combo point.",
+        "You open. You do not carry the flag. Sprint to the next opener, do not tank the road."
+      ],
+      "gearNote": "A dagger from the R14 arsenal is the Hemorrhage weapon. The R2 Insignia gets you out of the stun that follows a failed opener. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Subtlety": {
+          "Opportunity": 2,
+          "Master of Deception": 3,
+          "Camouflage": 2,
+          "Improved Ambush": 3,
+          "Dirty Tricks": 2,
+          "Elusiveness": 2,
+          "Initiative": 3,
+          "Ghostly Strike": 1,
+          "Serrated Blades": 3,
+          "Premeditation": 1,
+          "Heightened Senses": 2,
+          "Hemorrhage": 1,
+          "Preparation": 1,
+          "Dirty Deeds": 2,
+          "Quietus": 5,
+          "Cutthroat": 2,
+          "Thousand Cuts": 1
+        },
+        "Assassination": {
+          "Malice": 5,
+          "Ruthlessness": 3,
+          "Remorseless Attacks": 2,
+          "Lethality": 5
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Hemorrhage uptime (10/0/41)",
+      "summary": "Same opener spine, with Cutthroat maxed so Backstab can enable a second Ambush without stealth, and Setup so a dodge or a resist gives a combo point. This is the dungeon Subtlety build if you refuse to respec Combat.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Serrated Blades already ignores 9% armor. More Attack Power still beats stacking a stat the tree does not multiply."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune’s Light is 10% crit for 15 seconds and lines up with a Premeditation opener. The stealth detection reduction is a bonus on trash you skip.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is the damage cooldown this tree does not have. Adrenaline Rush is Combat. Orc brings the missing button.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Ambush, Hemorrhage, Rupture, then Hemorrhage cheaper from Thousand Cuts. Eviscerate only to finish.",
+        "Cutthroat’s Backstab proc lets the next Ambush skip stealth. Use it. Do not wait for a vanish on trash.",
+        "Preparation on bosses to get a second Vanish if the mechanic drops you in the fire, not to pad damage.",
+        "You will lose to Combat on a four-mob pull. Blade Flurry is not in this tree. Say so.",
+        "Kick still exists. Subtlety does not talent it. Press it anyway."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Subtlety": {
+          "Opportunity": 2,
+          "Master of Deception": 2,
+          "Camouflage": 2,
+          "Improved Ambush": 3,
+          "Dirty Tricks": 2,
+          "Initiative": 3,
+          "Ghostly Strike": 1,
+          "Serrated Blades": 3,
+          "Premeditation": 1,
+          "Heightened Senses": 2,
+          "Hemorrhage": 1,
+          "Preparation": 1,
+          "Dirty Deeds": 2,
+          "Quietus": 5,
+          "Cutthroat": 5,
+          "Setup": 3,
+          "Elusiveness": 2,
+          "Thousand Cuts": 1
+        },
+        "Assassination": {
+          "Malice": 5,
+          "Ruthlessness": 3,
+          "Murder": 2
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Ambush and Hemorrhage, no respec",
+      "summary": "Opportunity, Improved Ambush and Malice first, because those are damage at level 20. Hemorrhage comes as soon as Serrated Blades is maxed. Preparation and Thousand Cuts are the end of the path, not the start. Remorseless Attacks stays for chain pulls.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Attack Power",
+          "Stamina",
+          "Hit",
+          "Crit"
+        ],
+        "note": "A dagger is worth the trip to a vendor. Hemorrhage and Ghostly Strike both say so on the tooltip."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "You are in stealth more than any other spec. The detection reduction and Shadowmeld pay off before Preparation exists.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury finishes the mob Remorseless Attacks wants dead. Hardiness is the stun reduction while Vanish is still on a long cooldown.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Stealth, Ambush, Sinister Strike or Ghostly Strike, Eviscerate. Leave if the camp has three casters.",
+        "Do not force Rupture on a mob that dies in four seconds. The order takes Hemorrhage before the capstone for that reason.",
+        "Sprint is the travel tool until you have camps memorized. Icy Veins is right that it is one of the few early mobility cooldowns.",
+        "First Aid. Subtlety does not heal you.",
+        "At 60 you are a Hemorrhage rogue, not a Combat rogue who dipped Subtlety. The order never spends a Combat point."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide"
+      ],
+      "order": [
+        "Opportunity",
+        "Opportunity",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Remorseless Attacks",
+        "Remorseless Attacks",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Camouflage",
+        "Camouflage",
+        "Camouflage",
+        "Improved Ambush",
+        "Improved Ambush",
+        "Improved Ambush",
+        "Master of Deception",
+        "Master of Deception",
+        "Initiative",
+        "Initiative",
+        "Initiative",
+        "Ghostly Strike",
+        "Murder",
+        "Murder",
+        "Setup",
+        "Serrated Blades",
+        "Serrated Blades",
+        "Serrated Blades",
+        "Premeditation",
+        "Heightened Senses",
+        "Hemorrhage",
+        "Dirty Deeds",
+        "Dirty Deeds",
+        "Preparation",
+        "Heightened Senses",
+        "Cutthroat",
+        "Cutthroat",
+        "Cutthroat",
+        "Cutthroat",
+        "Cutthroat",
+        "Quietus",
+        "Quietus",
+        "Quietus",
+        "Quietus",
+        "Quietus",
+        "Thousand Cuts",
+        "Setup",
+        "Elusiveness",
+        "Improved Gouge"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-assassination-guide",
+      "title": "World of Warcraft: Forever Assassination Rogue Guide",
+      "url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

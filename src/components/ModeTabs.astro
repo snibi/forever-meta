@@ -1,0 +1,22 @@
+---
+import { MODES, type ModeKey } from '../lib/content';
+
+interface Props {
+  classSlug: string;
+  specSlug: string;
+  active: ModeKey;
+}
+const { classSlug, specSlug, active } = Astro.props;
+---
+<nav class="flex gap-1 border-b border-line overflow-x-auto" aria-label="Build mode">
+  {MODES.map((m) => (
+    <a
+      href={`/classes/${classSlug}/${specSlug}/${m.path}`}
+      class="mode-tab whitespace-nowrap"
+      aria-current={m.key === active ? 'page' : undefined}
+    >
+      {m.label}
+      <span class="hidden sm:block text-[11px] font-normal text-muted">{m.sub}</span>
+    </a>
+  ))}
+</nav>

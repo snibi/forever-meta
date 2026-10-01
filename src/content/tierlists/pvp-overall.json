@@ -1,0 +1,63 @@
+{
+  "title": "PvP overall",
+  "description": "Battlegrounds and world PvP. No arena and no rated ladder. One letter per spec for the job it actually does: flag, node, healer, or kill.",
+  "scope": "pvp",
+  "coverage": "all",
+  "basis": "L60 projection from beta build 1.60.1.70124 talent data plus each spec file's own PvP verdict. Seller lists are corroboration only. Nothing here was played at 60.",
+  "updatedOn": "2026-10-01",
+  "confidence": "low",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "druid-feral-combat", "note": "The spec file's PvP call is the flag: cat burst, bear when you have to stand on it." },
+        { "ref": "mage-frost", "note": "The battleground mage. Slows, freezes, Ice Barrier. Not a meter spec, a flag-stopper." },
+        { "ref": "warrior-arms", "note": "Mortal Strike's 50% healing cut. The spec file calls this the Warrior's PvP kit." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "ref": "rogue-subtlety", "note": "Opener and reset. Public lists stop at B; the kit still wins the first five seconds." },
+        { "ref": "rogue-assassination", "note": "Kidney Shot plus poisons that resist dispel. The healer-killer, not the flag runner." },
+        { "ref": "warlock-affliction", "note": "DoTs that keep working when you are crowd-controlled. Fear is still a battleground button." },
+        { "ref": "hunter-beast-mastery", "note": "Pet, a stun the other Hunter trees lack, and range. Holds a node without standing on it." },
+        { "ref": "hunter-survival", "note": "Melee Hunter with traps and Strider Kick. High ceiling, and it has to connect." },
+        { "ref": "priest-shadow", "note": "Silence, Blackout, and a 50% Mind Flay slow if you refuse the damage talent." },
+        { "ref": "priest-discipline", "note": "Power Word: Shield and Penance. The healer who buys a cast, not the one who tops a raid." },
+        { "ref": "shaman-elemental", "note": "Lava Burst and shocks. Weak before the deep talents, a real caster once they exist." },
+        { "ref": "paladin-protection", "note": "Judgement taunts with Seal of Fury. A node tank with a blessing, not a chaser." },
+        { "ref": "warrior-protection", "note": "Concussion Blow, Shield Slam, Charge in Defensive Stance. Holds the flag room." },
+        { "ref": "mage-arcane", "note": "Best-rated mage for damage. Frost still does the peeling. Arcane is the burst window." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "warrior-fury", "note": "Death Wish and Piercing Howl, no healing cut. Play Arms if the healer is the problem." },
+        { "ref": "rogue-combat", "note": "Sprint and Riposte. Fine when you cannot restealth. Subtlety opens better." },
+        { "ref": "paladin-retribution", "note": "Holy Strike and a Seal twist. Damage with a cleanse, not a dedicated killer." },
+        { "ref": "paladin-holy", "note": "Deepest buff kit and single-target heals. A node healer, not a chaser." },
+        { "ref": "shaman-enhancement", "note": "Stormstrike melee with a purge and an interrupt. Totems die when the fight moves." },
+        { "ref": "shaman-restoration", "note": "Riptide and Earth Shock. Instant Ghost Wolf is the reposition. Totems still have to live." },
+        { "ref": "warlock-destruction", "note": "Hard casts. Strong if they let you plant. Affliction wins the moment you have to move." },
+        { "ref": "hunter-marksmanship", "note": "Aimed Shot burst. Loses the pet tools Beast Mastery brings to a node fight." },
+        { "ref": "priest-holy", "note": "Prayer of Mending on a node. No blink. Discipline is the Priest you want focused." },
+        { "ref": "druid-restoration", "note": "HoTs and Wild Growth, no absorb, and a thinner dispel kit than the Shaman." },
+        { "ref": "mage-fire", "note": "Ignite and Blast Wave stuns. Glass, and Frost already owns the control job." }
+      ]
+    },
+    {
+      "tier": "C",
+      "entries": [
+        { "ref": "druid-balance", "note": "The spec file says druids cannot snare, silence or interrupt. That is a battleground problem." },
+        { "ref": "warlock-demonology", "note": "Pet variance. The spec file calls the ranking split and untested past the mid-30s." }
+      ]
+    },
+    { "tier": "D", "entries": [] }
+  ],
+  "sources": [
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" },
+    { "id": "icy-pvp-ranks", "title": "WoW Forever - PvP Rank System Explained", "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system", "publisher": "Icy Veins", "date": "2026-09-19", "tier": "reputable" }
+  ]
+}

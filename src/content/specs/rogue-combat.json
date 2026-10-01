@@ -1,0 +1,365 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "rogue",
+  "spec": "combat",
+  "tagline": "Blade Flurry and Adrenaline Rush: the weapon rogue for packs and sustained hits.",
+  "verdict": [
+    "Combat is the weapon spec. Hack and Slash changes with the weapon: swords and axes have a 5% chance of an extra attack, daggers and fists gain 5% crit, maces ignore 15% armor. Dual Wield Specialization is 25% off-hand damage. Adrenaline Rush doubles energy regeneration for 15 seconds. Blade Flurry is 20% attack speed and a cleave for 15 seconds.",
+    "Icy Veins’ Assassination page says the three Rogue specs are hard to tell apart at level 20, and that Rogue damage is high either way. The split shows up once Blade Flurry and Adrenaline Rush exist. wowforever.co puts Combat at B on MMOExp and Overgear and at F on the Sep-16 forum list. Treat it as the AoE and uptime spec, not the proven raid winner.",
+    "Riposte requires Deflection at max rank. Both Combat builds in this file pay that tax, because a disarm on parry is the battleground button and a free hit in dungeons.",
+    "Play Combat if your best weapons are swords or axes and the content is trash-heavy. Play Assassination if you have daggers and a boss that stands still. Level-60 points are a projection."
+  ],
+  "strengths": [
+    "Blade Flurry plus Adrenaline Rush is the only Rogue package that cleaves and refunds energy at the same time.",
+    "Hack and Slash means you do not respec when the weapon type changes. You change the bonus, not the build.",
+    "Improved Sprint removes movement impairs when you Sprint. Endurance cuts Sprint and Evasion cooldowns by up to 60%.",
+    "Weapon Expertise is 2% less chance to be dodged or parried. That is uptime, not a stat-weight guess."
+  ],
+  "weaknesses": [
+    "No Mortal Strike equivalent. You do not cut healing. A healer who is free-casting outlasts you.",
+    "The forum list puts Combat at the bottom. Two seller lists put it at B. Neither has a raid test.",
+    "Riposte locks three points of Deflection. Those points are not damage.",
+    "Icy Veins: early Rogue has Sprint and not much else for mobility. Combat does not fix the lack of a travel form."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Sprint and Riposte Combat (13/38/0)",
+      "summary": "Adrenaline Rush, Blade Flurry, Improved Sprint and a maxed Deflection so Riposte is legal. Assassination adds Malice, Ruthlessness, Murder and three Lethality. You stick to the target and disarm whoever parries you.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Precision is 3% hit in this tree. Swords want the Hack and Slash extra attack; Human Sword Specialization adds 2% crit on top if you actually equip a sword."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization is 2% crit while a sword is equipped, and Hack and Slash’s sword line is an extra attack. Will to Survive is the stun break. Perception finds stealth.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Hardiness cuts stun duration by 20%, which is how you stay on a target after the opener. Blood Fury is 10% Attack Power for the Adrenaline Rush window.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Sinister Strike to 5, Slice and Dice, then Eviscerate. Adrenaline Rush when energy is empty and the healer is still in range.",
+        "Improved Sprint clears roots. Use it to reconnect, not to cross the map.",
+        "Riposte after a parry. It is 150% weapon damage and a 6-second disarm.",
+        "Blade Flurry when two targets are stacked. It does not replace a sap on the third.",
+        "Kick with the silence talent. Two points, 2-second silence, 100% chance."
+      ],
+      "gearNote": "Swords from the R14 arsenal line up with Hack and Slash and with Human Sword Specialization. The R2 Insignia still comes first. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Combat": {
+          "Improved Sinister Strike": 2,
+          "Lightning Reflexes": 5,
+          "Improved Eviscerate": 2,
+          "Precision": 3,
+          "Deflection": 3,
+          "Puncturing Wounds": 2,
+          "Riposte": 1,
+          "Improved Sprint": 2,
+          "Endurance": 1,
+          "Dual Wield Specialization": 5,
+          "Improved Kick": 2,
+          "Blade Flurry": 1,
+          "Hack and Slash": 5,
+          "Weapon Expertise": 2,
+          "Aggression": 1,
+          "Adrenaline Rush": 1
+        },
+        "Assassination": {
+          "Malice": 5,
+          "Ruthlessness": 3,
+          "Murder": 2,
+          "Lethality": 3
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Blade Flurry swords (10/41/0)",
+      "summary": "Max Hack and Slash, Dual Wield Specialization, Weapon Expertise and Adrenaline Rush. Assassination is Malice, Ruthlessness and Murder. This is the trash and boss uptime build, not the poison build.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Precision plus Weapon Expertise is the hit-and-avoidance package in the tree. A sword or axe uses the extra-attack line of Hack and Slash. A dagger uses the crit line instead. Pick the weapon, do not respec."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization is 2% crit with a sword, and that is the Hack and Slash weapon. Elune’s Light is the runner-up if your best weapon is not a sword.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is 10% Attack Power for 15 seconds and lines up with Adrenaline Rush and Blade Flurry. Axe Specialization is 1% crit if the weapon is an axe, which Hack and Slash also rewards.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Slice and Dice up, then Sinister Strike, Eviscerate at 5. Flawless Execution makes that Eviscerate cost 10 less energy.",
+        "Blade Flurry on every pull of two or more. It is 15 seconds. Do not save it for the boss if the trash is the dangerous part.",
+        "Adrenaline Rush when Slice and Dice is up and energy is low, not at the pull when you are already full.",
+        "Kick casters. The silence talent is in this build.",
+        "Keep weapon skill trained when you swap types. Icy Veins’ warrior page makes the same point, and it applies here: a green skill on a better weapon is a downgrade."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Combat": {
+          "Improved Sinister Strike": 2,
+          "Lightning Reflexes": 5,
+          "Improved Eviscerate": 3,
+          "Precision": 3,
+          "Deflection": 3,
+          "Puncturing Wounds": 3,
+          "Riposte": 1,
+          "Improved Sprint": 1,
+          "Endurance": 2,
+          "Dual Wield Specialization": 5,
+          "Improved Kick": 2,
+          "Flawless Execution": 1,
+          "Blade Flurry": 1,
+          "Hack and Slash": 5,
+          "Weapon Expertise": 2,
+          "Aggression": 1,
+          "Adrenaline Rush": 1
+        },
+        "Assassination": {
+          "Malice": 5,
+          "Ruthlessness": 3,
+          "Murder": 2
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Sinister Strike into Adrenaline Rush",
+      "summary": "Cheap Sinister Strike, dodge, hit and Malice first, because those work at level 20 before Blade Flurry exists. The order then takes Dual Wield Specialization, Hack and Slash and Adrenaline Rush. Remorseless Attacks stays, for the same chain-pull reason Icy Veins gives Assassination.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Attack Power",
+          "Stamina",
+          "Hit",
+          "Crit"
+        ],
+        "note": "Any fast one-hander you can hit with beats a dagger you cannot get behind. Upgrade the weapons before the chest."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization works as soon as you equip a sword, which is the Combat weapon. Will to Survive is the panic button in a cave.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury and Hardiness are useful from level 10. Icy Veins names Orc the Horde Rogue pick on the Assassination page, and nothing in Combat changes that.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Sinister Strike, never pool energy. Eviscerate at 4 or 5. Slice and Dice only if the mob will live.",
+        "Remorseless Attacks after each kill. Pull immediately.",
+        "Sprint through camps you are not clearing. Improved Sprint arrives late in the order; until then a root still stops you.",
+        "Blade Flurry the moment the order grants it. That is when Combat starts killing packs instead of singles.",
+        "First Aid. You have no heal."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide",
+        "wowforever-co-tier-list"
+      ],
+      "order": [
+        "Improved Sinister Strike",
+        "Improved Sinister Strike",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Precision",
+        "Precision",
+        "Precision",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Remorseless Attacks",
+        "Remorseless Attacks",
+        "Improved Eviscerate",
+        "Improved Eviscerate",
+        "Improved Eviscerate",
+        "Puncturing Wounds",
+        "Puncturing Wounds",
+        "Puncturing Wounds",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Hack and Slash",
+        "Hack and Slash",
+        "Hack and Slash",
+        "Hack and Slash",
+        "Hack and Slash",
+        "Blade Flurry",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Deflection",
+        "Deflection",
+        "Deflection",
+        "Riposte",
+        "Improved Sprint",
+        "Weapon Expertise",
+        "Weapon Expertise",
+        "Aggression",
+        "Aggression",
+        "Aggression",
+        "Improved Kick",
+        "Improved Kick",
+        "Endurance",
+        "Adrenaline Rush"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-assassination-guide",
+      "title": "World of Warcraft: Forever Assassination Rogue Guide",
+      "url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    }
+  ]
+}

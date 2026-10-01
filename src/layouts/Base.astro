@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import meta from '../data/meta.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+  classColor?: string;
+}
+const {
+  title,
+  description = 'The WoW Forever meta, solved: one best PvP, PvE and leveling build for every spec, plus cross-spec tier lists.',
+  classColor,
+} = Astro.props;
+const fullTitle = title ? `${title} · ${meta.siteName}` : `${meta.siteName} — WoW Forever builds & tier lists`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const NAV = [
+  { href: '/#classes', label: 'Classes' },
+  { href: '/tier-lists/', label: 'Tier Lists' },
+  { href: '/races/', label: 'Races' },
+  { href: '/methodology/', label: 'Methodology' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/icons/classicon_warrior.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={meta.siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="theme-color" content="#0b0d12" />
+  </head>
+  <body>
+    <header class="border-b border-line bg-surface/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-2 px-4 py-3">
+        <a href="/" class="font-display text-xl font-bold tracking-wider text-gold no-underline">Forever Meta</a>
+        <nav class="flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted" aria-label="Main">
+          {NAV.map((n) => <a class="hover:text-text" href={n.href}>{n.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <div class="sticky top-0 z-30 border-b border-amber-500/30 bg-amber-950/90 backdrop-blur" role="note">
+      <p class="mx-auto max-w-6xl px-4 py-1.5 text-[11px] leading-snug text-amber-200 sm:truncate sm:text-xs">
+        Beta snapshot · build {meta.gameBuild} · level cap {meta.betaLevelCap} · L60 conclusions are projections until launch
+      </p>
+    </div>
+    <main style={classColor ? `--class-color:${classColor}` : undefined} class="mx-auto max-w-6xl px-4 py-8">
+      <slot />
+    </main>
+    <footer class="mt-12 border-t border-line bg-surface">
+      <div class="mx-auto max-w-6xl space-y-1 px-4 py-6 text-xs text-muted">
+        <p>
+          Talent &amp; racial data: <a class="underline" href="https://talentsforever.com" rel="noopener">talentsforever.com</a>
+          (<a class="underline" href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>, trimmed).
+        </p>
+        <p>Game icons © Blizzard Entertainment.</p>
+        <p>Fan site, not affiliated with Blizzard. Verified against beta build {meta.gameBuild} on {meta.researchedOn}.</p>
+      </div>
+    </footer>
+  </body>
+</html>

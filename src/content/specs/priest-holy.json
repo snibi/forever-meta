@@ -1,0 +1,372 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "priest",
+  "spec": "holy",
+  "tagline": "Renew, Binding Heal and Prayer of Mending: the bounce healer, not the solo spec.",
+  "verdict": [
+    "Holy is the reactive healer Blizzard still calls the Priest’s main identity, now with two new tools. Binding Heal is the 16-point spell that heals you and your target, tuned by Blizzard to match Flash Heal even if you need nothing. Prayer of Mending is the 31-point capstone: a heal that jumps up to five times when the carrier takes damage or receives a direct heal.",
+    "Icy Veins, writing for the level-20 beta, calls Holy a beginner-friendly all-rounder that is a bit weaker than the other healing specializations at single-target throughput, and says solo leveling as Holy is the wrong plan. wowforever.co’s indexed lists disagree with each other: Overgear and Skycoach put Holy at S, the Sep-16 forum post put it at C. There is no level-60 raid log behind either letter.",
+    "Blizzard added Holy Precision specifically so a healing Priest does not have to wear hit gear: 18% Holy hit at three ranks. Spiritual Guidance still converts Spirit into healing (25% of Spirit) and only a third of that into damage. That is the stat story. Gnome Eureka! is not — Sep 24 cut it to 10%.",
+    "Bring Holy when the damage is spread. Bring Discipline when one person is eating a boss ability. Do not level to 60 as a pure Holy soloist; this file’s leveling order keeps Spirit Tap so the respec never has to happen."
+  ],
+  "strengths": [
+    "Prayer of Mending plus Holy Nova is the spread-heal package. Binding Heal covers you and the tank in one cast.",
+    "Spiritual Healing is 10% to all healing in three points. Improved Healing cuts the mana of Heal, Greater Heal, Penance and Prayer of Mending by 15%.",
+    "Spirit of Redemption is 15 seconds of free healing after you die. In a dungeon that is a wipe save, not a trophy.",
+    "Same baseline kit as every Priest: Fear Ward and Devouring Plague at 20 for every race, Divine Spirit at 30, and a doubled Fade (Blizzard, Sep 30)."
+  ],
+  "weaknesses": [
+    "Icy Veins: no real mobility, and solo damage is bad enough that they tell Holy players to take Shadow talents while leveling.",
+    "Cloth, and almost no personal peel beyond Psychic Scream and the racial. Blizzard says Priests need friends with control.",
+    "Single-target throughput loses to Discipline in Icy Veins’ beta read. Holy’s win condition is several people hurt at once.",
+    "Public rank is a coin flip (S on two seller lists, C on a pre-beta forum post). Nothing here has been tested at 60."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Holy Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Node healer with Spell Warding (17/34/0)",
+      "summary": "Prayer of Mending, Binding Heal and a maxed Spell Warding (10% less spell damage taken), plus Discipline’s shield, Martyrdom pushback protection and Meditation. You are the battleground healer who stands on the node, not the flag runner.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Healing Power",
+          "Intellect",
+          "Spirit",
+          "MP5"
+        ],
+        "note": "Blizzard built Holy Precision so healing Priests are not expected to wear hit. This split puts only two points there; Stamina keeps you in the fight longer than more healing does."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes every stun, which is the button that keeps a node healer casting. Divine Grace, the Human priest spell, heals an ally under 50% and strips Weakened Soul. It cannot be cast on yourself.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken breaks Charm, Fear and Sleep. Icy Veins also prefers Undead for Holy because Cannibalize and Dark Sacrifice are mana tools Troll does not have.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Prayer of Mending on the flag carrier or the player about to be focused. It jumps when they take damage.",
+        "Power Word: Shield to buy a cast, then Heal. Do not shield the tank on cooldown if you need the absorb for yourself.",
+        "Binding Heal when you and the target are both low. It is a 1.5-second cast with no cooldown.",
+        "Psychic Scream the melee on you, then get behind the node. You have no blink.",
+        "Spirit of Redemption means you keep healing for 15 seconds after you die. Use it. Do not release early."
+      ],
+      "gearNote": "Healing Power on the R14 stave and the R13 chest and helm matters more than weapons with spell damage. The R2 Insignia is mandatory: a stunned healer is a lost node. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-holy-guide",
+        "blizz-priest-warrior",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Holy": {
+          "Holy Specialization": 5,
+          "Improved Renew": 3,
+          "Spell Warding": 5,
+          "Divine Fury": 5,
+          "Holy Nova": 1,
+          "Blessed Recovery": 3,
+          "Inspiration": 2,
+          "Improved Healing": 3,
+          "Binding Heal": 1,
+          "Spirit of Redemption": 1,
+          "Spiritual Guidance": 3,
+          "Spiritual Healing": 1,
+          "Prayer of Mending": 1
+        },
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Improved Power Word: Shield": 3,
+          "Martyrdom": 2,
+          "Silent Resolve": 2,
+          "Meditation": 3,
+          "Mental Agility": 2
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Holy Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Prayer of Mending raid healer (16/35/0)",
+      "summary": "Full Spiritual Guidance, Spiritual Healing and Improved Healing, Binding Heal, and Prayer of Mending, with Discipline Meditation so half your mana regeneration continues while you cast. Spell Warding is cut to two points to pay for the throughput.",
+      "stats": {
+        "priority": [
+          "Healing Power",
+          "Spirit",
+          "Intellect",
+          "MP5",
+          "Stamina"
+        ],
+        "note": "Spiritual Guidance adds up to 25% of your Spirit as healing. Blizzard cut the damage conversion to about a third of the healing conversion, so Spirit is a heal stat here, not a damage stat. Holy Precision exists so you skip hit gear; this build spends those points on Meditation instead."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Icy Veins picks Gnome for the priest spells, not for Eureka!. Confounding Flash confuses up to five enemies for 3 seconds and breaks on damage. Contingency Plan wards an ally and fires a shield plus a heal if they drop under 35%, and it stacks with Renew and Power Word: Shield. Sep 24 let Contingency Plan crit.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Icy Veins picks Undead over Troll for Holy because Cannibalize and Dark Sacrifice are mana tools. Dark Sacrifice’s mana gain scales with Spirit, which this build already stacks.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Prayer of Mending on the tank before the pull. It jumps on damage, so it pre-heals the next hit.",
+        "Renew on cooldown for chip damage. Sep 24 let Renew crit. Improved Renew is 15% more.",
+        "Greater Heal the spike. Downrank when the tank is stable — Icy Veins treats downranking as the mana skill.",
+        "Binding Heal if you ate a cleave. Inspiration’s crit heals also give the target 25% armor for 15 seconds.",
+        "Fade is twice as strong as old Fade (Blizzard). Use it when a heal crits and the mob looks at you."
+      ],
+      "sourceIds": [
+        "icy-holy-guide",
+        "blizz-priest-warrior",
+        "icy-race-guide",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Holy": {
+          "Holy Specialization": 5,
+          "Improved Renew": 3,
+          "Divine Fury": 5,
+          "Spell Warding": 2,
+          "Holy Nova": 1,
+          "Inspiration": 3,
+          "Searing Light": 2,
+          "Improved Healing": 3,
+          "Binding Heal": 1,
+          "Spirit of Redemption": 1,
+          "Spiritual Guidance": 5,
+          "Spiritual Healing": 3,
+          "Prayer of Mending": 1
+        },
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Improved Power Word: Shield": 3,
+          "Silent Resolve": 3,
+          "Meditation": 3,
+          "Mental Agility": 2
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Spirit Tap Holy, no respec",
+      "summary": "Icy Veins’ level-20 Holy path starts with Wand Specialization and Spirit Tap because solo Holy has no damage talents. Those five Shadow points stay in the level-60 order so you never respec. The Holy points still reach Prayer of Mending.",
+      "stats": {
+        "priority": [
+          "Spirit",
+          "Intellect",
+          "Stamina",
+          "Healing Power",
+          "MP5"
+        ],
+        "note": "Spirit Tap doubles Spirit for 15 seconds after a kill and keeps 50% mana regeneration while casting. Wand the last third of every mob so the five-second rule starts."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Same reason as the dungeon build: Contingency Plan and Confounding Flash are the priest spells Icy Veins cites, and Expansive Mind is 5% mana while you are drinking every other pull.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize restores 7% health and 7% mana every 2 seconds for 10 seconds off a humanoid or undead corpse. That is the solo mana button. Dark Sacrifice is the backup.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Shield, Smite, Mind Blast, Shadow Word: Pain, wand. That is Icy Veins’ solo sequence. Do not Smite a dying mob.",
+        "Spirit Tap is the pull timer. If it is up, pull. If it fell off, drink.",
+        "Renew yourself between packs only when the next pull is already running at you.",
+        "Group for elites. Icy Veins is right that Holy solo is the slow priest.",
+        "At 60 you are a healer with five wasted-looking Shadow points. They paid for every level from 10 to 30. Leave them."
+      ],
+      "sourceIds": [
+        "icy-holy-guide",
+        "blizz-priest-warrior",
+        "icy-race-guide"
+      ],
+      "order": [
+        "Wand Specialization",
+        "Wand Specialization",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Improved Renew",
+        "Improved Renew",
+        "Improved Renew",
+        "Holy Specialization",
+        "Holy Specialization",
+        "Holy Specialization",
+        "Holy Specialization",
+        "Holy Specialization",
+        "Divine Fury",
+        "Divine Fury",
+        "Divine Fury",
+        "Divine Fury",
+        "Divine Fury",
+        "Holy Nova",
+        "Inspiration",
+        "Improved Healing",
+        "Improved Healing",
+        "Improved Healing",
+        "Searing Light",
+        "Searing Light",
+        "Inspiration",
+        "Inspiration",
+        "Spell Warding",
+        "Spell Warding",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Silent Resolve",
+        "Silent Resolve",
+        "Silent Resolve",
+        "Meditation",
+        "Meditation",
+        "Meditation",
+        "Holy Precision",
+        "Mental Agility",
+        "Spirit of Redemption",
+        "Spiritual Guidance",
+        "Spiritual Guidance",
+        "Spiritual Guidance",
+        "Spiritual Guidance",
+        "Spiritual Guidance",
+        "Prayer of Mending"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-holy-guide",
+      "title": "World of Warcraft: Forever Holy Priest Guide",
+      "url": "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizz-priest-warrior",
+      "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

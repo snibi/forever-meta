@@ -1,0 +1,404 @@
+{
+  "class": "warlock",
+  "spec": "affliction",
+  "tagline": "Instant Corruption, Wrack and Imp sacrifice: the best leveler and top-rated DoT engine, L60 still unproven.",
+  "verdict": [
+    "Affliction is my pick for the Warlock who wants to level fast and still fight when the enemy will not stand still. Forty points in the tree give instant Corruption (Improved Corruption), Malediction, Pandemic, Shadow Mastery and the Wrack capstone, and eleven Demonology points buy Demonic Sacrifice so the Imp turns into a flat +15% Shadow damage buff with no pet to babysit. Every point is tied to the vendored talent text; nothing is simulated because level-60 gear and raids do not exist yet.",
+    "The public rankings disagree, so read them honestly: the wowforever.co aggregator shows 3 of 4 spec-level lists putting Affliction in the top band (Skycoach, MMOExp and Overgear are gold/boost sellers; the 16 Sep forum poster ranked it C before the beta opened). Icy Veins, whose author played a 12-hour Warlock demo to level 38, calls Affliction a top-tier leveler, notes that DoTs can now critically strike, and that Bane of Agony and Bane of Doom no longer compete with your raid Curse. Wowtbc.gg lands on the same 40/11/0 shape with Wrack as the filler.",
+    "Watch the moving parts. DoTs and drains are not sped up by Haste in the current beta (Icy Veins), Undead Touch of the Grave no longer triggers from periodic ticks after Sep 24, and Icy Veins' Sep 17-20 guides still quote Gnome Eureka! at 50% Mana reduction; the Sep-24 build made it a flat 10% cost cut plus 10% damage on the next 3 abilities for every class (Blizzard dev notes). Wrack, Soul Siphon and Pandemic have only been read off tooltips; nobody has played them at 40+ or against raid bosses."
+  ],
+  "strengths": [
+    "Corruption becomes instant at five Improved Corruption ranks (-2 sec cast, +10% damage), and DoTs can now critically strike, so damage keeps rolling while you move.",
+    "Bane of Agony and Bane of Doom are no longer Curses: you run your best DoT and Curse of the Elements or Recklessness on the same target (Icy Veins).",
+    "Wrack plus Improved Drains (+20%) and Soul Siphon (+12% per other Affliction effect, max +36%) gives a filler that scales with the DoTs you already maintain, and Wrack adds +10% to your other Shadow DoTs.",
+    "Very little downtime: Life Tap now scales with Spirit, Drain Life and Siphon Life heal you, and Improved Life Tap adds 20% Mana per tap."
+  ],
+  "weaknesses": [
+    "Needs ramp time: Icy Veins notes fast dungeon pulls can end before the DoTs pay off; elites and bosses are where it shines.",
+    "Haste is nearly dead gear for you in the current beta because DoTs and Drain channels ignore it.",
+    "The capstone comes late: Wrack sits in row 7 and needs 30 points above it, so in a respec-free order you learn it at level 40.",
+    "Sacrificing the Imp removes the pet entirely (no Blood Pact Stamina, no Voidwalker to hold threat) and any demon summon cancels the buff; threat control falls on Suppression."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Instant-DoT Harasser with Fel Concentration (40/11/0)",
+      "summary": "Instant Corruption, Bane of Agony and Siphon Life keep every enemy near your node bleeding while you stay mobile; Fel Concentration lets Drain Life and Wrack channel through hits and Curse of Exhaustion runs down flag carriers. Imp sacrifice gives +15% Shadow damage with nothing to micromanage.",
+      "stats": {
+        "priority": [
+          "Spell Power (Shadow)",
+          "Stamina",
+          "Hit",
+          "Spirit",
+          "Critical Strike",
+          "Intellect",
+          "Haste"
+        ],
+        "note": "Life Tap converts Health into Mana, so Stamina is both survival and sustain; Spirit scales Life Tap. Haste is last because DoTs and drains ignore it in the current beta (Icy Veins). Item stats are hidden until drops, so this order is a projection."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive instantly removes Stuns on a 3-minute cooldown, Perception exposes Rogues, and 5% Spirit feeds Life Tap; keep a sword equipped for the 2% crit.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken (2 min) breaks Fear, Charm and Sleep, the main tools used on casters, and Cannibalize refills Health and Mana between fights. Touch of the Grave will not proc from DoT ticks after Sep 24, so treat it as a bonus.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Before queueing, summon the Imp and cast Demonic Sacrifice for +15% Shadow damage (2-hour buff). Never summon another demon in a Battleground: any summon cancels it.",
+        "Role: node defender and harasser in Arathi Basin and Darkspear Islands. Open with instant Corruption, then Bane of Agony and Siphon Life on every enemy contesting your node; the DoTs keep ticking while you reposition.",
+        "Wrack (needs Siphon Life) is your channelled burst: 36 Shadow damage per second for 6 seconds and +10% to your other Shadow DoTs. Fel Concentration gives a 70% chance to avoid damage interruption on Drain Life, Drain Mana, Drain Soul and Wrack.",
+        "Take Amplify Curse into Curse of Exhaustion (-30% movement speed for 12 sec) to catch flag carriers in Warsong Gulch 10v10 or to stop an enemy runner at your base. Only one Curse per Warlock can be active on a target.",
+        "Fear is your peel but is risky near other enemies (Icy Veins). Use Life Tap only when you can afford the Health, and bring Healthstone, Soulstone and Ritual of Summoning for the group.",
+        "World PvP: dot, run, drain. Siphon Life and Drain Life let you win attrition fights that melee classes cannot close."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Firestone",
+          "note": "Reworked to grant 1% Critical Strike chance and Critical Strike damage and applied like a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 28). Exact values are not published for level 60.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "gearNote": "Cloth caster, so rank rewards are about the trinket and the elite cloth pieces. Rare PvP gear needs level 55 and Battleground marks (beta costs per Icy Veins: cloak 10 Arathi Basin marks + 3,000 Honor, chest 15 AB marks, legs 15 Warsong Gulch marks, helm 15 Alterac Valley marks). Buy in this order: R2 Insignia Trinket (3,500 Honor, 2,000 more for the Elite upgrade), R3 Faction Cloak, R4 Faction Necklace, R5 Combat Potions, then the R12 legs/shoulders and R13 chest/helmet elite pieces (R8 wrist/waist, R9 boots, R10 gloves fill in on the way; Emboldened Seals upgrade rare to Elite, datamined but not fully confirmed). R14 Weapon Arsenal (needs week 10+ of the season per the datamined weekly rank ceiling) lists a Grand Marshal's Stave, Mageblade, Longsword and Tome of Power; the stat budgets are hidden until items drop. R7 Battle Standard (15% max health aura, 10-minute cooldown) is for premade leaders, not for you.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-affliction-warlock",
+        "iv-warlock-overview",
+        "wowtbc-affliction-warlock",
+        "overgear-pvp-tier-list",
+        "iv-pvp-rank-system",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Affliction": {
+          "Improved Life Tap": 2,
+          "Suppression": 5,
+          "Improved Corruption": 5,
+          "Malediction": 5,
+          "Improved Drains": 3,
+          "Fel Concentration": 3,
+          "Amplify Curse": 1,
+          "Pandemic": 3,
+          "Improved Bane of Agony": 2,
+          "Curse of Exhaustion": 1,
+          "Siphon Life": 1,
+          "Soul Siphon": 3,
+          "Shadow Mastery": 5,
+          "Wrack": 1
+        },
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Fel Vitality": 3,
+          "Demonic Aegis": 2,
+          "Demonic Sacrifice": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "Wrack-Filler Affliction with Imp Sacrifice (40/11/0)",
+      "summary": "Keep Corruption, Bane of Agony and Siphon Life up, then channel Wrack as the filler: with Improved Drains and Soul Siphon it is boosted by every other Affliction effect on the target. Eleven Demonology points (Demonic Embrace, Fel Vitality, Demonic Aegis) reach Demonic Sacrifice for the Imp's +15% Shadow damage.",
+      "stats": {
+        "priority": [
+          "Spell Power (Shadow)",
+          "Hit",
+          "Critical Strike",
+          "Spirit",
+          "Intellect",
+          "Stamina",
+          "Haste"
+        ],
+        "note": "DoTs can crit and Pandemic doubles their crit bonus, so Crit outranks Haste, which does not tick DoTs or Drain channels in the current beta (Icy Veins). Suppression gives 5% Hit but Hit gear still matters. Life Tap scales with Spirit. L60 item stats are hidden; this is a projection."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "5% Spirit raises Life Tap output and the 2% sword crit helps your critical DoTs; Icy Veins calls Human far more competitive for Warlock than in Classic.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury now gives +10% Spell Power for 15 sec every 2 minutes, which Icy Veins calls the likely late-game best; Shatter Curse also strips Curses and Banes. Troll Berserking does not speed DoTs or channels.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Pre-pull: summon the Imp and Demonic Sacrifice it for +15% Shadow damage that lasts 2 hours; any new demon summon cancels it. You lose the Imp's Blood Pact Stamina buff for the group.",
+        "Curse of the Elements or Curse of Recklessness as your group needs it, since Bane of Agony and Bane of Doom no longer occupy the Curse slot (Icy Veins).",
+        "Priority: instant Corruption, Bane of Agony, Siphon Life, then Wrack as filler (wowtbc.gg rotation). Wrack requires Siphon Life, hits every second for 6 seconds and amplifies your other Shadow DoTs by 10%.",
+        "Cast Life Tap while moving; Spirit scaling makes it your Mana engine. Drain Life covers the Health you pay.",
+        "Suppression cuts your threat by 20%, which matters because the Imp is gone and nothing else holds aggro for you.",
+        "On trash, DoTs need time to ramp: Icy Veins flags fast dungeon pulls as Affliction's weak spot. Rain of Fire is your AoE option.",
+        "Level-60 points beyond 38 have not been playable yet (the demo stopped at 38, the beta at 30). Expect to re-test Soul Siphon, Pandemic and Wrack numbers after the first raid builds."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Firestone",
+          "note": "Reworked to grant 1% Critical Strike chance and Critical Strike damage and applied like a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 28). Exact values are not published for level 60.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-affliction-warlock",
+        "iv-warlock-overview",
+        "wowtbc-affliction-warlock",
+        "forevertalents-warlock-affliction",
+        "tavern-enchanting-formulas"
+      ],
+      "points": {
+        "Affliction": {
+          "Improved Life Tap": 2,
+          "Suppression": 5,
+          "Improved Corruption": 5,
+          "Malediction": 5,
+          "Improved Drains": 3,
+          "Improved Bane of Agony": 2,
+          "Pandemic": 3,
+          "Malevolence": 5,
+          "Siphon Life": 1,
+          "Soul Siphon": 3,
+          "Shadow Mastery": 5,
+          "Wrack": 1
+        },
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Fel Vitality": 3,
+          "Demonic Aegis": 2,
+          "Demonic Sacrifice": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Respec-Free Affliction Leveler, 10→60",
+      "summary": "Instant Corruption at 14, mana talents by 16, Suppression for Hit and threat by 21, then drains, Siphon Life, Shadow Mastery and Wrack at 40 before the Demonology Sacrifice package lands at 60. The first 11 points follow Icy Veins' level-20 build except that the last point goes to Suppression instead of Soul Harvesting, which is skipped so the order ends in the PvE build.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Spirit",
+          "Hit",
+          "Intellect",
+          "Stamina",
+          "Critical Strike"
+        ],
+        "note": "Spirit now drives Life Tap and regeneration (Icy Veins). Spell Power already appears on low-level gear. Haste is skipped because DoTs and drains ignore it."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Spirit +5% scales Life Tap, the 2% sword crit is free while questing, and Will to Survive saves you from the stuns that kill leveling casters.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize restores 7% Health and Mana every 2 seconds for 10 sec off a corpse, Icy Veins' pick for Affliction downtime; Will of the Forsaken breaks fears.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Send the demon in first (Voidwalker at 10, Succubus at 20 via class quests), then apply Corruption and Bane of Agony; spread DoTs to a second mob once you know your limits.",
+        "Improved Corruption x5 by level 14 makes Corruption instant, and Drain Life arrives at 14 (Icy Veins).",
+        "Do not Demonic Sacrifice until 60: the demon is your damage and tank while leveling (Succubus was the strongest damage demon in Icy Veins' demo, roughly 23-25% of total damage).",
+        "Let DoTs finish enemies instead of casting more; wand finishers were very strong at level 20, though Sep 24 stopped wands scaling with Spell Power, so re-check.",
+        "Use Life Tap only when you can afford the Health, drain to recover it, and keep a few Soul Shards by finishing kills with Drain Soul.",
+        "Take Tailoring and Enchanting, plus First Aid; cooking food now gives bonus XP (Icy Veins).",
+        "Respec to the PvE or PvP build at 60 if you want to swap the Demonology tail; it costs 1 silver in beta (temporary)."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-affliction-warlock",
+        "iv-warlock-overview",
+        "forevertalents-warlock-affliction",
+        "blizzard-beta-dev-notes-sep24"
+      ],
+      "order": [
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Life Tap",
+        "Improved Life Tap",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Improved Drains",
+        "Improved Drains",
+        "Improved Drains",
+        "Malediction",
+        "Malediction",
+        "Malediction",
+        "Malediction",
+        "Malediction",
+        "Siphon Life",
+        "Soul Siphon",
+        "Soul Siphon",
+        "Soul Siphon",
+        "Improved Bane of Agony",
+        "Shadow Mastery",
+        "Shadow Mastery",
+        "Shadow Mastery",
+        "Shadow Mastery",
+        "Shadow Mastery",
+        "Wrack",
+        "Improved Bane of Agony",
+        "Pandemic",
+        "Pandemic",
+        "Pandemic",
+        "Malevolence",
+        "Malevolence",
+        "Malevolence",
+        "Malevolence",
+        "Malevolence",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Fel Vitality",
+        "Fel Vitality",
+        "Fel Vitality",
+        "Demonic Aegis",
+        "Demonic Aegis",
+        "Demonic Sacrifice"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "iv-affliction-warlock",
+      "title": "World of Warcraft: Forever Affliction Warlock Guide",
+      "url": "https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-warlock-overview",
+      "title": "Warlock Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/warlock-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowtbc-affliction-warlock",
+      "title": "Affliction Warlock Rotation & Talent Build - WoW Forever",
+      "url": "https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock",
+      "publisher": "wowtbc.gg",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "forevertalents-warlock-affliction",
+      "title": "Warlock Affliction Build — WoW Forever",
+      "url": "https://forevertalents.org/builds/warlock-affliction/",
+      "publisher": "Forever Talents",
+      "date": "2026-09-26",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "overgear-pvp-tier-list",
+      "title": "WoW Forever Best Classes for PvP",
+      "url": "https://overgear.com/guides/wow-forever/best-classes-for-pvp",
+      "publisher": "Overgear",
+      "date": "2026-09-25",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

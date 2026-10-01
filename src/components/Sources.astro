@@ -1,0 +1,33 @@
+---
+interface Source {
+  id: string;
+  title: string;
+  url: string;
+  publisher: string;
+  date: string;
+  tier: 'official' | 'reputable' | 'fan' | 'seller';
+}
+interface Props {
+  sources: Source[];
+  heading?: string;
+}
+const { sources, heading = 'Sources' } = Astro.props;
+const TIER: Record<Source['tier'], string> = {
+  official: 'border-emerald-500/50 text-emerald-300 bg-emerald-500/10',
+  reputable: 'border-sky-500/50 text-sky-300 bg-sky-500/10',
+  fan: 'border-amber-500/50 text-amber-300 bg-amber-500/10',
+  seller: 'border-rose-500/50 text-rose-300 bg-rose-500/10',
+};
+---
+<section aria-label={heading}>
+  <h2 class="section-title">{heading}</h2>
+  <ol class="card divide-y divide-line list-decimal list-inside text-sm">
+    {sources.map((s) => (
+      <li class="px-4 py-2" id={`src-${s.id}`}>
+        <a class="text-gold underline" href={s.url} rel="noopener">{s.title}</a>
+        <span class="text-muted"> — {s.publisher}, {s.date}</span>
+        <span class={`ml-2 rounded-full border px-2 py-0.5 text-[11px] font-semibold ${TIER[s.tier]}`}>{s.tier}</span>
+      </li>
+    ))}
+  </ol>
+</section>

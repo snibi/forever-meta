@@ -1,0 +1,46 @@
+---
+import Icon from './Icon.astro';
+import { FIRST_TALENT_LEVEL, getClassTalents } from '../lib/talents';
+import type { ClassSlug } from '../lib/classes';
+
+interface Props {
+  classSlug: ClassSlug;
+  order: string[];
+}
+const { classSlug, order } = Astro.props;
+const ct = getClassTalents(classSlug);
+const byName = new Map(ct.trees.flatMap((t) => t.talents.map((x) => [x.name, x] as const)));
+
+const running: Record<string, number> = {};
+const rows = order.map((name, i) => {
+  running[name] = (running[name] ?? 0) + 1;
+  const t = byName.get(name);
+  return { level: FIRST_TALENT_LEVEL + i, name, icon: t?.icon ?? 'inv_misc_questionmark', rank: running[name], max: t?.max ?? 0 };
+});
+const groups: Array<{ label: string; rows: typeof rows }> = [];
+for (const r of rows) {
+  const start = Math.floor(r.level / 10) * 10;
+  const label = start === 60 ? 'Level 60' : `Levels ${start}–${start + 9}`;
+  let g = groups.find((x) => x.label === label);
+  if (!g) groups.push((g = { label, rows: [] }));
+  g.rows.push(r);
+}
+---
+<section aria-label="Leveling talent order" class="card overflow-hidden">
+  {groups.map((g) => (
+    <div>
+      <h4 class="sticky top-12 z-10 border-b border-line bg-raised px-4 py-1.5 font-display text-sm text-gold">{g.label}</h4>
+      <ol class="divide-y divide-line/60" data-leveling-rows>
+        {g.rows.map((r) => (
+          <li class="flex items-center gap-3 px-4 py-1.5 text-sm">
+            <span class="w-20 shrink-0 text-muted">Level {r.level}</span>
+            <span class="text-muted">·</span>
+            <Icon name={r.icon} size={24} alt="" />
+            <span class="font-medium">{r.name}</span>
+            <span class="ml-auto text-xs text-gold">({r.rank}/{r.max})</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  ))}
+</section>

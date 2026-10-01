@@ -1,0 +1,405 @@
+{
+  "class": "paladin",
+  "spec": "protection",
+  "tagline": "Seal of Fury finally gives Protection a taunt; Consecration AoE threat makes it the dungeon tank to beat.",
+  "verdict": [
+    "Protection Paladin has always had the best tank utility and no taunt. Forever fixes the second part: with Seal of Fury active, Judgement taunts the target for 4 sec, and since Judgement no longer consumes your Seal there is no twisting minigame to play. Swift Judgement finishes the remaining Judgement cooldown and makes the next one free, so a missed taunt is recoverable. Consecration is baseline at level 20 and hits the first four targets hard in damage and threat; Icy Veins calls it one of the best AoE threat tools in the game.",
+    "The build is the full Protection tree minus Guardian's Favor and Improved Hammer of Justice (43 points), because every one of those talents does something specific. Anticipation (+20 Defense), Toughness, Redoubt and Shield Specialization carry survival. Shield Specialization also returns 6% of max mana on a block, every 3 sec at most, which is how you pay for Consecration. Templar's Bulwark is an absorb for 100% of max health (8 sec, then 1 min of Forbearance), and Holy Shield, Reckoning (extra attacks from blocks and from crits taken) and Iron Creed (Holy Strike threat and 10% damage reduction) round out the tank kit. The last 8 points go into Retribution for Benediction, Holy Conduit and one Improved Judgement, which cut the cost of Holy Strike, Judgement and Consecration. Icy Veins names exactly this as the alternate path for Consecration uptime.",
+    "Outside rankings put Protection Paladin at or near the top of tanks: Skycoach and Overgear rate it S, and ExpCarry (a seller, so corroboration only) names it the best current tank. The Blizzard forum thread ranks it B. Everything is at level 20 to 30; nobody has tanked a level 60 dungeon, and Warrior Protection is the incumbent for raids. Icy Veins warns that Protection will struggle to kill bosses and other high-health single targets quickly.",
+    "The Sep-24 patch cut Righteous Fury's Holy threat bonus from 90% to 60%, so Holy threat is lower than it was before Sep 24. It also made Holy Strike's cooldown 10 sec and raised its weapon-damage coefficient at each rank, which lifts your single-target threat."
+  ],
+  "strengths": [
+    "Seal of Fury plus Judgement is a real 4 sec taunt, and Swift Judgement resets it when it misses.",
+    "Consecration is baseline and generates damage and threat on the first four targets it hits, which is why dungeon packs are easy to hold.",
+    "Templar's Bulwark (absorb equal to max health for 8 sec) and Holy Shield (+20% block, 110 Holy damage per block) give strong emergency defence.",
+    "The best buff package of any tank: Blessings of Kings, Might, Wisdom and Salvation, plus Protection, Freedom and Divine Intervention."
+  ],
+  "weaknesses": [
+    "Mana is the constraint: Consecration is expensive, so you manage it with Shield Specialization blocks and Benediction rather than spamming it.",
+    "Very weak mobility and no interrupt or slow (Blizzard, Icy Veins).",
+    "Single-target boss kill speed is low, and Righteous Fury threat was cut to 60% on Sep 24.",
+    "Unproven at level 60 and in raids; Warrior Protection remains the safer raid pick until real logs exist.",
+    "Dungeon XP was nerfed, which removes the old Protection Paladin dungeon-leveling edge."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Protection Paladin: flag carrier and node anchor",
+      "summary": "Tankiest battleground build: Templar's Bulwark, Holy Shield, Iron Creed and Improved Righteous Fury for mitigation, with Deflection, Benediction and Pursuit of Justice in Retribution for speed and parry.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Armor",
+          "Defense",
+          "Block",
+          "Spell Power",
+          "Intellect"
+        ],
+        "note": "Theory ranking: no PvP stat data exists for Forever, and item stats are hidden until drops. Spell Power matters because Consecration and Holy Shield damage scale with it."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform removes and grants immunity to Bleeds, Poisons and Diseases and cuts Physical damage taken by 10% for 8 sec. That is the best defensive racial a flag carrier can have.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Will of the Forsaken breaks Fear, Charm and Sleep, and Touch of the Grave heals you off damage dealt."
+        }
+      },
+      "playstyle": [
+        "Role: Warsong Gulch flag carrier or escort, and a hard-to-kill node holder in AB 15v15 and Darkspear Islands 15v15.",
+        "Pursuit of Justice (+15% movement speed, doesn't stack with other speed buffs) is the only movement-speed talent in the Paladin tree data, so the flag carrier takes it.",
+        "Templar's Bulwark gives an absorb equal to 100% of max health for 8 sec but applies Forbearance for 1 min: save it for the moment the carrier is focused, and let Sacred Duty bring it back sooner.",
+        "Improved Righteous Fury gives -6% damage taken while Righteous Fury is active, and Iron Creed adds -10% for 6 sec after Holy Strike: keep Righteous Fury on and Holy Strike on cooldown.",
+        "Guardian's Favor cuts Blessing of Protection's cooldown by 2 min and extends Blessing of Freedom by 6 sec, so you can rescue a teammate or yourself.",
+        "Shield Specialization returns 6% of max mana on block, so enemies hitting you refill the mana you spend on Judgement and Consecration."
+      ],
+      "enchants": [
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "The only chest formula on the BlizzCon demo vendor; the article says it gives a damage absorption proc. Numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Deflection",
+          "note": "Neck enchants are new in Forever. A Deflection formula was seen on the demo vendor; bonus not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram in Icy Veins' Protection gear table; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Exact effect is not published in the sources.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "gearNote": "Insignia Trinket (Rank 2) and Faction Cloak (Rank 3) are the cheap early wins; Faction Necklace at Rank 4. Battle Standard (Rank 7, +15% health to nearby allies, 10 min cooldown) fits a flag-defence stand. Rare PvP gear needs level 55 and needs Battleground Marks; Elite upgrades come through Emboldened Seals at Ranks 8 to 13. Rank 14 weapons include Aegis, Barricade and Battle Hammer, but that is a 10-week-plus grind (24,750 Rank Points).",
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "icy-protection-paladin",
+        "icy-race-guide",
+        "icy-pvp-rank-system"
+      ],
+      "points": {
+        "Protection": {
+          "Toughness": 5,
+          "Redoubt": 5,
+          "Guardian's Favor": 2,
+          "Anticipation": 5,
+          "Improved Righteous Fury": 3,
+          "Shield Specialization": 3,
+          "Sacred Duty": 2,
+          "Improved Hammer of Justice": 2,
+          "Templar's Bulwark": 1,
+          "Reckoning": 5,
+          "Iron Creed": 5,
+          "Holy Shield": 1
+        },
+        "Retribution": {
+          "Deflection": 5,
+          "Benediction": 5,
+          "Pursuit of Justice": 2
+        }
+      }
+    },
+    "pve": {
+      "title": "Protection Paladin: Seal of Fury dungeon and raid tank",
+      "summary": "Full Protection tree minus two low-impact talents, plus Benediction 5/5, Holy Conduit 2/2 and Improved Judgement 1/2 in Retribution for Consecration and Judgement uptime.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Hit",
+          "Stamina",
+          "Defense",
+          "Armor",
+          "Block",
+          "Intellect",
+          "Strength",
+          "Agility"
+        ],
+        "note": "Order is Icy Veins' Protection stat list. Spell Power leads because Consecration and Holy Shield scale with it. Hit and Crit are unified stats in Forever, and there is no TBC hit cap math. No level 60 BiS exists yet."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform is the defensive cooldown Icy Veins specifically recommends Protection Paladins pick Dwarf for: it removes Bleeds, Poisons and Diseases and reduces Physical damage taken by 10% for 8 sec.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Cannibalize restores Mana as well as Health, useful for a tank with expensive Consecration."
+        }
+      },
+      "playstyle": [
+        "Keep Righteous Fury and Seal of Fury up at all times. Seal of Fury gives small absorb shields and makes Judgement taunt for 4 sec.",
+        "Open with Consecration on the first four targets and hold the rest on Judgement. Only cast it as long as your mana allows.",
+        "Use Holy Strike on cooldown (10 sec): Iron Creed adds threat and -10% damage taken for 6 sec while Righteous Fury is on.",
+        "Hold Judgement for threat loss; Swift Judgement finishes its cooldown and makes the next Judgement free, once per minute.",
+        "Templar's Bulwark is your big absorb (100% of max health for 8 sec) but applies Forbearance for 1 min. Holy Shield (+20% block for 10 sec, 4 charges) layers on top.",
+        "Shield Specialization and Improved Seal of Fury both return mana, so keep blocking and let your Seal absorb damage.",
+        "Sacred Duty takes 60 sec off Divine Shield, Divine Protection and Templar's Bulwark."
+      ],
+      "enchants": [
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram in Icy Veins' Protection gear table; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Exact effect is not published in the sources.",
+          "evidence": "beta-tested"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "The only chest formula on the BlizzCon demo vendor; the article says it gives a damage absorption proc. Numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Deflection",
+          "note": "Neck enchants are new in Forever. A Deflection formula was seen on the demo vendor; bonus not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Formula seen on the demo vendor; exact bonus not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist (spell power alternative)",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Spell Power is your top stat for Consecration threat per Icy Veins; swap in if bracer Deflection turns out weak.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "medium",
+      "evidence": [
+        "official",
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "blizzard-beta-notes-sep24",
+        "icy-protection-paladin",
+        "icy-paladin-overview",
+        "wowforever-co-tier-list",
+        "expcarry-tier-list"
+      ],
+      "points": {
+        "Protection": {
+          "Toughness": 5,
+          "Redoubt": 5,
+          "Precision": 3,
+          "Anticipation": 5,
+          "Improved Seal of Fury": 1,
+          "Improved Righteous Fury": 3,
+          "Shield Specialization": 3,
+          "Sacred Duty": 2,
+          "Swift Judgement": 1,
+          "One-Handed Weapon Specialization": 3,
+          "Templar's Bulwark": 1,
+          "Reckoning": 5,
+          "Iron Creed": 5,
+          "Holy Shield": 1
+        },
+        "Retribution": {
+          "Benediction": 5,
+          "Holy Conduit": 2,
+          "Improved Judgement": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Protection Paladin: Redoubt-first leveling path",
+      "summary": "Follows Icy Veins' level-20 recommendation (Redoubt, Precision, Anticipation, Shield Specialization) with Toughness filling out level 30, then finishes on the PvE tank build with no respec.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Hit",
+          "Stamina",
+          "Defense",
+          "Armor",
+          "Block",
+          "Intellect",
+          "Strength",
+          "Agility"
+        ],
+        "note": "Same order as the PvE build. Spell Power also boosts Consecration while you pull groups of mobs."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform doubles as an extra defensive cooldown when you pull too much, per Icy Veins.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Cannibalize between pulls refills both Health and Mana, which cuts downtime."
+        }
+      },
+      "playstyle": [
+        "Consecration arrives at level 20 and is your leveling engine: pull groups of mobs and burn them down while holding them.",
+        "Keep Seal of Fury up even solo for the small absorb shields; use Judgement on cooldown for damage and to peel mobs off you.",
+        "Dungeon XP was nerfed (Icy Veins), so quest mostly and run only dungeons you hold quests for; dungeon quest XP was raised.",
+        "Be conservative with Consecration: it is expensive. Block-based mana from Shield Specialization (point 11 onward) is your sustain.",
+        "One-Handed Weapon Specialization (10% damage) lands at points 24 to 26 (levels 33 to 35), then Benediction and Holy Conduit cut Consecration costs from level 41.",
+        "Log out in a capital or inn to bank rested XP."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-protection-paladin",
+        "blizzard-deep-dive",
+        "method-itemization"
+      ],
+      "order": [
+        "Redoubt",
+        "Redoubt",
+        "Redoubt",
+        "Redoubt",
+        "Redoubt",
+        "Precision",
+        "Precision",
+        "Precision",
+        "Anticipation",
+        "Anticipation",
+        "Shield Specialization",
+        "Shield Specialization",
+        "Shield Specialization",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Improved Seal of Fury",
+        "Swift Judgement",
+        "One-Handed Weapon Specialization",
+        "One-Handed Weapon Specialization",
+        "One-Handed Weapon Specialization",
+        "Improved Righteous Fury",
+        "Improved Righteous Fury",
+        "Improved Righteous Fury",
+        "Sacred Duty",
+        "Sacred Duty",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Holy Conduit",
+        "Holy Conduit",
+        "Improved Judgement",
+        "Templar's Bulwark",
+        "Reckoning",
+        "Reckoning",
+        "Reckoning",
+        "Reckoning",
+        "Reckoning",
+        "Iron Creed",
+        "Iron Creed",
+        "Iron Creed",
+        "Iron Creed",
+        "Iron Creed",
+        "Holy Shield"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-deep-dive",
+      "title": "World of Warcraft: Forever Deep Dive Panel Recap",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-13",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-paladin-overview",
+      "title": "Paladin Class Guide – WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/paladin-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-protection-paladin",
+      "title": "World of Warcraft: Forever Protection Paladin Guide",
+      "url": "https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared (October 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "expcarry-tier-list",
+      "title": "WoW Forever Tier List: Best Classes for DPS, PvP & Leveling",
+      "url": "https://expcarry.com/wow-forever-class-tier-list",
+      "publisher": "ExpCarry",
+      "date": "2026-09-29",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

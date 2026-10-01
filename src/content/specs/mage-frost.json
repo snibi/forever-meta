@@ -1,0 +1,360 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "mage",
+  "spec": "frost",
+  "tagline": "Slows, freezes and Ice Barrier: the safe mage, not the top of the meter.",
+  "verdict": [
+    "Frost is the control mage. Icy Veins describes it as the spec that slows and freezes targets and keeps casting under pressure, and says outright that it will not top the damage meters. The client agrees: Improved Frostbolt cuts the cast by 0.5 seconds, Elemental Precision is 5% Frost and Fire hit, Ice Shards doubles Frost crit damage, and Ice Barrier is a shield that also stops pushback while it holds.",
+    "Public PvE lists put Frost in the third band. wowforever.co shows MMOExp, the Sep-16 forum list and Overgear all at B, under Arcane (S everywhere those lists rank it) and usually under Fire. That is the right read for raids. Frost is the battleground mage, not the raid mage.",
+    "Icy Veins’ Sep-17 Frost page still says Gnome Eureka! cuts the cost of the next three casts by 50%. The Sep-24 notes and the Sep-28 race guide both put Eureka! at 10% cost and 10% damage or healing. This page follows the later number. Escape Artist is still a real second root-break next to Blink.",
+    "Play Frost if you want the flag stopped and the caster alive. Play Arcane if the only score that matters is dungeon damage. Every 51-point split here is a projection from talent text; the first 11 leveling points follow Icy Veins’ level-20 Frost build."
+  ],
+  "strengths": [
+    "Best control in the class: Permafrost adds 10% slow and 33% chill duration, Frostbite freezes, Shatter is +50% crit on Frozen targets, and Fingers of Frost treats the next two spells as if the target were Frozen.",
+    "Ice Lance deals 300% damage to Frozen targets and is instant, so Frost is the mage spec that keeps doing damage while moving (Icy Veins).",
+    "Ice Barrier absorbs damage and stops cast pushback while the shield holds. Cold Snap resets the other Frost cooldowns, including Ice Block.",
+    "Winter’s Chill stacks to +10% crit for your own Frostbolt and Ice Lance, which is the raid reason to bring one Frost mage even if Arcane wins the meter."
+  ],
+  "weaknesses": [
+    "Icy Veins: Frost will not top the meters. Three published DPS lists put it at B, behind Arcane.",
+    "Most of the damage is still a cast. Ice Lance helps, it does not replace Frostbolt.",
+    "Needs a freeze to turn on Shatter and the 300% Ice Lance. Bosses that cannot be frozen lose that package.",
+    "Mana stops you more often than other classes while leveling (Icy Veins). The 51-point build has not been played at 60."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Deep Frost control (17/0/34)",
+      "summary": "Ice Barrier, Shatter, Fingers of Frost and a 4-second Improved Counterspell silence. Arcane stays shallow: hit, clearcasting, resistance reduction and the silence. No Presence of Mind — that row needs 20 Arcane points.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Spell Power",
+          "Crit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "Elemental Precision already adds 5% Frost and Fire hit. Do not import a Burning Crusade hit cap; Forever has not published one."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Escape Artist is a second root and snare break on top of Blink, and Expansive Mind is 5% more mana. Eureka! is only 10% cost and 10% damage on the next three abilities after Sep 24, so it is a bonus, not the reason.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken breaks Charm, Fear and Sleep, which is the battleground button. Touch of the Grave procs at 10% for casters and does not break crowd control after Sep 24.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Open with Frostbolt. Permafrost’s extra slow is the peel; do not Frost Nova the first target unless they close.",
+        "Frozen target: Ice Lance, then Shatter-boosted Frostbolt. Fingers of Frost lets you bank two “treated as Frozen” spells.",
+        "Improved Counterspell is a 4-second silence. Use it on the healer, not on a Frostbolt.",
+        "Ice Barrier before you plant. Ice Block when the stun lands and the Insignia is down. Cold Snap brings both back.",
+        "You are the flag stopper and the node peeler, not the flag carrier. Polymorph the off-target."
+      ],
+      "gearNote": "A Frost mage wants the R14 stave or mageblade and the R13 chest and helm for Intellect and Stamina. The R2 Insignia matters more than any armor piece, because Ice Block is already your panic button. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-frost-guide",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Frost": {
+          "Improved Frostbolt": 5,
+          "Elemental Precision": 5,
+          "Ice Shards": 5,
+          "Permafrost": 3,
+          "Ice Lance": 1,
+          "Piercing Ice": 3,
+          "Shatter": 3,
+          "Ice Block": 1,
+          "Cold Snap": 1,
+          "Fingers of Frost": 2,
+          "Winter's Chill": 4,
+          "Ice Barrier": 1
+        },
+        "Arcane": {
+          "Arcane Focus": 5,
+          "Improved Channeling": 1,
+          "Arcane Subtlety": 2,
+          "Arcane Concentration": 5,
+          "Magic Absorption": 2,
+          "Improved Counterspell": 2
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Winter’s Chill Frostbolt (16/0/35)",
+      "summary": "The dungeon Frost build: 0.5-second Frostbolts, 5% hit, doubled crit damage, 6% Frost damage, full Winter’s Chill, and Ice Barrier so a pull that turns on you does not cancel the cast. Arcane adds hit, clearcasting, pushback protection and 6% Arcane crit.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Spell Power",
+          "Crit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "Icy Veins’ level-20 Frost build takes Elemental Precision first because a miss deletes the cast. Same rule at 60 until a hit cap is published."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Expansive Mind is 5% more mana on a spec that drinks between pulls. Eureka! adds 10% damage to three casts. Escape Artist is the dungeon root-break when a runner connects.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is 10% Spell Power for 15 seconds, and Icy Veins calls Orc the Horde mage built for that button. Shatter Curse is the magic defensive.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Frostbolt is the cast. Do not cancel it to Ice Lance; Icy Veins is explicit that Ice Lance snapshots freeze after the current cast finishes.",
+        "Keep Winter’s Chill at 5 stacks. Ice Lance on the move still refreshes it.",
+        "Cone of Cold and Blizzard are the AoE. Improved Cone of Cold is not in this split; Piercing Ice and Winter’s Chill win the points.",
+        "Ice Barrier before a risky pull. Ice Block if you yank the pack, so the tank can get it back.",
+        "One Frost mage is enough for Winter’s Chill. A second mage should be Arcane."
+      ],
+      "sourceIds": [
+        "icy-frost-guide",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Frost": {
+          "Improved Frostbolt": 5,
+          "Elemental Precision": 5,
+          "Ice Shards": 5,
+          "Frost Channeling": 3,
+          "Piercing Ice": 3,
+          "Ice Lance": 1,
+          "Shatter": 3,
+          "Ice Block": 1,
+          "Cold Snap": 1,
+          "Fingers of Frost": 2,
+          "Winter's Chill": 5,
+          "Ice Barrier": 1
+        },
+        "Arcane": {
+          "Arcane Focus": 5,
+          "Improved Channeling": 3,
+          "Arcane Concentration": 5,
+          "Arcane Impact": 3
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Ice Lance by 20, Ice Barrier by 60",
+      "summary": "The first 11 points are Icy Veins’ level-20 Frost build: Elemental Precision, Frostbite, two Ice Shards, Ice Lance. After that the path finishes Ice Shards, takes Improved Frostbolt, and walks to Ice Barrier without a respec.",
+      "stats": {
+        "priority": [
+          "Intellect",
+          "Spell Power",
+          "Stamina",
+          "Spirit",
+          "Crit"
+        ],
+        "note": "A wand finishes mobs so the five-second rule can give mana back. Icy Veins names Greater Magic Wand at level 13 as the cheap early weapon."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Icy Veins’ Frost page picks Gnome for Escape Artist and the extra mana. Ignore that page’s 50% Eureka! figure; the Sep-28 race guide and the Sep-24 notes both say 10%.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is 10% Spell Power on a two-minute cooldown, shorter than Troll Berserking, which Icy Veins notes also burns mana faster.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "One mob at a time until Frost Nova and Ice Lance are both in the bar. Drink before you are empty.",
+        "Frostbolt until Frostbite freezes, then Ice Lance. Do not cancel the bolt.",
+        "Frost Nova and walk back if they touch you. Wand the last 20% so mana starts regenerating.",
+        "Blizzard only with a partner. Solo, the mana is not worth the pack.",
+        "No respec at 40. The same tree is the level-60 Frost build, minus a few Arcane points you add as they unlock."
+      ],
+      "sourceIds": [
+        "icy-frost-guide",
+        "icy-race-guide",
+        "foreverchanges-patch-notes"
+      ],
+      "order": [
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Frostbite",
+        "Frostbite",
+        "Frostbite",
+        "Ice Shards",
+        "Ice Shards",
+        "Ice Shards",
+        "Ice Shards",
+        "Ice Shards",
+        "Ice Lance",
+        "Improved Frostbolt",
+        "Improved Frostbolt",
+        "Improved Frostbolt",
+        "Improved Frostbolt",
+        "Improved Frostbolt",
+        "Piercing Ice",
+        "Piercing Ice",
+        "Piercing Ice",
+        "Permafrost",
+        "Permafrost",
+        "Permafrost",
+        "Shatter",
+        "Shatter",
+        "Shatter",
+        "Ice Block",
+        "Cold Snap",
+        "Fingers of Frost",
+        "Fingers of Frost",
+        "Winter's Chill",
+        "Winter's Chill",
+        "Winter's Chill",
+        "Ice Barrier",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Subtlety",
+        "Arcane Subtlety",
+        "Improved Channeling",
+        "Improved Channeling",
+        "Improved Channeling"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-frost-guide",
+      "title": "World of Warcraft: Forever Frost Mage Guide",
+      "url": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

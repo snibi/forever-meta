@@ -1,0 +1,254 @@
+{
+  "class": "mage",
+  "spec": "arcane",
+  "tagline": "Arcane Blast burst, Arcane Power windows and the best beta ratings of the three mage trees.",
+  "verdict": [
+    "Arcane is the mage to roll. Arcane Blast stacks four times for +10% damage on every other spell per stack, Missile Barrage turns a 40% Blast proc into a free, double-speed Arcane Missiles, and Arcane Mind adds +10% Intellect and +100% to the critical strike damage bonus of your Arcane spells. Icy Veins says Blast, Missiles and Missile Barrage make the tree 'a lot more likely to be played and perform well' than its Classic version.",
+    "The rankings agree with the talent text. wowforever.co's side-by-side of every published list puts Arcane in the top band in 4 of 4 spec-level sources. Be honest about what that means: those sources are two gold sellers, a Blizzard-forum player post and a boost service, not sims, and no sims exist yet. The Frost and Fire verdicts in these files are where the sources actually disagree.",
+    "The Sep-24 beta build was kind to you: Arcane Missiles now checks line of sight once when the channel starts instead of on every missile. It also hurt a little: wands no longer gain Spell Power, and Gnome Eureka! is now a flat 10% cost cut plus 10% damage on the next 3 abilities for every class.",
+    "Everything past level 30 is a projection. The beta is capped at 30 (build 1.60.1.70124), item stats are hidden until they drop, and the vendored talent file is client build 1.60.1.70009. The PvE and PvP allocations are theory built from talent text; the 10-20 leveling path follows Icy Veins' beta-tested level 20 build."
+  ],
+  "strengths": [
+    "Highest burst in the class: Presence of Mind into Arcane Power gives 15 s of +30% spell damage, and Arcane Blast stacks add +10% damage to everything else.",
+    "Arcane Meditation lets 50% of mana regeneration continue while casting and Arcane Concentration gives a 10% Clearcasting chance, so it can sustain the burn that Arcane Blast's cost curve demands.",
+    "Safe to cast in groups: Improved Channeling gives 100% pushback protection on Arcane Missiles and 70% on Arcane Blast, and Improved Counterspell adds a 4 s silence.",
+    "Icy Veins calls Arcane 'a solid leveling spec': big single-target burst for quests and Arcane Meditation cuts drink time between pulls.",
+    "Mage utility comes free with the spec: Polymorph, Blink, food and water, portals and Arcane Intellect."
+  ],
+  "weaknesses": [
+    "Mana is the damage budget. Each Arcane Blast stack raises its cost by 175%, and with no wand scaling after Sep 24, running dry hurts more than it used to.",
+    "Almost no damage while moving. Icy Veins lists Presence of Mind, Fire Blast and the wand as your only options; Blink is the real movement tool.",
+    "Aggro risk. Icy Veins warns that Arcane burst pulls threat in dungeons when the tank is not strong, and Arcane Subtlety only trims Arcane threat by 30%.",
+    "Fewer slows than Frost, so you rely on Frostbolt, Frost Nova and Cone of Cold for kiting.",
+    "Every level 60 conclusion is a projection until launch."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Arcane Burst with a Frost Nova Shatter splash (31/0/20)",
+      "summary": "Presence of Mind and Arcane Power for burst, Improved Counterspell for a 4 s silence, and a Frost splash (Frost Nova, Frostbite, Shatter, Ice Block) so a Frost Nova opener gives Arcane Blast +50% crit chance against a Frozen target.",
+      "stats": {
+        "priority": ["Spell Power", "Hit", "Intellect", "Crit", "Stamina", "Spirit"],
+        "note": "Hit and Crit are unified stats (Blizzard Deep Dive). Arcane Focus gives +5% Arcane hit and Elemental Precision +5% Frost/Fire hit, so gear hit is a top-up rather than the whole job. No hit cap is published, so do not apply TBC math. Stamina's rank is the PvP judgement call: you want to survive the first charge."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive strips stuns, Perception reveals stealthers in AB and WSG, and Sword Specialization adds 2% crit with a sword. Icy Veins calls Humans 'very likely the kings in PvP'.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Spell Power for 15 s) lines up exactly with the 15 s Arcane Power window, Hardiness cuts stun duration 20% and Shatter Curse is a free anti-warlock cooldown. Icy Veins calls Hardiness very good for PvP.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Role: burst and silence. Stay behind your flag carrier or node defenders and delete the healer; Improved Counterspell turns your interrupt into a 4 s silence.",
+        "Opener: Frost Nova the target (Improved Frost Nova takes 4 s off its cooldown), then Presence of Mind into Arcane Blast. Shatter gives +50% crit chance against Frozen targets and Arcane Mind raises your Arcane crit damage bonus by 100%.",
+        "Pop Arcane Power (+30% damage and +30% mana cost for 15 s) only when the kill window is real. Line Blood Fury up with it if you are Orc.",
+        "Mana: Arcane Meditation keeps 50% of regeneration running while you cast and Arcane Concentration adds Clearcasting procs, but four Arcane Blast stacks are expensive. Stop at two or three stacks in a long fight.",
+        "Defence: Frostbite can Freeze on Chill effects, and Icy Veins notes Frost Armor's chill on melee attackers can trigger it. Blink breaks stuns and roots and Ice Block covers the rest.",
+        "Missile Barrage is skipped on purpose. A channeled Arcane Missiles is an easy interrupt target; the points go to Counterspell and the Frost splash instead."
+      ],
+      "enchants": [
+        { "slot": "Wrist", "name": "Enchant Bracer - Greater Spellpower", "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.", "evidence": "datamined" },
+        { "slot": "Neck", "name": "Enchant Necklace - Spell Power", "note": "Neck enchants are new to Forever. Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Hands", "name": "Enchant Gloves - Arcane Power", "note": "One of three elemental glove formulas seen (Arcane, Holy, Natural). Exact effect not published.", "evidence": "datamined" },
+        { "slot": "Two-handed weapon", "name": "Enchant 2H Weapon - Mighty Spell Power", "note": "Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Weapon oil", "name": "Brilliant Wizard Oil", "note": "Icy Veins calls it the strongest wizard oil known so far. Sep-24 reverted the lower oils to Classic values (Minor 8, Lesser 16, Wizard 24 Spell Power) and left Brilliant unchanged.", "evidence": "beta-tested" }
+      ],
+      "gearNote": "Buy the R2 Insignia trinket first (3,500 Honor, 2,000 to upgrade it to the epic version), then the R3 Faction Cloak (10 Arathi Basin Marks + 3,000 Honor). The elite pieces that move the needle for a mage are Legs and Shoulders at R12 and Chest and Helm at R13, bought through Emboldened Seals; Rare PvP gear needs level 55. At R14 the Weapon Arsenal lists a Grand Marshal's Stave (20 Alterac Valley Marks, 15,000 Honor), a Mageblade and a Tome of Power (Darkspear Islands Marks). All costs are beta numbers and may change. Battle Standard (R7, +15% max health aura, 10 min cooldown) belongs to whoever leads the push, not to you.",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-arcane-guide", "icy-frost-guide", "icy-mage-overview", "icy-pvp-ranks", "blizz-deep-dive", "blizz-whats-next"],
+      "points": {
+        "Arcane": {
+          "Arcane Focus": 5,
+          "Arcane Concentration": 5,
+          "Magic Absorption": 2,
+          "Arcane Impact": 3,
+          "Arcane Blast": 1,
+          "Improved Counterspell": 2,
+          "Arcane Meditation": 3,
+          "Presence of Mind": 1,
+          "Arcane Mind": 5,
+          "Arcane Instability": 3,
+          "Arcane Power": 1
+        },
+        "Frost": {
+          "Elemental Precision": 5,
+          "Frostbite": 3,
+          "Improved Frost Nova": 2,
+          "Permafrost": 3,
+          "Ice Lance": 1,
+          "Piercing Ice": 2,
+          "Ice Block": 1,
+          "Shatter": 3
+        }
+      }
+    },
+    "pve": {
+      "title": "Arcane Blast and Missile Barrage (46/5/0)",
+      "summary": "Nearly the whole Arcane tree: Arcane Blast, Missile Barrage, Arcane Meditation, Arcane Mind and Arcane Power, plus Incineration and Wake of Fire from Fire for Arcane Blast crit and a faster Fire Blast for movement.",
+      "stats": {
+        "priority": ["Hit", "Spell Power", "Spirit", "Intellect", "Crit", "Stamina", "MP5"],
+        "note": "This is Icy Veins' Arcane ranking from the level 20 beta. Spirit works while casting through Mage Armor and Arcane Meditation. Crit becomes strong once Arcane Mind is 5/5. Icy Veins says Hit is best 'until the cap' but publishes no cap, so do not apply TBC math. Item stats stay hidden until items drop."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Arcane is a mana-limited burn spec. Expansive Mind adds 5% maximum Mana and Eureka! (10% cheaper, 10% more damage on the next 3 abilities, 2 min cooldown) fits an Arcane Power window. Icy Veins lists Gnome as a candidate for best PvE race.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Spell Power for 15 s, 2 min cooldown) matches the 15 s Arcane Power window and comes up more often than Berserking. Icy Veins calls Orc and Troll roughly tied.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Core loop (Icy Veins): cast Arcane Blast up to four times, then Arcane Missiles. When Missile Barrage procs (40% from Blast, 20% from Fireball, Frostbolt and Frostfire Bolt), fire Missiles immediately: they are free and tick every 0.5 s.",
+        "Cooldowns: Presence of Mind plus Arcane Blast, then Arcane Power (+30% damage, +30% mana cost, 15 s) on pull and on every burn phase. Use Evocation (8 min cooldown) and conjured mana gems to refill between burns.",
+        "Movement: Fire Blast (Wake of Fire cuts its cooldown by 2 s), a Presence of Mind Arcane Blast, then the wand. Blink usually beats walking.",
+        "Threat: Arcane Subtlety trims Arcane threat by 30%, but four-stack Blasts still out-pull a weak tank in a level 60 dungeon. Open with Blast stacks only after the tank has aggro; Ice Barrier is not in this build, so use Mana Shield.",
+        "The Missile Barrage numbers (40% Blast, 20% Frostbolt) and the Sep-24 line-of-sight change are from the Icy Veins guide and Blizzard's dev notes; the allocation itself is a theory projection.",
+        "Raids: Barrow Deeps (10), Hyjal Summit (20) and Onyxia (40) open on 2026-12-09. Re-verify this page after each beta build and at launch."
+      ],
+      "enchants": [
+        { "slot": "Wrist", "name": "Enchant Bracer - Greater Spellpower", "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.", "evidence": "datamined" },
+        { "slot": "Neck", "name": "Enchant Necklace - Spell Power", "note": "Neck enchants are new to Forever. Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Hands", "name": "Enchant Gloves - Arcane Power", "note": "The Arcane version of three elemental glove formulas seen. Exact effect not published.", "evidence": "datamined" },
+        { "slot": "Two-handed weapon", "name": "Enchant 2H Weapon - Mighty Spell Power", "note": "Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Weapon oil", "name": "Brilliant Wizard Oil", "note": "Strongest wizard oil known in the beta; Sep-24 reverted the lower oils to Classic values and left Brilliant unchanged.", "evidence": "beta-tested" }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-arcane-guide", "icy-mage-overview", "icy-race-guide", "blizz-dev-notes-sep24", "warcrafttavern-enchants", "wowforever-co-tier-list"],
+      "points": {
+        "Arcane": {
+          "Wand Specialization": 2,
+          "Arcane Focus": 5,
+          "Improved Channeling": 5,
+          "Arcane Subtlety": 2,
+          "Magic Absorption": 2,
+          "Arcane Concentration": 5,
+          "Arcane Resilience": 1,
+          "Arcane Geometry": 2,
+          "Arcane Impact": 3,
+          "Arcane Blast": 1,
+          "Arcane Shielding": 2,
+          "Improved Counterspell": 2,
+          "Arcane Meditation": 3,
+          "Missile Barrage": 1,
+          "Presence of Mind": 1,
+          "Arcane Mind": 5,
+          "Arcane Instability": 3,
+          "Arcane Power": 1
+        },
+        "Fire": {
+          "Wake of Fire": 2,
+          "Incineration": 3
+        }
+      }
+    },
+    "leveling": {
+      "title": "Wand, Concentration, Arcane Blast, then Meditation (10-60)",
+      "summary": "Icy Veins' level 20 Arcane path (Wand Specialization, Arcane Focus, Subtlety, Concentration, Arcane Blast), then Missile Barrage at 25, Arcane Meditation by 29 and Arcane Mind by 35, ending on the PvE allocation with no respec.",
+      "stats": {
+        "priority": ["Spell Power", "Spirit", "Intellect", "Hit", "Crit", "Stamina"],
+        "note": "Leveling gear is quest rewards and Tailoring: Icy Veins' level 20 list is built from BoP Tailoring pieces plus dungeon drops. Spirit matters more while questing because Mage Armor and Arcane Meditation let it regenerate mana in combat."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Icy Veins' leveling complaint for mages is constant stops for mana. Expansive Mind adds 5% maximum Mana and Escape Artist is a second escape after Blink.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize now restores Mana as well as Health (7% of each every 2 s for 10 s on a humanoid or undead corpse), which cuts the drink breaks between pulls.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Levels 10-20: get a wand as early as you can. Icy Veins says early wands out-damage spells and Wand Specialization (+25% at 2/2) is point one for that reason. Pull with Frostbolt so the mob arrives slowed.",
+        "Level 20: take Arcane Blast. Until then Frostbolt and Arcane Missiles carry you. Missile Barrage unlocks after 15 points, so you buy it at level 25.",
+        "Rotation: Arcane Blast up to four times then Arcane Missiles, or Missiles the moment Barrage procs. If a mob is about to die, skip the extra Blast: its cost rises 175% per stack.",
+        "Arcane Meditation (levels 27-29) is the leveling power spike: 50% of mana regeneration while casting. Finish a pull on the wand and eat or drink only when you must.",
+        "Mage Armor for mana, Frost Armor when you will be hit. Frost Nova then back up when something reaches you; Arcane Explosion and Flamestrike for packs, starting with one or two mobs.",
+        "Professions (Icy Veins): Engineering first, Tailoring second. Tailoring now makes BoP Rare gear from level 10."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-arcane-guide", "icy-mage-overview", "blizz-dev-notes-sep24", "blizz-deep-dive"],
+      "order": [
+        "Wand Specialization",
+        "Wand Specialization",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Arcane Subtlety",
+        "Arcane Subtlety",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Blast",
+        "Arcane Concentration",
+        "Arcane Concentration",
+        "Arcane Impact",
+        "Arcane Impact",
+        "Missile Barrage",
+        "Arcane Impact",
+        "Arcane Meditation",
+        "Arcane Meditation",
+        "Arcane Meditation",
+        "Presence of Mind",
+        "Arcane Mind",
+        "Arcane Mind",
+        "Arcane Mind",
+        "Arcane Mind",
+        "Arcane Mind",
+        "Arcane Instability",
+        "Arcane Instability",
+        "Arcane Instability",
+        "Improved Counterspell",
+        "Improved Counterspell",
+        "Arcane Power",
+        "Arcane Focus",
+        "Arcane Focus",
+        "Incineration",
+        "Incineration",
+        "Incineration",
+        "Wake of Fire",
+        "Wake of Fire",
+        "Improved Channeling",
+        "Improved Channeling",
+        "Improved Channeling",
+        "Improved Channeling",
+        "Improved Channeling",
+        "Arcane Geometry",
+        "Arcane Geometry",
+        "Magic Absorption",
+        "Magic Absorption",
+        "Arcane Shielding",
+        "Arcane Shielding",
+        "Arcane Resilience"
+      ]
+    }
+  },
+  "sources": [
+    { "id": "icy-arcane-guide", "title": "World of Warcraft: Forever Arcane Mage Guide", "url": "https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-24", "tier": "reputable" },
+    { "id": "icy-frost-guide", "title": "World of Warcraft: Forever Frost Mage Guide", "url": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "icy-mage-overview", "title": "Mage Class Guide (WoW Forever)", "url": "https://www.icy-veins.com/wow-forever/mage-class-overview", "publisher": "Icy Veins", "date": "2026-09-27", "tier": "reputable" },
+    { "id": "icy-race-guide", "title": "WoW Forever Racial Guide", "url": "https://www.icy-veins.com/wow-forever/race-guide", "publisher": "Icy Veins", "date": "2026-09-28", "tier": "reputable" },
+    { "id": "icy-pvp-ranks", "title": "WoW Forever - PvP Rank System Explained", "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system", "publisher": "Icy Veins", "date": "2026-09-19", "tier": "reputable" },
+    { "id": "blizz-dev-notes-sep24", "title": "WoW Forever Beta Development Notes - Updated September 24", "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696", "publisher": "Blizzard Entertainment", "date": "2026-09-24", "tier": "official" },
+    { "id": "blizz-deep-dive", "title": "World of Warcraft: Forever Deep Dive Panel Recap", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313", "publisher": "Blizzard Entertainment", "date": "2026-09-13", "tier": "official" },
+    { "id": "blizz-whats-next", "title": "World of Warcraft: Forever What's Next Panel Recap", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303862", "publisher": "Blizzard Entertainment", "date": "2026-09-12", "tier": "official" },
+    { "id": "warcrafttavern-enchants", "title": "New Enchanting Formulas for World of Warcraft Forever", "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever", "publisher": "Warcraft Tavern", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

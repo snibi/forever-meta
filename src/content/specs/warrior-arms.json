@@ -1,0 +1,385 @@
+{
+  "class": "warrior",
+  "spec": "arms",
+  "tagline": "Two-hander built on Rend, Overpower, Slam and Mortal Strike: mid-pack in PvE, the Warrior’s best PvP kit.",
+  "verdict": [
+    "Arms is the two-handed Warrior, and the tree has a clear spine: Improved Rend feeds Bloodthrill (Overpower off Rend), Weaponmaster folds every weapon specialization into one talent, and Mortal Strike sits at the end behind Sweeping Strikes. Blizzard’s Sep-30 Priest & Warrior deep dive also lists Spearing Strike (a 16-point dismount) and a redesigned Improved Slam that no longer delays your swing, so the spec has more toys than it did in 1.12.",
+    "Where it ranks is unsettled. No Blizzard or major-guide tier list exists for level 60. The public rankings that wowforever.co indexes put Arms in the third band (MMOExp, Overgear) and in the bottom band on one forum thread, below Fury on the two gold-service lists, and Icy Veins rates Arms leveling as strong potential with a difficult early game. Read Arms as mid-tier PvE and the Warrior’s best PvP spec until raids open on Dec 9.",
+    "The real unknown is Rage. Blizzard fully normalized Rage from damage dealt (it now follows weapon speed, with crits to give 75% more) and says there are still Rage bugs in the beta. The PvE and leveling builds lean on Unbridled Wrath, which grants 2 Rage per proc with a two-hander, and on Anger Management for a steady drip. Slam’s cooldown went from 15 s to 18 s in the Sep-24 build, and Improved Slam now claws back 1.5/3 s of it; Icy Veins’ page still says Improved Slam leaves the cooldown alone, so I follow the client talent text and Blizzard’s notes.",
+    "The call: go Arms if you want Mortal Strike’s 50% healing cut in battlegrounds and a two-hander that can swap weapon types without a respec. Pick Fury instead if your only goal is raid damage and you can stand the Rage starvation."
+  ],
+  "strengths": [
+    "Mortal Strike cuts healing on the target by 50% for 10 s, which is the strongest anti-healer tool the Warrior has in battlegrounds.",
+    "Weaponmaster merges the old weapon specializations: axes/polearms add up to 5% crit, maces/staves ignore up to 15% armor, swords add up to a 5% chance of an extra attack, so you run whichever two-hander is best.",
+    "Spearing Strike dismounts mounted targets and hits Giants and Dragonkin for 80% extra weapon damage; it is a utility the other two specs lack.",
+    "Bloodthrill (20% at max rank, main-hand only since Sep 24) and Improved Overpower make Overpower a regular button instead of a dodge-reaction."
+  ],
+  "weaknesses": [
+    "Rage-hungry and Rage-fragile: Rage from damage dealt is now normalized, and Blizzard is still chasing Rage bugs in the beta.",
+    "Every public list that ranks both Warrior DPS specs puts Arms below Fury (B vs A on MMOExp and Overgear, F vs C on the forum thread).",
+    "Needs 35+ points in one tree to pay off, so there is little room for hybrid utility; the Slam nerf to 18 s also hit this spec first.",
+    "No escape or movement tool once combat starts (Icy Veins), and solo leveling is slow when gear falls behind or you pull two mobs."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Arms: Mortal Strike flag hunter (36 Arms / 15 Fury)",
+      "summary": "Full Arms path to Mortal Strike with Spearing Strike, Improved Hamstring and Weaponmaster, topped with Cruelty, Iron Will and Unbridled Wrath from Fury. Built to run down flag carriers and cut healing on priority targets in WSG, AB, Darkspear Islands and world PvP.",
+      "stats": {
+        "priority": [
+          "Weapon Damage",
+          "Strength",
+          "Crit",
+          "Hit",
+          "Stamina",
+          "Agility"
+        ],
+        "note": "Level-60 PvP itemization is hidden until items drop, so this order is projected from the talent text: Mortal Strike scales with weapon damage, Impale and Cruelty reward Crit, and Icy Veins’ level-20 melee list runs Weapon Damage, Hit, Crit, Strength, Agility, Stamina. Hit and Crit are unified stats in Forever."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes every Stun on a 3 min cooldown, the Warrior’s only stun break, and Sword Specialization adds 2% crit with a sword or two-handed sword.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury adds 10% Attack Power for 15 s every 2 min to line up with Mortal Strike bursts, and Hardiness (−20% stun duration) stacks with Iron Will.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Hunt mounted and fleeing flag carriers: Spearing Strike (15 Rage, 20 s cooldown) dismounts them, Charge closes, and Improved Hamstring gives each Hamstring a 15% chance to immobilize for 5 s.",
+        "Put Mortal Strike on the enemy healer’s target or the flag carrier’s healer: the 50% healing reduction lasts 10 s.",
+        "Keep Rend on anything you want to Overpower: Bloodthrill gives main-hand hits a 20% chance to enable Overpower, and Improved Overpower adds 50% crit to it.",
+        "Iron Will (−15% stun duration) plus Hardiness or Will to Survive is what keeps you alive through a stun chain; Weaponmaster lets you pick up whatever two-hander drops.",
+        "Sweeping Strikes (next 5 melee attacks hit a second nearby enemy) is your burst opener when two players are stacked on a flag room or node.",
+        "Unproven against real BG teams: this is a projection from talent text, not beta-tested at level 60."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Formula seen on a BlizzCon-demo Enchanting vendor; exact Strength amount and skill requirement not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Classic-style WoW; exact amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "The only new cloak formula Warcraft Tavern listed; exact amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Insignia Trinket at Rank 2 first, then the Rank 3 Faction Cloak (10 Arathi Basin Marks + 3,000 Honor). The Rank 7 Battle Standard (15% max health aura, 10 min cooldown) belongs in every WSG or AV push. Elite pieces unlock from Rank 8 (Wrist, Waist) through Rank 13 (Chest, Helmet); Rare PvP gear has no rank requirement but needs level 55. Rank 14 opens the Weapon Arsenal: the two-handers (Demolisher, Glaive, Battle Hammer, Stave, Sunderer, Claymore) cost 20 Alterac Valley Marks + 15,000 Honor each, so match the type to your Weaponmaster bonus and racial.",
+      "confidence": "low",
+      "evidence": [
+        "theory",
+        "datamined"
+      ],
+      "sourceIds": [
+        "blizzard-priest-warrior-deep-dive",
+        "icy-veins-arms-warrior",
+        "icy-veins-pvp-rank-system",
+        "blizzard-beta-dev-notes-sep-24",
+        "icy-veins-warrior-overview"
+      ],
+      "points": {
+        "Arms": {
+          "Deflection": 5,
+          "Improved Rend": 3,
+          "Improved Charge": 2,
+          "Improved Overpower": 2,
+          "Deep Wounds": 3,
+          "Spearing Strike": 1,
+          "Two-Handed Weapon Specialization": 3,
+          "Impale": 2,
+          "Sweeping Strikes": 1,
+          "Weaponmaster": 5,
+          "Bloodthrill": 5,
+          "Improved Hamstring": 3,
+          "Mortal Strike": 1
+        },
+        "Fury": {
+          "Cruelty": 5,
+          "Iron Will": 5,
+          "Unbridled Wrath": 5
+        }
+      }
+    },
+    "pve": {
+      "title": "Arms: Rend / Overpower / Slam two-hander (37 Arms / 14 Fury)",
+      "summary": "Arms 37 / Fury 14: every Arms talent on the Rend → Bloodthrill → Weaponmaster → Mortal Strike line plus Cruelty and Unbridled Wrath from Fury for crit and Rage, with Improved Tactical Mastery and Anger Management to patch the Rage economy. Aimed at level-60 dungeons and raid prep.",
+      "stats": {
+        "priority": [
+          "Weapon Damage",
+          "Hit",
+          "Strength",
+          "Crit",
+          "Agility",
+          "Expertise",
+          "Stamina"
+        ],
+        "note": "Projection only: no level-60 item stats are visible. Icy Veins ranks Weapon Damage, Hit, Crit, Strength, Agility, Stamina for level 20, Method says Expertise (fewer dodges and parries) replaces weapon skill gear, and Blizzard says items now carry less weapon skill. Hit and Crit are unified."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune’s Light gives +10% crit for 15 s every 3 min and Quickness adds 2% movement speed; Icy Veins calls Night Elf arguably the best Warrior race.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury adds 10% Attack Power for 15 s on a 2 min cooldown and Axe Specialization adds 1% crit with an axe; Icy Veins expects Orc to stay the go-to Horde Warrior.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Open from Battle Stance: Charge, Rend (Improved Rend +35% bleed, now scales with Attack Power), then Mortal Strike and Overpower whenever Bloodthrill or a dodge lights it up.",
+        "Slam is your filler: Improved Slam cuts cast time and global cooldown by 0.5 s, stops Slam from delaying your swing, and trims its 18 s cooldown by 3 s at 2 points.",
+        "Weaponmaster picks the weapon for you: axes/polearms +5% crit, maces/staves ignore 15% armor, swords 5% chance of an extra attack. Equip whichever raw two-hander is best and let the racial (Axe Specialization, Sword Specialization) stack on top.",
+        "Rage plan: Unbridled Wrath gives 2 extra Rage on a two-hander, Anger Management adds 1 Rage per 3 s in combat, and Improved Tactical Mastery plus the baseline Tactical Mastery lets you keep up to 25 Rage through a stance swap.",
+        "Use Sweeping Strikes and Cleave on packs, and save Spearing Strike for Giants and Dragonkin where it deals an extra 80% weapon damage.",
+        "Blizzard is still fixing Rage generation bugs in the beta: re-check this build after the fix and again once level-60 gear exists."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Formula seen on a BlizzCon-demo Enchanting vendor; exact Strength amount and skill requirement not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Classic-style WoW; exact amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "The only new cloak formula Warcraft Tavern listed; exact amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Raid and dungeon gear will not be visible until Dec 9. Until then Icy Veins’ level-20 list pairs a slow two-hander with Strength, Hit and Crit pieces.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-priest-warrior-deep-dive",
+        "icy-veins-arms-warrior",
+        "icy-veins-warrior-overview",
+        "blizzard-beta-dev-notes-sep-24",
+        "warcraft-tavern-enchanting-formulas",
+        "method-itemization",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Arms": {
+          "Improved Heroic Strike": 3,
+          "Improved Rend": 3,
+          "Improved Tactical Mastery": 5,
+          "Improved Overpower": 2,
+          "Anger Management": 1,
+          "Deep Wounds": 3,
+          "Spearing Strike": 1,
+          "Two-Handed Weapon Specialization": 3,
+          "Impale": 2,
+          "Bloodthrill": 5,
+          "Sweeping Strikes": 1,
+          "Weaponmaster": 5,
+          "Improved Slam": 2,
+          "Mortal Strike": 1
+        },
+        "Fury": {
+          "Cruelty": 5,
+          "Unbridled Wrath": 5,
+          "Boundless Rage": 3,
+          "Piercing Howl": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Arms: Cruelty and Unbridled Wrath opener, Weaponmaster by the 30s (ends as the PvE build)",
+      "summary": "Ten points of Fury first for crit and Rage, then a straight run up the Arms tree with no respec: Rend and Overpower, Deep Wounds, Two-Handed Weapon Specialization, Weaponmaster and Bloodthrill, Improved Slam and Mortal Strike, finishing on the PvE spread.",
+      "stats": {
+        "priority": [
+          "Weapon Damage",
+          "Hit",
+          "Crit",
+          "Strength",
+          "Agility",
+          "Stamina"
+        ],
+        "note": "Taken from Icy Veins’ Arms and Fury leveling lists: a better weapon beats everything, and a miss gives no damage and no Rage."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune’s Light is a +10% crit cooldown, Quickness adds run speed, and Wisp Spirit speeds corpse runs; Icy Veins picks Night Elf for Alliance Warrior leveling.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Attack Power) is a free pull cooldown and Hardiness trims stuns; Icy Veins picks Orc for Horde Warrior leveling.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Levels 10–14 go into Cruelty (+5% crit), levels 15–19 into Unbridled Wrath (2 extra Rage on a two-hander); level 20 takes Piercing Howl, exactly Icy Veins’ level-20 build, because it slows packs by 50% for 6 s.",
+        "Levels 21–23 take Improved Rend, then Improved Heroic Strike and Improved Overpower; Deep Wounds lands at level 31 (a bleed worth 60% of your weapon’s average damage on every crit).",
+        "Two-Handed Weapon Specialization is level 36, Impale at 39, and Spearing Strike at 41 for dismounting mounted enemies in the open world.",
+        "Weaponmaster arrives at level 42 (maxed at 46), Sweeping Strikes at 47, Bloodthrill from 48 and Mortal Strike at level 51; Improved Slam waits until 54.",
+        "Skip Heroic Strike while questing: it turns a white hit into a yellow hit that makes no Rage, so spend Rage on Rend, Overpower and Mortal Strike (Icy Veins).",
+        "Victory Rush unlocks at level 20 and heals 10% of max health after a kill (30 s cooldown); bandages and food cover the rest, and Icy Veins recommends First Aid for exactly this.",
+        "Keep a one-hander and shield in your bags to Shield Bash an important cast or to tank a dungeon (Icy Veins)."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-veins-arms-warrior",
+        "icy-veins-fury-warrior",
+        "blizzard-priest-warrior-deep-dive",
+        "icy-veins-warrior-overview"
+      ],
+      "order": [
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Piercing Howl",
+        "Improved Rend",
+        "Improved Rend",
+        "Improved Rend",
+        "Improved Heroic Strike",
+        "Improved Heroic Strike",
+        "Improved Heroic Strike",
+        "Improved Overpower",
+        "Improved Overpower",
+        "Improved Tactical Mastery",
+        "Improved Tactical Mastery",
+        "Deep Wounds",
+        "Deep Wounds",
+        "Deep Wounds",
+        "Improved Tactical Mastery",
+        "Improved Tactical Mastery",
+        "Two-Handed Weapon Specialization",
+        "Two-Handed Weapon Specialization",
+        "Two-Handed Weapon Specialization",
+        "Impale",
+        "Impale",
+        "Spearing Strike",
+        "Weaponmaster",
+        "Weaponmaster",
+        "Weaponmaster",
+        "Weaponmaster",
+        "Weaponmaster",
+        "Sweeping Strikes",
+        "Bloodthrill",
+        "Bloodthrill",
+        "Bloodthrill",
+        "Mortal Strike",
+        "Bloodthrill",
+        "Bloodthrill",
+        "Improved Slam",
+        "Improved Slam",
+        "Improved Tactical Mastery",
+        "Anger Management",
+        "Boundless Rage",
+        "Boundless Rage",
+        "Boundless Rage"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-priest-warrior-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-warrior-overview",
+      "title": "Warrior Class Guide — WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/warrior-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-arms-warrior",
+      "title": "World of Warcraft: Forever Arms Warrior Guide",
+      "url": "https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-fury-warrior",
+      "title": "World of Warcraft: Forever Fury Warrior Guide",
+      "url": "https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List — Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

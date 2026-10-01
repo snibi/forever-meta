@@ -1,0 +1,134 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Icon from '../../../../components/Icon.astro';
+import Badge from '../../../../components/Badge.astro';
+import ModeTabs from '../../../../components/ModeTabs.astro';
+import TalentTrees from '../../../../components/TalentTrees.astro';
+import LevelingOrder from '../../../../components/LevelingOrder.astro';
+import StatPriority from '../../../../components/StatPriority.astro';
+import RacePicks from '../../../../components/RacePicks.astro';
+import Enchants from '../../../../components/Enchants.astro';
+import BisTable from '../../../../components/BisTable.astro';
+import PvpRankPath from '../../../../components/PvpRankPath.astro';
+import Sources from '../../../../components/Sources.astro';
+import { ROLE_LABEL, specById } from '../../../../lib/classes';
+import { treeIcon } from '../../../../lib/talents';
+import { MODES, getSpecs, resolvePoints, type ModeKey } from '../../../../lib/content';
+
+export async function getStaticPaths() {
+  const specs = await getSpecs();
+  return specs.flatMap((s) =>
+    [undefined, 'pve', 'leveling'].map((mode) => ({
+      params: { class: s.data.class, spec: s.data.spec, mode },
+      props: { entry: s.data },
+    })),
+  );
+}
+
+const { entry } = Astro.props;
+const modeParam = Astro.params.mode as string | undefined;
+const active: ModeKey = (modeParam as ModeKey | undefined) ?? 'pvp';
+const mode = MODES.find((m) => m.key === active)!;
+const def = specById(`${entry.class}-${entry.spec}`)!;
+const build = entry.builds[active];
+const points = resolvePoints(entry, active);
+---
+<Base
+  title={`${def.name} — ${mode.label} build`}
+  description={`${entry.tagline} Best ${mode.label} talents, races and stat priority for ${def.name} in WoW Forever.`}
+  classColor={def.color}
+>
+  <nav class="mb-4 text-sm text-muted" aria-label="Breadcrumb">
+    <a class="underline" href="/#classes">Classes</a> /
+    <a class="underline" href={`/classes/${def.class}/`}>{def.className}</a> /
+  </nav>
+  <header class="mb-6 flex flex-wrap items-center gap-4">
+    <Icon name={treeIcon(def.class, def.tree)} size={64} alt="" style={`view-transition-name:spec-${def.id}`} />
+    <div class="min-w-0 flex-1">
+      <h1 class="text-3xl font-bold sm:text-4xl" style={`color:${def.color}`}>{def.name}</h1>
+      <p class="text-sm text-muted">{ROLE_LABEL[def.role]}{def.altRoles?.length ? ` · can ${def.altRoles.join('/')}` : ''}</p>
+      <p class="mt-1">{entry.tagline}</p>
+    </div>
+    <p class="text-xs text-muted sm:text-right">Verified {entry.verifiedOn}<br />Build {entry.gameBuild}</p>
+  </header>
+
+  <ModeTabs classSlug={def.class} specSlug={entry.spec} active={active} />
+
+  <div class="mt-6 space-y-10">
+    <section>
+      <div class="mb-2 flex flex-wrap items-center gap-3">
+        <h2 class="text-2xl">{build.title}</h2>
+        <Badge confidence={build.confidence} evidence={build.evidence} />
+      </div>
+      <p class="prose-block max-w-3xl text-muted">{build.summary}</p>
+    </section>
+
+    <TalentTrees classSlug={def.class} points={points} />
+
+    {active === 'leveling' && (
+      <section>
+        <h2 class="section-title">Leveling talent order</h2>
+        <p class="mb-3 text-sm text-muted">One point per level from 10 to 60, planned to need no respec.</p>
+        <LevelingOrder classSlug={def.class} order={entry.builds.leveling.order} />
+      </section>
+    )}
+
+    <section>
+      <h2 class="section-title">Stat priority</h2>
+      <StatPriority priority={build.stats.priority} note={build.stats.note} />
+    </section>
+
+    <section>
+      <h2 class="section-title">Best race</h2>
+      <RacePicks alliance={build.races.alliance} horde={build.races.horde} />
+    </section>
+
+    {build.enchants.length > 0 && (
+      <section>
+        <h2 class="section-title">Enchants</h2>
+        <Enchants enchants={build.enchants} />
+      </section>
+    )}
+
+    {build.bis && build.bis.length > 0 && (
+      <section>
+        <h2 class="section-title">Best in slot</h2>
+        <BisTable bis={build.bis} />
+      </section>
+    )}
+
+    {active === 'pvp' && (
+      <section class="space-y-3">
+        <h2 class="section-title">Rank-gear path</h2>
+        <PvpRankPath />
+        {build.gearNote && <p class="prose-block max-w-3xl">{build.gearNote}</p>}
+      </section>
+    )}
+
+    <section>
+      <h2 class="section-title">How to play it</h2>
+      <ul class="list-disc space-y-1.5 pl-5 max-w-3xl">
+        {build.playstyle.map((p) => <li>{p}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Verdict</h2>
+      <div class="prose-block max-w-3xl">
+        {entry.verdict.map((p) => <p>{p}</p>)}
+      </div>
+      <div class="mt-5 grid gap-4 md:grid-cols-2">
+        <div class="card p-4" style="border-top:2px solid var(--color-tier-c)">
+          <h3 class="mb-2 text-base">Strengths</h3>
+          <ul class="list-disc space-y-1 pl-5 text-sm">{entry.strengths.map((s) => <li>{s}</li>)}</ul>
+        </div>
+        <div class="card p-4" style="border-top:2px solid var(--color-tier-s)">
+          <h3 class="mb-2 text-base">Weaknesses</h3>
+          <ul class="list-disc space-y-1 pl-5 text-sm">{entry.weaknesses.map((s) => <li>{s}</li>)}</ul>
+        </div>
+      </div>
+    </section>
+
+    <Sources sources={entry.sources} />
+  </div>
+</Base>

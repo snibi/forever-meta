@@ -1,0 +1,368 @@
+{
+  "class": "hunter",
+  "spec": "beast-mastery",
+  "tagline": "Pet-first Hunter: the best leveler in the game, with two Hawks, Bestial Wrath and the class's only stun.",
+  "verdict": [
+    "Beast Mastery is the Hunter you can recommend to anyone. Icy Veins calls Hunter the strongest leveling class in the game and Beast Mastery the spec that doubles down on it: the pet holds threat and deals most of the damage, you shoot from range, Feign Death resets any bad pull. Pets now inherit stats from your gear (Blizzard, Icy Veins), so the build keeps scaling at level 60 instead of capping out with the pet's base stats.",
+    "The Forever talents are what make the 31-point core worth it. Summon Hawk (16 points, level 25) drops two 18-second Hawks on your target and shares Arcane Shot's cooldown; Deadly Aspects gives Auto Shot a 10% chance at 5/5 to grant +30% ranged attack speed for 12 sec under Aspect of the Hawk (Icy Veins: one of the best 5-point talents in the class); Bestial Wrath adds +50% pet damage for 18 sec; Ferocity into Frenzy keeps the pet at +30% attack speed after every crit. We spend the other 20 points in Marksmanship (Lethal Attacks, Careful Aim, Improved Stings, Efficiency, Rapid Killing) rather than Survival, because personal crit and Intellect-to-Attack-Power scale with the same gear the pet inherits.",
+    "Public rankings back the pick as a safe one: the wowforever.co roundup shows Beast Mastery in the second band (A) on every spec-level list that ranks it (MMOExp, the player-posted Blizzard forum list, Overgear), where Marksmanship and Survival both show wide spreads. Icy Veins puts it as \"still a strong choice\" in dungeons with Explosive Trap and Multi-Shot for AoE.",
+    "Everything at level 60 is a projection: the beta cap is 30, so the 31-point Bestial Wrath and every Marksmanship point past the 21st are untested. Treat the PvP and PvE builds as theory and the first ~16 leveling points as the supported part."
+  ],
+  "strengths": [
+    "Strongest leveling Hunter (Icy Veins): the pet tanks and kills, Auto Shot plus pet is competitive even at zero mana, and Feign Death is the best reset button in the game.",
+    "Owns the Hunter's only stun: Intimidation stuns for 3 sec on the pet's next attack and gives that attack +100% crit. Blizzard states Hunters otherwise cannot Stun or Interrupt.",
+    "Scales with gear: pets inherit Hunter stats, and Unleashed Fury, Ferocity, Frenzy, Focused Fire and Bestial Wrath all multiply pet output.",
+    "Low execution floor: baseline Aimed Shot at 20, Auto Shot that abilities no longer clip, and traps usable in combat (30 sec cooldown).",
+    "Two on-demand Hawks (Summon Hawk) are a new ranged-independent damage source that pet control can't get wrong."
+  ],
+  "weaknesses": [
+    "Pet management is a liability in dungeons: Icy Veins warns an irresponsible Hunter pulling extra targets quickly becomes a liability, and pets are the first thing AoE kills in PvP.",
+    "The dead zone: ranged abilities are unusable within 8 yards of the enemy (Blizzard).",
+    "Summon Hawk shares a cooldown with Arcane Shot and only two Hawks can be active, so it is a rotational button, not a free cooldown.",
+    "The Sep-24 build cut the wolf's Furious Howl Attack Power bonus by 40%, so pick pets for their family ability (Bear Swipe, Scorpid Poison), not for the group buff.",
+    "Icy Veins notes Hunters have historically out-scaled in late raiding and benefit least from world buffs; that risk is not testable before the Dec 9 raids."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "31/0/20 Beast Mastery/Survival: stun, root and pet burst",
+      "summary": "Full Beast Mastery burst package (Deadly Aspects, Summon Hawk, Intimidation, Frenzy, Bestial Wrath) with 20 points in Survival for Improved Tracking, 5/5 Entrapment, Survivalist, Surefooted, Deterrence and Counterattack. You are a battleground skirmisher: pet and Hawks pressure one target, Intimidation is the stun, traps in combat are the roots.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Critical Strike",
+          "Hit",
+          "Stamina",
+          "Attack Power",
+          "Intellect"
+        ],
+        "note": "Icy Veins only publishes a leveling order (weapon damage, Hit, Agility, Crit, Intellect, Spirit, Stamina). We promote Stamina for battlegrounds because Hunters get focused (inference); the pet inherits your Agility, Crit and Stamina, so one set of gear feeds both. Hit and Crit are unified, so Hit also makes traps and Feign Death more reliable (Blizzard)."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes all stuns and, per Icy Veins, does not share a cooldown with the PvP trinket, so you carry two stun breaks; Sword Specialization adds +2% crit with a sword equipped.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp (2 sec AoE stun, 2 min cooldown) is a second stun for a class that has one; Endurance adds 5% Health and 1% hit, and Plainsrunning speeds flag and node runs.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Open: Hunter's Mark, send the pet, Summon Hawk (shared cooldown with Arcane Shot), then Aimed Shot or Multi-Shot. Line up Bestial Wrath with the pet's Intimidation so the stun lands as a 100%-crit hit.",
+        "Intimidation is your only stun. Spend it on a healer mid-cast or an enemy flag carrier, not on whoever is closest.",
+        "Traps work in combat on a 30-second cooldown (Frost and Fire traps are separate). A Freezing or Frost Trap with Entrapment 5/5 roots everything it catches for 5 sec: use it to break melee contact, then re-open at range.",
+        "Keep Aspect of the Hawk up for Deadly Aspects. Use Aspect of the Cheetah (+6% from Pathfinding) only to run, and drop it before contact because any damage dazes you and removes it (Icy Veins).",
+        "WSG/AB/Darkspear: send the pet first with Bestial Swiftness (+30% pet speed) to threaten flags and nodes; on defense, Deterrence (+25% Dodge and Parry for 10 sec) and Counterattack (5-sec immobilize after a parry) cover melee that gets through the dead zone.",
+        "Track Humanoids for Improved Tracking (+5% all damage to the tracked type). Players are Humanoids in Classic rules; switch to Undead against Forsaken-heavy groups (inference)."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rare PvP gear needs level 55 and is not rank-locked; Elite upgrades use Emboldened Seals (strongly supported by datamining, not confirmed). R2 Insignia Trinket (3,500 Honor) is the first purchase because you have no stun break outside Human. R3 Cloak (10 Arathi Basin Marks, 3,000 Honor) and R4 Necklace (10 Darkspear Islands Marks, 5,000 Honor) both take the new Agility enchants. R7 Battle Standard (15% max health aura, 10 min cooldown) matters for AV and AB group fights. R8-R13 Elite pieces fill the rest; R14 unlocks the Grand Marshal/High Warlord weapons, and the ranged-named entries (Hand Cannon, Bullseye, Repeater: 10 Darkspear Islands Marks, 8,000 Honor) are the ones to buy (weapon type inferred from the names). The R14 rank ceiling is week 10 of the season.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-bm-hunter",
+        "icy-veins-race-guide",
+        "icy-veins-pvp-rank-system",
+        "blizzard-beta-notes-sep24"
+      ],
+      "points": {
+        "Beast Mastery": {
+          "Deadly Aspects": 5,
+          "Focused Fire": 2,
+          "Improved Aspect of the Monkey": 3,
+          "Pathfinding": 2,
+          "Bestial Swiftness": 1,
+          "Unleashed Fury": 5,
+          "Ferocity": 5,
+          "Summon Hawk": 1,
+          "Intimidation": 1,
+          "Frenzy": 5,
+          "Bestial Wrath": 1
+        },
+        "Survival": {
+          "Improved Tracking": 5,
+          "Entrapment": 5,
+          "Survivalist": 5,
+          "Surefooted": 3,
+          "Deterrence": 1,
+          "Counterattack": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "31/20/0 Beast Mastery/Marksmanship: Hawks, Wrath and Careful Aim",
+      "summary": "The standard Hunter raid spec rebuilt on Forever talents: the full Beast Mastery damage line to Bestial Wrath, then 20 points of Marksmanship for Lethal Attacks, Careful Aim (Attack Power from Intellect), Improved Stings, Efficiency and Rapid Killing. Roughly the same 51 points you will level on, with Endurance Training instead of Pathfinding.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Intellect",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Order follows Icy Veins' level-20 list (weapon damage, Hit, Agility, Crit, Intellect); weapon damage comes from the ranged weapon, so prefer slow high-damage hits. Intellect ranks high because Careful Aim gives 1 Attack Power per point at 5/5. Level 60 itemization is hidden, so weights are provisional."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Icy Veins gives Humans a slight PvE edge: Sword Specialization is a permanent +2% crit (it also applies to ranged), Perception and Will to Survive are free utility.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is +10% Attack Power for 15 sec on a 2 min cooldown, which fits Bestial Wrath and Rapid Fire windows better than Troll's 10% haste for 10-12 sec every 3 min.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Keep Aspect of the Hawk up in combat: Deadly Aspects (10% per Auto Shot at 5/5 for +30% ranged attack speed, 12 sec) is the biggest passive DPS source in the build.",
+        "Hunter's Mark and Serpent Sting on the target, pet on auto-cast, Bestial Wrath (+50% pet damage, 18 sec) and Rapid Fire together; Rapid Killing cuts Rapid Fire's cooldown by up to 2 min and rewards finishing targets under Serpent Sting.",
+        "Keep both Hawks up (Summon Hawk shares Arcane Shot's cooldown); fill with Aimed Shot or Multi-Shot, which now share one cooldown, and Arcane Shot when mana is high (Icy Veins).",
+        "Explosive Trap is on-demand AoE in combat on a 30 sec cooldown; Freezing and Frost Trap are your crowd control for pulls.",
+        "Mind pet aggro: Disengage (threat reduction doubled) if you pull threat, and never let the pet chain-pull in 5-man dungeons (Icy Veins).",
+        "Pick the pet by family ability: Bear Swipe (3-target cleave), Scorpid Poison (stacking DoT), not the wolf's Furious Howl, which lost 40% Attack Power on Sep 24."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Only worth it because Careful Aim converts Intellect into Attack Power. Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-bm-hunter",
+        "icy-veins-race-guide",
+        "warcraft-tavern-enchanting-formulas",
+        "wowforever-tier-list",
+        "blizzard-beta-notes-sep24"
+      ],
+      "points": {
+        "Beast Mastery": {
+          "Deadly Aspects": 5,
+          "Endurance Training": 5,
+          "Focused Fire": 2,
+          "Bestial Swiftness": 1,
+          "Unleashed Fury": 5,
+          "Ferocity": 5,
+          "Summon Hawk": 1,
+          "Intimidation": 1,
+          "Frenzy": 5,
+          "Bestial Wrath": 1
+        },
+        "Marksmanship": {
+          "Lethal Attacks": 5,
+          "Careful Aim": 5,
+          "Improved Stings": 3,
+          "Efficiency": 5,
+          "Rapid Killing": 2
+        }
+      }
+    },
+    "leveling": {
+      "title": "Beast Mastery first: Deadly Aspects, Hawk at 25, Wrath at 40",
+      "summary": "Deadly Aspects, Focused Fire and Pathfinding come first (Icy Veins' level-20 picks), Summon Hawk lands at level 25 on the 16th point, Bestial Wrath at 40, and the last 20 levels go into Marksmanship. The final 51 points are the PvE build with Pathfinding swapped for Endurance Training, so you only need a respec if you want those two points back.",
+      "stats": {
+        "priority": [
+          "Ranged weapon damage",
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Intellect",
+          "Spirit",
+          "Stamina"
+        ],
+        "note": "Straight from Icy Veins' Beast Mastery level-20 list: slower, harder-hitting weapons are better because abilities such as Aimed Shot use weapon damage. Hit and Crit rarely appear on low-level gear. Spirit is a leveling-only stat; Stamina also raises your pet's Health."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Big Game Hunter is +5% damage to Beasts, the creature type you will kill most while questing, and Stoneform clears bleeds and poisons mid-pull.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Icy Veins names Tauren the strongest Hunter race in either faction for leveling: Plainsrunning stacks to +30% speed so you can range every target without taking melee hits, no mounts before level 40.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Before pulling: Hunter's Mark, send the pet first so it holds threat, then Serpent Sting, Aimed Shot on cooldown (Multi-Shot for groups), Auto Shot the rest (Icy Veins).",
+        "Stay in Aspect of the Hawk in combat (Deadly Aspects), Aspect of the Cheetah while travelling, never when something can hit you.",
+        "If you pull threat from the pet, wait a beat or Disengage; swapping to melee only slows kills (Icy Veins).",
+        "Take a Bear early: its unique Swipe hits 3 targets on a 5-sec cooldown, one of the few ways a pet holds several mobs.",
+        "Use Mend Pet and Serpent Sting as your mana sinks; with no mana, Auto Shot plus pet is still competitive. Feign Death to reset bad pulls.",
+        "Skinning and Leatherworking pair naturally: send the pet at the next mob while you skin (Icy Veins).",
+        "Level 25 gives you Summon Hawk, 40 gives Bestial Wrath and Dual Spec; from 41 every point is Marksmanship for personal damage."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-veins-bm-hunter",
+        "icy-veins-race-guide",
+        "blizzard-hunter-druid-deep-dive"
+      ],
+      "order": [
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Focused Fire",
+        "Focused Fire",
+        "Pathfinding",
+        "Pathfinding",
+        "Endurance Training",
+        "Bestial Swiftness",
+        "Unleashed Fury",
+        "Unleashed Fury",
+        "Unleashed Fury",
+        "Unleashed Fury",
+        "Summon Hawk",
+        "Unleashed Fury",
+        "Ferocity",
+        "Ferocity",
+        "Ferocity",
+        "Ferocity",
+        "Ferocity",
+        "Intimidation",
+        "Endurance Training",
+        "Endurance Training",
+        "Frenzy",
+        "Frenzy",
+        "Frenzy",
+        "Frenzy",
+        "Frenzy",
+        "Bestial Wrath",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Efficiency",
+        "Improved Stings",
+        "Improved Stings",
+        "Improved Stings",
+        "Rapid Killing",
+        "Rapid Killing"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-hunter-druid-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives — Hunter and Druid",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301515",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-hunter-overview",
+      "title": "Hunter Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/hunter-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-bm-hunter",
+      "title": "World of Warcraft: Forever Beast Mastery Hunter Guide",
+      "url": "https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-18",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-tier-list",
+      "title": "WoW Forever Tier List — Every Public Ranking (Oct 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

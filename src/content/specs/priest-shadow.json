@@ -1,0 +1,371 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "priest",
+  "spec": "shadow",
+  "tagline": "Shadowform, Mind Flay and a personal Shadow Weaving: the cloth DoT caster.",
+  "verdict": [
+    "Shadow is the damage priest, and Shadowform is the spec. The client talent makes you deal 10% more Shadow damage, cuts Shadow mana costs by 50%, doubles Shadow crit damage, and reduces physical damage taken by 15%. You cannot cast healing spells in that form. Blizzard’s Sep-30 note says non-healing spells still work, and that the damage bonus was cut relative to the old design.",
+    "Shadow Weaving no longer buffs the raid. Blizzard moved it to a personal 2% stack, five stacks, 15 seconds. Devouring Plague is now baseline at 20 for every race, and Devouring Contagion cuts its mana cost by 50% and jumps it when the target dies. That is the dungeon cleave, not a second healer.",
+    "wowforever.co shows Shadow at A on MMOExp and Overgear and at B on the Sep-16 forum list. Nobody has a level-60 parse. Blizzard’s own line is that Shadow deals strong damage over time and brings less utility than a Warlock. Believe that until raids open.",
+    "Improved Mind Flay is a trap in battlegrounds. Rank 2 adds 20% damage and 10 yards, and the tooltip replaces the slow with 20%. Base Mind Flay is a 50% slow. The PvP build leaves Improved Mind Flay empty and keeps the slow."
+  ],
+  "strengths": [
+    "Shadowform is 10% damage, 50% cheaper Shadow spells, double crit damage and 15% less physical damage taken.",
+    "Blackout is a 10% chance for any Shadow damage spell to stun for 3 seconds. Silence is a 5-second silence that no longer requires Improved Psychic Scream.",
+    "Vampiric Embrace heals the party for 20% of your Shadow damage for 30 seconds, and it can trigger Spirit Tap when the afflicted target dies.",
+    "Fear Ward, Devouring Plague and Divine Spirit are baseline. You are not locked out of them for being the wrong race."
+  ],
+  "weaknesses": [
+    "No healing spells inside Shadowform. You are a DPS who happens to wear cloth.",
+    "Shadow Weaving is personal now. You do not buff the other caster’s Shadow damage.",
+    "Blizzard: less utility than a Warlock in the same role. You bring a silence and a stun proc, not a summon or a healthstone.",
+    "The 50% Mind Flay slow and the damage talent cannot both be maxed. Pick one. This page picks the slow for PvP and the damage for PvE."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Shadowform with the 50% snare (13/0/38)",
+      "summary": "Shadowform, Blackout, Silence and an untalented Mind Flay so the slow stays at 50%. Discipline adds the shield, Martyrdom and Meditation. Improved Mind Flay is skipped on purpose.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Spell Power",
+          "Hit",
+          "Crit",
+          "Intellect"
+        ],
+        "note": "Shadow Focus is 5% Shadow hit. Cloth dies to a Warrior connect, so Stamina outranks the last point of crit until you have a shield macro and a teammate."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes stuns. A Shadow Priest who eats a stun dies in cloth before Blackout can answer. Perception is the second button when a Rogue opens on the node.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken breaks fear, which is how other Priests and Warlocks end your cast. Touch of the Grave is a 10% health drain for casters and no longer breaks crowd control.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Shadowform before the fight. You will not be healing. Say that in party chat.",
+        "Shadow Word: Pain, then Mind Flay. The 50% slow is the peel. Do not spend the talent that cuts it to 20%.",
+        "Silence the healer. Blackout stuns are random; do not plan a go around them, but do follow one that lands.",
+        "Vampiric Embrace on the kill target so your team gets 20% of your Shadow damage as healing.",
+        "Psychic Scream when two melee connect. Improved Psychic Scream is in this build because Blackout is already maxed, which is its requirement."
+      ],
+      "gearNote": "Spell Power on the R14 stave and the R13 chest. The R2 Insignia is the difference between eating a stun and getting a Shadow Word: Pain back out. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "icy-pvp-ranks",
+        "icy-race-guide",
+        "warcrafttavern-enchants",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Shadow": {
+          "Shadow Focus": 5,
+          "Blackout": 5,
+          "Shadow Affinity": 3,
+          "Improved Shadow Word: Pain": 2,
+          "Mind Flay": 1,
+          "Improved Psychic Scream": 2,
+          "Improved Mind Blast": 5,
+          "Vampiric Embrace": 1,
+          "Shadow Weaving": 3,
+          "Silence": 1,
+          "Devouring Contagion": 2,
+          "Darkness": 5,
+          "Early Demise": 2,
+          "Shadowform": 1
+        },
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Improved Power Word: Shield": 3,
+          "Martyrdom": 2,
+          "Meditation": 3
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Personal Shadow Weaving (15/0/36)",
+      "summary": "Shadowform, full Mind Flay damage, Shadow Weaving, Devouring Contagion and Spirit Tap for the mana between packs. Silence and Blackout are out. This is a dungeon DPS build, not a healer who dips Shadow.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Hit",
+          "Crit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "Shadow Focus covers 5% hit. Shadow Weaving is 10% personal Shadow damage at five stacks. Do not gear as if you still buff the raid — Blizzard removed that."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune’s Light is 10% crit for 15 seconds on every spell and attack, which is the largest damage racial a Shadow Priest can press. Starshards is the Night Elf priest spell and now has a 30-second cooldown with substantially more damage.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "troll",
+          "why": "Berserking is 10% spell haste for 10 seconds. Shadow Word: Pain and Devouring Plague do not care about haste, but Mind Flay and Mind Blast do. Beast Slaying is 5% against beasts while you level and in several dungeons.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Shadowform, Shadow Word: Pain, Devouring Plague, Mind Blast on cooldown, Mind Flay to fill. Early Demise is the execute: +30% Shadow Word: Death crit at or below 20% health.",
+        "Keep Shadow Weaving at five stacks. It is only yours.",
+        "Devouring Contagion jumps Devouring Plague when the target dies. Pull the next mob into that range on trash.",
+        "Vampiric Embrace on the boss so the party gets 20% of your Shadow damage as healing. You still cannot cast a heal.",
+        "Fade when a Mind Blast crits. You have no threat talent in this split beyond what Fade itself does."
+      ],
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Shadow": {
+          "Shadow Focus": 5,
+          "Spirit Tap": 5,
+          "Improved Shadow Word: Pain": 2,
+          "Shadow Reach": 2,
+          "Shadow Affinity": 1,
+          "Mind Flay": 1,
+          "Improved Mind Flay": 2,
+          "Improved Mind Blast": 5,
+          "Vampiric Embrace": 1,
+          "Shadow Weaving": 3,
+          "Devouring Contagion": 2,
+          "Darkness": 5,
+          "Early Demise": 1,
+          "Shadowform": 1
+        },
+        "Discipline": {
+          "Twin Disciplines": 5,
+          "Power in Light": 1,
+          "Silent Resolve": 3,
+          "Holy Precision": 2,
+          "Meditation": 3,
+          "Mental Agility": 1
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Spirit Tap into Shadowform",
+      "summary": "Wand Specialization and Spirit Tap first, because that is the mana loop every priest guide describes for solo play. Shadow Focus and Mind Flay come next. Shadowform is the payoff, taken as soon as the row gate and Vampiric Embrace allow, with no respec.",
+      "stats": {
+        "priority": [
+          "Spirit",
+          "Intellect",
+          "Spell Power",
+          "Stamina",
+          "Crit"
+        ],
+        "note": "Spirit Tap is a 100% Spirit bonus for 15 seconds after a kill, with 50% mana regeneration while casting. A wand is the filler, not a joke."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Expansive Mind is 5% mana on the longest drink class in the beta. Contingency Plan is an emergency shield if a pull goes wrong before Shadowform’s 15% physical reduction exists.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize is health and mana off a corpse, which is the pull-to-pull button Spirit Tap does not cover when the corpse is a humanoid. Touch of the Grave adds a small drain on damaging spells.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Shield, Mind Blast, Shadow Word: Pain, wand. Drink only when Spirit Tap missed.",
+        "One mob until Mind Flay exists. Then the slow lets you wand while walking backward.",
+        "Do not take Improved Mind Flay until the slow has already saved you a few times and you understand you are trading it for damage.",
+        "Shadowform the moment the order reaches it. Healing is over. Carry water and bandages.",
+        "Devouring Plague is baseline at 20. Use it. The talent only makes it cheaper and sticky."
+      ],
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "icy-holy-guide",
+        "icy-race-guide"
+      ],
+      "order": [
+        "Wand Specialization",
+        "Wand Specialization",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Spirit Tap",
+        "Shadow Focus",
+        "Shadow Focus",
+        "Shadow Focus",
+        "Shadow Focus",
+        "Shadow Focus",
+        "Improved Shadow Word: Pain",
+        "Improved Shadow Word: Pain",
+        "Mind Flay",
+        "Improved Mind Flay",
+        "Improved Mind Flay",
+        "Improved Mind Blast",
+        "Improved Mind Blast",
+        "Improved Mind Blast",
+        "Improved Mind Blast",
+        "Improved Mind Blast",
+        "Shadow Weaving",
+        "Shadow Weaving",
+        "Shadow Weaving",
+        "Vampiric Embrace",
+        "Devouring Contagion",
+        "Devouring Contagion",
+        "Darkness",
+        "Darkness",
+        "Darkness",
+        "Darkness",
+        "Darkness",
+        "Shadow Reach",
+        "Shadow Reach",
+        "Early Demise",
+        "Early Demise",
+        "Shadowform",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Twin Disciplines",
+        "Silent Resolve",
+        "Silent Resolve",
+        "Silent Resolve",
+        "Meditation",
+        "Meditation",
+        "Meditation",
+        "Mental Agility",
+        "Mental Agility"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizz-priest-warrior",
+      "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "icy-holy-guide",
+      "title": "World of Warcraft: Forever Holy Priest Guide",
+      "url": "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    }
+  ]
+}

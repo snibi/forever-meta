@@ -1,0 +1,52 @@
+---
+import Icon from './Icon.astro';
+import { raceBySlug } from '../lib/races';
+
+interface Pick {
+  race: string;
+  why: string;
+  runnerUp?: string;
+}
+interface Props {
+  alliance: Pick;
+  horde: Pick;
+}
+const { alliance, horde } = Astro.props;
+const sides = [
+  { key: 'alliance', label: 'Alliance', color: 'var(--color-alliance)', pick: alliance },
+  { key: 'horde', label: 'Horde', color: 'var(--color-horde)', pick: horde },
+] as const;
+---
+<section aria-label="Best races" class="grid gap-4 md:grid-cols-2">
+  {sides.map(({ label, color, pick }) => {
+    const race = raceBySlug(pick.race);
+    const runner = pick.runnerUp ? raceBySlug(pick.runnerUp) : undefined;
+    return (
+      <div class="card p-4" style={`border-top:3px solid ${color}`}>
+        <div class="mb-2 flex items-center gap-3">
+          {race && <Icon name={race.icon} size={44} alt={race.name} />}
+          <div>
+            <div class="text-xs font-semibold uppercase tracking-wider" style={`color:${color}`}>{label}</div>
+            <div class="font-display text-lg">{race?.name ?? pick.race}</div>
+          </div>
+          {runner && (
+            <span class="chip ml-auto" title="Runner-up">
+              <Icon name={runner.icon} size={20} alt="" />
+              <span class="text-muted">Runner-up:</span> {runner.name}
+            </span>
+          )}
+        </div>
+        <p class="mb-3 text-sm leading-relaxed">{pick.why}</p>
+        <ul class="flex flex-wrap gap-1.5">
+          {race?.racials.map((r) => (
+            <li class="chip tip-host" tabindex="0">
+              <Icon name={r.icon} size={20} alt="" />
+              {r.name}
+              <div class="tip" role="tooltip">{r.text}</div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  })}
+</section>

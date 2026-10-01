@@ -1,0 +1,38 @@
+{
+  "title": "PvE healers",
+  "description": "Five healers, one letter each, for level-60 dungeons and the December raids. Absorb, single-target, and raid healing are different jobs.",
+  "scope": "pve",
+  "coverage": "healer",
+  "basis": "L60 projection from beta build 1.60.1.70124 and the five healer spec files. Icy Veins' Holy Priest and Restoration Shaman guides (level-20 beta) set the relative jobs. No raid log exists.",
+  "updatedOn": "2026-10-01",
+  "confidence": "low",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "priest-discipline", "note": "The Discipline file says bring it to every dungeon. Shield, Penance, Divine Aegis. The absorb healer." },
+        { "ref": "paladin-holy", "note": "The file's single-target healer, plus the buff kit. Light's Vigil is the new answer to spread damage." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "ref": "shaman-restoration", "note": "Riptide into Chain Heal, Mana Tide for the group. Icy Veins calls it an excellent dungeon healer." },
+        { "ref": "druid-restoration", "note": "Wild Growth and Swiftmend. The file rates the HoTs and also notes no absorb and a thinner utility kit." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "priest-holy", "note": "Prayer of Mending when damage is spread. Icy Veins says Discipline outshines it on single-target. The file agrees." }
+      ]
+    },
+    { "tier": "C", "entries": [] },
+    { "tier": "D", "entries": [] }
+  ],
+  "sources": [
+    { "id": "icy-holy-guide", "title": "World of Warcraft: Forever Holy Priest Guide", "url": "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "icy-resto-guide", "title": "World of Warcraft: Forever Restoration Shaman Guide", "url": "https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide", "publisher": "Icy Veins", "date": "2026-09-23", "tier": "reputable" },
+    { "id": "blizz-priest-warrior", "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514", "publisher": "Blizzard Entertainment", "date": "2026-09-30", "tier": "official" }
+  ]
+}

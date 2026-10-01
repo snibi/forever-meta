@@ -1,0 +1,405 @@
+{
+  "class": "warlock",
+  "spec": "destruction",
+  "tagline": "Hard-cast Fire and Shadow burst: Conflagrate, Shadowburn, Incinerate and Shadow and Flame loop. Strong, unproven at 60.",
+  "verdict": [
+    "Destruction is the burst-and-nuke Warlock. Thirty-three tree points reach Incinerate (row 7) through Bane, Improved Shadow Bolt, Ruin, Agonizing Flames, Conflagrate, Bane of Havoc and Shadow and Flame, and the remaining points go into Demonology for Demonic Sacrifice (Succubus: +15% Fire) and Decimation. That shape matches the 3/17/31 split on wowtbc.gg and Icy Veins' read of the tree.",
+    "Why this build: Destruction hits now instead of ramping (Icy Veins notes it fits fast dungeon pulls), and Shadow and Flame ties the school buffs to two instants (Conflagrate no longer consumes Immolate, Shadowburn refunds its shard) that are free to weave. The cost is Mana and standing still. Public lists put it in the second band (MMOExp A, Overgear A, forum poster B per wowforever.co), below Affliction and above Demonology.",
+    "Caveats: Icy Veins' guide only covered level 20 (Bane, Destructive Reach, Cataclysm, Shadowburn). Icy Veins' Sep 17-20 guides still quote Gnome Eureka! at 50% Mana reduction; the Sep-24 build made it a flat 10% cost cut plus 10% damage on the next 3 abilities for every class (Blizzard dev notes). Fire and Shadow are separate schools on gear, so Spell Power (Fire) or (Shadow) may not both apply. Level 60 rotation and sims do not exist yet."
+  ],
+  "strengths": [
+    "Bane removes 0.5 sec from Shadow Bolt, Immolate and Incinerate and 2 sec from Soul Fire; Cataclysm cuts Destruction spell Mana by 10%.",
+    "Shadow and Flame: Conflagrate gives +10% Shadow damage and Shadowburn +10% Fire damage for 20 sec, Conflagrate stops consuming Immolate and Shadowburn always refunds its Soul Shard.",
+    "Incinerate does 25% more to an Immolated target and Bane of Havoc copies 15% of your damage to a second target for cheap two-target cleave.",
+    "Intensity (70% to resist damage interruption) and Molten Skin (-10% damage taken) give the burst spec real staying power in PvP."
+  ],
+  "weaknesses": [
+    "Mana hungry: hard-casting burns Mana fast (Icy Veins), so Life Tap, Cataclysm and Fel Vitality are mandatory.",
+    "Standing still: most damage needs casts, and Icy Veins found no dedicated movement ability at level 20.",
+    "Searing Pain generates significant threat (Icy Veins) and the PvE build has no Suppression, so check the tank before opening.",
+    "Fire and Shadow school Spell Power on gear may split your stats, and level-60 sims do not exist yet."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Daze-and-Burst Destruction (40/0/11)",
+      "summary": "Immolate with Aftermath into Conflagrate (dazes for 50% slow) and Shadowburn, then Incinerate under Shadow and Flame; Intensity keeps casts alive and Molten Skin trims damage. Sacrifice the Succubus for +15% Fire.",
+      "stats": {
+        "priority": [
+          "Spell Power (Fire)",
+          "Stamina",
+          "Hit",
+          "Critical Strike",
+          "Spirit",
+          "Haste",
+          "Intellect"
+        ],
+        "note": "Fire Spell Power because the sacrifice and Incinerate lean Fire, but Shadow Bolt and Shadowburn use Shadow damage. Stamina matters because you are cloth with Life Tap. Projection until items drop."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive breaks Stuns and the 2% sword crit helps Ruin-fuelled burst; Perception counters Rogues.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken (2 min) clears fear effects, and Touch of the Grave procs off direct casts like Conflagrate and Incinerate (10% for casters, 1 sec ICD).",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Sacrifice the Succubus before queueing: +15% Fire damage for 2 hours. Do not summon any demon afterwards or the buff is cancelled.",
+        "Burst: Immolate (Aftermath +50% initial damage) → Conflagrate (88-110 Fire, Dazes 50% for 5 sec, +10% Shadow for 20 sec) → Shadowburn (instant, +10% Fire, refunds its Shard) → Incinerate.",
+        "Intensity gives a 70% chance to cast through damage interruption, and Molten Skin takes 10% off all damage; your peel is the 50% Daze from Conflagrate.",
+        "Bane of Havoc on a second target during team fights: 15% of your damage is copied to the cursed target.",
+        "Role: kill-window burst in Arathi Basin, Warsong Gulch and Alterac Valley; stay near a healer or flag carrier and burst on cooldown."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Firestone",
+          "note": "Reworked to grant 1% Critical Strike chance and Critical Strike damage and applied like a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 28). Exact values are not published for level 60.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "gearNote": "Cloth caster, so rank rewards are about the trinket and the elite cloth pieces. Rare PvP gear needs level 55 and Battleground marks (beta costs per Icy Veins: cloak 10 Arathi Basin marks + 3,000 Honor, chest 15 AB marks, legs 15 Warsong Gulch marks, helm 15 Alterac Valley marks). Buy in this order: R2 Insignia Trinket (3,500 Honor, 2,000 more for the Elite upgrade), R3 Faction Cloak, R4 Faction Necklace, R5 Combat Potions, then the R12 legs/shoulders and R13 chest/helmet elite pieces (R8 wrist/waist, R9 boots, R10 gloves fill in on the way; Emboldened Seals upgrade rare to Elite, datamined but not fully confirmed). R14 Weapon Arsenal (needs week 10+ of the season per the datamined weekly rank ceiling) lists a Grand Marshal's Stave, Mageblade, Longsword and Tome of Power; the stat budgets are hidden until items drop. R7 Battle Standard (15% max health aura, 10-minute cooldown) is for premade leaders, not for you.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-destruction-warlock",
+        "iv-warlock-overview",
+        "wowtbc-destruction-warlock",
+        "forevertalents-warlock-destruction",
+        "iv-pvp-rank-system",
+        "overgear-pvp-tier-list"
+      ],
+      "points": {
+        "Destruction": {
+          "Improved Shadow Bolt": 5,
+          "Bane": 5,
+          "Aftermath": 5,
+          "Molten Skin": 5,
+          "Ruin": 5,
+          "Shadowburn": 1,
+          "Intensity": 3,
+          "Agonizing Flames": 3,
+          "Conflagrate": 1,
+          "Bane of Havoc": 1,
+          "Shadow and Flame": 5,
+          "Incinerate": 1
+        },
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Fel Vitality": 3,
+          "Demonic Aegis": 2,
+          "Demonic Sacrifice": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "Incinerate and Shadow and Flame Nuker (2/17/33 shape)",
+      "summary": "Hard-cast Incinerate under Shadow and Flame while weaving Conflagrate and Shadowburn, with Succubus sacrifice for +15% Fire and Decimation to execute with Soul Fire. 33 Destruction points reach Incinerate; Demonology supplies Embrace, Fel Vitality and the sacrifice.",
+      "stats": {
+        "priority": [
+          "Spell Power (Fire)",
+          "Hit",
+          "Critical Strike",
+          "Haste",
+          "Spirit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "Icy Veins' level-20 order puts Haste above Crit; with Ruin, Improved Shadow Bolt and Fire and Brimstone I rank Crit higher at 60 (theory). No Suppression, so Hit comes from gear. Items are hidden until drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "The 2% sword crit boosts Ruin, Improved Shadow Bolt and Fire and Brimstone, and Spirit +5% helps Life Tap, which a Mana-hungry Destruction Warlock uses constantly.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury gives +10% Spell Power for 15 sec per 2 minutes, a bigger uptime than Berserking's 10 sec per 3 minutes; Shatter Curse is a defensive bonus.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Pre-pull: summon the Succubus, cast Demonic Sacrifice (+15% Fire for 2 hrs); Imp sacrifice gives Shadow instead, but Immolate, Incinerate, Conflagrate and Searing Pain are all Fire.",
+        "Rotation shell (wowtbc.gg): curse, Shadowburn to keep Shadow and Flame, Immolate, Bane of Doom if the target lives over a minute, Conflagrate on cooldown, Incinerate as filler.",
+        "Execute below 35% HP: Decimation triggers off Searing Pain or Shadow Bolt for +6% damage and a faster, shard-free Soul Fire.",
+        "Bane of Havoc on a second target for cheap 15% cleave when there are two bosses or adds.",
+        "Manage Mana: Cataclysm -10% cost, Fel Vitality +15% maximum Mana, Life Tap while moving.",
+        "Watch threat on Searing Pain (Icy Veins); Destruction has no Suppression in this build."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Firestone",
+          "note": "Reworked to grant 1% Critical Strike chance and Critical Strike damage and applied like a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 28). Exact values are not published for level 60.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-destruction-warlock",
+        "iv-warlock-overview",
+        "wowtbc-destruction-warlock",
+        "forevertalents-warlock-destruction",
+        "tavern-enchanting-formulas"
+      ],
+      "points": {
+        "Destruction": {
+          "Bane": 5,
+          "Improved Shadow Bolt": 5,
+          "Cataclysm": 3,
+          "Ruin": 5,
+          "Shadowburn": 1,
+          "Agonizing Flames": 3,
+          "Conflagrate": 1,
+          "Bane of Havoc": 1,
+          "Fire and Brimstone": 3,
+          "Shadow and Flame": 5,
+          "Incinerate": 1
+        },
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Fel Vitality": 3,
+          "Demonic Energies": 2,
+          "Demonic Aegis": 2,
+          "Demonic Sacrifice": 1,
+          "Master Summoner": 2,
+          "Decimation": 2
+        },
+        "Affliction": {
+          "Improved Life Tap": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Hard-Cast Destruction Leveler, 10→60",
+      "summary": "Follows Icy Veins' level-20 build exactly (Bane x5, Destructive Reach, Cataclysm, Shadowburn), then Improved Shadow Bolt and Agonizing Flames, Conflagrate at 29, Suppression for Hit and threat, Ruin, Shadow and Flame and Incinerate by 53.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Hit",
+          "Haste",
+          "Critical Strike",
+          "Spirit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "This is Icy Veins' tested level-20 order. Haste speeds Shadow Bolt and Immolate casts but not DoTs; Hit matters because Destruction has no Hit until Suppression."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Expansive Mind (+5% Mana) and Eureka! (-10% cost on the next 3 spells, +10% damage) help a Mana-hungry hard caster; Escape Artist frees you from snares. Icy Veins lists Gnome first for Destruction.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "troll",
+          "why": "Berserking (+10% casting speed for 10 sec) suits a hard-cast leveler, and Rapid Regeneration restores 50% Health over 6 sec after Life Tap (Icy Veins).",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Send the demon in first (Voidwalker holds enemies while you cast; Succubus at 20), then open at max range with Immolate and Shadow Bolt; Destructive Reach adds 20% range.",
+        "Use Shadowburn to finish: with a non-trivial kill within 8 sec you get the Soul Shard back. Use wand finishers, though Sep 24 changed wands, so check.",
+        "Do not overcast: stop spending Mana when the demon and your DoTs will finish the mob. Life Tap only when you can afford the Health.",
+        "Searing Pain is a fast option from 18 but generates lots of threat in dungeons; Suppression arrives at 30.",
+        "Keep armor buff up: Demon Skin early, Demon Armor from 20; take Tailoring and Enchanting.",
+        "Respec at 60 to the PvE build (1 silver in beta, temporary) to pick up the Succubus sacrifice package."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-destruction-warlock",
+        "iv-warlock-overview",
+        "forevertalents-warlock-destruction",
+        "blizzard-beta-dev-notes-sep24"
+      ],
+      "order": [
+        "Bane",
+        "Bane",
+        "Bane",
+        "Bane",
+        "Bane",
+        "Destructive Reach",
+        "Destructive Reach",
+        "Cataclysm",
+        "Cataclysm",
+        "Cataclysm",
+        "Shadowburn",
+        "Improved Shadow Bolt",
+        "Improved Shadow Bolt",
+        "Improved Shadow Bolt",
+        "Improved Shadow Bolt",
+        "Improved Shadow Bolt",
+        "Agonizing Flames",
+        "Agonizing Flames",
+        "Agonizing Flames",
+        "Conflagrate",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Improved Life Tap",
+        "Improved Life Tap",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Ruin",
+        "Ruin",
+        "Ruin",
+        "Ruin",
+        "Ruin",
+        "Bane of Havoc",
+        "Shadow and Flame",
+        "Shadow and Flame",
+        "Shadow and Flame",
+        "Shadow and Flame",
+        "Shadow and Flame",
+        "Incinerate",
+        "Improved Drains",
+        "Improved Drains",
+        "Improved Drains",
+        "Soul Harvesting",
+        "Soul Harvesting",
+        "Malediction",
+        "Malediction"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "iv-destruction-warlock",
+      "title": "World of Warcraft: Forever Destruction Warlock Guide",
+      "url": "https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-warlock-overview",
+      "title": "Warlock Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/warlock-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowtbc-destruction-warlock",
+      "title": "Destruction Warlock Rotation & Talent Build - WoW Forever",
+      "url": "https://wowtbc.gg/warcraftforever/class-guides/destruction-warlock",
+      "publisher": "wowtbc.gg",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "forevertalents-warlock-destruction",
+      "title": "Warlock Destruction Build — WoW Forever",
+      "url": "https://forevertalents.org/builds/warlock-destruction/",
+      "publisher": "Forever Talents",
+      "date": "2026-09-26",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "overgear-pvp-tier-list",
+      "title": "WoW Forever Best Classes for PvP",
+      "url": "https://overgear.com/guides/wow-forever/best-classes-for-pvp",
+      "publisher": "Overgear",
+      "date": "2026-09-25",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

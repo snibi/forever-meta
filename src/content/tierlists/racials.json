@@ -1,0 +1,77 @@
+{
+  "title": "Racials",
+  "description": "All 37 racials, counted once when both Skyborne factions share the name. Combat value first. Treasure-tracking is not a combat racial.",
+  "scope": "racials",
+  "coverage": "racials",
+  "basis": "Client racial text in the vendored races file, the Icy Veins race guide (Sep 28, 2026), and the Sep 24 Eureka! nerf. Gnome is not S. The old 50% cost cut is gone.",
+  "updatedOn": "2026-10-01",
+  "confidence": "medium",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "Will to Survive", "note": "Clears every stun. The battleground button for anyone who dies in a stun lock." },
+        { "ref": "Will of the Forsaken", "note": "Breaks Charm, Fear and Sleep. Fear is still a battleground win condition." },
+        { "ref": "Blood Fury", "note": "10% Attack Power and Spell Power for 15 seconds. Works on the new Orc Mage." },
+        { "ref": "Stoneform", "note": "Drops bleed, poison and disease, and cuts physical damage 10% for 8 seconds." },
+        { "ref": "Escape Artist", "note": "Breaks roots and snares and grants a short immunity. The second Blink." },
+        { "ref": "Hardiness", "note": "Stun duration reduced 20%. Always on. The reason Orc stays the PvP melee pick." },
+        { "ref": "Berserking", "note": "10% spell and attack speed for 10 seconds. Haste on a button, for healers and casters." },
+        { "ref": "Elune's Light", "note": "10% crit on every spell and attack for 15 seconds. The largest damage cooldown that is not a weapon buff." },
+        { "ref": "War Stomp", "note": "Stuns up to 5 enemies for 2 seconds. A tank and flag-carrier peel that is not a talent." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "ref": "Eureka!", "note": "10% cheaper and 10% stronger on the next 3 abilities. Was up to 50% before Sep 24. Not S." },
+        { "ref": "Touch of the Grave", "note": "10% chance for casters, 5% for melee, to drain up to 5% health. No longer breaks crowd control." },
+        { "ref": "Perception", "note": "Stealth detection for 20 seconds. The anti-Rogue button on a 3-minute cooldown." },
+        { "ref": "Shadowmeld", "note": "Drops you out of combat attention. Night Elf Rogues and Druids are also harder to see in stealth." },
+        { "ref": "Endurance", "note": "5% health and 1% hit. Both numbers are live on every pull, which is why tanks take Tauren." },
+        { "ref": "Sword Specialization", "note": "2% crit with a sword, spells included. The best weapon racial, and it does nothing for daggers." },
+        { "ref": "Quickness", "note": "1% dodge, 2% movement speed, and stealth detection as if you were 1 level higher." },
+        { "ref": "Shatter Curse", "note": "Clears curses and banes, then 15% less magic damage for 8 seconds." },
+        { "ref": "Plainsrunning", "note": "Up to 30% movement speed while you keep moving. The leveling racial. Damage drops the stacks." },
+        { "ref": "Expansive Mind", "note": "5% more mana, rage or energy. Quiet, and it is up on every pull." },
+        { "ref": "Cannibalize", "note": "7% health and 7% mana every 2 seconds off a humanoid or undead corpse. The solo drink." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "The Human Spirit", "note": "5% Spirit. Real for a Holy Priest stacking Spiritual Guidance. Nothing for a Warrior." },
+        { "ref": "Regeneration", "note": "10% more health regen, and 10% of it continues in combat. A trickle, not a potion." },
+        { "ref": "Rapid Regeneration", "note": "Channels 50% of your health back over 6 seconds. Any hit cancels it." },
+        { "ref": "Walk on Air", "note": "A 10-second glide on a 2-minute cooldown. Pathing, not a fight button. Shared by both Skyborne." },
+        { "ref": "Beast Slaying", "note": "5% damage to beasts. Strong while leveling, narrow in a raid." },
+        { "ref": "Big Game Hunter", "note": "Same 5% against beasts, on the Alliance side. Same limit." },
+        { "ref": "Wind Blessed", "note": "1% haste to spells, melee and ranged. Always on, and it is 1%. Shared by both Skyborne." },
+        { "ref": "Axe Specialization", "note": "1% crit with an axe. Half of Sword Specialization, and only on that weapon." },
+        { "ref": "Mace Specialization", "note": "1% crit with a mace. Take it if the weapon is a mace. Do not pick the race for it." }
+      ]
+    },
+    {
+      "tier": "C",
+      "entries": [
+        { "ref": "Elemental Insight", "note": "5% damage to elementals. Narrow. Shared by both Skyborne, so it is one entry." },
+        { "ref": "Engineering Specialization", "note": "20% fewer engineering failures. A profession racial, not a combat one." },
+        { "ref": "Wisp Spirit", "note": "75% faster as a corpse. Useful, and you had to die to use it." },
+        { "ref": "Read Ley Line", "note": "Health and mana regen, 15 seconds if you miss the ley line and 15 minutes if you find one." },
+        { "ref": "Skysight", "note": "Movement speed from an elemental convergence. 30 seconds if you do not find one." }
+      ]
+    },
+    {
+      "tier": "D",
+      "entries": [
+        { "ref": "Find Treasure", "note": "Shows treasure on the minimap. No combat value." },
+        { "ref": "Cultivation", "note": "Duplicates an herb. Sep 24 made it ask for a player level. Not a fight racial." },
+        { "ref": "Underwater Breathing", "note": "Breath lasts 300% longer. One zone, no fight." }
+      ]
+    }
+  ],
+  "sources": [
+    { "id": "icy-race-guide", "title": "WoW Forever Racial Guide", "url": "https://www.icy-veins.com/wow-forever/race-guide", "publisher": "Icy Veins", "date": "2026-09-28", "tier": "reputable" },
+    { "id": "foreverchanges-patch-notes", "title": "WoW Forever Patch Notes: every beta update, class by class", "url": "https://foreverchanges.pro/patch-notes", "publisher": "ForeverChanges", "date": "2026-09-30", "tier": "fan" }
+  ]
+}

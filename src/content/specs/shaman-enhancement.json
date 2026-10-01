@@ -1,0 +1,321 @@
+{
+  "class": "shaman",
+  "spec": "enhancement",
+  "tagline": "Melee battle-mage: Stormstrike, Flurry, Maelstrom Weapon and Rage of the Farseer on Intellect-fed Attack Power.",
+  "verdict": [
+    "Enhancement is the spec Blizzard rebuilt the most. Mental Dexterity turns 100% of your Intellect into Attack Power, Mental Quickness adds spell damage and healing equal to 30% of Intellect, Maelstrom Weapon makes Lightning Bolt cheaper and faster from your melee hits, and the 31-point capstone Rage of the Farseer is a 30% attack speed cooldown (the Sep-24 patch stripped its spell casting speed component). The result is a hybrid that wears whatever Intellect/Strength gear drops.",
+    "Public placement is split: a player-posted forum list put it in S, Overgear and MMOExp put it in B (wowforever.co aggregation). Icy Veins says it is \"effective, but needs to grow into its talent tree\" and was Mana-starved at the level-20 beta cap, because Improved Stormstrike and Maelstrom Weapon were unreachable. That is why this build goes straight down the center column: Thundering Strikes, Mental Dexterity, Flurry, Stormstrike and Maelstrom Weapon in order.",
+    "Elemental Devastation (3/3, +9% melee crit for 10 sec after a spell crit) and Concussion come out of the Elemental tree because Icy Veins says the former is meant for Enhancement. Tidal Focus gives the +5% Hit melee needs. Everything is a projection until level 60 items and raids are live."
+  ],
+  "strengths": [
+    "Mental Dexterity and Mental Quickness let Intellect gear double as Attack Power and Spell Power, so gear options are broad.",
+    "Rage of the Farseer is a personal 30% attack speed cooldown that also speeds up Maelstrom Weapon stacks.",
+    "Stormstrike sits at a much lower level than in Classic with a shorter cooldown (about 8 sec per Icy Veins), and Improved Stormstrike can reset it on Dodge or Parry.",
+    "Windfury Totem is called a must-have melee buff by Icy Veins, and Enhancement brings strong off-healing between pulls."
+  ],
+  "weaknesses": [
+    "Mana is the leash: Icy Veins notes swing timers are slow, costs are high and the tree only rounds out deep.",
+    "Weapon DPS is the top stat; Icy Veins advises slow two-handers, so your upgrades depend heavily on which weapons actually drop.",
+    "Sep-24 totem nerfs: Flametongue Totem no longer stacks with Flametongue Weapon or Windfury Totem, and Windfury/Grace of Air/Tranquil Air don't stack across Shamans, so you compete for the Air slot.",
+    "Public tier lists disagree wildly (S on the forum, B on seller lists), and none has tested it at 60."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Enhancement PvP: Toughness Windfury Bruiser (8 / 43 / 0)",
+      "summary": "Melee battleground burst: full Enhancement tree minus the leveling filler, with Toughness for Stamina, Improved Ghost Wolf for instant mobility and Guardian Totems to shorten Grounding Totem.",
+      "stats": {
+        "priority": ["Weapon DPS", "Crit", "Strength", "Stamina", "Hit", "Intellect", "Agility", "Expertise", "Spell Power"],
+        "note": "Our projection. Icy Veins ranks Weapon DPS first for PvE and Crit above Strength; we move Stamina up for 15v15 survivability. Expertise reduces the chance attacks are dodged or parried (Blizzard, Method)."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance Shaman race. Stoneform removes bleeds, poisons and diseases and trims Physical damage 10%, ideal against Rogues and Warriors; Mace Specialization gives +1% crit with a mace."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Hardiness cuts stun duration 20% (Icy Veins: a game-changer against stun classes), Blood Fury is a 10% Attack Power burst, Axe Specialization adds +1% crit with an axe.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Role: burst melee and flag-room bruiser. Jump the enemy carrier or healer, Stormstrike, then Earth Shock; Stormstrike's 20% bonus applies to the next Lightning Bolt, Chain Lightning or Earth Shock, so line up Maelstrom Weapon casts behind it.",
+        "Rage of the Farseer (+30% attack speed for 25 sec; Icy Veins says it is a 3 minute cooldown) is your opener on a pushed node or flag carrier. Flurry adds 25% attack speed for 3 swings after each melee crit.",
+        "Improved Ghost Wolf makes Ghost Wolf instant and usable everywhere, so you can chase or disengage at will. Ghost Wolf gives +40% speed (Icy Veins); you cannot do damage while wolfed.",
+        "Frost Shock is your slow, Earth Shock your interrupt, and Earthbind Totem slows nearby enemies. Guardian Totems also trims 2 sec from Grounding Totem.",
+        "Spirit Weapons adds Parry. Toughness adds 10% Stamina, enough for flag room fights. Stoneform (Dwarf) or Hardiness (Orc) are the cooldowns that decide stun-heavy fights.",
+        "Drop Battle Standard (Rank 7) when your team pushes a choke or a node; it grants allies nearby 15% max health.",
+        "No arenas or rated PvP exist in Forever; plan for Warsong Gulch, Arathi Basin, Darkspear Islands, Alterac Valley and world PvP."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Formula seen on a BlizzCon demo vendor; effect value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever; effect value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "The one chest formula found: a damage absorption proc.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rank 2 Insignia Trinket first (3,500 Honor, +2,000 for the Epic version) and the Rank 3 Faction Cloak (10 Arathi Basin Marks + 3,000 Honor) are the cheap early wins. Rank 7 opens the Battle Standard (15% max health aura, 10 min cooldown) for flag-room and node pushes. The Elite pieces unlock Wrist/Waist (R8), Boots (R9), Gloves (R10), Legs/Shoulders (R12) and Chest/Helm (R13), with Rare PvP gear requiring level 55 and Marks of Honor from the matching battleground. Rank 14 opens the weapon arsenal: pick a slow two-hander (Icy Veins' Weapon DPS advice); cost is 15,000 Honor + 20 Alterac Valley Marks or 8,000 Honor + 10 Darkspear Islands Marks (beta prices, datamined).",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-veins-enhancement-shaman", "icy-veins-shaman-overview", "icy-veins-pvp-rank-system", "blizzard-beta-dev-notes-sep-24", "method-itemization"],
+      "points": {
+        "Elemental": {
+          "Concussion": 5,
+          "Elemental Devastation": 3
+        },
+        "Enhancement": {
+          "Thundering Strikes": 5,
+          "Ancestral Knowledge": 5,
+          "Improved Ghost Wolf": 2,
+          "Mental Dexterity": 3,
+          "Guardian Totems": 2,
+          "Elemental Weapons": 3,
+          "Shamanistic Focus": 1,
+          "Toughness": 5,
+          "Flurry": 5,
+          "Stormstrike": 1,
+          "Spirit Weapons": 1,
+          "Mental Quickness": 2,
+          "Improved Stormstrike": 2,
+          "Maelstrom Weapon": 5,
+          "Rage of the Farseer": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "Enhancement PvE: Maelstrom Battle-Mage (8 / 33 / 10)",
+      "summary": "Level-60 dungeon and raid-prep Enhancement: center-column Stormstrike/Flurry/Maelstrom Weapon path with Hit from Tidal Focus, Elemental Devastation and Concussion on top.",
+      "stats": {
+        "priority": ["Weapon DPS", "Hit", "Expertise", "Crit", "Strength", "Intellect", "Agility", "Spell Power", "Spirit", "Stamina"],
+        "note": "Icy Veins' Enhancement ranking (level-20 beta); they warn endgame values will change once Hit and Expertise gear exists. Hit and Crit are unified spell/melee stats. Icy Veins: 1 Strength is 2 Attack Power, 1 Intellect is 1 Attack Power via Mental Dexterity plus Mana and spell crit."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance Shaman race. Mace Specialization (+1% crit with a mace) matches slow two-hander maces; Stoneform is a self-cleanse for poison/disease/bleed fights."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Attack Power and Spell Power for 15 sec) stacks with Rage of the Farseer, and Axe Specialization (+1% crit with an axe) fits slow two-hand axes. Icy Veins' go-to pick for Horde Shaman.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Keep Windfury Weapon on your two-hander. Use Rockbiter Weapon only when solo and Flametongue Weapon in groups (Icy Veins), because Spirit Weapons is not in this build and Rockbiter adds threat.",
+        "Drop all four totems with Call of the Elements: Strength of Earth, Mana Spring, Searing Totem and an Air totem (Windfury Totem or Grace of Air Totem), per the community rotation draft on wowtbc.gg. Sep-24: Flametongue Totem, Windfury Totem and Tranquil Air no longer stack with each other.",
+        "Priority (community draft, untested): Rage of the Farseer with on-use trinkets, Lightning Bolt at 5 stacks of Maelstrom Weapon, Stormstrike on cooldown, then Earth Shock (preferred when Flame Shock is already ticking) or Flame Shock.",
+        "Stormstrike makes the next Lightning Bolt, Chain Lightning or Earth Shock deal 20% more, so cast your Maelstrom Weapon Lightning Bolt right after it.",
+        "Elemental Devastation gives +9% melee crit for 10 sec after a spell crit, and Flurry turns melee crits into 25% attack speed for 3 swings, so Earth Shock/Lightning Bolt crits feed your melee.",
+        "Improved Stormstrike gives 50% mana regeneration while casting for 15 sec after each Stormstrike, so use Stormstrike on cooldown.",
+        "Enhancement can off-heal with Healing Wave between pulls; Spirit Weapons plus Rockbiter can even off-tank in a pinch (Icy Veins), but this build prioritises damage."
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Formula name only; effect value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever; effect value not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Intellect is Attack Power through Mental Dexterity; effect value not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-veins-enhancement-shaman", "icy-veins-shaman-overview", "blizzard-beta-dev-notes-sep-24", "warcraft-tavern-enchanting-formulas", "wowtbc-gg-enhancement-shaman", "wowforever-co-tier-list"],
+      "points": {
+        "Elemental": {
+          "Concussion": 5,
+          "Elemental Devastation": 3
+        },
+        "Enhancement": {
+          "Thundering Strikes": 5,
+          "Ancestral Knowledge": 5,
+          "Mental Dexterity": 3,
+          "Elemental Weapons": 3,
+          "Shamanistic Focus": 1,
+          "Flurry": 5,
+          "Stormstrike": 1,
+          "Improved Stormstrike": 2,
+          "Mental Quickness": 2,
+          "Maelstrom Weapon": 5,
+          "Rage of the Farseer": 1
+        },
+        "Restoration": {
+          "Totemic Focus": 5,
+          "Tidal Focus": 5
+        }
+      }
+    },
+    "leveling": {
+      "title": "Enhancement Leveling: Stormstrike at 25, Maelstrom Weapon at 36",
+      "summary": "Respec-free 10-60 path: Thundering Strikes, Mental Dexterity and Shamanistic Focus by 20 (Icy Veins' level-20 goals), Stormstrike at 25, Rage of the Farseer at 41.",
+      "stats": {
+        "priority": ["Weapon DPS", "Strength", "Crit", "Intellect", "Agility", "Stamina", "Spirit"],
+        "note": "Classic WoW Forever's beta-client guide lists Weapon Damage, Strength, Crit, Intellect, Agility; Icy Veins: weapon DPS is the primary damage source, and 'of the Gorilla' greens suit Enhancement."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance Shaman race. Big Game Hunter (+5% vs Beasts) is useful during questing, and Stoneform handles poison and bleed mobs."
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Icy Veins' Enhancement guide calls out Plainsrunning (up to +30% movement speed) for exploring before mounts; Endurance also adds 5% Health and 1% Hit.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Levels 10-20: Thundering Strikes, Ancestral Knowledge, Mental Dexterity and Shamanistic Focus. Shamanistic Focus (-45% Shock and Lightning Shield mana) is the 11th point at level 20; Improved Ghost Wolf follows once Ghost Wolf unlocks.",
+        "Use Rockbiter Weapon when solo (it lasts 60 minutes in Forever) and Flametongue Weapon in dungeons to avoid threat problems; Windfury Weapon waits until 30.",
+        "Stormstrike from level 25 (Icy Veins says it is much earlier than Classic with an 8 sec cooldown); Improved Stormstrike at 32 for Mana regeneration.",
+        "Heal yourself between pulls with Healing Wave (Icy Veins); finish enemies with auto-attacks if mana is low.",
+        "Maelstrom Weapon lands at 36-40 and Rage of the Farseer at 41. Spirit Weapons comes at 50 as a dungeon safety valve.",
+        "The last 10 levels are Totemic Focus and Tidal Focus, which become a 5% Hit and cheaper totems; the build ends identical to the Restoration/Elemental splash in PvE except for Ghost Wolf and Spirit Weapons."
+      ],
+      "enchants": [
+        {
+          "slot": "Two-Handed Weapon",
+          "name": "Enchant 2H Weapon - Minor Impact",
+          "note": "+4 weapon damage on a two-hander (Enchanting 100); a cheap early upgrade per beta crafting data.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Relic",
+          "name": "Polished Driftwood Icon",
+          "note": "Enchanting-crafted Shaman relic; Icy Veins calls it a strong early pickup.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-veins-enhancement-shaman", "icy-veins-shaman-overview", "classicwowforever-enhancement-shaman", "icy-veins-race-guide"],
+      "order": [
+        "Thundering Strikes", "Thundering Strikes", "Thundering Strikes", "Thundering Strikes", "Thundering Strikes",
+        "Ancestral Knowledge", "Ancestral Knowledge",
+        "Mental Dexterity", "Mental Dexterity", "Mental Dexterity",
+        "Shamanistic Focus",
+        "Improved Ghost Wolf", "Improved Ghost Wolf",
+        "Elemental Weapons", "Elemental Weapons",
+        "Stormstrike",
+        "Elemental Weapons",
+        "Flurry", "Flurry", "Flurry", "Flurry", "Flurry",
+        "Improved Stormstrike", "Improved Stormstrike",
+        "Mental Quickness", "Mental Quickness",
+        "Maelstrom Weapon", "Maelstrom Weapon", "Maelstrom Weapon", "Maelstrom Weapon", "Maelstrom Weapon",
+        "Rage of the Farseer",
+        "Concussion", "Concussion", "Concussion", "Concussion", "Concussion",
+        "Ancestral Knowledge", "Ancestral Knowledge", "Ancestral Knowledge",
+        "Spirit Weapons",
+        "Totemic Focus", "Totemic Focus", "Totemic Focus", "Totemic Focus", "Totemic Focus",
+        "Tidal Focus", "Tidal Focus", "Tidal Focus", "Tidal Focus", "Tidal Focus"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-veins-shaman-overview",
+      "title": "Shaman Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/shaman-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-enhancement-shaman",
+      "title": "World of Warcraft: Forever Enhancement Shaman Guide",
+      "url": "https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-21",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes - Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "classicwowforever-enhancement-shaman",
+      "title": "WoW Forever Enhancement Shaman Guide",
+      "url": "https://classicwowforever.com/class-guides/shaman/enhancement",
+      "publisher": "Classic WoW Forever",
+      "date": "2026-09-25",
+      "tier": "fan"
+    },
+    {
+      "id": "wowtbc-gg-enhancement-shaman",
+      "title": "Enhancement Shaman Rotation & Talent Build - WoW Forever",
+      "url": "https://wowtbc.gg/warcraftforever/class-guides/enhancement-shaman",
+      "publisher": "wowtbc.gg",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "WoW Forever (wowforever.co)",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

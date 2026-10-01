@@ -1,0 +1,289 @@
+{
+  "class": "druid",
+  "spec": "restoration",
+  "tagline": "HoT-first healer: instant Swiftmend, a one-second Rejuvenation and the new party-wide Wild Growth. Crit finally matters.",
+  "verdict": [
+    "Restoration in Forever plays like a later-era healer more than a Vanilla one, and that is why I rate it. Wild Growth (the 31-point talent) heals a target and its whole party, including pets, with a 7-sec HoT on a 6-sec cooldown; Swiftmend no longer consumes the Rejuvenation or Regrowth under it; Gift of the Earthmother cuts the global cooldown on Rejuvenation, Swiftmend and Wild Growth to 1 sec; and the Sep-24 build lets Rejuvenation, Tranquility and Wild Growth crit (Regrowth already could). Icy Veins calls it a 'powerhouse dungeon healer'.",
+    "Mana is the one thing Resto must solve and Reflection solves it: 50% of Mana regeneration continues while casting, and Living Spirit adds +15% Spirit. The dungeon build is 38 points of Restoration plus 13 in Balance. Genesis adds +5% to periodic healing, Nature's Majesty adds +4% crit that HoTs now use, Nature's Splendor stretches Rejuvenation by 3 sec and Regrowth by 6 sec, and Improved Wrath makes your damage filler cheap. I drop Furor, Subtlety, Natural Shapeshifter and Improved Tranquility to pay for it.",
+    "Limits are well documented. Icy Veins notes druid healers have no absorb, Tranquility only heals your own party, a utility kit weaker than Shaman, and Tree Form and Lifebloom are not in the game. Leveling as Resto is the slowest of the three trees, so most players will level Feral or Balance and heal dungeons on the way. Rankings are split: Overgear puts Restoration in its second band, the Blizzard-forum thread in its fourth, so level-60 data on Dec 9 decides it."
+  ],
+  "strengths": [
+    "Wild Growth heals a party-wide HoT on a 6-sec cooldown and Swiftmend is an instant spot heal that no longer eats your HoT (Blizzard).",
+    "Gift of the Earthmother brings Rejuvenation, Swiftmend and Wild Growth to a 1-sec global cooldown, so you can blanket a group fast.",
+    "Reflection allows 50% Mana regeneration while casting, and Rejuvenation, Tranquility, Wild Growth and Regrowth can all crit now.",
+    "Highly mobile: many key spells are instant-cast, plus Dash, Travel Form and shapeshifting to break roots (Icy Veins); Revive and Rebirth cover resurrections."
+  ],
+  "weaknesses": [
+    "No absorb, no true party-wide emergency button besides Wild Growth, and Tranquility heals only your own party (Icy Veins).",
+    "Utility kit is weaker than Shaman's: no snare, silence or interrupt (Blizzard) and Entangling Roots is the only crowd control.",
+    "Slow to level: damage is the lowest of the three trees, so Icy Veins suggests levelling Feral or Balance instead.",
+    "Tree Form and Lifebloom are absent; HoTs do not scale with Haste, so that stat is weak for the spec (Icy Veins)."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Battleground healer: Resto 43 + Balance 8",
+      "summary": "Keep the Restoration healing core, add Natural Shapeshifter for cheap form-shifts out of roots, and take Genesis and Nature's Majesty from Balance. You are a party-stack healer for AB and Darkspear Islands, a flag-carrier healer in WSG, and a mobile instant-cast healer in AV.",
+      "stats": {
+        "priority": ["Bonus Healing", "Stamina", "Intellect", "Spirit", "Critical Strike"],
+        "note": "Theory. Icy Veins' level-20 order is Healing Power, Intellect, Spirit, Critical Strike, Haste; Stamina is moved up because battleground healers get focused. Haste lacks value since HoTs do not scale with it. Bonus Healing also includes one-third as much bonus damage (Blizzard). Item stats hidden until drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune's Light gives +10% crit for 15 sec, which HoTs now use, and Shadowmeld and Quickness help you escape gangs.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp stuns up to 5 melee for 2 sec when they dive you, and 5% more Health helps a healer survive the opener.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "WSG 10v10: heal the flag carrier from behind with Rejuvenation and instant Swiftmend, so you can keep moving; Nature's Swiftness makes the next Nature spell instant.",
+        "AB and Darkspear Islands 15v15: stand in the middle of your party's node group and drop Wild Growth on the member with the most party members nearby; it heals every second for 7 sec.",
+        "AV 40v40: tag along with a 5-man party since Wild Growth and Tranquility only help parties; Tranquility is unusable on a stranger.",
+        "Get out of roots and snares by shapeshifting; Natural Shapeshifter cuts that Mana cost by 30%. Remember you cannot cast heals while in form.",
+        "Thorns on the node tank now grows with your spell power; Nature's Grasp is baseline and castable in form.",
+        "Keep Rejuvenation on every flag carrier; Nature's Focus gives 70% to avoid pushback while casting Nature spells in a scrum."
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Formula name from the BlizzCon-demo vendor screenshots; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-Hand Weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "One of three 2H formulas seen (with Spellblasting and Mighty Spell Power); numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "The article describes it as a damage-absorption proc; useful for a healer who gets focused. The only chest formula seen.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rare PvP gear needs level 55. Priorities: Insignia trinket (R2, Honor only), Faction Cloak (R3: 10 AB Marks + 3,000 Honor), Faction Necklace (R4). Battle Standard (R7, +15% max health to nearby allies, 10-min cooldown) is a good node-fight tool for a healer's group. Elite Chest and Helm (R13), Legs and Shoulders (R12) are the biggest Elite slots; stats are hidden, so slot count rather than a named BiS decides. At R14, the Weapon Arsenal lists a Premier Grand Marshal's Stave (20 AV Marks + 15,000 Honor) and a Tome of Restoration (10 Darkspear Islands Marks + 7,000 Honor); the source does not say whether druids can equip the tome.",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["blizzard-hunter-druid-deep-dive", "icy-veins-resto-druid", "icy-veins-pvp-rank-system", "warcraft-tavern-enchanting"],
+      "points": {
+        "Restoration": {
+          "Nature's Focus": 5,
+          "Naturalist": 5,
+          "Natural Shapeshifter": 3,
+          "Reflection": 3,
+          "Gift of Nature": 5,
+          "Gift of the Earthmother": 1,
+          "Tranquil Spirit": 5,
+          "Improved Rejuvenation": 3,
+          "Swiftmend": 1,
+          "Nature's Swiftness": 1,
+          "Living Spirit": 3,
+          "Improved Tranquility": 2,
+          "Improved Regrowth": 5,
+          "Wild Growth": 1
+        },
+        "Balance": {
+          "Genesis": 5,
+          "Nature's Majesty": 2,
+          "Nature's Reach": 1
+        }
+      }
+    },
+    "pve": {
+      "title": "Dungeon and raid HoT healer: Resto 38 + Balance 13",
+      "summary": "Keep the whole healing core through Wild Growth, then spend 13 points in Balance on Improved Wrath, Genesis, Nature's Majesty and Nature's Splendor. You get +5% periodic healing, +4% crit for crit-capable HoTs and longer Rejuvenation and Regrowth.",
+      "stats": {
+        "priority": ["Bonus Healing", "Intellect", "Spirit", "Critical Strike", "Haste"],
+        "note": "Icy Veins' level-20 list, kept for L60 as a projection. Spirit rises in value with Reflection (50% regeneration while casting) and Living Spirit (+15% Spirit). Crit is meaningful now that HoTs crit. Haste does not affect HoT healing or tick rate (Icy Veins). Item stats are hidden until drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune's Light is +10% crit for 15 sec every 3 min, and crit now boosts Rejuvenation, Tranquility, Wild Growth and Regrowth.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "5% Health and War Stomp (a 2-sec stun on up to 5 enemies) protect a healer on bad pulls.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "Keep Rejuvenation on the tank and on anyone taking steady damage; with Gift of the Earthmother it has a 1-sec global cooldown.",
+        "Swiftmend requires an active Rejuvenation or Regrowth, heals the full HoT duration, and no longer removes the HoT (Blizzard); chain Rejuvenation then Swiftmend for spot healing.",
+        "Wild Growth (6-sec cooldown, high Mana cost) puts a front-loaded 7-sec HoT on the target's whole party; it is your 5-man group heal.",
+        "Omen of Clarity is baseline and procs on heals as well as spells (Icy Veins); Regrowth's cost is much lower now because Mana scales with the upfront heal.",
+        "Cast Thorns on the tank: it now scales with the druid's spell power. Mark of the Wild buffs the group, and Rebirth and Revive cover resurrections.",
+        "Between heals, Moonfire and Wrath are cheap filler, and with Improved Wrath's 50% Mana discount and Naturalist's +5% damage you can speed up runs."
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new to Forever; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Formula name from the BlizzCon-demo vendor screenshots; effect size is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-Hand Weapon",
+          "name": "Enchant 2H Weapon - Mighty Healing Power",
+          "note": "One of three 2H formulas seen (with Spellblasting and Mighty Spell Power); numbers not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["blizzard-hunter-druid-deep-dive", "icy-veins-resto-druid", "icy-veins-druid-overview", "blizzard-beta-dev-notes-sep-24", "warcraft-tavern-enchanting", "wowforever-tier-list"],
+      "points": {
+        "Restoration": {
+          "Nature's Focus": 5,
+          "Naturalist": 5,
+          "Reflection": 3,
+          "Gift of Nature": 5,
+          "Gift of the Earthmother": 1,
+          "Tranquil Spirit": 5,
+          "Improved Rejuvenation": 3,
+          "Swiftmend": 1,
+          "Nature's Swiftness": 1,
+          "Living Spirit": 3,
+          "Improved Regrowth": 5,
+          "Wild Growth": 1
+        },
+        "Balance": {
+          "Improved Wrath": 5,
+          "Genesis": 5,
+          "Nature's Majesty": 2,
+          "Nature's Splendor": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Improved Wrath first, healing core second, ending on the PvE build",
+      "summary": "Resto levels slowest, so levels 10-14 go into Improved Wrath, then Nature's Focus, Naturalist and Reflection. After 30 you add Genesis, Nature's Majesty, the Gift talents, Swiftmend and Wild Growth, ending on the PvE allocation with no respec.",
+      "stats": {
+        "priority": ["Bonus Healing", "Intellect", "Spirit", "Critical Strike", "Haste"],
+        "note": "Icy Veins' beta order. Healers are told to favor Healing Power and Intellect on the highest item-level piece; Bonus Healing also includes one-third as much bonus damage (Blizzard), which helps questing."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Quickness adds +2% movement speed, and Elune's Light and Shadowmeld help a slow-killing leveler survive bad pulls.",
+          "runnerUp": "skyborne-high-order"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Plainsrunning builds up to +30% run speed and 5% extra Health means fewer deaths while leveling slowly.",
+          "runnerUp": "skyborne-windshaper"
+        }
+      },
+      "playstyle": [
+        "Levels 10-14: Improved Wrath. Icy Veins' world-content build picks it as a big damage boost that also cuts the time you spend drinking.",
+        "Kill with Moonfire (instant, great for pulling) and Wrath, then heal yourself with Rejuvenation; Nature's Focus (levels 15-19) keeps those casts from being interrupted.",
+        "Naturalist (20-24) gives +5% damage and a faster Healing Touch; Reflection (25-27) lets 50% of Mana regeneration continue while you cast.",
+        "Icy Veins says you can heal dungeons 100% fine with this world-content layout, so queue as a healer while you level.",
+        "You can respec for 1 silver in the beta, but this order needs none; Swiftmend and Gift of Nature fill 36-39 and Wild Growth lands at level 55.",
+        "Take the Revive quest-trainer spell at 12 and Cure Poison quest at 14: groups expect both."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-veins-resto-druid", "blizzard-hunter-druid-deep-dive", "icy-veins-druid-overview"],
+      "order": [
+        "Improved Wrath", "Improved Wrath", "Improved Wrath", "Improved Wrath", "Improved Wrath",
+        "Nature's Focus", "Nature's Focus", "Nature's Focus", "Nature's Focus", "Nature's Focus",
+        "Naturalist", "Naturalist", "Naturalist", "Naturalist", "Naturalist",
+        "Reflection", "Reflection", "Reflection",
+        "Genesis", "Genesis", "Genesis", "Genesis", "Genesis",
+        "Nature's Majesty", "Nature's Majesty",
+        "Gift of the Earthmother",
+        "Gift of Nature",
+        "Swiftmend",
+        "Gift of Nature", "Gift of Nature", "Gift of Nature", "Gift of Nature",
+        "Improved Rejuvenation", "Improved Rejuvenation", "Improved Rejuvenation",
+        "Nature's Swiftness",
+        "Living Spirit", "Living Spirit", "Living Spirit",
+        "Nature's Splendor",
+        "Improved Regrowth", "Improved Regrowth", "Improved Regrowth", "Improved Regrowth", "Improved Regrowth",
+        "Wild Growth",
+        "Tranquil Spirit", "Tranquil Spirit", "Tranquil Spirit", "Tranquil Spirit", "Tranquil Spirit"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-hunter-druid-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives - Hunter and Druid",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301515",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes - Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-resto-druid",
+      "title": "World of Warcraft: Forever Restoration Druid Guide",
+      "url": "https://www.icy-veins.com/wow-forever/restoration-druid-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-18",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-druid-overview",
+      "title": "Druid Class Guide (WoW Forever)",
+      "url": "https://www.icy-veins.com/wow-forever/druid-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

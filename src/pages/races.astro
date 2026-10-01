@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { CLASSES } from '../lib/classes';
+import { RACES } from '../lib/races';
+import { getTierLists } from '../lib/content';
+
+const hasRacialsList = (await getTierLists()).some((l) => l.id === 'racials');
+const factions = [
+  { key: 'alliance', label: 'Alliance', color: 'var(--color-alliance)' },
+  { key: 'horde', label: 'Horde', color: 'var(--color-horde)' },
+] as const;
+---
+<Base title="Races" description="WoW Forever race and class availability, the six new combinations and every racial.">
+  <h1 class="mb-2 text-4xl font-bold text-gold">Races &amp; racials</h1>
+  <p class="mb-8 max-w-3xl text-muted">
+    Ten playable races, four racials each. Six race/class combinations are new to the franchise.
+    {hasRacialsList && <a class="underline" href="/tier-lists/racials/">See the racials tier list →</a>}
+  </p>
+
+  <div class="card mb-10 overflow-x-auto">
+    <table class="w-full text-center text-sm" id="race-matrix">
+      <thead class="bg-raised text-xs uppercase tracking-wider">
+        <tr>
+          <th class="px-3 py-2 text-left">Race</th>
+          {CLASSES.map((c) => <th class="px-2 py-2" style={`color:${c.color}`}>{c.name}</th>)}
+        </tr>
+      </thead>
+      {factions.map((f) => (
+        <tbody class="divide-y divide-line border-t border-line">
+          <tr><th colspan={CLASSES.length + 1} class="px-3 py-1 text-left text-xs uppercase tracking-widest" style={`color:${f.color}`}>{f.label}</th></tr>
+          {RACES.filter((r) => r.faction === f.key).map((r) => (
+            <tr>
+              <th class="px-3 py-2 text-left font-medium"><a class="inline-flex items-center gap-2 no-underline" href={`#${r.slug}`}><Icon name={r.icon} size={22} alt="" />{r.name}</a></th>
+              {CLASSES.map((c) => (
+                <td class="px-2 py-2">
+                  {r.classes.includes(c.slug) ? (
+                    <span>
+                      <span class="text-emerald-400" aria-label="Playable">✓</span>
+                      {r.newClasses.includes(c.slug) && <span class="new-pill ml-1 rounded bg-gold px-1 py-0.5 text-[10px] font-bold text-black">NEW</span>}
+                    </span>
+                  ) : <span class="text-line" aria-label="Not playable">·</span>}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      ))}
+    </table>
+  </div>
+
+  <div class="space-y-10">
+    {factions.map((f) => (
+      <section>
+        <h2 class="mb-4 text-2xl" style={`color:${f.color}`}>{f.label}</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          {RACES.filter((r) => r.faction === f.key).map((r) => (
+            <article id={r.slug} class="card p-4" style={`border-top:3px solid ${f.color}`}>
+              <header class="mb-3 flex items-center gap-3">
+                <Icon name={r.icon} size={44} alt="" />
+                <h3 class="text-lg">{r.name}</h3>
+              </header>
+              <dl class="space-y-2 text-sm">
+                {r.racials.map((x) => (
+                  <div class="flex gap-2">
+                    <Icon name={x.icon} size={24} alt="" />
+                    <div><dt class="font-medium">{x.name}</dt><dd class="text-muted">{x.text}</dd></div>
+                  </div>
+                ))}
+              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>

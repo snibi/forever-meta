@@ -1,0 +1,401 @@
+{
+  "class": "hunter",
+  "spec": "survival",
+  "tagline": "Melee Hunter reborn: dual-wield Mongoose Bite, Strider Kick and trap weaving. Highest ceiling, slowest start.",
+  "verdict": [
+    "Survival is the only fully redesigned Hunter tree: Icy Veins calls it \"by far the most changed\" and says it is now a primarily melee spec. Savage Strikes (+4% melee crit), Predator's Edge (+30% melee crit damage, +50% off-hand damage), Lightning Reflexes (+10% Agility) and the new Aspect of the Beast melee Attack Power make it a dual-wielder; Beast Mastery's Deadly Aspects (10% per melee auto attack for +30% melee attack speed under Aspect of the Beast, as Blizzard says to support these melee builds) is why we spend 5 points in the BM tree.",
+    "Expose Prey and Lacerating Strikes make Mongoose Bite a rotational button: attacks on a Hunter's Marked target have a 10% chance to activate Mongoose Bite for 5 sec, and the bite then bleeds for 21 sec for 40% of its damage (it can crit since the Sep-24 build). Strider Kick (100% weapon damage, +30% movement speed for 3 sec, also buffed Sep 24) is the second new rotational melee button, and Resourcefulness cuts Trap and melee mana cost by up to 60% so you can weave Explosive Trap. Icy Veins: Resourcefulness \"should enable you to spam out traps and melee attacks non-stop throughout any fight\".",
+    "The price is time. Icy Veins rates Survival the weakest Hunter leveler (the melee talents sit in the deep half of the tree and you play ranged for at least the first 40 levels), calls its dungeon scaling \"mediocre\" (no AoE beyond Explosive Trap), but expects exceptional single-target damage at the end of the game. The wowforever.co roundup lists Survival as A on MMOExp and Overgear and S on a player-posted Blizzard forum list.",
+    "No level above 30 has been tested, and Survival's signature talents are at points 31+. Everything below is a projection, with the leveling path built to be ranged-first and respec-free."
+  ],
+  "strengths": [
+    "Highest single-target ceiling among Hunters per Icy Veins (\"exceptional single-target damage\" and \"scale very well into the end-game\").",
+    "Self-sufficient melee kit: Deterrence, Counterattack (5-sec immobilize), Strider Kick's speed burst and Surefooted's snare reduction.",
+    "Best trap spec: Entrapment (5-sec root on every trap trigger), Clever Traps and Survivalist's Discipline (trap cooldowns -40%).",
+    "Mana-light: Resourcefulness reduces Trap and melee mana cost by up to 60%.",
+    "Hunter without pet dependence: dual-wield melee plus Lone Wolf (+20% damage with no pet) removes pet management."
+  ],
+  "weaknesses": [
+    "Weakest leveler of the three (Icy Veins): you play ranged for the first 40 levels or more while the melee talents arrive.",
+    "No AoE except Explosive Trap, and melee dungeons are rough early (Icy Veins).",
+    "Aspect of the Cheetah is poor for a melee spec: any damage dazes you and cancels it.",
+    "Melee is hit by dodge and parry; Expertise-style itemization is announced but not visible yet (Method, Blizzard).",
+    "Most untested of the three: the Lacerating Strikes, Expose Prey and Predator's Edge values only come into play at 31+ points."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "5/0/46 Deadly Aspects + Survival: trap, kick and Deterrence skirmisher",
+      "summary": "Nearly the whole Survival tree (skipping Expose Prey/Lacerating Strikes, Survival Tactics and 4 points of Clever Traps) with Deadly Aspects for melee haste. Entrapment, Improved Wing Clip, Counterattack and Deterrence give you control and survival; Predator's Edge and Strider Kick give you the kill.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Critical Strike",
+          "Hit",
+          "Stamina",
+          "Expertise",
+          "Strength"
+        ],
+        "note": "Icy Veins lists Survival's PvE order as weapon damage, Hit, Agility, Crit, Strength, Intellect, Spirit, Stamina. We promote Stamina for battlegrounds (inference). Expertise is the TBC-style dodge/parry stat that replaces weapon skill (Method); no Forever item has shown a value yet."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive breaks stuns without sharing a cooldown with the PvP trinket (Icy Veins), Sword Specialization adds +2% crit, and Humans are Icy Veins' pick for PvP.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp is an AoE stun on 2 min cooldown, Endurance gives 5% Health plus 1% hit, and Plainsrunning helps you reach and leave fights.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Role: node assassin and flag-carrier hunter. Strider Kick (100% weapon damage, +30% speed for 3 sec) closes distance, Aspect of the Beast (melee AP) stays on, and Deadly Aspects ramps your swing speed.",
+        "Deterrence (+25% Dodge and Parry, 10 sec) into Counterattack after a parry gives a 5-sec immobilize; Deflection's +10% parry fuels it.",
+        "Traps work in combat on a 30-second cooldown, Survivalist's Discipline makes that 18 sec for traps and Deterrence. Entrapment 5/5 roots every trapped target for 5 sec, and Improved Wing Clip adds a 20% chance to immobilize for 5 sec.",
+        "You cannot stun or interrupt (Blizzard) - use Human Will to Survive or Tauren War Stomp for utility.",
+        "You still shoot: Aspect of the Hawk and Auto Shot are your answer to kiting casters and flag carriers you cannot catch.",
+        "Track Humanoids for Improved Tracking; against Forsaken-heavy groups switch to Undead (inference from Classic creature types)."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "The only physical-damage glove formula in the listing; Strength is 1 melee Attack Power per point (Icy Veins). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Rare PvP gear needs level 55 and is not rank-locked; Elite upgrades use Emboldened Seals (strongly supported by datamining, not confirmed). R2 Insignia Trinket (3,500 Honor), then R3 Cloak (10 Arathi Basin Marks, 3,000 Honor) and R4 Necklace (10 Darkspear Islands Marks, 5,000 Honor) with Agility enchants. Melee spec, so Wrist (10 Warsong Gulch Marks) and Gloves (10 Warsong Gulch Marks) are cheap upgrades, Chest and Legs the expensive ones (15 Marks each). R7 Battle Standard (15% max health aura, 10 min cooldown) for AV and AB. R14 weapons: the paired Left/Right Hand Blade, Swiftblade and Dirk entries (10 Darkspear Islands Marks, 8,000 Honor) are likely the dual-wield options (inferred from names).",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-sv-hunter",
+        "icy-veins-race-guide",
+        "icy-veins-pvp-rank-system",
+        "blizzard-beta-notes-sep24",
+        "method-itemization"
+      ],
+      "points": {
+        "Beast Mastery": {
+          "Deadly Aspects": 5
+        },
+        "Survival": {
+          "Improved Tracking": 5,
+          "Deflection": 5,
+          "Savage Strikes": 2,
+          "Entrapment": 5,
+          "Survivalist": 5,
+          "Improved Wing Clip": 3,
+          "Clever Traps": 1,
+          "Surefooted": 3,
+          "Deterrence": 1,
+          "Predator's Edge": 5,
+          "Counterattack": 1,
+          "Resourcefulness": 2,
+          "Survivalist's Discipline": 2,
+          "Strider Kick": 1,
+          "Lightning Reflexes": 5
+        }
+      }
+    },
+    "pve": {
+      "title": "5/11/35 Survival: dual-wield Mongoose Bites with Lone Wolf",
+      "summary": "Deadly Aspects for melee haste, Lethal Attacks and Careful Aim for crit and Intellect-to-Attack-Power, and Lone Wolf for +20% damage with no pet. In Survival: Predator's Edge, Savage Strikes, Lightning Reflexes, Expose Prey into Lacerating Strikes, Strider Kick, Resourcefulness and Survivalist's Discipline for trap weaving.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Expertise",
+          "Strength",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "Icy Veins: weapon damage, Hit, Agility, Crit, Strength (1 melee Attack Power each), Intellect (1 Attack Power via Careful Aim). Method says Expertise replaces weapon skill for melee as in TBC; we rank it after Crit because Forever has not shown any Expertise item yet (inference). Weapon damage still matters: slow weapons hit harder."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization is +2% crit to all attacks with a sword equipped, the biggest permanent crit racial for a dual-wielder; Icy Veins calls Human the PvE and PvP edge.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Attack Power 15 sec, 2 min) and Hardiness (-20% stun duration) suit a melee Hunter in the dead zone; Axe Specialization adds crit with an axe.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Keep Aspect of the Beast on for the melee Attack Power and Deadly Aspects procs; drop it for Aspect of the Hawk only when you have to range.",
+        "Hunter's Mark the target so Expose Prey can activate Mongoose Bite; use the Bite when it procs and it now adds a 21-second bleed (40% of the hit).",
+        "Weave Strider Kick, Raptor Strike and Explosive Trap; Resourcefulness makes the mana cost of Traps and melee abilities 60% lower, and Survivalist's Discipline takes the trap cooldown from 30 to 18 sec.",
+        "Dismiss the pet for Lone Wolf (+20% damage); the pet adds little in melee, and there is nothing to micromanage in the dead zone.",
+        "Expect ranged phases: Icy Veins says Survival will still need to range early in the game and has no AoE besides Explosive Trap.",
+        "Entrapment is skipped in this build; use Freezing Trap for crowd control and Frost Trap for slowing."
+      ],
+      "enchants": [
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Agility",
+          "note": "Neck enchants are new to Forever (Warcraft Tavern). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Only worth it because Careful Aim converts Intellect into Attack Power. Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "The only physical-damage glove formula in the listing; Strength is 1 melee Attack Power per point (Icy Veins). Formula seen on the BlizzCon demo Enchanting vendor (Warcraft Tavern); its numeric value has not been published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-hunter-druid-deep-dive",
+        "icy-veins-sv-hunter",
+        "icy-veins-hunter-overview",
+        "icy-veins-race-guide",
+        "method-itemization",
+        "warcraft-tavern-enchanting-formulas",
+        "wowforever-tier-list"
+      ],
+      "points": {
+        "Beast Mastery": {
+          "Deadly Aspects": 5
+        },
+        "Marksmanship": {
+          "Lethal Attacks": 5,
+          "Careful Aim": 5,
+          "Lone Wolf": 1
+        },
+        "Survival": {
+          "Improved Tracking": 5,
+          "Savage Strikes": 2,
+          "Survivalist": 5,
+          "Surefooted": 3,
+          "Clever Traps": 2,
+          "Predator's Edge": 5,
+          "Resourcefulness": 2,
+          "Expose Prey": 2,
+          "Survivalist's Discipline": 2,
+          "Strider Kick": 1,
+          "Lightning Reflexes": 5,
+          "Lacerating Strikes": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Ranged first: Deadly Aspects, Lethal Attacks, Careful Aim, then melee from 43",
+      "summary": "Icy Veins says Survival is the slowest leveler and that you need to be ranged for at least 40 levels. So the first 15 points go into the Beast Mastery and Marksmanship talents that boost Auto Shot (Deadly Aspects, Lethal Attacks, Careful Aim), then the Survival tree top to bottom. Melee finishes at 60 with Predator's Edge, Lightning Reflexes and Lacerating Strikes.",
+      "stats": {
+        "priority": [
+          "Ranged weapon damage",
+          "Hit",
+          "Agility",
+          "Critical Strike",
+          "Strength",
+          "Intellect",
+          "Spirit",
+          "Stamina"
+        ],
+        "note": "Icy Veins' Survival level-20 list. You range until about level 43, so ranged weapon damage matters most until then; Strength becomes useful with the melee talents. Melee is more exposed to dodge and parry on higher-level enemies (Icy Veins)."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Big Game Hunter is +5% to Beasts, Stoneform is good against poisons and bleeds while you learn melee.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Icy Veins' single strongest Hunter race for leveling; Plainsrunning lets you kite while ranging for the first 40 levels. Less useful once you melee, but still the pick.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Levels 10 to ~42: play it as a ranged Hunter. Hunter's Mark, pet first, Serpent Sting, Aimed Shot, Auto Shot; use Aspect of the Hawk for Deadly Aspects.",
+        "Do not take the Survival talents before Deadly Aspects, Lethal Attacks and Careful Aim: the first 20 points of Survival are extremely weak next to Beast Mastery and Marksmanship (Icy Veins).",
+        "Keep your pet out. It holds threat while you range, and the final build has no Lone Wolf.",
+        "From level 43 (Predator's Edge) start meleeing with Aspect of the Beast, Raptor Strike and Strider Kick (level 54), then Mongoose Bite with Expose Prey and Lacerating Strikes at 60.",
+        "Use Deterrence (level 43) as the panic button and Feign Death to reset pulls.",
+        "Skinning and Leatherworking suit Hunters; the pet starts the next mob while you skin (Icy Veins)."
+      ],
+      "enchants": [],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-veins-sv-hunter",
+        "icy-veins-hunter-overview",
+        "icy-veins-race-guide",
+        "blizzard-hunter-druid-deep-dive"
+      ],
+      "order": [
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Deadly Aspects",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Lethal Attacks",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Careful Aim",
+        "Improved Tracking",
+        "Improved Tracking",
+        "Improved Tracking",
+        "Improved Tracking",
+        "Improved Tracking",
+        "Savage Strikes",
+        "Savage Strikes",
+        "Survivalist",
+        "Survivalist",
+        "Survivalist",
+        "Surefooted",
+        "Surefooted",
+        "Surefooted",
+        "Survivalist",
+        "Survivalist",
+        "Clever Traps",
+        "Clever Traps",
+        "Deterrence",
+        "Predator's Edge",
+        "Predator's Edge",
+        "Predator's Edge",
+        "Predator's Edge",
+        "Predator's Edge",
+        "Resourcefulness",
+        "Resourcefulness",
+        "Expose Prey",
+        "Expose Prey",
+        "Survivalist's Discipline",
+        "Survivalist's Discipline",
+        "Strider Kick",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lacerating Strikes"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-hunter-druid-deep-dive",
+      "title": "World of Warcraft: Forever Class Deep Dives — Hunter and Druid",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301515",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-veins-hunter-overview",
+      "title": "Hunter Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/hunter-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-sv-hunter",
+      "title": "World of Warcraft: Forever Survival Hunter Guide",
+      "url": "https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-tier-list",
+      "title": "WoW Forever Tier List — Every Public Ranking (Oct 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

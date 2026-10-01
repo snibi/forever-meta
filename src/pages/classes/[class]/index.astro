@@ -1,0 +1,91 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { CLASSES, ROLE_LABEL, classBySlug } from '../../../lib/classes';
+import { treeIcon } from '../../../lib/talents';
+import { RACES } from '../../../lib/races';
+import { MODES, getSpecs, getTierLists, specHref, specTiers } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return CLASSES.map((c) => ({ params: { class: c.slug } }));
+}
+
+const cls = classBySlug(Astro.params.class!)!;
+const specs = await getSpecs();
+const lists = await getTierLists();
+const TIER_COLOR: Record<string, string> = {
+  S: 'var(--color-tier-s)', A: 'var(--color-tier-a)', B: 'var(--color-tier-b)', C: 'var(--color-tier-c)', D: 'var(--color-tier-d)',
+};
+const factions = [
+  { key: 'alliance', label: 'Alliance', color: 'var(--color-alliance)' },
+  { key: 'horde', label: 'Horde', color: 'var(--color-horde)' },
+] as const;
+---
+<Base title={`${cls.name} builds`} description={`Best PvP, PvE and leveling builds for every ${cls.name} spec in WoW Forever.`} classColor={cls.color}>
+  <header class="mb-8 flex items-center gap-4">
+    <Icon name={`classicon_${cls.slug}`} size={64} alt="" />
+    <div>
+      <p class="text-sm text-muted"><a class="underline" href="/#classes">Classes</a> /</p>
+      <h1 class="text-4xl font-bold" style={`color:${cls.color}`}>{cls.name}</h1>
+    </div>
+  </header>
+
+  <div class="grid gap-4 md:grid-cols-3">
+    {cls.specs.map((s) => {
+      const id = `${cls.slug}-${s.slug}`;
+      const entry = specs.find((x) => x.id === id);
+      const flat = { ...s, id, class: cls.slug, className: cls.name, color: cls.color };
+      const tiers = specTiers(lists, flat);
+      return (
+        <article class="card card-accent flex flex-col p-4" data-spec-card={id}>
+          <div class="mb-3 flex items-center gap-3">
+            <Icon name={treeIcon(cls.slug, s.tree)} size={48} alt="" style={`view-transition-name:spec-${id}`} />
+            <div>
+              <h2 class="text-lg">{s.name}</h2>
+              <p class="text-xs text-muted">{ROLE_LABEL[s.role]}{s.altRoles?.length ? ` · can ${s.altRoles.join('/')}` : ''}</p>
+            </div>
+          </div>
+          {entry ? (
+            <>
+              <p class="mb-4 flex-1 text-sm">{entry.data.tagline}</p>
+              <div class="mb-4 grid grid-cols-3 gap-2 text-center">
+                {MODES.map((m) => (
+                  <a href={specHref(flat, m.key)} class="rounded-md border border-line bg-raised py-2 no-underline hover:border-[var(--class-color)]">
+                    <div class="text-[11px] uppercase tracking-wider text-muted">{m.label}</div>
+                    <div class="font-display text-xl font-bold" style={`color:${tiers[m.key] ? TIER_COLOR[tiers[m.key]!] : 'var(--color-muted)'}`}>{tiers[m.key] ?? '—'}</div>
+                  </a>
+                ))}
+              </div>
+              <a class="chip justify-center py-1.5" style={`--chip-color:${cls.color}`} href={specHref(flat)}>Open build →</a>
+            </>
+          ) : (
+            <>
+              <p class="flex-1 text-sm text-muted">No build published yet.</p>
+              <span class="chip disabled mt-4 justify-center py-1.5" aria-disabled="true">Coming soon</span>
+            </>
+          )}
+        </article>
+      );
+    })}
+  </div>
+
+  <section class="mt-10" aria-labelledby="races-h">
+    <h2 id="races-h" class="section-title">Playable races</h2>
+    <div class="grid gap-4 md:grid-cols-2">
+      {factions.map((f) => (
+        <div class="card p-4" style={`border-top:3px solid ${f.color}`}>
+          <h3 class="mb-3 text-sm uppercase tracking-wider" style={`color:${f.color}`}>{f.label}</h3>
+          <ul class="flex flex-wrap gap-2">
+            {RACES.filter((r) => r.faction === f.key && r.classes.includes(cls.slug)).map((r) => (
+              <li class="chip">
+                <Icon name={r.icon} size={24} alt="" />
+                {r.name}
+                {r.newClasses.includes(cls.slug) && <span class="rounded bg-gold px-1 text-[10px] font-bold text-black">NEW</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

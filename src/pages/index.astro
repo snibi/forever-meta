@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import Countdown from '../components/Countdown.astro';
+import TierList from '../components/TierList.astro';
+import Icon from '../components/Icon.astro';
+import { CLASSES, ROLE_GLYPH, ROLE_LABEL } from '../lib/classes';
+import { treeIcon } from '../lib/talents';
+import { getSpecs, getTierLists, specHref } from '../lib/content';
+
+const specs = await getSpecs();
+const lists = await getTierLists();
+const have = new Set(specs.map((s) => s.id));
+const SNAPSHOT = [
+  ['pvp-overall', 'PvP — overall'],
+  ['pve-dps', 'PvE — DPS'],
+  ['pve-tank', 'PvE — tank'],
+  ['pve-healer', 'PvE — healer'],
+  ['leveling', 'Leveling'],
+] as const;
+const rows = SNAPSHOT.flatMap(([id, label]) => {
+  const list = lists.find((l) => l.id === id);
+  return list ? [{ id, label, list: list.data }] : [];
+});
+---
+<Base>
+  <section class="py-10 text-center">
+    <h1 class="text-4xl font-bold text-gold sm:text-6xl">Forever Meta</h1>
+    <p class="mt-3 font-display text-xl sm:text-2xl">The WoW Forever meta, solved.</p>
+    <p class="mx-auto mt-3 max-w-2xl text-muted">
+      One best PvP, PvE and leveling build for all 27 specs, with race picks, stat priorities and the PvP rank path —
+      every claim tied to the beta client's talent data or a cited source.
+    </p>
+    <div class="mt-5"><Countdown /></div>
+  </section>
+
+  {rows.length > 0 && (
+    <section class="mb-12" aria-labelledby="snapshot">
+      <h2 id="snapshot" class="section-title text-2xl">Meta snapshot</h2>
+      <p class="mb-4 text-sm text-muted">S-tier today. <a class="underline" href="/tier-lists/">All tier lists →</a></p>
+      <div class="grid gap-5 lg:grid-cols-2">
+        {rows.map((r) => (
+          <div>
+            <h3 class="mb-2 text-sm text-muted"><a class="hover:text-text" href={`/tier-lists/${r.id}/`}>{r.label}</a></h3>
+            <TierList list={r.list} onlyTiers={['S']} />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section id="classes" aria-labelledby="classes-h">
+    <h2 id="classes-h" class="section-title text-2xl">Classes</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {CLASSES.map((c) => (
+        <article class="card card-accent p-4" style={`--class-color:${c.color}`} data-class-card>
+          <a href={`/classes/${c.slug}/`} class="mb-3 flex items-center gap-3 no-underline">
+            <Icon name={`classicon_${c.slug}`} size={40} alt="" />
+            <h3 class="text-xl" style={`color:${c.color}`}>{c.name}</h3>
+          </a>
+          <ul class="flex flex-col gap-2">
+            {c.specs.map((s) => {
+              const id = `${c.slug}-${s.slug}`;
+              const inner = (
+                <>
+                  <Icon name={treeIcon(c.slug, s.tree)} size={26} alt="" />
+                  <span>{s.tree}</span>
+                  <span class="ml-auto text-muted" title={ROLE_LABEL[s.role]} aria-label={ROLE_LABEL[s.role]}>{ROLE_GLYPH[s.role]}</span>
+                  {!have.has(id) && <span class="text-[11px] text-muted">Coming soon</span>}
+                </>
+              );
+              return (
+                <li>
+                  {have.has(id) ? (
+                    <a class="chip w-full" style={`--chip-color:${c.color}`} href={specHref({ class: c.slug, slug: s.slug })}>{inner}</a>
+                  ) : (
+                    <span class="chip disabled w-full" aria-disabled="true">{inner}</span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

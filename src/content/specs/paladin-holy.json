@@ -1,0 +1,398 @@
+{
+  "class": "paladin",
+  "spec": "holy",
+  "tagline": "Light's Vigil finally gives Holy an AoE answer; single-target healing and buffs are still the class's calling card.",
+  "verdict": [
+    "Holy Paladin is the healer you bring for single-target throughput and the deepest utility kit in the game, and Forever patches its one historic hole. Light's Vigil (the row-7 capstone, which pushed Holy Shock up the tree) marks one party member for 30 sec: your next Holy Shock on them has no cooldown and heals their party for 325 to 343. Blizzard's deep dive calls it a high-cost cooldown that can reset Holy Shock, and Icy Veins expects it to be the fix for group damage. We build around it.",
+    "The catch is arithmetic. The Holy tree in the vendored client data holds only 46 talent points, so a 51-point build has to leave it. We spend 32 to 33 points on the healing spine (Divine Intellect, Healing Light, Reverence, Illumination, Infusion of Light, Holy Power, Light's Vigil) and put the spillover where it actually helps a healer: Protection for armor, Defense and cooldown cuts, plus Benediction in PvE for cheaper instant spells and dispels. Nobody has tested this at level 60. The Holy Shock-to-Light's Vigil half of the tree is out of reach at the current level cap of 30.",
+    "Outside rankings do not agree, so do not treat Holy as a sure S-tier pick. wowforever.co's side-by-side shows the Blizzard forum list at C and Overgear at B for Holy Paladin, while ExpCarry (a seller, so corroboration only) puts it in A among level-20 healers. Restoration Druid is the beta's healer of the moment. Our case for Holy is Light's Vigil plus Blessings, Auras, Lay on Hands and plate, not a measured throughput lead.",
+    "Sep-24 notes that matter here: Improved Holy Strike was removed and its 10 sec cooldown made baseline for every Paladin, and Holy Power now also adds its +15% crit to Holy Strike. Neither changes the healing build, but it makes the damage-assisted Shockadin style slightly more viable for solo play."
+  ],
+  "strengths": [
+    "Light's Vigil lets one Holy Shock reset itself and heal an entire party, fixing the AoE gap Holy has had since Vanilla.",
+    "Illumination plus Reverence is a real mana engine: crits refund 50% of base cost and 30% of regeneration continues while casting.",
+    "Voice of Truth (6 sec silence and interrupt immunity) and Spiritual Focus (70% chance to keep casting through damage) make casts reliable.",
+    "Best-in-class group utility: all Blessings now last 60 minutes and Blessing of Kings is trainer-taught, plus Blessing of Protection, Freedom and Lay on Hands as panic buttons."
+  ],
+  "weaknesses": [
+    "Very weak mobility. Icy Veins calls it the class's sole weakness and Holy has no movement tools.",
+    "The Holy tree has only 46 points, so 5 to 19 points go to filler in other trees; the build is a compromise, not a pure Holy tree.",
+    "Light's Vigil is expensive and limited to one active per party. Its real value is unproven until level 60 gear and fights exist.",
+    "Leveling as Holy is slow and dungeon XP was nerfed; you lack personal damage when questing alone.",
+    "No interrupt and no slow, as Blizzard says plainly in the deep dive."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Holy Paladin: battleground support healer",
+      "summary": "Healing spine plus interrupt and fear resistance, and Protection points for faster Blessing of Protection, Divine Shield and Hammer of Justice. You heal the flag carrier in WSG and keep the group alive at AB and AV.",
+      "stats": {
+        "priority": [
+          "Bonus Healing",
+          "Intellect",
+          "Stamina",
+          "Crit",
+          "MP5",
+          "Spirit"
+        ],
+        "note": "No Resilience stat is documented for Forever, so Stamina is the survival stat. Item stats are hidden until items drop, so this is a theory ranking; re-check at launch."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive instantly removes all Stuns on a 3 min cooldown, and Perception counters stealthed flag hunters. The Human Spirit (+5% Spirit) also feeds Reverence.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Will of the Forsaken breaks Charm, Fear and Sleep, and Cannibalize restores 7% Health and 7% Mana every 2 sec for 10 sec between fights."
+        }
+      },
+      "playstyle": [
+        "Role: pocket healer on your flag carrier in WSG 10v10, and the group anchor on a node in AB 15v15 or Darkspear Islands 15v15.",
+        "Guardian's Favor cuts Blessing of Protection's cooldown by 2 min and adds 6 sec to Blessing of Freedom; Sacred Duty takes 60 sec off Divine Shield and Divine Protection.",
+        "Voice of Truth (6 sec) is your answer to a caster trying to lock you out: pop it into the heal you cannot afford to lose.",
+        "Unyielding Faith (-30% Fear and Disorient duration) plus Improved Hammer of Justice (15 sec less cooldown at max rank) gives you a defensive stun every fight.",
+        "Holy Shock has a 10 sec cooldown; use it as an instant heal under pressure, or on a Light's Vigil target for a free chain heal.",
+        "Keep Seal of Righteousness up: Judgement no longer consumes your Seal, so the damage is free whenever mana allows."
+      ],
+      "enchants": [
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram listed in Icy Veins' Holy gear table; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Exact effect is not published in the sources.",
+          "evidence": "beta-tested"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new in Forever; the formula was seen on the BlizzCon demo vendor. Numeric bonus not shown in the article.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Intellect is your #2 stat and feeds Divine Intellect. Bonus size not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Priorities: Insignia Trinket (Rank 2) first, then Faction Cloak (Rank 3, costs Arathi Basin Marks) and Faction Necklace (Rank 4). Battle Standard at Rank 7 gives nearby allies +15% health on a 10 min cooldown, strong for a stand at a node. Rare PvP gear needs level 55; Elite pieces come from Emboldened Seals at Ranks 8 to 13, with Elite Chest and Helmet at Rank 13. At Rank 14 the weapon list includes Tome of Restoration, Aegis and Barricade, but that is a 10-week-plus grind (24,750 Rank Points).",
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "icy-holy-paladin",
+        "icy-race-guide",
+        "icy-pvp-rank-system"
+      ],
+      "points": {
+        "Holy": {
+          "Divine Intellect": 5,
+          "Healing Light": 3,
+          "Spiritual Focus": 2,
+          "Unyielding Faith": 2,
+          "Voice of Truth": 1,
+          "Reverence": 3,
+          "Purifying Power": 2,
+          "Infusion of Light": 2,
+          "Illumination": 5,
+          "Divine Favor": 1,
+          "Holy Shock": 1,
+          "Holy Power": 5,
+          "Light's Vigil": 1
+        },
+        "Protection": {
+          "Toughness": 5,
+          "Guardian's Favor": 2,
+          "Precision": 1,
+          "Anticipation": 5,
+          "Sacred Duty": 2,
+          "Improved Hammer of Justice": 3
+        }
+      }
+    },
+    "pve": {
+      "title": "Holy Paladin: Light's Vigil dungeon and raid healer",
+      "summary": "32 Holy points for the healing spine and Light's Vigil, 14 in Protection for armor, Defense and cooldown cuts, and Benediction 5/5 for cheaper instant spells and dispels.",
+      "stats": {
+        "priority": [
+          "Bonus Healing",
+          "Intellect",
+          "MP5",
+          "Crit",
+          "Haste",
+          "Spirit"
+        ],
+        "note": "Order follows Icy Veins' Holy guide. Spirit is worth more than usual because Reverence keeps 30% of regeneration running while you cast. Item stats are hidden until drops, so there is no level 60 BiS yet."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "The Human Spirit (+5% Spirit) synergizes with Reverence, Sword Specialization adds 2% crit with a sword, and Icy Veins rates Human slightly ahead for Holy.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Cannibalize now restores Mana as well as Health, which helps mana-hungry healers between pulls."
+        }
+      },
+      "playstyle": [
+        "Flash of Light is your main heal; Holy Light is for big hits and when mana allows. Heal crits from Holy Shock or Flash of Light trim 1 sec off your next Holy Light (Infusion of Light).",
+        "Put Light's Vigil on one party member before the pull. Only one can be active per party, and the Holy Shock you cast on them has no cooldown and heals their party for 325 to 343.",
+        "Illumination refunds 50% of base cost on crits, and Reverence keeps 30% of regeneration running while casting. Take it before anything else in row 3.",
+        "Divine Favor guarantees a crit on Flash of Light, Holy Light or Holy Shock: use it on the heal you most need to land and enjoy the Illumination refund.",
+        "Keep your Blessings (they last 60 minutes) and Aura running. Lay on Hands heals for your max health but spends all your mana, so it is a last resort.",
+        "Benediction and Purifying Power make Cleanse and Purify cheap in dispel-heavy fights."
+      ],
+      "enchants": [
+        {
+          "slot": "Relic (Libram)",
+          "name": "Tenets of the Silver Hand",
+          "note": "Enchanting-crafted Libram listed in Icy Veins' Holy gear table; Warcraft Tavern confirms Enchanting makes Paladin-only Librams. Exact effect is not published in the sources.",
+          "evidence": "beta-tested"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Healing Power",
+          "note": "Neck enchants are new in Forever; the formula was seen on the BlizzCon demo vendor. Numeric bonus not shown in the article.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Intellect",
+          "note": "Intellect is your #2 stat and feeds Divine Intellect. Bonus size not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Off-hand",
+          "name": "Enchant Off-hand - Wisdom",
+          "note": "Off-hand enchanting is new; effect not described in the source, so verify in game before buying mats.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "official",
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "blizzard-deep-dive",
+        "icy-holy-paladin",
+        "icy-paladin-overview",
+        "wowforever-co-tier-list",
+        "expcarry-tier-list"
+      ],
+      "points": {
+        "Holy": {
+          "Divine Intellect": 5,
+          "Healing Light": 3,
+          "Spiritual Focus": 2,
+          "Unyielding Faith": 1,
+          "Voice of Truth": 1,
+          "Reverence": 3,
+          "Purifying Power": 2,
+          "Infusion of Light": 2,
+          "Illumination": 5,
+          "Divine Favor": 1,
+          "Holy Shock": 1,
+          "Holy Power": 5,
+          "Light's Vigil": 1
+        },
+        "Protection": {
+          "Toughness": 5,
+          "Guardian's Favor": 2,
+          "Anticipation": 5,
+          "Sacred Duty": 2
+        },
+        "Retribution": {
+          "Benediction": 5
+        }
+      }
+    },
+    "leveling": {
+      "title": "Holy Paladin: healing-first leveling path",
+      "summary": "Holy leveling is dungeon-and-quest-chain support rather than fast solo kills. The first 21 points follow Icy Veins' level-20 build and finish on the PvE build, so you never respec.",
+      "stats": {
+        "priority": [
+          "Bonus Healing",
+          "Intellect",
+          "Spirit",
+          "MP5",
+          "Crit",
+          "Stamina"
+        ],
+        "note": "Bonus Healing now also grants one third as much bonus damage (Blizzard deep dive), which helps Holy solo play. Spirit regenerates between pulls and works while casting with Reverence."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "The Human Spirit (+5% Spirit) plus Reverence cuts drinking time between pulls, and Sword Specialization adds crit if you find a sword.",
+          "runnerUp": "dwarf"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Only Horde option. Cannibalize on corpses refills Health and Mana quickly between pulls."
+        }
+      },
+      "playstyle": [
+        "Dungeon XP was nerfed but dungeon quest XP was boosted, so run only the dungeons you hold quests for and quest in between.",
+        "Early talents: Divine Intellect, Healing Light, then Reverence, exactly as Icy Veins recommends for level 20.",
+        "Keep Seal of Righteousness up, use Judgement and Holy Strike on cooldown, and heal yourself with Flash of Light; you are nearly unkillable but kill slowly.",
+        "Use Lay on Hands only in emergencies: it heals you or an ally for your max health and drains all your mana.",
+        "Log out in a capital or inn to bank rested XP, as both Icy Veins guides advise.",
+        "Holy Shock arrives at point 26 (level 35) and Light's Vigil at point 32 (level 41); until then Flash of Light and Holy Light carry you."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "icy-holy-paladin",
+        "blizzard-deep-dive",
+        "method-itemization"
+      ],
+      "order": [
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Divine Intellect",
+        "Healing Light",
+        "Healing Light",
+        "Healing Light",
+        "Spiritual Focus",
+        "Spiritual Focus",
+        "Reverence",
+        "Reverence",
+        "Reverence",
+        "Purifying Power",
+        "Purifying Power",
+        "Illumination",
+        "Illumination",
+        "Illumination",
+        "Illumination",
+        "Illumination",
+        "Voice of Truth",
+        "Infusion of Light",
+        "Infusion of Light",
+        "Divine Favor",
+        "Unyielding Faith",
+        "Holy Shock",
+        "Holy Power",
+        "Holy Power",
+        "Holy Power",
+        "Holy Power",
+        "Holy Power",
+        "Light's Vigil",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Guardian's Favor",
+        "Guardian's Favor",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Sacred Duty",
+        "Sacred Duty",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction",
+        "Benediction"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizzard-deep-dive",
+      "title": "World of Warcraft: Forever Deep Dive Panel Recap",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-13",
+      "tier": "official"
+    },
+    {
+      "id": "blizzard-beta-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "icy-paladin-overview",
+      "title": "Paladin Class Guide – WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/paladin-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-holy-paladin",
+      "title": "World of Warcraft: Forever Holy Paladin Guide",
+      "url": "https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcraft-tavern-enchanting",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared (October 2026)",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "expcarry-tier-list",
+      "title": "WoW Forever Tier List: Best Classes for DPS, PvP & Leveling",
+      "url": "https://expcarry.com/wow-forever-class-tier-list",
+      "publisher": "ExpCarry",
+      "date": "2026-09-29",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

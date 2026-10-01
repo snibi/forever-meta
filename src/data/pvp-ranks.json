@@ -1,0 +1,34 @@
+{
+  "sourceUrl": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+  "sourceDate": "2026-09-19",
+  "evidence": "datamined",
+  "honorCap": 15000,
+  "weeklyRankCeiling": [3, 5, 6, 7, 8, 9, 11, 12, 13, 14],
+  "ranks": [
+    { "rank": 1, "alliance": "Private", "horde": "Scout", "rankPoints": 750, "cumulativeRankPoints": 750, "rewards": ["Faction Tabard"] },
+    { "rank": 2, "alliance": "Corporal", "horde": "Grunt", "rankPoints": 900, "cumulativeRankPoints": 1650, "rewards": ["Insignia Trinket"] },
+    { "rank": 3, "alliance": "Sergeant", "horde": "Sergeant", "rankPoints": 1050, "cumulativeRankPoints": 2700, "rewards": ["Faction Cloak"] },
+    { "rank": 4, "alliance": "Master Sergeant", "horde": "Senior Sergeant", "rankPoints": 1200, "cumulativeRankPoints": 3900, "rewards": ["Faction Necklace"] },
+    { "rank": 5, "alliance": "Sergeant Major", "horde": "First Sergeant", "rankPoints": 1350, "cumulativeRankPoints": 5250, "rewards": ["Combat Potions"] },
+    { "rank": 6, "alliance": "Knight", "horde": "Stone Guard", "rankPoints": 1500, "cumulativeRankPoints": 6750, "rewards": ["Elite Faction Tabard"] },
+    { "rank": 7, "alliance": "Knight-Lieutenant", "horde": "Blood Guard", "rankPoints": 1650, "cumulativeRankPoints": 8400, "rewards": ["Battle Standard (15% max health aura, 10 min cooldown)"] },
+    { "rank": 8, "alliance": "Knight-Captain", "horde": "Legionnaire", "rankPoints": 1800, "cumulativeRankPoints": 10200, "rewards": ["Elite Wrist", "Elite Waist"] },
+    { "rank": 9, "alliance": "Knight-Champion", "horde": "Centurion", "rankPoints": 1950, "cumulativeRankPoints": 12150, "rewards": ["Elite Boots"] },
+    { "rank": 10, "alliance": "Lieutenant Commander", "horde": "Champion", "rankPoints": 2100, "cumulativeRankPoints": 14250, "rewards": ["Elite Gloves"] },
+    { "rank": 11, "alliance": "Commander", "horde": "Lieutenant General", "rankPoints": 2350, "cumulativeRankPoints": 16600, "rewards": ["Black War Mounts"] },
+    { "rank": 12, "alliance": "Marshal", "horde": "General", "rankPoints": 2500, "cumulativeRankPoints": 19100, "rewards": ["Elite Legs", "Elite Shoulders"] },
+    { "rank": 13, "alliance": "Field Marshal", "horde": "Warlord", "rankPoints": 2650, "cumulativeRankPoints": 21750, "rewards": ["Elite Chest", "Elite Helmet"] },
+    { "rank": 14, "alliance": "Grand Marshal", "horde": "High Warlord", "rankPoints": 3000, "cumulativeRankPoints": 24750, "rewards": ["Weapon Arsenal"] }
+  ],
+  "battlegrounds": [
+    { "name": "Warsong Gulch", "size": "10v10", "minLevel": 10, "status": "datamined" },
+    { "name": "Arathi Basin", "size": "15v15", "minLevel": 20, "status": "datamined" },
+    { "name": "Darkspear Islands", "size": "15v15", "minLevel": 30, "status": "datamined" },
+    { "name": "Alterac Valley", "size": "40v40", "minLevel": 51, "status": "datamined" }
+  ],
+  "notes": [
+    "Rare-quality PvP gear is not rank-locked and needs level 55; Elite (epic) upgrades use Emboldened Seals unlocked by rank.",
+    "Rank points come from battlegrounds and Gadgetzan tasks; exact values are not yet known.",
+    "Beta vendor prices (Honor plus battleground Marks) are subject to change."
+  ]
+}

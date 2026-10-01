@@ -1,0 +1,406 @@
+{
+  "class": "warlock",
+  "spec": "demonology",
+  "tagline": "Sacrifice the Imp, keep a live demon via Demonic Pact: Shadow stacking and Soul Link, but rankings are split.",
+  "verdict": [
+    "Demonology is the pet-stacking Warlock, and its best version is built around one new talent: Demonic Pact. Thirty-one points reach it, which lets you Demonic Sacrifice the Imp for +15% Shadow damage and still field a live Succubus or Felhunter, so Demonic Knowledge, Master Demonologist and Soul Link stay active. Icy Veins describes exactly that interaction as the point of the rework.",
+    "Rankings are the weakest part of the case. Per the wowforever.co aggregator, MMOExp and Overgear (both sellers) drop Demonology to the bottom D band while the 16 Sep forum thread has it in A, which is as wide a spread as any Warlock spec gets. The one hands-on data point is Icy Veins' beta demo: the Succubus was the strongest damage demon at roughly 23-25% of Warlock damage, the Imp struggled with Mana and damage, and the Voidwalker out-threatened tanks. Pets scale with your stats now, so Demonology gets the most out of that.",
+    "Treat it as high variance. Pet tuning can move this spec more than any other, and nothing past level 38 has been played. Icy Veins' Sep 17-20 guides still quote Gnome Eureka! at 50% Mana reduction; the Sep-24 build made it a flat 10% cost cut plus 10% damage on the next 3 abilities for every class (Blizzard dev notes)."
+  ],
+  "strengths": [
+    "Demonic Sacrifice (Imp: +15% Shadow) into a fresh Succubus with Demonic Pact stacks Shadow damage with Master Demonologist (+10% Shadow at 5 ranks) and Soul Link (+3% damage for you and the demon).",
+    "Demonic Knowledge adds spell damage equal to up to 100% of your level while a demon is out, and Demonic Embrace adds 15% Stamina.",
+    "Soul Link diverts 30% of damage you take to the demon, and Demonic Energies heals the demon for 15% of your spell damage while Life Tap refills its Mana.",
+    "Fast recovery from wipes: Master Summoner (-4 sec cast, -40% Mana) plus Fel Domination (-5.5 sec, -50% Mana) make resummons cheap."
+  ],
+  "weaknesses": [
+    "Widest ranking spread of the three Warlock specs: two seller lists put it at D while a forum poster put it at A, and none of them played level 60.",
+    "Pet management: Icy Veins notes poor positioning or a demon wandering through another pack can ruin a pull, and the Succubus is melee.",
+    "It splits points three ways in PvE (31 Demonology / 18 Destruction / 2 Affliction), so it has no Suppression Hit or threat reduction.",
+    "Re-summoning the sacrificed Imp cancels Demonic Sacrifice even with Demonic Pact, and the Succubus is a fragile melee pet that you must keep alive."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Soul Link Felhunter Bruiser (20/31/0)",
+      "summary": "Sacrifice the Imp for Shadow damage, then summon a Felhunter thanks to Demonic Pact: Soul Link soaks 30% of your damage, Master Demonologist cuts Magic damage taken, Spell Lock and Devour Magic cover healers and casters. Instant Corruption and Fel Concentration-backed Drain Life handle sustained pressure.",
+      "stats": {
+        "priority": [
+          "Spell Power (Shadow)",
+          "Stamina",
+          "Hit",
+          "Spirit",
+          "Critical Strike",
+          "Intellect"
+        ],
+        "note": "Stamina gets a 15% talent boost and Soul Link/Life Tap already trade Health for safety, so raw Health pays twice. Item stats are hidden until drops; this order is a projection."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive instantly clears Stuns, Perception counters Rogues, and Spirit +5% improves Life Tap which also refuels your demon via Demonic Energies.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Will of the Forsaken answers Fear, Charm and Sleep, and Cannibalize between fights restores Health and Mana for you without costing a shard.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Pre-queue sequence: summon the Imp and cast Demonic Sacrifice (+15% Shadow damage, 2 hrs). Demonic Pact keeps the effect when you summon a different demon, so then summon the Felhunter and activate Soul Link. Resummoning an Imp would cancel the sacrifice.",
+        "Role: node defender in Arathi Basin and Darkspear Islands, and a flag-room guard in Warsong Gulch. Soul Link makes you hard to burst; the Felhunter eats the damage and heals through Demonic Energies.",
+        "Felhunter tools: Spell Lock interrupts casters (Improved Felhunter shortens its cooldown by up to 6 sec; the build takes one rank) and Devour Magic is a dispel (Icy Veins). Master Demonologist gives the Felhunter variant -10% Magic damage taken at 5 ranks.",
+        "Corruption is instant (5 Improved Corruption); channel Drain Life with Fel Concentration (70% to avoid interruption) when peeled. Fear is the escape button; avoid it near other enemies.",
+        "Health Funnel costs 30% less Health with Improved Health Funnel and works regardless of the demon's health, so you can revive a hurt Felhunter mid-fight.",
+        "Soul Link lasts only as long as the demon is active, so keep it alive: heal it with Health Funnel and Demonic Energies, and do not park it in AoE."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Spellstone",
+          "note": "Reworked to grant 1% Haste and Spell Power as a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 36). Haste only speeds hard casts, so it is a better fit for Shadow Bolt than for DoTs.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "gearNote": "Cloth caster, so rank rewards are about the trinket and the elite cloth pieces. Rare PvP gear needs level 55 and Battleground marks (beta costs per Icy Veins: cloak 10 Arathi Basin marks + 3,000 Honor, chest 15 AB marks, legs 15 Warsong Gulch marks, helm 15 Alterac Valley marks). Buy in this order: R2 Insignia Trinket (3,500 Honor, 2,000 more for the Elite upgrade), R3 Faction Cloak, R4 Faction Necklace, R5 Combat Potions, then the R12 legs/shoulders and R13 chest/helmet elite pieces (R8 wrist/waist, R9 boots, R10 gloves fill in on the way; Emboldened Seals upgrade rare to Elite, datamined but not fully confirmed). R14 Weapon Arsenal (needs week 10+ of the season per the datamined weekly rank ceiling) lists a Grand Marshal's Stave, Mageblade, Longsword and Tome of Power; the stat budgets are hidden until items drop. R7 Battle Standard (15% max health aura, 10-minute cooldown) is for premade leaders, not for you.",
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-demonology-warlock",
+        "iv-warlock-overview",
+        "forevertalents-warlock-demonology",
+        "wowtbc-demonology-warlock",
+        "iv-pvp-rank-system",
+        "overgear-pvp-tier-list"
+      ],
+      "points": {
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Improved Health Funnel": 2,
+          "Fel Vitality": 3,
+          "Demonic Energies": 2,
+          "Demonic Aegis": 2,
+          "Demonic Sacrifice": 1,
+          "Master Summoner": 2,
+          "Fel Domination": 1,
+          "Decimation": 2,
+          "Soul Link": 1,
+          "Demonic Knowledge": 3,
+          "Improved Felhunter": 1,
+          "Master Demonologist": 5,
+          "Demonic Pact": 1
+        },
+        "Affliction": {
+          "Improved Life Tap": 2,
+          "Suppression": 5,
+          "Improved Corruption": 5,
+          "Improved Drains": 3,
+          "Fel Concentration": 3,
+          "Malediction": 2
+        }
+      }
+    },
+    "pve": {
+      "title": "Demonic Pact Shadow Stack (31/18 Destruction/2)",
+      "summary": "Sacrifice the Imp for +15% Shadow damage, summon the Succubus under Demonic Pact and run Shadow Bolt as filler with Bane, Improved Shadow Bolt and Ruin from the Destruction tree. Unholy Power, Demonic Knowledge, Master Demonologist and Soul Link stack on top. Matches the 2/31/18 split published by wowtbc.gg.",
+      "stats": {
+        "priority": [
+          "Spell Power (Shadow)",
+          "Hit",
+          "Critical Strike",
+          "Haste",
+          "Spirit",
+          "Intellect",
+          "Stamina"
+        ],
+        "note": "No Suppression here, so Hit comes from gear. Shadow Bolt is a hard cast, so Haste counts (unlike DoT builds), but Improved Shadow Bolt and Ruin make Crit the bigger multiplier. L60 stats are hidden; projection."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "The 2% sword crit multiplies Ruin and Improved Shadow Bolt, and 5% Spirit lifts Life Tap for you and the demon through Demonic Energies.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury's +10% Spell Power and Attack Power for 15 sec fits a spell-and-pet burst window; Shatter Curse is a free defensive.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Pre-pull: summon the Imp, cast Demonic Sacrifice (+15% Shadow damage for 2 hrs), then summon the Succubus; Demonic Pact keeps the sacrifice alive. The Succubus is the DPS demon (Icy Veins).",
+        "Cast Soul Link on the Succubus (+3% damage to both of you, 30% of damage you take goes to the demon).",
+        "Curse of the Elements or Recklessness for your group, then Bane of Doom if the target lives over a minute (it explodes after 60 sec and can spawn a Doomguard, Icy Veins), then Shadow Bolt filler.",
+        "Execute: Decimation makes Shadow Bolt or Searing Pain on targets under 35% deal +6% damage and grants a cheaper, faster Soul Fire (-40% cast, no shard).",
+        "Keep the Succubus alive and in range: Demonic Energies heals it for 15% of your spell damage and Life Tap gives it Mana; Move To (100 yd) pulls it out of AoE.",
+        "Never resummon an Imp: resummoning the sacrificed pet cancels the sacrifice even with Demonic Pact. Master Summoner and Fel Domination make other resummons fast and cheap after a wipe."
+      ],
+      "enchants": [
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Recipe listed by Warcraft Tavern from the Azeroth Commerce Authority Enchanting vendor in the BlizzCon demo; the exact bonus is not stated.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchants are new to Forever; same vendor list, no numbers published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Two-handed weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Staff users only; Enchant 2H Weapon - Spellblasting appears on the same list but its effect is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Weapon (oil)",
+          "name": "Create Spellstone",
+          "note": "Reworked to grant 1% Haste and Spell Power as a weapon oil (Icy Veins, BlizzCon demo; trainer rank at level 36). Haste only speeds hard casts, so it is a better fit for Shadow Bolt than for DoTs.",
+          "evidence": "beta-tested"
+        }
+      ],
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-demonology-warlock",
+        "iv-warlock-overview",
+        "wowtbc-demonology-warlock",
+        "forevertalents-warlock-demonology",
+        "tavern-enchanting-formulas"
+      ],
+      "points": {
+        "Demonology": {
+          "Demonic Embrace": 5,
+          "Unholy Power": 5,
+          "Fel Vitality": 3,
+          "Demonic Energies": 2,
+          "Demonic Sacrifice": 1,
+          "Master Summoner": 2,
+          "Fel Domination": 1,
+          "Decimation": 2,
+          "Soul Link": 1,
+          "Demonic Knowledge": 3,
+          "Master Demonologist": 5,
+          "Demonic Pact": 1
+        },
+        "Destruction": {
+          "Improved Shadow Bolt": 5,
+          "Bane": 5,
+          "Cataclysm": 3,
+          "Ruin": 5
+        },
+        "Affliction": {
+          "Improved Life Tap": 2
+        }
+      }
+    },
+    "leveling": {
+      "title": "Pet-First Demonology Leveler, 10→60",
+      "summary": "Improved Corruption x5, Unholy Power x5 and Demonic Energies mirror Icy Veins' level-20 build; Embrace and Fel Vitality harden you by 29, Affliction Hit and drains fill the 30s, and the Sacrifice/Soul Link/Demonic Pact line lands at 45-60.",
+      "stats": {
+        "priority": [
+          "Spell Power",
+          "Spirit",
+          "Stamina",
+          "Hit",
+          "Intellect",
+          "Critical Strike"
+        ],
+        "note": "Life Tap scales with Spirit and also feeds your demon via Demonic Energies; Stamina keeps you inside the Life Tap budget. Spell Power is already on low-level gear (Icy Veins)."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Spirit +5% scales Life Tap (also your demon's Mana) and Will to Survive removes stuns that otherwise kill you mid-cast.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize restores 7% Health and Mana every 2 seconds for 10 sec, which covers both Life Tap and Health Funnel costs.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Send the demon in first: Voidwalker from level 10 holds enemies while you cast; Succubus unlocks at 20, Felhunter at 30 via class quests (Icy Veins).",
+        "The first 11 points (Improved Corruption, Unholy Power, Demonic Energies) match Icy Veins' beta level-20 build; Demonic Energies heals the demon for part of your spell damage and Life Tap restores its Mana.",
+        "Use Health Funnel when Demonic Energies is not enough; First Aid is worth taking because Life Tap and Health Funnel both spend your Health.",
+        "Take Demonic Sacrifice at 45 only to unlock the later row; do not activate it until 60. Until then the demon is your damage and tank.",
+        "Wands were very strong at level 20 (Icy Veins) but Sep 24 stopped them scaling with Spell Power; verify before relying on them.",
+        "You can respec at 60 for 1 silver in the beta (temporary) to the PvE or PvP variants."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "sourceIds": [
+        "iv-demonology-warlock",
+        "iv-warlock-overview",
+        "forevertalents-warlock-demonology",
+        "blizzard-beta-dev-notes-sep24"
+      ],
+      "order": [
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Improved Corruption",
+        "Unholy Power",
+        "Unholy Power",
+        "Unholy Power",
+        "Unholy Power",
+        "Unholy Power",
+        "Demonic Energies",
+        "Demonic Energies",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Demonic Embrace",
+        "Fel Vitality",
+        "Fel Vitality",
+        "Fel Vitality",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Suppression",
+        "Improved Life Tap",
+        "Improved Life Tap",
+        "Improved Drains",
+        "Improved Drains",
+        "Improved Drains",
+        "Soul Harvesting",
+        "Soul Harvesting",
+        "Malediction",
+        "Malediction",
+        "Malediction",
+        "Demonic Sacrifice",
+        "Master Summoner",
+        "Master Summoner",
+        "Fel Domination",
+        "Decimation",
+        "Decimation",
+        "Soul Link",
+        "Demonic Knowledge",
+        "Demonic Knowledge",
+        "Demonic Knowledge",
+        "Master Demonologist",
+        "Master Demonologist",
+        "Master Demonologist",
+        "Master Demonologist",
+        "Master Demonologist",
+        "Demonic Pact"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "iv-demonology-warlock",
+      "title": "World of Warcraft: Forever Demonology Warlock Guide",
+      "url": "https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-warlock-overview",
+      "title": "Warlock Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/warlock-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "iv-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep24",
+      "title": "WoW Forever Beta Development Notes – Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment (forums)",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowtbc-demonology-warlock",
+      "title": "Demonology Warlock Rotation & Talent Build - WoW Forever",
+      "url": "https://wowtbc.gg/warcraftforever/class-guides/demonology-warlock",
+      "publisher": "wowtbc.gg",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "forevertalents-warlock-demonology",
+      "title": "Warlock Demonology Build — WoW Forever",
+      "url": "https://forevertalents.org/builds/warlock-demonology/",
+      "publisher": "Forever Talents",
+      "date": "2026-09-26",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "overgear-pvp-tier-list",
+      "title": "WoW Forever Best Classes for PvP",
+      "url": "https://overgear.com/guides/wow-forever/best-classes-for-pvp",
+      "publisher": "Overgear",
+      "date": "2026-09-25",
+      "tier": "seller"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

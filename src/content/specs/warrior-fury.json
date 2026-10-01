@@ -1,0 +1,367 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "warrior",
+  "spec": "fury",
+  "tagline": "Bloodthirst and Flurry: the dual-wield Warrior, and the one the lists rank above Arms.",
+  "verdict": [
+    "Fury is the dual-wield damage spec. Bloodthirst hits for 35% of Attack Power plus 30 and grants 10% movement speed for 10 seconds. Blizzard removed the heal. Death Wish is 20% physical damage and fear immunity for 30 seconds, and you take 5% more damage while it is up. Flurry is 25% attack speed for three swings after a crit. Enrage is 10% physical damage for 12 seconds after you take any hit, at a 30% chance.",
+    "Blizzard’s Sep-30 deep dive says Iron Will moved to Arms. The vendored client, build 1.60.1.70009, still has Iron Will in Fury. This file follows the client. If a later build moves it, the PvP split changes. The same note says Rage from damage dealt is fully normalized by weapon speed, crits give 75% more Rage, and Rage bugs are still open in the beta.",
+    "wowforever.co puts Fury at A on MMOExp and Overgear and at C on the forum list, above Arms on both seller lists. Icy Veins’ Fury page, updated Sep 27, is a level-20 guide: Cruelty, Unbridled Wrath, then Piercing Howl. It calls Warrior leveling slow and weapon-dependent. That is the start of this leveling order.",
+    "Play Fury for dungeon and raid damage if you can feed it Rage. Play Arms if you need Mortal Strike’s healing cut. Play Protection if you are the tank. The 51-point builds are projections past the beta cap."
+  ],
+  "strengths": [
+    "Death Wish plus Bloodthirst is the burst, and Bloodthirst’s 10% movement speed is a reconnect, not a heal.",
+    "Dual Wield Specialization is 25% off-hand damage, double off-hand Rage, and 10% off-hand hit. That is why Fury dual-wields.",
+    "Piercing Howl is a 50% slow on every nearby enemy for 6 seconds. Icy Veins takes it as the 11th point for a reason.",
+    "Improved Berserker Rage generates 10 Rage and clears movement impairs. That is the root-break Arms does not have in this tree."
+  ],
+  "weaknesses": [
+    "Blizzard is still chasing Rage bugs, and Rage from damage is now normalized. A slow weapon no longer prints Rage the old way.",
+    "Death Wish increases damage taken by 5%. Pop it into a stun and you die faster.",
+    "Icy Veins: bad at fighting two mobs early, no in-combat escape besides Hamstring, and Victory Rush does not exist until 20.",
+    "No healing reduction. A free-casting healer wins the long battleground fight."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Death Wish and Piercing Howl (7/44/0)",
+      "summary": "Bloodthirst, Death Wish, Piercing Howl, Iron Will and Improved Intercept. Arms is only max Deflection and Improved Overpower, which is legal because Deflection’s five points open the row. You are the disruptor, not the flag carrier.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Hit",
+          "Crit",
+          "Strength",
+          "Agility"
+        ],
+        "note": "Precision in this split is only two points, 2% hit. Stamina keeps Death Wish from killing you. Strength is Attack Power. Do not chase a hit cap nobody has published."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes stuns, which is the Death Wish killer. Sword Specialization is 2% crit if you are on swords. Perception finds the Rogue on your healer.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Icy Veins picks Orc for Fury: Blood Fury is 10% Attack Power for 15 seconds, Hardiness cuts stuns by 20%, and that lines up with Death Wish. Axe Specialization is 1% crit on axes.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Charge or Intercept, Hamstring, Piercing Howl if the team is stacked. Bloodthirst on cooldown for the damage and the 10% speed.",
+        "Death Wish when you have a healer and a target, not when you are alone on the road. You take 5% more damage.",
+        "Improved Berserker Rage to clear a root and get 10 Rage back.",
+        "Iron Will is 15% shorter stuns, and it is in the Fury tree on this client. Take it. Do not wait for the Arms move Blizzard described and has not shipped.",
+        "You do not have Mortal Strike. Call the Arms warrior for the healing cut. You bring the slow and the burst."
+      ],
+      "gearNote": "One-handers from the R14 arsenal, not the two-hander. Dual Wield Specialization is the reason. The R2 Insignia is mandatory before any weapon. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-fury-guide",
+        "blizz-priest-warrior",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Fury": {
+          "Cruelty": 5,
+          "Iron Will": 5,
+          "Unbridled Wrath": 5,
+          "Piercing Howl": 1,
+          "Blood Craze": 3,
+          "Boundless Rage": 2,
+          "Enrage": 5,
+          "Improved Execute": 2,
+          "Dual Wield Specialization": 3,
+          "Death Wish": 1,
+          "Improved Intercept": 2,
+          "Precision": 2,
+          "Flurry": 5,
+          "Improved Berserker Rage": 2,
+          "Bloodthirst": 1
+        },
+        "Arms": {
+          "Deflection": 5,
+          "Improved Overpower": 2
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Bloodthirst dual-wield (6/45/0)",
+      "summary": "Cruelty, Unbridled Wrath, Enrage, full Dual Wield Specialization, Death Wish, Flurry and Bloodthirst. Arms is Heroic Strike cost and parry, all in row 1, because five Arms points are not enough to open row 2.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Crit",
+          "Strength",
+          "Agility",
+          "Stamina"
+        ],
+        "note": "Precision is 3% hit. Flurry wants crits. Strength feeds Bloodthirst’s 35% Attack Power. Icy Veins tells you to compare weapon DPS and to train the weapon skill before you swap types."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Icy Veins’ Fury page picks Night Elf: Elune’s Light is 10% crit for 15 seconds, which is Flurry and Bloodthirst crits, and Shadowmeld drops threat when you yank a pack. Quickness is 1% dodge and 2% movement speed on the client, not just the speed the guide mentions.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is the Attack Power cooldown Icy Veins names for Horde Fury. Use it inside Death Wish, not before the pull.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Bloodthirst on cooldown. Whirlwind and Cleave when Rage allows. Heroic Strike only when you are about to cap Rage — Icy Veins says it replaces the white hit and stops that swing from generating Rage.",
+        "Death Wish on the boss once the tank has threat. You take 5% more damage. Do not pop it on the pull.",
+        "Battle Shout stays up. Blizzard cut its Attack Power because both factions now have Shaman and Paladin buffs, and baked Improved Battle Shout into the baseline.",
+        "Keep a shield in the bag for Shield Bash. Icy Veins tells Fury warriors they will tank leveling dungeons. That does not make this a tank build.",
+        "If Rage bugs are still eating your bar, that is the beta Blizzard described on Sep 30. Do not respec to fix a bug."
+      ],
+      "sourceIds": [
+        "icy-fury-guide",
+        "blizz-priest-warrior",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Fury": {
+          "Cruelty": 5,
+          "Booming Voice": 5,
+          "Unbridled Wrath": 5,
+          "Improved Cleave": 3,
+          "Boundless Rage": 3,
+          "Enrage": 5,
+          "Dual Wield Specialization": 5,
+          "Improved Execute": 2,
+          "Death Wish": 1,
+          "Precision": 3,
+          "Flurry": 5,
+          "Improved Berserker Rage": 2,
+          "Bloodthirst": 1
+        },
+        "Arms": {
+          "Improved Heroic Strike": 3,
+          "Deflection": 3
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Cruelty, Unbridled Wrath, Piercing Howl",
+      "summary": "The first 11 points are Icy Veins’ level-20 Fury build: five Cruelty, five Unbridled Wrath, Piercing Howl. The order then takes Cleave cost, Enrage, Dual Wield Specialization, Flurry, Death Wish and Bloodthirst. Deflection is the only Arms tax, and it is row 1 so it never blocks the path.",
+      "stats": {
+        "priority": [
+          "Attack Power",
+          "Strength",
+          "Stamina",
+          "Crit",
+          "Agility"
+        ],
+        "note": "Icy Veins: upgrade the weapon before anything else, and fight mobs at your level or lower. A two-hander makes Unbridled Wrath grant 2 Rage. Use one until dual-wield hit exists."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Same pick as the Icy Veins Fury page. Elune’s Light is the crit cooldown. Shadowmeld is the oops button when Charge lands in a second pack.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Icy Veins picks Orc for Blood Fury and the axe crit. Hardiness matters once you start charging into camps that stun.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Charge, Rend or Heroic Strike only if you will not cap, then auto-attack. Bloodrage between pulls so Rage does not decay. Icy Veins spells this out.",
+        "One mob until Piercing Howl exists. Then the slow is how you take two.",
+        "Victory Rush at 20 is a 10% heal on a kill. Use the window. It is not a talent.",
+        "Eat. You have no real heal until Bloodthirst, and Bloodthirst does not heal anymore.",
+        "Do not tank a dungeon in this spec past the point a shield warrior is available. You can. You should not."
+      ],
+      "sourceIds": [
+        "icy-fury-guide",
+        "blizz-priest-warrior",
+        "icy-race-guide"
+      ],
+      "order": [
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Unbridled Wrath",
+        "Piercing Howl",
+        "Improved Cleave",
+        "Improved Cleave",
+        "Improved Cleave",
+        "Boundless Rage",
+        "Enrage",
+        "Enrage",
+        "Enrage",
+        "Enrage",
+        "Enrage",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Dual Wield Specialization",
+        "Flurry",
+        "Flurry",
+        "Flurry",
+        "Flurry",
+        "Flurry",
+        "Death Wish",
+        "Bloodthirst",
+        "Precision",
+        "Precision",
+        "Precision",
+        "Boundless Rage",
+        "Boundless Rage",
+        "Improved Execute",
+        "Improved Execute",
+        "Improved Berserker Rage",
+        "Improved Berserker Rage",
+        "Booming Voice",
+        "Booming Voice",
+        "Booming Voice",
+        "Booming Voice",
+        "Booming Voice",
+        "Deflection",
+        "Deflection",
+        "Deflection",
+        "Deflection",
+        "Deflection"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-fury-guide",
+      "title": "World of Warcraft: Forever Fury Warrior Guide",
+      "url": "https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizz-priest-warrior",
+      "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    }
+  ]
+}

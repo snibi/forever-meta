@@ -1,0 +1,363 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "warrior",
+  "spec": "protection",
+  "tagline": "Shield Slam, Last Stand and a Charge that works in Defensive Stance.",
+  "verdict": [
+    "Protection is the shield tank. Shield Slam deals 421 to 439 plus your block value, with a 50% chance to dispel one magic effect, and Blizzard says it causes a very high amount of threat. Concussion Blow is a 5-second stun and the requirement for Shield Slam. Last Stand is 30% of your maximum health for 20 seconds. Bastion is 10% damage while a shield is equipped.",
+    "Blizzard’s Sep-30 deep dive made several of the old tax talents baseline: Improved Shield Block, Improved Taunt, and a Tactical Mastery that keeps 10 Rage on a stance swap. Vanguard, the new 16-point talent, lets you Charge in Defensive Stance. Thunder Clap works in Defensive Stance and scales with Attack Power. Sunder Armor’s threat scales with Attack Power, and it works even if a stronger Expose Armor is already on the target.",
+    "Rage from taking damage ignores armor and absorbs, so a shield no longer starves you, and a Power Word: Shield on you no longer deletes your Rage. Rage from dealing damage is normalized, and Blizzard says Rage bugs are still open. wowforever.co puts Protection at A on Overgear and at B on the forum list. There is no tank parse.",
+    "This is the main tank. Feral and Paladin Protection exist. You bring Shield Slam, a stun, and a disarm cooldown reduction the others do not copy. Level-60 points are a projection from the client tree."
+  ],
+  "strengths": [
+    "Shield Slam is the threat button and a magic dispel. Concussion Blow is a 5-second stun on a tank, which is rare.",
+    "Last Stand is 30% health for 20 seconds. Shield Wall’s cooldown is 15 minutes baseline, and Improved Shield Wall cuts another 11 minutes in the builds that take it.",
+    "Vanguard means you do not leave Defensive Stance to Charge. That was the old gap.",
+    "Shield Specialization is 5 Rage on block, at a 100% chance, and Anticipation is 20 Defense skill. Blizzard doubled the Defense per point."
+  ],
+  "weaknesses": [
+    "Blizzard: Warriors lack an easy way to recover once the damage gets ahead of them. Last Stand delays that. It does not heal you.",
+    "Defiance’s extra threat requires a shield. You cannot “just dual-wield for damage” and keep the talent.",
+    "Rage bugs are still live. A tank who cannot generate Rage cannot Sunder. That is a beta problem, not a talent problem.",
+    "No ranged threat beyond what you can Charge. Thunder Clap is melee. A runner still needs a Hamstring or a teammate."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Deflection",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Threat and Revenge still scale with damage. Amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Node stun tank (6/0/45)",
+      "summary": "Shield Slam, Concussion Blow, Improved Disarm, Improved Shield Bash silence and Last Stand. You hold a flag node. You do not chase. Arms is Deflection and one Improved Charge so the opener still gives Rage.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Defense",
+          "Hit",
+          "Strength",
+          "Block"
+        ],
+        "note": "Anticipation is already 20 Defense skill. More Defense and Stamina keep you on the node. Strength still feeds Shield Slam through block value only if the item actually has block; do not drop Stamina for it."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform removes bleed, poison and disease and cuts physical damage by 10% for 8 seconds. That is the node-tank button. Mace Specialization is 1% crit with a mace, which is a shield pair.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "War Stomp stuns up to 5 enemies for 2 seconds, which is the peel when they swarm the flag. Endurance is 5% health and 1% hit on every pull, not just the stomp.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Vanguard Charge into Defensive Stance, Thunder Clap, Concussion Blow the healer or the flag carrier’s escort, Shield Slam on cooldown.",
+        "Improved Shield Bash silences for 3 seconds. Use it on the cast, not on cooldown.",
+        "Disarm the Warrior or Rogue on you. Three points cut the cooldown by 20 seconds.",
+        "Last Stand when the focus swap lands, not at 90% health. Shield Wall after, if Improved Shield Wall’s shorter cooldown is up.",
+        "Drop the R7 Battle Standard on the node. You are the person who should be holding it."
+      ],
+      "gearNote": "The R14 arsenal includes a shield. Take it. Elite chest and helm at R13 are the Stamina pieces. The Battle Standard is yours. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "icy-pvp-ranks",
+        "icy-race-guide",
+        "warcrafttavern-enchants",
+        "wowforever-co-tier-list"
+      ],
+      "points": {
+        "Protection": {
+          "Shield Specialization": 5,
+          "Anticipation": 5,
+          "Toughness": 5,
+          "Improved Bloodrage": 2,
+          "Improved Thunder Clap": 3,
+          "Last Stand": 1,
+          "Master of Defense": 2,
+          "Improved Revenge": 3,
+          "Defiance": 1,
+          "Improved Disarm": 3,
+          "Improved Sunder Armor": 2,
+          "Vanguard": 1,
+          "Concussion Blow": 1,
+          "Bastion": 5,
+          "Improved Shield Wall": 2,
+          "Improved Shield Bash": 2,
+          "Focused Rage": 1,
+          "Shield Slam": 1
+        },
+        "Arms": {
+          "Deflection": 5,
+          "Improved Charge": 1
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Deflection",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Threat and Revenge still scale with damage. Amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "A damage-absorption proc. Amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Shield Slam main tank (8/0/43)",
+      "summary": "Shield Slam, Last Stand, full Bastion, Defiance, Sunder cost reduction and Vanguard. Arms stays in row 1 — Deflection and a cheaper Heroic Strike — because baseline Tactical Mastery already keeps 10 Rage on a swap and five Arms points cannot open the talent.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Defense",
+          "Hit",
+          "Strength",
+          "Armor"
+        ],
+        "note": "Blizzard: Rage from damage taken ignores armor, so more armor does not starve you. Defense is still the crush and crit reduction. Anticipation is 20 Defense skill before gear. Strength scales Sunder threat."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform is a bleed and poison dispel on a 3-minute cooldown, which is a tank external you do not talent. Human Will to Survive is the runner-up for stun-heavy bosses.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Endurance is 5% health and 1% hit. Both are tank stats on every pull. War Stomp is the emergency AoE stun when a pack gets past you.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Defensive Stance, Vanguard Charge if you need to connect, Thunder Clap, Sunder to a stack, Shield Slam on cooldown. Revenge when it lights up. Improved Revenge is 60% more Revenge damage, not a stun — Blizzard redesigned it.",
+        "Demo Shout if no one else has it. Battle Shout if the group has no equivalent. Blizzard cut Battle Shout’s Attack Power because both factions have both buff classes now.",
+        "Last Stand on the tank-killer cast, Shield Wall if you still have it. They no longer share a cooldown with each other or with Retaliation.",
+        "Shield Bash the cast. You do not have the silence talent in this split. The interrupt still works.",
+        "If Rage generation bugs out, that is the known beta issue. Swap to a slower decision, do not drop Sunder for Heroic Strike."
+      ],
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants"
+      ],
+      "points": {
+        "Protection": {
+          "Shield Specialization": 5,
+          "Anticipation": 5,
+          "Toughness": 5,
+          "Improved Bloodrage": 2,
+          "Improved Thunder Clap": 3,
+          "Last Stand": 1,
+          "Master of Defense": 2,
+          "Improved Revenge": 3,
+          "Defiance": 2,
+          "Improved Sunder Armor": 3,
+          "Vanguard": 1,
+          "Concussion Blow": 1,
+          "Bastion": 5,
+          "Improved Shield Wall": 2,
+          "Focused Rage": 2,
+          "Shield Slam": 1
+        },
+        "Arms": {
+          "Deflection": 5,
+          "Improved Heroic Strike": 3
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Shield on, Cruelty until Shield Slam",
+      "summary": "Shield Specialization, Anticipation and Toughness first, because you are holding a shield from level 10. Five Fury points of Cruelty are the only off-tree damage, and they sit in row 1 so they never fight the tank path. Shield Slam is taken the moment Concussion Blow and the row gate allow.",
+      "stats": {
+        "priority": [
+          "Stamina",
+          "Strength",
+          "Armor",
+          "Spirit",
+          "Agility"
+        ],
+        "note": "A shield with block value beats a two-hander that makes you level faster and then makes you useless in the dungeon. Icy Veins’ Fury page tells warriors to keep a shield in the bag. This spec wears it."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Stoneform saves the pull that poisoned you. You are the only Alliance warrior race whose defensive is a dispel.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "5% health from Endurance is more leveling health than Orc’s Blood Fury, and 1% hit is 1% more Sunders that land. War Stomp is the second mob.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Shield, Defensive Stance once you have it, Thunder Clap, Sunder. One mob until Last Stand exists.",
+        "Charge only with Vanguard once the order reaches it. Before that, stance-swap costs all but 10 Rage. Baseline Tactical Mastery is that 10.",
+        "Eat. Last Stand is not a heal, and it arrives late.",
+        "Tank the dungeon when someone asks. That is the point of the spec. Do not duel-wield the trash and swap for the boss if you can help it; Defiance wants the shield the whole time.",
+        "Victory Rush at 20 is your only real heal on a kill. Use the window between pulls."
+      ],
+      "sourceIds": [
+        "blizz-priest-warrior",
+        "icy-fury-guide",
+        "icy-race-guide"
+      ],
+      "order": [
+        "Shield Specialization",
+        "Shield Specialization",
+        "Shield Specialization",
+        "Shield Specialization",
+        "Shield Specialization",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Anticipation",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Toughness",
+        "Improved Thunder Clap",
+        "Improved Thunder Clap",
+        "Improved Thunder Clap",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Cruelty",
+        "Improved Revenge",
+        "Improved Revenge",
+        "Improved Revenge",
+        "Improved Bloodrage",
+        "Improved Bloodrage",
+        "Last Stand",
+        "Defiance",
+        "Defiance",
+        "Defiance",
+        "Improved Sunder Armor",
+        "Improved Sunder Armor",
+        "Improved Sunder Armor",
+        "Concussion Blow",
+        "Shield Slam",
+        "Bastion",
+        "Bastion",
+        "Bastion",
+        "Bastion",
+        "Bastion",
+        "Vanguard",
+        "Master of Defense",
+        "Master of Defense",
+        "Improved Shield Bash",
+        "Improved Shield Bash",
+        "Focused Rage",
+        "Focused Rage",
+        "Focused Rage",
+        "Improved Shield Wall"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "blizz-priest-warrior",
+      "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-30",
+      "tier": "official"
+    },
+    {
+      "id": "icy-fury-guide",
+      "title": "World of Warcraft: Forever Fury Warrior Guide",
+      "url": "https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-27",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

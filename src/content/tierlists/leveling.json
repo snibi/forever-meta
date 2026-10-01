@@ -1,0 +1,65 @@
+{
+  "title": "Leveling",
+  "description": "Solo 10 to 60, no respec required. Dungeon invites help a healer. They do not move a spec that cannot kill a quest mob.",
+  "scope": "leveling",
+  "coverage": "all",
+  "basis": "Level-20 beta reports from the Icy Veins class guides, plus each spec file's leveling order. Class bands on Mobalytics (indexed by wowforever.co, checked 2026-09-26) are corroboration, not the ranking.",
+  "updatedOn": "2026-10-01",
+  "confidence": "medium",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "hunter-beast-mastery", "note": "The Hunter file calls it the best leveler in the game. The pet tanks. You drink less." },
+        { "ref": "warlock-affliction", "note": "The Warlock file's leveling pick. Instant Corruption and a pet. DoTs kill while you walk." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "ref": "mage-frost", "note": "Icy Veins: comfortable, not fast. Frostbite and Ice Lance keep melee off you. You still drink." },
+        { "ref": "mage-arcane", "note": "The safe mage rating, and Arcane Missiles works on the move once Missile Barrage exists." },
+        { "ref": "hunter-marksmanship", "note": "Aimed Shot is baseline at 20. Slower than Beast Mastery because the pet is not the plan." },
+        { "ref": "rogue-assassination", "note": "Icy Veins: high early damage and Remorseless Attacks for chain pulls. Poisons have to stay applied." },
+        { "ref": "druid-feral-combat", "note": "Cat for the quest, bear when it hurts. The file's dungeon role is the bear. Solo, the cat is enough." },
+        { "ref": "shaman-enhancement", "note": "Melee with Ghost Wolf. Stormstrike comes late. Still faster than healing your way to 60." },
+        { "ref": "warlock-destruction", "note": "Hard casts and a pet. Fine once Shadowburn exists. Affliction is the one that does not stand still." },
+        { "ref": "priest-shadow", "note": "Spirit Tap and a wand. This is the Priest solo spec. The healer trees borrow it and admit it." },
+        { "ref": "paladin-retribution", "note": "Holy Strike from level 6 and a bubble. Mobalytics puts the class in S. This is the spec that earns it." },
+        { "ref": "paladin-protection", "note": "You can tank every dungeon quest on the way. Solo is slower than Ret. The invite is the point." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "mage-fire", "note": "Icy Veins: slightly slower, because the crit talents are deep and low levels do not have the crit." },
+        { "ref": "hunter-survival", "note": "The file levels it ranged-first on purpose. The melee kit is the payoff, not the 10-30 experience." },
+        { "ref": "rogue-combat", "note": "Sinister Strike and a weapon upgrade. Icy Veins says the specs feel the same at 20. Combat wakes up at Blade Flurry." },
+        { "ref": "rogue-subtlety", "note": "Ambush is strong. You are in stealth a lot, and you have no heal. First Aid is mandatory." },
+        { "ref": "warrior-arms", "note": "Icy Veins: slow, weapon-dependent, bad at two mobs. Mortal Strike does not fix levels 10-30." },
+        { "ref": "warrior-fury", "note": "Same warning. Cruelty and Unbridled Wrath help. A bad weapon still ends the session." },
+        { "ref": "druid-balance", "note": "Wrath hits harder after Sep 24. You still cast, and you still cannot snare a runner." },
+        { "ref": "priest-discipline", "note": "The file tells you to wand and lean on Shadow tools. It works. It is not a damage spec." },
+        { "ref": "warlock-demonology", "note": "A second body helps. The file says the payoff talents are untested and the ranking is split." }
+      ]
+    },
+    {
+      "tier": "C",
+      "entries": [
+        { "ref": "shaman-elemental", "note": "The file says weak below 40. Lightning Bolt levels you. The rotation does not exist yet." },
+        { "ref": "warrior-protection", "note": "Shield on, one mob at a time. You tank the dungeon. You do not win the quest clock." },
+        { "ref": "priest-holy", "note": "Icy Veins says do not solo as Holy. The file keeps Spirit Tap so you can, and it is still the slow Priest." },
+        { "ref": "shaman-restoration", "note": "Icy Veins: a group leveler. Ten Elemental points keep Lightning Bolt honest. It is still a healer." },
+        { "ref": "druid-restoration", "note": "The file's own limit: leveling as Restoration is the slow druid. Wild Growth does not kill quest mobs." },
+        { "ref": "paladin-holy", "note": "Best in a dungeon group. Solo, you are a Ret paladin who has not talented Ret. Bubble and wand." }
+      ]
+    },
+    { "tier": "D", "entries": [] }
+  ],
+  "sources": [
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" },
+    { "id": "icy-frost-guide", "title": "World of Warcraft: Forever Frost Mage Guide", "url": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "icy-fury-guide", "title": "World of Warcraft: Forever Fury Warrior Guide", "url": "https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-27", "tier": "reputable" },
+    { "id": "icy-holy-guide", "title": "World of Warcraft: Forever Holy Priest Guide", "url": "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124",
+  "class": "rogue",
+  "spec": "assassination",
+  "tagline": "Mutilate, poisons and Venom: the dagger rogue that kills with the weapons, not the finishers alone.",
+  "verdict": [
+    "Assassination is the poison spec. Mutilate hits with both weapons and hits 20% harder on a poisoned target. Venom, the capstone, adds 30% poison damage and 10% apply chance for up to 21 seconds at five combo points. Vile Poisons is 20% poison damage and 40% less chance they get dispelled. Improved Poisons is 10% more applications and a 50% chance not to spend a charge.",
+    "Icy Veins’ level-20 Assassination guide calls it the king of poisons and builds the first 11 points as Remorseless Attacks, Malice, Ruthlessness and Relentless Strikes. That page still says Gnome Eureka! is a massive damage boost. Sep 24 cut Eureka! to 10% cost and 10% damage on the next three abilities. Escape Artist is still the reason a leveling Gnome is fine. It is not a 50% button.",
+    "wowforever.co shows Assassination at A on MMOExp and Overgear and at C on the Sep-16 forum list. No level-60 log exists. Human Sword Specialization does not apply to daggers, so it is not the PvE pick.",
+    "Play Assassination when the fight is long enough for poisons to tick and you can stay on one target. Play Combat if the weapons you have are swords and the pack is large. The 51-point splits are projections. The opening of the leveling order is the Icy Veins level-20 path."
+  ],
+  "strengths": [
+    "Venom plus Vile Poisons is the highest poison multiplier in the tree, and Improved Poisons makes the charges last.",
+    "Cold Blood makes the next Mutilate, Backstab or Eviscerate a guaranteed crit. Seal Fate then adds a combo point on crits.",
+    "Murder is 4% damage against Humanoids and Giants. Most dungeon and battleground targets are one of those.",
+    "Improved Kidney Shot makes stunned targets take 10% more damage from you. That is the PvP go."
+  ],
+  "weaknesses": [
+    "Icy Veins: at low levels Rogue offers damage and Kick, not unique group buffs. Sap and Blind come later.",
+    "Daggers want you behind the target for Backstab. Mutilate does not, which is why it is the button when you cannot get there.",
+    "Poisons have charges. Icy Veins warns you will run out of charges before the duration if you chain mobs and forget to reapply.",
+    "Public rank is A or C depending on the list. Nothing has been tested at 60."
+  ],
+  "builds": {
+    "pvp": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Kidney Shot poison burst (41/10/0)",
+      "summary": "Mutilate into a Kidney Shot that makes the target take 10% more damage, Cold Blood on the finisher, Venom so the poisons stick through a dispel. Combat is only hit, cheaper Sinister Strike and dodge.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Precision in the Combat splash is 3% hit. Do not import a Burning Crusade hit cap. Agility gives crit and dodge; Attack Power feeds the white hits that apply poison."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes stuns, which is how you die in a stun-lock before Kidney Shot comes back. Perception finds the other Rogue. Sword Specialization does nothing for daggers, so it is not the reason.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Icy Veins picks Orc for Assassination: Blood Fury is 10% Attack Power for 15 seconds, Hardiness cuts stun duration by 20%, and Shatter Curse is the magic defensive. Axe Specialization does not apply to daggers.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Cheap Shot or Garrote to open, Mutilate to 5, Kidney Shot, Cold Blood, Eviscerate or Venom. Venom if the healer is still up and you need the poisons to live through a dispel.",
+        "Instant Poison on the main hand, Wound or Crippling on the off hand in battlegrounds. Icy Veins wants Instant on both for pure PvE damage; PvP wants the slow.",
+        "Kick the heal. Improved Kick is not in this split. The 10 Combat points went to hit and energy, not the silence.",
+        "Gouge to restealth or to stop a cast you cannot Kick. Improved Gouge adds 1.5 seconds.",
+        "You are the healer killer, not the flag carrier. Sprint is the escape. You do not have Improved Sprint here."
+      ],
+      "gearNote": "Daggers from the R14 arsenal (the Dirk and the Mageblade-adjacent one-handers) matter more than armor. The R2 Insignia is the stun break that lets you Kidney Shot back. Rank rewards are datamined beta numbers and may change. Rare PvP gear is not rank-locked but needs level 55; Elite pieces are Emboldened Seal upgrades. R2 Insignia trinket (3,500 Honor, 2,000 more for the epic version) is the stun break. R3 Faction Cloak is 10 Arathi Basin Marks plus 3,000 Honor. Elite wrists and waist are R8, boots R9, gloves R10, legs and shoulders R12, chest and helm R13. R14 unlocks the weapon arsenal. The R7 Battle Standard is a 15% max-health aura on a 10-minute cooldown — carry it if you anchor a node or a flag team.",
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide",
+        "icy-pvp-ranks",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Assassination": {
+          "Malice": 5,
+          "Improved Gouge": 3,
+          "Ruthlessness": 3,
+          "Murder": 2,
+          "Improved Slice and Dice": 2,
+          "Lethality": 5,
+          "Relentless Strikes": 1,
+          "Vile Poisons": 5,
+          "Improved Poisons": 3,
+          "Cold Blood": 1,
+          "Mutilate": 1,
+          "Improved Kidney Shot": 2,
+          "Vigor": 2,
+          "Seal Fate": 5,
+          "Venom": 1
+        },
+        "Combat": {
+          "Lightning Reflexes": 5,
+          "Precision": 3,
+          "Improved Sinister Strike": 2
+        }
+      }
+    },
+    "pve": {
+      "confidence": "low",
+      "evidence": [
+        "theory"
+      ],
+      "enchants": [
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Superior Strength",
+          "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Strength",
+          "note": "Neck enchants are new to Forever. Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Back",
+          "name": "Enchant Cloak - Agility",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Superior Deflection",
+          "note": "Name only, amount not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "title": "Venom poison rotation (41/10/0)",
+      "summary": "Full poison talents, Mutilate, Cold Blood and three points of Seal Fate, with a Combat splash for 3% hit and a cheaper Sinister Strike. Slice and Dice is talented because dungeon bosses live long enough for the duration, which is the opposite of Icy Veins’ level-20 advice.",
+      "stats": {
+        "priority": [
+          "Hit",
+          "Agility",
+          "Crit",
+          "Attack Power",
+          "Stamina"
+        ],
+        "note": "Malice is already 5% crit. The Combat splash is the hit. Weapon skill is still a real stat if a dagger is below your level; do not skip training it."
+      },
+      "races": {
+        "alliance": {
+          "race": "night-elf",
+          "why": "Elune’s Light is 10% crit for 15 seconds on every attack, and it does not care that you are holding daggers. Human Sword Specialization does not work on daggers. Gnome Eureka! is only 10% on three abilities after Sep 24, so it loses to the crit cooldown.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is 10% Attack Power on demand. Icy Veins names Orc the Horde Assassination pick for that button plus Hardiness and Shatter Curse.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Instant Poison on both weapons, as Icy Veins recommends for the current beta. Reapply when charges drop, not when the buff timer does.",
+        "Ambush from stealth, then Mutilate. Backstab only if you are already behind and Mutilate is unavailable.",
+        "Slice and Dice at 5 if the target will live. Eviscerate if it will not. Venom on bosses.",
+        "Cold Blood the Mutilate, not the auto-attack. Seal Fate adds a combo point when that crits.",
+        "Kick caster trash. You are not the group buffer. Say so before the pull."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "wowforever-co-tier-list",
+        "icy-race-guide",
+        "warcrafttavern-enchants",
+        "foreverchanges-patch-notes"
+      ],
+      "points": {
+        "Assassination": {
+          "Malice": 5,
+          "Remorseless Attacks": 2,
+          "Improved Gouge": 2,
+          "Ruthlessness": 3,
+          "Murder": 2,
+          "Improved Slice and Dice": 3,
+          "Lethality": 5,
+          "Relentless Strikes": 1,
+          "Improved Poisons": 5,
+          "Vile Poisons": 5,
+          "Cold Blood": 1,
+          "Mutilate": 1,
+          "Vigor": 2,
+          "Seal Fate": 3,
+          "Venom": 1
+        },
+        "Combat": {
+          "Lightning Reflexes": 5,
+          "Precision": 3,
+          "Improved Sinister Strike": 2
+        }
+      }
+    },
+    "leveling": {
+      "confidence": "medium",
+      "evidence": [
+        "beta-tested",
+        "theory"
+      ],
+      "enchants": [],
+      "title": "Icy Veins’ first 11, then Mutilate",
+      "summary": "Remorseless Attacks, Malice, Ruthlessness and Relentless Strikes are the level-20 path Icy Veins prints, because mobs die before Slice and Dice matters. The same order then takes Lethality, the poison talents and Mutilate, and finishes at Venom. No respec.",
+      "stats": {
+        "priority": [
+          "Agility",
+          "Attack Power",
+          "Stamina",
+          "Hit",
+          "Crit"
+        ],
+        "note": "A faster dagger beats a slow sword you cannot Backstab with. Keep poisons crafted. First Aid is the heal you do not have."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Icy Veins picks Gnome while Vanish is not trained yet, because Escape Artist breaks roots. Do not believe that page’s 50% Eureka! number. The Sep-28 race guide says 10% cost and 10% damage.",
+          "runnerUp": "night-elf"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury ends packs faster, which is what Remorseless Attacks wants: a kill, then a 40% crit on the next builder. Hardiness keeps you on the mob through a stun.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Stealth, Ambush, Sinister Strike or Backstab, Eviscerate. Never sit at full energy. Icy Veins is right that a full bar is wasted regeneration.",
+        "Remorseless Attacks after a kill is a 40% crit on the next builder for 20 seconds. Pull the next mob before it falls off.",
+        "Instant Poison on both weapons as soon as you can make it. Check charges, not just the timer.",
+        "Sprint out of a bad cave. Evasion on elites, not saved for a boss you will not see today.",
+        "Skip Improved Slice and Dice until mobs live. The order does that. It still ends with the talent once bosses exist."
+      ],
+      "sourceIds": [
+        "icy-assassination-guide",
+        "icy-race-guide",
+        "foreverchanges-patch-notes"
+      ],
+      "order": [
+        "Remorseless Attacks",
+        "Remorseless Attacks",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Malice",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Ruthlessness",
+        "Relentless Strikes",
+        "Murder",
+        "Murder",
+        "Lethality",
+        "Lethality",
+        "Lethality",
+        "Lethality",
+        "Lethality",
+        "Improved Poisons",
+        "Improved Poisons",
+        "Improved Poisons",
+        "Improved Poisons",
+        "Improved Poisons",
+        "Vile Poisons",
+        "Vile Poisons",
+        "Vile Poisons",
+        "Vile Poisons",
+        "Vile Poisons",
+        "Cold Blood",
+        "Mutilate",
+        "Seal Fate",
+        "Seal Fate",
+        "Seal Fate",
+        "Seal Fate",
+        "Seal Fate",
+        "Vigor",
+        "Vigor",
+        "Improved Slice and Dice",
+        "Improved Slice and Dice",
+        "Improved Slice and Dice",
+        "Venom",
+        "Improved Sinister Strike",
+        "Improved Sinister Strike",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Lightning Reflexes",
+        "Precision",
+        "Precision",
+        "Precision",
+        "Lightning Reflexes",
+        "Lightning Reflexes"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-assassination-guide",
+      "title": "World of Warcraft: Forever Assassination Rogue Guide",
+      "url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-pvp-ranks",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "warcrafttavern-enchants",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "foreverchanges-patch-notes",
+      "title": "WoW Forever Patch Notes: every beta update, class by class",
+      "url": "https://foreverchanges.pro/patch-notes",
+      "publisher": "ForeverChanges",
+      "date": "2026-09-30",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "wowforever.co",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ]
+}

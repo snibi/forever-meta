@@ -1,0 +1,307 @@
+{
+  "class": "shaman",
+  "spec": "elemental",
+  "tagline": "Lava Burst, Chain Lightning and Fire Nova on a talent-capped crit engine. Weak below 40, scary at 60.",
+  "verdict": [
+    "Elemental is the caster that finally gets a real rotation. Lightning Bolt and Chain Lightning now cast faster at baseline, Elemental Alacrity (Row 3 in the vendored client data) strips another 0.5 sec off Lightning Bolt, Chain Lightning and Lava Burst, and the 31-point capstone Lava Burst hits 20% harder into your own Flame Shock. Icy Veins expects DPS Shamans to \"perform extremely well\" now that early raids lost their heavy Nature/Fire resistances.",
+    "The honest caveat: nobody has played this spec past the beta cap. Icy Veins calls Elemental \"quite weak\" at low levels because Lava Burst and Elemental Alacrity were out of reach at the level-20 cap, and the lowered base spell damage makes the early game a slog of Lightning Bolt and Flame Shock. Public tier lists scatter it between A and S (wowforever.co aggregates MMOExp A, Overgear A, a forum thread S), so treat every L60 number here as theory.",
+    "Our build commits 32 points to the Elemental tree because every one of them is damage or mana: Concussion, Call of Flame, Alacrity, Call of Thunder into Elemental Fury (+100% crit damage, a five-point talent in this build of the game), Lightning Overload and Lava Burst. Thundering Strikes (+5% crit to all spells) from Enhancement and Tidal Focus (+5% Hit) plus mana tools from Restoration fill the remaining 19 points."
+  ],
+  "strengths": [
+    "Lava Burst, Chain Lightning and Fire Nova give a single-target and AoE toolkit in one spec (Icy Veins calls it an all-rounder DPS profile).",
+    "Elemental Fury plus Thundering Strikes and Call of Thunder stack crit chance and crit damage for a spiky, high-ceiling damage profile.",
+    "Earth Shock interrupt, Purge, Earthbound root, Tremor and Grounding Totems: the deepest utility belt of any DPS spec.",
+    "Totemic Projection and Call of the Elements make totem upkeep far cheaper and less annoying than in Classic."
+  ],
+  "weaknesses": [
+    "Poor at low levels: Icy Veins rates early damage weak, and Lava Burst only arrives on the 31st talent point (level 41 in our leveling order).",
+    "Mana hungry. Convection, Totemic Focus, Mindfulness and Water Shield exist in this build purely to keep the bar full.",
+    "Totem coverage is a recurring cost: Sep-24 changes mean Flametongue Totem no longer stacks with Flametongue Weapon or Windfury Totem, so group totem coordination matters.",
+    "Every L60 placement is a projection; public tier lists disagree between A and S."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Elemental PvP: Earthbound Burst Caster (34 / 17 / 0)",
+      "summary": "Battleground burst caster built around Lava Burst, Earth Shock interrupts, Eye of the Storm pushback resistance and Earthbound roots, with an instant Ghost Wolf for rotating between objectives.",
+      "stats": {
+        "priority": ["Spell Power", "Crit", "Hit", "Stamina", "Intellect", "Haste", "MP5"],
+        "note": "Our projection. Elemental Fury makes crits +100% bigger, so Crit rises above Haste; Stamina keeps you alive in a 15v15 melee. Item stats are hidden until items drop."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance Shaman race. Stoneform strips bleeds/poisons/diseases and cuts Physical damage 10% for 8 sec, which is the right answer to melee dive."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Hardiness shaves 20% off stun duration, Shatter Curse gives Curse/Bane immunity plus 15% less Magic damage for 8 sec, and Blood Fury adds a 10% Spell Power burst.",
+          "runnerUp": "tauren"
+        }
+      },
+      "playstyle": [
+        "Role: ranged burst and peel. Sit behind your flag carrier or node defenders, open on the enemy healer or carrier with Flame Shock (Elemental Reach is skipped here, so you stay at Flame Shock's base range) then Lava Burst for the 20% bonus.",
+        "Earth Shock is your interrupt; Reverberation cuts shock cooldowns so you can threaten it more often. Frost Shock (8 sec slow) peels melee off your carrier.",
+        "Drop Earthbind Totem with Earthbound talented: it immobilizes nearby enemies for 5 sec on cast. Combine with Grounding Totem, whose cooldown Guardian Totems cuts by 2 sec, to blank enemy casters.",
+        "Eye of the Storm gives 70% less pushback on Lightning Bolt, Chain Lightning and Lava Burst, so you can finish casts under pressure. Lightning Overload adds free duplicate casts at half damage.",
+        "Improved Ghost Wolf makes Ghost Wolf instant and usable indoors (Icy Veins), the best way to rotate between nodes in Arathi Basin or run back from a graveyard in Alterac Valley.",
+        "Elemental Warding trims Fire, Frost and Nature damage by 10% at max rank, which is the only defensive spell mitigation in the tree.",
+        "Don't plan around arenas or rated PvP: there are none. This build is for Warsong Gulch, Arathi Basin, Darkspear Islands, Alterac Valley and world PvP."
+      ],
+      "enchants": [
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchanting is new to Forever; formula seen on a BlizzCon demo vendor, numbers not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Formula name only; effect values not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Chest",
+          "name": "Enchant Chest - Absorption",
+          "note": "The lone chest formula found; described as a damage absorption proc.",
+          "evidence": "datamined"
+        }
+      ],
+      "gearNote": "Get the Insignia Trinket (R2, 3,500 Honor, 2,000 more for the Epic upgrade) and the Faction Cloak (R3, 10 Arathi Basin Marks + 3,000 Honor) first; they are cheap and do not depend on stats we cannot see yet. Rank 7 unlocks the Battle Standard (15% max health aura, 10 min cooldown) for a node push or a flag room. Rare PvP gear needs level 55, and the Elite upgrades come from Emboldened Seals: Wrist (R8), Boots (R9), Gloves (R10), Legs/Shoulders (R12), Chest/Helm (R13). Rank 14 opens the weapon arsenal (Stave costs 15,000 Honor + 20 Alterac Valley Marks, beta prices). All datamined, subject to change.",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-veins-elemental-shaman", "icy-veins-shaman-overview", "icy-veins-pvp-rank-system", "blizzard-beta-dev-notes-sep-24", "wowforeverwiki-pvp"],
+      "points": {
+        "Elemental": {
+          "Concussion": 5,
+          "Elemental Warding": 3,
+          "Reverberation": 5,
+          "Call of Flame": 3,
+          "Elemental Focus": 1,
+          "Elemental Alacrity": 3,
+          "Eye of the Storm": 3,
+          "Call of Thunder": 1,
+          "Lightning Overload": 3,
+          "Earthbound": 1,
+          "Elemental Fury": 5,
+          "Lava Burst": 1
+        },
+        "Enhancement": {
+          "Thundering Strikes": 5,
+          "Ancestral Knowledge": 5,
+          "Improved Ghost Wolf": 2,
+          "Guardian Totems": 2,
+          "Anticipation": 3
+        }
+      }
+    },
+    "pve": {
+      "title": "Elemental PvE: Crit Fury Lava Burst (32 / 5 / 14)",
+      "summary": "Level-60 dungeon and raid-prep Elemental: max Alacrity into Elemental Fury and Lava Burst, Thundering Strikes for crit, Tidal Focus for Hit and a Restoration mana package.",
+      "stats": {
+        "priority": ["Spell Power", "Hit", "Haste", "Crit", "Intellect", "MP5", "Spirit", "Stamina"],
+        "note": "Order follows Icy Veins' Elemental stat list (level-20 beta). Tidal Focus already gives +5% Hit, and Elemental Fury (+100% crit damage) will probably push Crit up once gear exists. Hit and Crit are unified spell/melee stats; do not apply TBC hit-cap math."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance Shaman race. Mace Specialization is +1% crit with a mace equipped, Big Game Hunter is +5% damage to Beasts and Stoneform covers poison/disease mechanics."
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury is a 15 sec, +10% Attack Power and Spell Power cooldown that lines up with Lava Burst and Chain Lightning windows; Axe Specialization adds +1% crit with an axe. Icy Veins names Orc the default Horde Shaman.",
+          "runnerUp": "troll"
+        }
+      },
+      "playstyle": [
+        "Place all four totems before the pull with Call of the Elements (3 sec cast), Searing Totem last because it expires fastest. Keep a party buff totem (Strength of Earth) down before Searing, as Icy Veins advises; the buff is worth more than one extra Lightning Bolt.",
+        "Pull with Lightning Bolt at range, put Flame Shock up, then use Lava Burst while it ticks for the 20% bonus. Refresh Flame Shock on long-lived targets.",
+        "Fire Nova (explodes your active Fire Totem) on cooldown against 3+ enemies; Improved Fire Nova adds +20% damage and a 4 sec shorter cooldown.",
+        "Chain Lightning for packs. Lightning Overload gives your Lightning Bolt and Chain Lightning a 10% chance for a free half-damage duplicate.",
+        "Use Earth Shock to interrupt; Eye of the Storm takes 70% of the pushback off your big casts.",
+        "Totemic Projection and Totemic Recall let you move totems up to 30 yards away instead of re-casting them, which Icy Veins calls a huge mana saver. Reincarnation is your own wipe-recovery tool.",
+        "Water Shield restores 2% max mana per globe when you are hit or when a healing crit lands, so on a DPS Shaman it is a sustain tool for incoming damage; Mindfulness keeps 50% of your regen going while casting.",
+        "Sep-24 note: Tranquil Air, Windfury and Grace of Air Totems no longer stack even across different Shamans, so talk to your raid's other Shamans before picking an Air totem."
+      ],
+      "enchants": [
+        {
+          "slot": "Two-Handed Weapon",
+          "name": "Enchant 2H Weapon - Mighty Spell Power",
+          "note": "Formula name only; effect values not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Neck",
+          "name": "Enchant Necklace - Spell Power",
+          "note": "Neck enchanting is new to Forever; effect values not published.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Wrist",
+          "name": "Enchant Bracer - Greater Spellpower",
+          "note": "Alternative: Enchant Bracer - Superior Intellect if mana is the problem.",
+          "evidence": "datamined"
+        },
+        {
+          "slot": "Hands",
+          "name": "Enchant Gloves - Natural Power",
+          "note": "One of three school-specific glove formulas; the name suggests Nature damage, which covers Lightning Bolt, Chain Lightning and Earth Shock but not your Fire spells. Effect values not published.",
+          "evidence": "datamined"
+        }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-veins-elemental-shaman", "icy-veins-shaman-overview", "blizzard-beta-dev-notes-sep-24", "warcraft-tavern-enchanting-formulas", "method-itemization", "wowforever-co-tier-list"],
+      "points": {
+        "Elemental": {
+          "Convection": 5,
+          "Concussion": 5,
+          "Call of Flame": 3,
+          "Elemental Focus": 1,
+          "Elemental Alacrity": 3,
+          "Improved Fire Nova": 2,
+          "Eye of the Storm": 3,
+          "Call of Thunder": 1,
+          "Lightning Overload": 3,
+          "Elemental Fury": 5,
+          "Lava Burst": 1
+        },
+        "Enhancement": {
+          "Thundering Strikes": 5
+        },
+        "Restoration": {
+          "Totemic Focus": 5,
+          "Mindfulness": 3,
+          "Tidal Focus": 5,
+          "Water Shield": 1
+        }
+      }
+    },
+    "leveling": {
+      "title": "Elemental Leveling: Concussion to Lava Burst, then Crit and Mana",
+      "summary": "Respec-free 10-60 path that matches Icy Veins' level-20 Elemental build, reaches Alacrity at 20 and Lava Burst at 41, and lands on the PvE build at level 60.",
+      "stats": {
+        "priority": ["Spell Power", "Hit", "Haste", "Crit", "Intellect", "MP5", "Spirit", "Stamina"],
+        "note": "Icy Veins' level-20 caster order. Keep Water in the bags: mana depletes faster than it regenerates in long fights."
+      },
+      "races": {
+        "alliance": {
+          "race": "dwarf",
+          "why": "Only Alliance option. Big Game Hunter (+5% vs Beasts) is useful for leveling, as most open-world quest mobs are Beasts."
+        },
+        "horde": {
+          "race": "tauren",
+          "why": "Plainsrunning builds up to +30% movement speed while you run and Endurance gives +5% Health and +1% Hit, which helps a slow-killing early caster. Icy Veins singles it out for exploring before mounts.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Levels 10-20: Lightning Bolt and Flame Shock are most of your kit (Icy Veins). The first ten points (Concussion, Call of Flame, Convection) are Icy Veins' level-20 build; Elemental Alacrity takes the 11th point at level 20.",
+        "Kite elite melee with Frost Shock (8 sec slow) or circle an Earthbind Totem, per Icy Veins; do not tank elites.",
+        "Elemental Alacrity at 20 and Lightning Overload at 30 are the first big power spikes. Lava Burst arrives at 41 on the 32nd point and becomes the main nuke.",
+        "Use Searing Totem and Fire Nova (Improved Fire Nova arrives at 28) against multi-mob pulls in dungeons; Fire Nova now fires from your active Fire Totem.",
+        "Skinning + Leatherworking (camp chair and camp tent) or Herbalism + Alchemy (Mana Well) are Icy Veins' two recommended profession pairs.",
+        "Levels 42-60 are Thundering Strikes, Totemic Focus, Tidal Focus, Mindfulness and Water Shield: crit, Hit and mana, so the 60 build is not rushed at the expense of the first 41 levels."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-veins-elemental-shaman", "icy-veins-shaman-overview", "icy-veins-race-guide", "blizzard-beta-dev-notes-sep-24"],
+      "order": [
+        "Concussion", "Concussion", "Concussion", "Concussion", "Concussion",
+        "Call of Flame", "Call of Flame", "Call of Flame",
+        "Convection", "Convection",
+        "Elemental Alacrity", "Elemental Alacrity", "Elemental Alacrity",
+        "Elemental Focus",
+        "Convection", "Convection", "Convection",
+        "Call of Thunder",
+        "Improved Fire Nova", "Improved Fire Nova",
+        "Lightning Overload", "Lightning Overload", "Lightning Overload",
+        "Eye of the Storm", "Eye of the Storm", "Eye of the Storm",
+        "Elemental Fury", "Elemental Fury", "Elemental Fury", "Elemental Fury", "Elemental Fury",
+        "Lava Burst",
+        "Thundering Strikes", "Thundering Strikes", "Thundering Strikes", "Thundering Strikes", "Thundering Strikes",
+        "Totemic Focus", "Totemic Focus", "Totemic Focus", "Totemic Focus", "Totemic Focus",
+        "Tidal Focus", "Tidal Focus", "Tidal Focus", "Tidal Focus", "Tidal Focus",
+        "Mindfulness", "Mindfulness", "Mindfulness",
+        "Water Shield"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "icy-veins-shaman-overview",
+      "title": "Shaman Class Guide - WoW Forever",
+      "url": "https://www.icy-veins.com/wow-forever/shaman-class-overview",
+      "publisher": "Icy Veins",
+      "date": "2026-09-20",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-elemental-shaman",
+      "title": "World of Warcraft: Forever Elemental Shaman Guide",
+      "url": "https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-23",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-race-guide",
+      "title": "WoW Forever Racial Guide",
+      "url": "https://www.icy-veins.com/wow-forever/race-guide",
+      "publisher": "Icy Veins",
+      "date": "2026-09-28",
+      "tier": "reputable"
+    },
+    {
+      "id": "icy-veins-pvp-rank-system",
+      "title": "WoW Forever - PvP Rank System Explained",
+      "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system",
+      "publisher": "Icy Veins",
+      "date": "2026-09-19",
+      "tier": "reputable"
+    },
+    {
+      "id": "blizzard-beta-dev-notes-sep-24",
+      "title": "WoW Forever Beta Development Notes - Updated September 24",
+      "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696",
+      "publisher": "Blizzard Entertainment",
+      "date": "2026-09-24",
+      "tier": "official"
+    },
+    {
+      "id": "warcraft-tavern-enchanting-formulas",
+      "title": "New Enchanting Formulas for World of Warcraft Forever",
+      "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever",
+      "publisher": "Warcraft Tavern",
+      "date": "2026-09-17",
+      "tier": "reputable"
+    },
+    {
+      "id": "method-itemization",
+      "title": "Warcraft Forever: Itemization & Loot (Expertise, Spell Damage & More!)",
+      "url": "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more",
+      "publisher": "Method",
+      "date": "2026-09-15",
+      "tier": "reputable"
+    },
+    {
+      "id": "wowforever-co-tier-list",
+      "title": "WoW Forever Tier List: Every Public Ranking, Compared",
+      "url": "https://wowforever.co/tier-list",
+      "publisher": "WoW Forever (wowforever.co)",
+      "date": "2026-10-01",
+      "tier": "fan"
+    },
+    {
+      "id": "wowforeverwiki-pvp",
+      "title": "WoW Forever PvP & Honor System",
+      "url": "https://wowforeverwiki.org/pvp",
+      "publisher": "WoW Forever Wiki",
+      "date": "2026-10-01",
+      "tier": "fan"
+    }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

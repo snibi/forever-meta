@@ -1,0 +1,253 @@
+{
+  "class": "mage",
+  "spec": "fire",
+  "tagline": "Ignite, Hot Streak and Combustion: the crit-fed damage engine with the slowest start and the most disputed rating.",
+  "verdict": [
+    "Fire is a damage-only spec and it knows it. Icy Veins says Fire Mages are 'built for one thing: high and consistent damage'. Ignite adds 40% of every Fire crit as a 4 s burn, Hot Streak turns non-periodic crits into a Pyroblast that drops from 6 s to 1.5 s at three stacks, and Combustion gives a 10%-per-hit crit ramp until four crits land. Frostfire Bolt fixes the old problem of fire-resistant bosses: it uses whichever school the target resists less.",
+    "The rating is the most disputed in the class. wowforever.co shows Fire at A in two sources (MMOExp, Overgear) and at F in a player-posted Blizzard-forum list, which also put Arcane at S. Nobody has sims. Take that as 'real but unproven': Fire's strength depends on crit chance you will not have until level 60 gear, so the beta (cap 30) underrates it.",
+    "Sep-24 was a mixed patch. Hot Streak now lasts 20 s (was 15), Wake of Fire's Fire Blast bonus lasts 30 s (was 20), and Ignite no longer double-dips on percentage damage modifiers, which foreverchanges.pro files as a nerf. The vendored talent data (client build 1.60.1.70009) already carries the 20 s and 30 s numbers.",
+    "My call: play Fire if you want Ignite-and-Pyroblast pressure and can live with a slower 10-40. Pick Arcane if you want the safest-rated mage. Every level 60 allocation here is a projection; the level 10-20 path follows Icy Veins' beta level 20 build."
+  ],
+  "strengths": [
+    "Highest sustained single-target ceiling in the class on paper: Fire Power (+10% Fire damage), Critical Mass (+6% crit), Master of Elements mana refunds and Combustion all stack on one school.",
+    "Hot Streak lets you cast Pyroblast on the move-friendly 1.5 s timer at three stacks, and the Pyroblast DoT plus Ignite soften movement phases (Icy Veins).",
+    "Strong AoE for leveling and trash: Flamestrike, Blast Wave and Arcane Explosion, with Improved Flamestrike adding +15% crit.",
+    "Burning Soul gives Fire spells a 70% chance not to lose casting time when hit, which is rare reliability for a caster.",
+    "Improved Scorch stacks a 3%-per-stack Fire vulnerability up to 5 stacks for 30 s on your target."
+  ],
+  "weaknesses": [
+    "Needs crit to function and low-level characters do not have it. Icy Veins says Fire levels slightly slower than the other specs and the key talents sit deep in the tree.",
+    "Glass cannon. Ignite crits can pull threat from a tank quickly and Icy Veins tells Fire mages to keep Frost Nova ready.",
+    "Ignite no longer double-dips (Sep-24 nerf) and its ceiling has not been tested against real level 60 gear.",
+    "Fire resistance on bosses (Icy Veins names Ragnaros) means a Fire mage needs Frostfire Bolt or Arcane Subtlety-style resistance reduction.",
+    "Rating is contested: the spec is A in two sources and F in another."
+  ],
+  "builds": {
+    "pvp": {
+      "title": "Fire Burst with a Frost control splash (0/38/13)",
+      "summary": "Burning Soul, Impact and Blast Wave for a caster that keeps casting and hands out stuns and slows, Hot Streak plus Combustion for burst, and a Frost splash (Elemental Precision, Frostbite, Frost Nova, Permafrost) for hit and control.",
+      "stats": {
+        "priority": ["Spell Power", "Hit", "Crit", "Stamina", "Intellect", "Spirit"],
+        "note": "Hit and Crit are unified (Blizzard Deep Dive). Elemental Precision gives +5% Frost/Fire hit. No hit cap is published; do not apply TBC math. Fire lives on crit, so crit sits above Stamina only if you can stay alive; this ranking is theory."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Will to Survive removes stuns, Perception reveals stealthers and Sword Specialization adds 2% crit with a sword. Fire lives on crit and Icy Veins calls Humans very likely the PvP kings.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "orc",
+          "why": "Blood Fury (+10% Spell Power for 15 s) is the best burst racial for a Combustion window, and Hardiness shaves 20% off stun duration. Shatter Curse reduces Magic damage taken by 15% for 8 s.",
+          "runnerUp": "undead"
+        }
+      },
+      "playstyle": [
+        "Role: ranged burst on the push or the node attack. Burning Soul gives a 70% chance of not losing casting time when hit, and Impact gives your Fire spells a 10% chance to stun for 2 s, so you finish casts that other casters lose.",
+        "Burst: land Fireball or Scorch crits to build Hot Streak, then Pyroblast (4.5/3/1.5 s at 1/2/3 stacks per Icy Veins). Fire Blast is the instant filler, helped by Wake of Fire's 2 s cooldown cut and Incineration's +6% crit.",
+        "Pop Combustion (+10% Fire crit per hit until four non-periodic Fire crits) with Blood Fury (Orc) for the kill window.",
+        "Control: Blast Wave dazes for 50% slow over 6 s and Flame Throwing extends Fire range by 6 yards. Frost Nova (Improved Frost Nova cuts its cooldown 4 s) and Blink handle melee.",
+        "Frost Armor's chill on melee attackers can trigger Frostbite (Icy Veins). Fire Ward with Improved Fire Ward is left out; save the points for Frost control."
+      ],
+      "enchants": [
+        { "slot": "Wrist", "name": "Enchant Bracer - Greater Spellpower", "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.", "evidence": "datamined" },
+        { "slot": "Neck", "name": "Enchant Necklace - Spell Power", "note": "Neck enchants are new to Forever. Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Two-handed weapon", "name": "Enchant 2H Weapon - Mighty Spell Power", "note": "Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Weapon oil", "name": "Brilliant Wizard Oil", "note": "Strongest wizard oil known in the beta; Sep-24 reverted the lower oils to Classic values and left Brilliant unchanged.", "evidence": "beta-tested" }
+      ],
+      "gearNote": "R2 Insignia trinket first (3,500 Honor, 2,000 more for the epic version) so Blink and Ice Block are not your only answer to a stun, then the R3 Faction Cloak (10 Arathi Basin Marks + 3,000 Honor). For a crit caster the elite Chest and Helm (R13) and Legs and Shoulders (R12) are the biggest pieces, bought with Emboldened Seals; Rare PvP gear needs level 55. The R14 Weapon Arsenal includes a Grand Marshal's Stave (20 Alterac Valley Marks, 15,000 Honor), a Mageblade and a Tome of Power (Darkspear Islands Marks). All costs are beta numbers and may change. Skip the R7 Battle Standard; give it to a flag carrier.",
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-fire-guide", "icy-mage-overview", "icy-frost-guide", "icy-pvp-ranks", "blizz-deep-dive", "blizz-whats-next"],
+      "points": {
+        "Fire": {
+          "Wake of Fire": 2,
+          "Incineration": 3,
+          "Improved Fireball": 5,
+          "Ignite": 5,
+          "Flame Throwing": 2,
+          "Impact": 3,
+          "Pyroblast": 1,
+          "Burning Soul": 3,
+          "Hot Streak": 1,
+          "Master of Elements": 3,
+          "Critical Mass": 3,
+          "Blast Wave": 1,
+          "Fire Power": 5,
+          "Combustion": 1
+        },
+        "Frost": {
+          "Elemental Precision": 5,
+          "Frostbite": 3,
+          "Improved Frost Nova": 2,
+          "Permafrost": 3
+        }
+      }
+    },
+    "pve": {
+      "title": "Ignite, Hot Streak and Combustion (0/46/5)",
+      "summary": "Nearly the whole Fire tree (Ignite, Hot Streak, Improved Scorch, Master of Elements, Fire Power, Combustion) plus Elemental Precision for +5% Fire hit.",
+      "stats": {
+        "priority": ["Hit", "Spell Power", "Crit", "Spirit", "Intellect", "Stamina", "MP5"],
+        "note": "This is Icy Veins' Fire ranking from the level 20 beta: Hit, Spell Power, then Crit, which they call 'a great damage increase for Fire Mages'. They publish no hit cap, so do not apply TBC math. Item stats stay hidden until items drop."
+      },
+      "races": {
+        "alliance": {
+          "race": "human",
+          "why": "Sword Specialization adds 2% crit to all spells with a sword equipped, and Icy Veins calls that presumably the best damage increase in a standing-still Patchwerk fight. It needs a sword; Gnome is the fallback if staves win.",
+          "runnerUp": "gnome"
+        },
+        "horde": {
+          "race": "troll",
+          "why": "Berserking gives +10% spellcasting speed for 10 s, which shortens Pyroblast and Fireball casts, and Beast Slaying adds 5% vs Beasts. Icy Veins gives Trolls a slight edge over Orcs in PvE.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Opener: Pyroblast for the DoT, then Fireball (Improved Fireball shaves 0.5 s) or Frostfire Bolt once you learn it. Icy Veins says you get it around level 40.",
+        "Keep Improved Scorch stacked: Scorch has a 100% chance to add a 3%-per-stack Fire vulnerability (5 stacks, 30 s). Scorch crits also feed Hot Streak.",
+        "Hot Streak comes from non-periodic crits with Fireball, Frostfire Bolt, Fire Blast and Scorch and lasts 20 s. Each stack takes 25% off Pyroblast; spend it at three stacks (1.5 s).",
+        "Fire Blast on a kill gives +50% crit chance on the next one for 30 s (Wake of Fire); Incineration adds +6% to Fire Blast and Scorch crit, so that ping feeds Hot Streak.",
+        "Use Combustion on cooldown during a burn: +10% Fire crit per hit until 4 non-periodic crits land, which is when Ignite stacks are largest.",
+        "Mana: Master of Elements refunds 30% of base mana on Fire and Frost crits, so mana improves as crit improves.",
+        "Threat: Ignite crits can out-pull a tank. Keep Frost Nova ready and open after the tank has aggro (Icy Veins).",
+        "Raids open 2026-12-09. Fire-resistant bosses are why Frostfire Bolt exists (Icy Veins names Ragnaros)."
+      ],
+      "enchants": [
+        { "slot": "Wrist", "name": "Enchant Bracer - Greater Spellpower", "note": "Name seen on a BlizzCon demo enchanting vendor; the amount is not published.", "evidence": "datamined" },
+        { "slot": "Neck", "name": "Enchant Necklace - Spell Power", "note": "Neck enchants are new to Forever. Name only, amount not published.", "evidence": "datamined" },
+        { "slot": "Two-handed weapon", "name": "Enchant 2H Weapon - Mighty Spell Power", "note": "Name only, amount not published. No Fire-specific glove formula was among the three elemental glove enchants seen (Arcane, Holy, Natural).", "evidence": "datamined" },
+        { "slot": "Weapon oil", "name": "Brilliant Wizard Oil", "note": "Strongest wizard oil known in the beta; Sep-24 reverted the lower oils to Classic values and left Brilliant unchanged.", "evidence": "beta-tested" }
+      ],
+      "confidence": "low",
+      "evidence": ["theory"],
+      "sourceIds": ["icy-fire-guide", "icy-mage-overview", "icy-race-guide", "blizz-dev-notes-sep24", "warcrafttavern-enchants", "wowforever-co-tier-list", "blizz-forum-tier-thread"],
+      "points": {
+        "Fire": {
+          "Wake of Fire": 2,
+          "Incineration": 3,
+          "Improved Fireball": 5,
+          "Ignite": 5,
+          "Flame Throwing": 2,
+          "Impact": 3,
+          "Burning Soul": 3,
+          "Improved Flamestrike": 3,
+          "Pyroblast": 1,
+          "Improved Scorch": 3,
+          "Improved Fire Ward": 2,
+          "Hot Streak": 1,
+          "Master of Elements": 3,
+          "Critical Mass": 3,
+          "Blast Wave": 1,
+          "Fire Power": 5,
+          "Combustion": 1
+        },
+        "Frost": {
+          "Elemental Precision": 5
+        }
+      }
+    },
+    "leveling": {
+      "title": "Fireball, Wake of Fire, Ignite, Pyroblast (10-60)",
+      "summary": "Icy Veins' level 20 Fire path (Improved Fireball, Wake of Fire, Ignite, Pyroblast), then Hot Streak at 26, Master of Elements and Critical Mass to 32, Fire Power by 41 and Combustion at 42; it ends on the PvE allocation with no respec.",
+      "stats": {
+        "priority": ["Spell Power", "Hit", "Crit", "Spirit", "Intellect", "Stamina"],
+        "note": "Fire has little crit before level 60 gear, so early Spell Power and Spirit (less drinking) beat Crit. Icy Veins' level 20 list is BoP Tailoring plus dungeon drops."
+      },
+      "races": {
+        "alliance": {
+          "race": "gnome",
+          "why": "Fire needs to restore mana between pulls (Blizzard's own reason for lengthening Wake of Fire). Expansive Mind adds 5% maximum Mana and Escape Artist gives a second escape after Blink.",
+          "runnerUp": "human"
+        },
+        "horde": {
+          "race": "undead",
+          "why": "Cannibalize restores Mana as well as Health (7% of each every 2 s for 10 s on a corpse), which cuts the downtime Fire suffers between pulls.",
+          "runnerUp": "orc"
+        }
+      },
+      "playstyle": [
+        "Icy Veins' honest line: Fire levels slightly slower than Arcane and Frost because crit is low. Take it for the L60 payoff; it is not terrible.",
+        "Levels 10-14: all five points in Improved Fireball and get a wand as soon as possible. Early wands are strong and out-damage spells for the first levels (Icy Veins).",
+        "Pull with Pyroblast (unlocked at level 20, via 10 points above it) so the DoT ticks while you Fireball. Use Fire Blast to finish non-trivial targets: Wake of Fire then gives +50% crit on the next one for 30 s.",
+        "AoE: Flamestrike, then Blast Wave, then Arcane Explosion. Frost Nova and Cone of Cold to kite. Start with one or two mobs.",
+        "Level 26: Hot Streak. From here every Fireball, Fire Blast and Scorch crit cuts Pyroblast's cast time by 25% per stack. Master of Elements at 27-29 pays back mana on Fire crits.",
+        "Level 40: learn Frostfire Bolt (Icy Veins) and use it instead of Fireball when it beats it.",
+        "Professions: Engineering first, Tailoring second (Flame Circlet, Flame Sash, Flame Boots are the leveling pieces Icy Veins names)."
+      ],
+      "enchants": [],
+      "confidence": "medium",
+      "evidence": ["beta-tested", "theory"],
+      "sourceIds": ["icy-fire-guide", "icy-mage-overview", "blizz-dev-notes-sep24", "blizz-deep-dive"],
+      "order": [
+        "Improved Fireball",
+        "Improved Fireball",
+        "Improved Fireball",
+        "Improved Fireball",
+        "Improved Fireball",
+        "Wake of Fire",
+        "Wake of Fire",
+        "Ignite",
+        "Ignite",
+        "Ignite",
+        "Pyroblast",
+        "Ignite",
+        "Ignite",
+        "Incineration",
+        "Incineration",
+        "Incineration",
+        "Hot Streak",
+        "Master of Elements",
+        "Master of Elements",
+        "Master of Elements",
+        "Critical Mass",
+        "Critical Mass",
+        "Critical Mass",
+        "Blast Wave",
+        "Impact",
+        "Impact",
+        "Impact",
+        "Fire Power",
+        "Fire Power",
+        "Fire Power",
+        "Fire Power",
+        "Fire Power",
+        "Combustion",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Elemental Precision",
+        "Burning Soul",
+        "Burning Soul",
+        "Burning Soul",
+        "Improved Scorch",
+        "Improved Scorch",
+        "Improved Scorch",
+        "Improved Flamestrike",
+        "Improved Flamestrike",
+        "Improved Flamestrike",
+        "Flame Throwing",
+        "Flame Throwing",
+        "Improved Fire Ward",
+        "Improved Fire Ward"
+      ]
+    }
+  },
+  "sources": [
+    { "id": "icy-fire-guide", "title": "World of Warcraft: Forever Fire Mage Guide", "url": "https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-24", "tier": "reputable" },
+    { "id": "icy-frost-guide", "title": "World of Warcraft: Forever Frost Mage Guide", "url": "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide", "publisher": "Icy Veins", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "icy-mage-overview", "title": "Mage Class Guide (WoW Forever)", "url": "https://www.icy-veins.com/wow-forever/mage-class-overview", "publisher": "Icy Veins", "date": "2026-09-27", "tier": "reputable" },
+    { "id": "icy-race-guide", "title": "WoW Forever Racial Guide", "url": "https://www.icy-veins.com/wow-forever/race-guide", "publisher": "Icy Veins", "date": "2026-09-28", "tier": "reputable" },
+    { "id": "icy-pvp-ranks", "title": "WoW Forever - PvP Rank System Explained", "url": "https://www.icy-veins.com/wow-forever/pvp-rank-system", "publisher": "Icy Veins", "date": "2026-09-19", "tier": "reputable" },
+    { "id": "blizz-dev-notes-sep24", "title": "WoW Forever Beta Development Notes - Updated September 24", "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-september-24/2360696", "publisher": "Blizzard Entertainment", "date": "2026-09-24", "tier": "official" },
+    { "id": "blizz-deep-dive", "title": "World of Warcraft: Forever Deep Dive Panel Recap", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313", "publisher": "Blizzard Entertainment", "date": "2026-09-13", "tier": "official" },
+    { "id": "blizz-whats-next", "title": "World of Warcraft: Forever What's Next Panel Recap", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303862", "publisher": "Blizzard Entertainment", "date": "2026-09-12", "tier": "official" },
+    { "id": "warcrafttavern-enchants", "title": "New Enchanting Formulas for World of Warcraft Forever", "url": "https://www.warcrafttavern.com/forever/news/new-enchanting-formulas-for-world-of-warcraft-forever", "publisher": "Warcraft Tavern", "date": "2026-09-17", "tier": "reputable" },
+    { "id": "foreverchanges-patch-notes", "title": "WoW Forever Patch Notes: every beta update, class by class", "url": "https://foreverchanges.pro/patch-notes", "publisher": "ForeverChanges", "date": "2026-09-30", "tier": "fan" },
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" },
+    { "id": "blizz-forum-tier-thread", "title": "Current Tier List for Best class and Spec", "url": "https://us.forums.blizzard.com/en/wow/t/current-tier-list-for-best-class-and-spec/2350964", "publisher": "Blizzard Forums (player post)", "date": "2026-09-16", "tier": "fan" }
+  ],
+  "verifiedOn": "2026-10-01",
+  "gameBuild": "1.60.1.70124"
+}

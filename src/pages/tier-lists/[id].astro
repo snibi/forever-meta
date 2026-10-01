@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import Badge from '../../components/Badge.astro';
+import TierList from '../../components/TierList.astro';
+import Sources from '../../components/Sources.astro';
+import { getTierLists } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const lists = await getTierLists();
+  return lists.map((l) => ({ params: { id: l.id }, props: { list: l.data } }));
+}
+const { list } = Astro.props;
+---
+<Base title={list.title} description={list.description}>
+  <nav class="mb-4 text-sm text-muted"><a class="underline" href="/tier-lists/">Tier lists</a> /</nav>
+  <h1 class="mb-2 text-4xl font-bold text-gold">{list.title}</h1>
+  <p class="mb-3 max-w-3xl text-muted">{list.description}</p>
+  <div class="mb-6 flex flex-wrap items-center gap-3 text-sm">
+    <Badge confidence={list.confidence} />
+    <span class="text-muted">Updated {list.updatedOn}</span>
+  </div>
+  <TierList list={list} />
+  <section class="mt-8 max-w-3xl">
+    <h2 class="section-title">Basis</h2>
+    <p class="prose-block">{list.basis}</p>
+  </section>
+  <div class="mt-8"><Sources sources={list.sources} /></div>
+</Base>

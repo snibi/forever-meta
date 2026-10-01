@@ -1,0 +1,31 @@
+{
+  "title": "PvE tanks",
+  "description": "Who holds a level-60 dungeon, and who you trust first when raids open on December 9. Three specs can tank. That is the whole list.",
+  "scope": "pve",
+  "coverage": "tank",
+  "basis": "L60 projection from beta build 1.60.1.70124. Warrior and Paladin notes are from Blizzard's Sep 30 deep dive and the spec files. Feral's crushing-blow caveat is Icy Veins, as cited in the Feral file. No raid test exists.",
+  "updatedOn": "2026-10-01",
+  "confidence": "low",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "ref": "warrior-protection", "note": "Shield Slam, Last Stand, and a Charge that works in Defensive Stance. The file calls this the main tank." },
+        { "ref": "paladin-protection", "note": "Seal of Fury makes Judgement a taunt. The file calls it the dungeon tank to beat, even after the Righteous Fury nerf." }
+      ]
+    },
+    { "tier": "A", "entries": [] },
+    {
+      "tier": "B",
+      "entries": [
+        { "ref": "druid-feral-combat", "note": "The file says bring the bear to dungeons. Icy Veins flags no easy answer to crits and Crushing Blows. Not the raid starter." }
+      ]
+    },
+    { "tier": "C", "entries": [] },
+    { "tier": "D", "entries": [] }
+  ],
+  "sources": [
+    { "id": "blizz-priest-warrior", "title": "World of Warcraft: Forever Class Deep Dives — Priest and Warrior", "url": "https://worldofwarcraft.blizzard.com/en-us/news/24301514", "publisher": "Blizzard Entertainment", "date": "2026-09-30", "tier": "official" },
+    { "id": "wowforever-co-tier-list", "title": "WoW Forever Tier List: Every Public Ranking, Compared", "url": "https://wowforever.co/tier-list", "publisher": "wowforever.co", "date": "2026-10-01", "tier": "fan" }
+  ]
+}
