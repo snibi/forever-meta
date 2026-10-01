@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import meta from '../data/meta.json';
+import { href } from '../lib/paths';
 
 interface Props {
   title?: string;
@@ -13,12 +14,12 @@ const {
   classColor,
 } = Astro.props;
 const fullTitle = title ? `${title} · ${meta.siteName}` : `${meta.siteName} — WoW Forever builds & tier lists`;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const canonical = Astro.url;
 const NAV = [
-  { href: '/#classes', label: 'Classes' },
-  { href: '/tier-lists/', label: 'Tier Lists' },
-  { href: '/races/', label: 'Races' },
-  { href: '/methodology/', label: 'Methodology' },
+  { href: href('/#classes'), label: 'Classes' },
+  { href: href('/tier-lists/'), label: 'Tier Lists' },
+  { href: href('/races/'), label: 'Races' },
+  { href: href('/methodology/'), label: 'Methodology' },
 ];
 ---
 <!doctype html>
@@ -29,7 +30,7 @@ const NAV = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/icons/classicon_warrior.jpg" />
+    <link rel="icon" href={href('/icons/classicon_warrior.jpg')} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={meta.siteName} />
     <meta property="og:title" content={fullTitle} />
@@ -40,7 +41,7 @@ const NAV = [
   <body>
     <header class="border-b border-line bg-surface/80 backdrop-blur">
       <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-2 px-4 py-3">
-        <a href="/" class="font-display text-xl font-bold tracking-wider text-gold no-underline">Forever Meta</a>
+        <a href={href('/')} class="font-display text-xl font-bold tracking-wider text-gold no-underline">Forever Meta</a>
         <nav class="flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted" aria-label="Main">
           {NAV.map((n) => <a class="hover:text-text" href={n.href}>{n.label}</a>)}
         </nav>

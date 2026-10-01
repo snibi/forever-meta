@@ -1,6 +1,6 @@
 ---
 import icons from '../data/icons.json';
-
+import { href } from '../lib/paths';
 interface Props {
   name: string;
   size?: number;
@@ -13,7 +13,7 @@ const available = new Set<string>(icons);
 const file = available.has(name) ? name : 'inv_misc_questionmark';
 ---
 <img
-  src={`/icons/${file}.jpg`}
+  src={href(`/icons/${file}.jpg`)}
   width={size}
   height={size}
   alt={alt}

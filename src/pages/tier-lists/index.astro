@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Badge from '../../components/Badge.astro';
 import { getTierLists } from '../../lib/content';
+import { href } from '../../lib/paths';
 
 const ORDER = ['pvp-overall', 'pve-dps', 'pve-tank', 'pve-healer', 'leveling', 'racials'];
 const lists = (await getTierLists()).sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
@@ -14,7 +15,7 @@ const lists = (await getTierLists()).sort((a, b) => ORDER.indexOf(a.id) - ORDER.
   ) : (
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {lists.map((l) => (
-        <a href={`/tier-lists/${l.id}/`} class="card block p-4 no-underline transition hover:border-gold">
+        <a href={href(`/tier-lists/${l.id}/`)} class="card block p-4 no-underline transition hover:border-gold">
           <h2 class="mb-1 text-lg text-gold">{l.data.title}</h2>
           <p class="mb-3 text-sm text-muted">{l.data.description}</p>
           <div class="flex items-center justify-between gap-2">

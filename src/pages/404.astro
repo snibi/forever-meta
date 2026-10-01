@@ -1,10 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import { href } from '../lib/paths';
 ---
 <Base title="Not found">
   <div class="py-20 text-center">
     <h1 class="text-5xl font-bold text-gold">404</h1>
     <p class="mt-3 text-muted">That page wandered off into the Barrens.</p>
-    <p class="mt-6"><a class="chip px-4 py-2" href="/">Back to Forever Meta</a></p>
+    <p class="mt-6"><a class="chip px-4 py-2" href={href('/')}>Back to Forever Meta</a></p>
   </div>
 </Base>

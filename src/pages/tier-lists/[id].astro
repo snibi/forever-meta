@@ -4,6 +4,7 @@ import Badge from '../../components/Badge.astro';
 import TierList from '../../components/TierList.astro';
 import Sources from '../../components/Sources.astro';
 import { getTierLists } from '../../lib/content';
+import { href } from '../../lib/paths';
 
 export async function getStaticPaths() {
   const lists = await getTierLists();
@@ -12,7 +13,7 @@ export async function getStaticPaths() {
 const { list } = Astro.props;
 ---
 <Base title={list.title} description={list.description}>
-  <nav class="mb-4 text-sm text-muted"><a class="underline" href="/tier-lists/">Tier lists</a> /</nav>
+  <nav class="mb-4 text-sm text-muted"><a class="underline" href={href('/tier-lists/')}>Tier lists</a> /</nav>
   <h1 class="mb-2 text-4xl font-bold text-gold">{list.title}</h1>
   <p class="mb-3 max-w-3xl text-muted">{list.description}</p>
   <div class="mb-6 flex flex-wrap items-center gap-3 text-sm">

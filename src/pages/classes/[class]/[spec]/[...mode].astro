@@ -14,6 +14,7 @@ import Sources from '../../../../components/Sources.astro';
 import { ROLE_LABEL, specById } from '../../../../lib/classes';
 import { treeIcon } from '../../../../lib/talents';
 import { MODES, getSpecs, resolvePoints, type ModeKey } from '../../../../lib/content';
+import { href } from '../../../../lib/paths';
 
 export async function getStaticPaths() {
   const specs = await getSpecs();
@@ -39,8 +40,8 @@ const points = resolvePoints(entry, active);
   classColor={def.color}
 >
   <nav class="mb-4 text-sm text-muted" aria-label="Breadcrumb">
-    <a class="underline" href="/#classes">Classes</a> /
-    <a class="underline" href={`/classes/${def.class}/`}>{def.className}</a> /
+    <a class="underline" href={href('/#classes')}>Classes</a> /
+    <a class="underline" href={href(`/classes/${def.class}/`)}>{def.className}</a> /
   </nav>
   <header class="mb-6 flex flex-wrap items-center gap-4">
     <Icon name={treeIcon(def.class, def.tree)} size={64} alt="" style={`view-transition-name:spec-${def.id}`} />

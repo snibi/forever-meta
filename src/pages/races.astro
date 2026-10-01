@@ -4,6 +4,7 @@ import Icon from '../components/Icon.astro';
 import { CLASSES } from '../lib/classes';
 import { RACES } from '../lib/races';
 import { getTierLists } from '../lib/content';
+import { href } from '../lib/paths';
 
 const hasRacialsList = (await getTierLists()).some((l) => l.id === 'racials');
 const factions = [
@@ -15,7 +16,7 @@ const factions = [
   <h1 class="mb-2 text-4xl font-bold text-gold">Races &amp; racials</h1>
   <p class="mb-8 max-w-3xl text-muted">
     Ten playable races, four racials each. Six race/class combinations are new to the franchise.
-    {hasRacialsList && <a class="underline" href="/tier-lists/racials/">See the racials tier list →</a>}
+    {hasRacialsList && <a class="underline" href={href('/tier-lists/racials/')}>See the racials tier list →</a>}
   </p>
 
   <div class="card mb-10 overflow-x-auto">

@@ -6,6 +6,7 @@ import Icon from '../components/Icon.astro';
 import { CLASSES, ROLE_GLYPH, ROLE_LABEL } from '../lib/classes';
 import { treeIcon } from '../lib/talents';
 import { getSpecs, getTierLists, specHref } from '../lib/content';
+import { href } from '../lib/paths';
 
 const specs = await getSpecs();
 const lists = await getTierLists();
@@ -36,11 +37,11 @@ const rows = SNAPSHOT.flatMap(([id, label]) => {
   {rows.length > 0 && (
     <section class="mb-12" aria-labelledby="snapshot">
       <h2 id="snapshot" class="section-title text-2xl">Meta snapshot</h2>
-      <p class="mb-4 text-sm text-muted">S-tier today. <a class="underline" href="/tier-lists/">All tier lists →</a></p>
+      <p class="mb-4 text-sm text-muted">S-tier today. <a class="underline" href={href('/tier-lists/')}>All tier lists →</a></p>
       <div class="grid gap-5 lg:grid-cols-2">
         {rows.map((r) => (
           <div>
-            <h3 class="mb-2 text-sm text-muted"><a class="hover:text-text" href={`/tier-lists/${r.id}/`}>{r.label}</a></h3>
+            <h3 class="mb-2 text-sm text-muted"><a class="hover:text-text" href={href(`/tier-lists/${r.id}/`)}>{r.label}</a></h3>
             <TierList list={r.list} onlyTiers={['S']} />
           </div>
         ))}
@@ -53,7 +54,7 @@ const rows = SNAPSHOT.flatMap(([id, label]) => {
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {CLASSES.map((c) => (
         <article class="card card-accent p-4" style={`--class-color:${c.color}`} data-class-card>
-          <a href={`/classes/${c.slug}/`} class="mb-3 flex items-center gap-3 no-underline">
+          <a href={href(`/classes/${c.slug}/`)} class="mb-3 flex items-center gap-3 no-underline">
             <Icon name={`classicon_${c.slug}`} size={40} alt="" />
             <h3 class="text-xl" style={`color:${c.color}`}>{c.name}</h3>
           </a>

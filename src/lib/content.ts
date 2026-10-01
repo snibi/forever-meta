@@ -2,6 +2,7 @@ import { getCollection } from 'astro:content';
 import { getClassTalents, replayOrder, type Points } from './talents';
 import type { SpecContent, SpecBuildMode, TierListContent } from './schema';
 import type { FlatSpec } from './classes';
+import { href } from './paths';
 
 export interface SpecEntry {
   id: string; // "{class}-{spec}"
@@ -46,7 +47,7 @@ export type ModeKey = (typeof MODES)[number]['key'];
 
 export const specHref = (s: Pick<FlatSpec, 'class' | 'slug'>, mode?: ModeKey) => {
   const m = MODES.find((x) => x.key === mode);
-  return `/classes/${s.class}/${s.slug}/${m?.path ?? ''}`;
+  return href(`/classes/${s.class}/${s.slug}/${m?.path ?? ''}`);
 };
 
 /** Tier letter for a spec in the tier list that drives a given build mode, or null. */

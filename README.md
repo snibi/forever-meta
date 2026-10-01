@@ -1,8 +1,8 @@
 # Forever Meta
 
-Static meta site for **World of Warcraft: Forever**. One best build per spec for PvP, PvE, and leveling, plus cross-spec tier lists. Local preview only.
+Static meta site for **World of Warcraft: Forever**. One best build per spec for PvP, PvE, and leveling, plus cross-spec tier lists.
 
-Launch used by the countdown: `2026-11-04T23:00:00Z` (2026-11-04 15:00 PST). Raids open 2026-12-09. Snapshot date and build live in `src/data/meta.json`.
+Live: https://snibi.github.io/forever-meta/
 
 ## Run
 
@@ -69,4 +69,4 @@ The beta banner used a fixed height and `truncate`. At 390px it cut off “L60 c
 
 ### Not in scope
 
-No deploy. `astro.config.mjs` sets `site` to `http://localhost:4321`. No arena tools, no item database, no live talent calculator.
+No arena tools, no item database, no live talent calculator. GitHub Pages publishes `master` via `.github/workflows/deploy.yml`.
