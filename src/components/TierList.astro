@@ -8,8 +8,9 @@ import { uniqueRacials } from '../lib/races';
 interface Props {
   list: TierListEntry['data'];
   onlyTiers?: string[];
+  tipBelow?: boolean;
 }
-const { list, onlyTiers } = Astro.props;
+const { list, onlyTiers, tipBelow = false } = Astro.props;
 const racials = new Map(uniqueRacials().map((r) => [r.name, r]));
 const COLOR: Record<string, string> = {
   S: 'var(--color-tier-s)',
@@ -21,11 +22,15 @@ const COLOR: Record<string, string> = {
 const mode = list.scope === 'pvp' || list.scope === 'pve' || list.scope === 'leveling' ? list.scope : undefined;
 const tiers = list.tiers.filter((t) => !onlyTiers || onlyTiers.includes(t.tier));
 ---
-<div class="card divide-y divide-line overflow-hidden">
-  {tiers.map((tier) => (
+<div class="card divide-y divide-line">
+  {tiers.map((tier, i) => (
     <div class="flex" data-tier={tier.tier}>
       <div
-        class="flex w-14 shrink-0 items-center justify-center font-display text-2xl font-bold text-black sm:w-20 sm:text-3xl"
+        class:list={[
+          'flex w-14 shrink-0 items-center justify-center font-display text-2xl font-bold text-black sm:w-20 sm:text-3xl',
+          i === 0 && 'rounded-tl-xl',
+          i === tiers.length - 1 && 'rounded-bl-xl',
+        ]}
         style={`background:${COLOR[tier.tier]}`}
       >{tier.tier}</div>
       <ul class="flex min-h-16 flex-1 flex-wrap items-center gap-2 p-3">
@@ -34,7 +39,7 @@ const tiers = list.tiers.filter((t) => !onlyTiers || onlyTiers.includes(t.tier))
           const spec = specById(e.ref);
           const racial = racials.get(e.ref);
           return (
-            <li class="tip-host" data-chip>
+            <li class:list={['tip-host', tipBelow && 'tip-below']} data-chip>
               {spec ? (
                 <a class="chip" style={`--chip-color:${spec.color}`} href={specHref(spec, mode)}>
                   <Icon name={treeIcon(spec.class, spec.tree)} size={26} alt="" />

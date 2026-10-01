@@ -43,7 +43,7 @@ const rows = SNAPSHOT.flatMap(([id, label]) => {
         {rows.map((r) => (
           <div>
             <h3 class="mb-2 text-sm text-muted"><a class="hover:text-text" href={href(`/tier-lists/${r.id}/`)}>{r.label}</a></h3>
-            <TierList list={r.list} onlyTiers={['S']} />
+            <TierList list={r.list} onlyTiers={['S']} tipBelow />
           </div>
         ))}
       </div>

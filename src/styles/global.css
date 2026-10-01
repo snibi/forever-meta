@@ -113,6 +113,8 @@ a.chip:hover, a.chip:focus-visible {
 }
 .tip-host.tip-below > .tip { bottom: auto; top: calc(100% + 8px); }
 .tip-host > .tip.tip-flip { left: auto; right: 0; transform: none; }
+.tip-host:hover,
+.tip-host:focus-within { z-index: 60; }
 
 /* Talent grid */
 .talent-grid {
