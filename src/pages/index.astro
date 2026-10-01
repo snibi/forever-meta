@@ -3,7 +3,8 @@ import Base from '../layouts/Base.astro';
 import Countdown from '../components/Countdown.astro';
 import TierList from '../components/TierList.astro';
 import Icon from '../components/Icon.astro';
-import { CLASSES, ROLE_GLYPH, ROLE_LABEL } from '../lib/classes';
+import { CLASSES, ROLE_LABEL, textColor } from '../lib/classes';
+import RoleMark from '../components/RoleMark.astro';
 import { treeIcon } from '../lib/talents';
 import { getSpecs, getTierLists, specHref } from '../lib/content';
 import { href } from '../lib/paths';
@@ -56,7 +57,7 @@ const rows = SNAPSHOT.flatMap(([id, label]) => {
         <article class="card card-accent p-4" style={`--class-color:${c.color}`} data-class-card>
           <a href={href(`/classes/${c.slug}/`)} class="mb-3 flex items-center gap-3 no-underline">
             <Icon name={`classicon_${c.slug}`} size={40} alt="" />
-            <h3 class="text-xl" style={`color:${c.color}`}>{c.name}</h3>
+            <h3 class="text-xl" style={`color:${textColor(c.color)}`}>{c.name}</h3>
           </a>
           <ul class="flex flex-col gap-2">
             {c.specs.map((s) => {
@@ -65,7 +66,7 @@ const rows = SNAPSHOT.flatMap(([id, label]) => {
                 <>
                   <Icon name={treeIcon(c.slug, s.tree)} size={26} alt="" />
                   <span>{s.tree}</span>
-                  <span class="ml-auto text-muted" title={ROLE_LABEL[s.role]} aria-label={ROLE_LABEL[s.role]}>{ROLE_GLYPH[s.role]}</span>
+                  <span class="ml-auto inline-flex text-muted" title={ROLE_LABEL[s.role]} aria-label={ROLE_LABEL[s.role]}><RoleMark role={s.role} /></span>
                   {!have.has(id) && <span class="text-[11px] text-muted">Coming soon</span>}
                 </>
               );

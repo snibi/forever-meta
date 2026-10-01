@@ -40,9 +40,9 @@ const NAV = [
   </head>
   <body>
     <header class="border-b border-line bg-surface/80 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-2 px-4 py-3">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8">
         <a href={href('/')} class="font-display text-xl font-bold tracking-wider text-gold no-underline">Forever Meta</a>
-        <nav class="flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted" aria-label="Main">
+        <nav class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted sm:gap-x-5" aria-label="Main">
           {NAV.map((n) => <a class="hover:text-text" href={n.href}>{n.label}</a>)}
         </nav>
       </div>
@@ -65,5 +65,23 @@ const NAV = [
         <p>Fan site, not affiliated with Blizzard. Verified against beta build {meta.gameBuild} on {meta.researchedOn}.</p>
       </div>
     </footer>
+    <script>
+      function placeTip(host: Element) {
+        const tip = host.querySelector(':scope > .tip');
+        if (!tip) return;
+        tip.classList.remove('tip-flip');
+        const box = tip.getBoundingClientRect();
+        if (box.right > window.innerWidth - 8) tip.classList.add('tip-flip');
+        if (box.top < 52 && !host.classList.contains('tip-below')) host.classList.add('tip-below');
+      }
+      document.addEventListener('pointerover', (event) => {
+        const host = event.target instanceof Element ? event.target.closest('.tip-host') : null;
+        if (host) placeTip(host);
+      });
+      document.addEventListener('focusin', (event) => {
+        const host = event.target instanceof Element ? event.target.closest('.tip-host') : null;
+        if (host) placeTip(host);
+      });
+    </script>
   </body>
 </html>

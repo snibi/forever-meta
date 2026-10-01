@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { specById } from '../lib/classes';
+import { specById, textColor } from '../lib/classes';
 import { treeIcon } from '../lib/talents';
 import { specHref, type TierListEntry } from '../lib/content';
 import { uniqueRacials } from '../lib/races';
@@ -38,7 +38,7 @@ const tiers = list.tiers.filter((t) => !onlyTiers || onlyTiers.includes(t.tier))
               {spec ? (
                 <a class="chip" style={`--chip-color:${spec.color}`} href={specHref(spec, mode)}>
                   <Icon name={treeIcon(spec.class, spec.tree)} size={26} alt="" />
-                  <span style={`color:${spec.color}`}>{spec.name}</span>
+                  <span style={`color:${textColor(spec.color)}`}>{spec.name}</span>
                 </a>
               ) : (
                 <span class="chip" tabindex="0">

@@ -11,7 +11,7 @@ import Enchants from '../../../../components/Enchants.astro';
 import BisTable from '../../../../components/BisTable.astro';
 import PvpRankPath from '../../../../components/PvpRankPath.astro';
 import Sources from '../../../../components/Sources.astro';
-import { ROLE_LABEL, specById } from '../../../../lib/classes';
+import { ROLE_LABEL, specById, textColor } from '../../../../lib/classes';
 import { treeIcon } from '../../../../lib/talents';
 import { MODES, getSpecs, resolvePoints, type ModeKey } from '../../../../lib/content';
 import { href } from '../../../../lib/paths';
@@ -46,7 +46,7 @@ const points = resolvePoints(entry, active);
   <header class="mb-6 flex flex-wrap items-center gap-4">
     <Icon name={treeIcon(def.class, def.tree)} size={64} alt="" style={`view-transition-name:spec-${def.id}`} />
     <div class="min-w-0 flex-1">
-      <h1 class="text-3xl font-bold sm:text-4xl" style={`color:${def.color}`}>{def.name}</h1>
+      <h1 class="text-3xl font-bold sm:text-4xl" style={`color:${textColor(def.color)}`}>{def.name}</h1>
       <p class="text-sm text-muted">{ROLE_LABEL[def.role]}{def.altRoles?.length ? ` · can ${def.altRoles.join('/')}` : ''}</p>
       <p class="mt-1">{entry.tagline}</p>
     </div>

@@ -125,5 +125,9 @@ export function classBySlug(slug: string): ClassDef | undefined {
   return CLASSES.find((c) => c.slug === slug);
 }
 
-export const ROLE_GLYPH: Record<Role, string> = { tank: '🛡', healer: '✚', melee: '⚔', ranged: '✦' };
+/** Brand color is too dark for small text on #191d27. Shaman is the only miss (3.5:1). */
+export function textColor(color: string): string {
+  return color.toLowerCase() === '#0070dd' ? '#8ebeff' : color;
+}
+
 export const ROLE_LABEL: Record<Role, string> = { tank: 'Tank', healer: 'Healer', melee: 'Melee DPS', ranged: 'Ranged DPS' };

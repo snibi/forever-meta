@@ -45,11 +45,6 @@ h1, h2, h3 {
   letter-spacing: 0.02em;
 }
 
-a { color: inherit; }
-
-main {
-  --class-color: var(--color-gold);
-}
 
 .prose-block p + p { margin-top: 0.85rem; }
 .prose-block p { line-height: 1.7; }
@@ -117,6 +112,7 @@ a.chip:hover, a.chip:focus-visible {
   visibility: visible;
 }
 .tip-host.tip-below > .tip { bottom: auto; top: calc(100% + 8px); }
+.tip-host > .tip.tip-flip { left: auto; right: 0; transform: none; }
 
 /* Talent grid */
 .talent-grid {
@@ -128,7 +124,7 @@ a.chip:hover, a.chip:focus-visible {
 .talent-cell { width: 44px; height: 44px; }
 .talent-cell img { width: 44px; height: 44px; border-radius: 6px; display: block; }
 .talent-cell.spent img { box-shadow: 0 0 0 2px var(--color-gold), 0 0 12px color-mix(in srgb, var(--color-gold) 40%, transparent); }
-.talent-cell.unspent img { filter: grayscale(1); opacity: 0.4; }
+.talent-cell.unspent img { filter: grayscale(0.35); opacity: 0.72; }
 .talent-rank {
   position: absolute;
   right: -6px;

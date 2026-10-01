@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Icon from '../../../components/Icon.astro';
-import { CLASSES, ROLE_LABEL, classBySlug } from '../../../lib/classes';
+import { CLASSES, ROLE_LABEL, classBySlug, textColor } from '../../../lib/classes';
 import { treeIcon } from '../../../lib/talents';
 import { RACES } from '../../../lib/races';
 import { MODES, getSpecs, getTierLists, specHref, specTiers } from '../../../lib/content';
@@ -27,7 +27,7 @@ const factions = [
     <Icon name={`classicon_${cls.slug}`} size={64} alt="" />
     <div>
       <p class="text-sm text-muted"><a class="underline" href={href('/#classes')}>Classes</a> /</p>
-      <h1 class="text-4xl font-bold" style={`color:${cls.color}`}>{cls.name}</h1>
+      <h1 class="text-4xl font-bold" style={`color:${textColor(cls.color)}`}>{cls.name}</h1>
     </div>
   </header>
 

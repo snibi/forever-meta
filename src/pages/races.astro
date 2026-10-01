@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
-import { CLASSES } from '../lib/classes';
+import { CLASSES, textColor } from '../lib/classes';
 import { RACES } from '../lib/races';
 import { getTierLists } from '../lib/content';
 import { href } from '../lib/paths';
@@ -24,7 +24,7 @@ const factions = [
       <thead class="bg-raised text-xs uppercase tracking-wider">
         <tr>
           <th class="px-3 py-2 text-left">Race</th>
-          {CLASSES.map((c) => <th class="px-2 py-2" style={`color:${c.color}`}>{c.name}</th>)}
+          {CLASSES.map((c) => <th class="px-2 py-2" style={`color:${textColor(c.color)}`}>{c.name}</th>)}
         </tr>
       </thead>
       {factions.map((f) => (
@@ -32,7 +32,7 @@ const factions = [
           <tr><th colspan={CLASSES.length + 1} class="px-3 py-1 text-left text-xs uppercase tracking-widest" style={`color:${f.color}`}>{f.label}</th></tr>
           {RACES.filter((r) => r.faction === f.key).map((r) => (
             <tr>
-              <th class="px-3 py-2 text-left font-medium"><a class="inline-flex items-center gap-2 no-underline" href={`#${r.slug}`}><Icon name={r.icon} size={22} alt="" />{r.name}</a></th>
+              <th class="px-3 py-2 text-left font-medium"><a class="inline-flex items-center gap-2 no-underline" href={`#${r.slug}`}><Icon name={r.icon} size={28} alt="" />{r.name}</a></th>
               {CLASSES.map((c) => (
                 <td class="px-2 py-2">
                   {r.classes.includes(c.slug) ? (
